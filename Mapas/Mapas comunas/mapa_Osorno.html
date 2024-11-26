@@ -1,0 +1,2666 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_67c4ca1d6e1a3156ee5186023684f8dd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+    <div style="
+    position: fixed;
+    bottom: 50px; left: 50px; width: 180px; height: 100px;
+    border:2px solid grey; z-index:9999; font-size:14px;
+    background-color:white; opacity: 0.85; padding: 10px;">
+    <b>Rangos de Superficie</b><br>
+    <i class="fa fa-circle" style="color:blue"></i> 500-4999 m2<br>
+    <i class="fa fa-circle" style="color:green"></i> 10001-100000 m2<br>
+    </div>
+    
+    
+            <div class="folium-map" id="map_67c4ca1d6e1a3156ee5186023684f8dd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_67c4ca1d6e1a3156ee5186023684f8dd = L.map(
+                "map_67c4ca1d6e1a3156ee5186023684f8dd",
+                {
+                    center: [-40.57848998393116, -73.12562994047487],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e8528f5a00116d1d86999eaacc45132c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_e8528f5a00116d1d86999eaacc45132c.addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+            var circle_marker_8bca70893feb36d990e789f1ea2d8a7d = L.circleMarker(
+                [-40.5781344, -73.136378],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_3ac972a46477861483d5de5589508651 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b7fe2d472f3f92baf455eb2968f8352f = $(`<div id="html_b7fe2d472f3f92baf455eb2968f8352f" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 14000.0<br>Superficie: 1113.0 m²</div>`)[0];
+                popup_3ac972a46477861483d5de5589508651.setContent(html_b7fe2d472f3f92baf455eb2968f8352f);
+            
+        
+
+        circle_marker_8bca70893feb36d990e789f1ea2d8a7d.bindPopup(popup_3ac972a46477861483d5de5589508651)
+        ;
+
+        
+    
+    
+            var circle_marker_cfa681e611c5068112ad2689e8f068c5 = L.circleMarker(
+                [-40.5812817, -73.130604],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_9f1aeed1df1497cba4525c11748a2790 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_820e6982a20dc63cd94c732d5f307a02 = $(`<div id="html_820e6982a20dc63cd94c732d5f307a02" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 20800.0<br>Superficie: 1300.0 m²</div>`)[0];
+                popup_9f1aeed1df1497cba4525c11748a2790.setContent(html_820e6982a20dc63cd94c732d5f307a02);
+            
+        
+
+        circle_marker_cfa681e611c5068112ad2689e8f068c5.bindPopup(popup_9f1aeed1df1497cba4525c11748a2790)
+        ;
+
+        
+    
+    
+            var circle_marker_64db8264afede9dde3079a3aae517902 = L.circleMarker(
+                [-40.5846402, -73.0912583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_d3209bf4be16fb4f01bba06f3d531e4b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d28f4e789bb50b3185ba4e84ae8398a = $(`<div id="html_3d28f4e789bb50b3185ba4e84ae8398a" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 2972.9263703433835<br>Superficie: 2050.0 m²</div>`)[0];
+                popup_d3209bf4be16fb4f01bba06f3d531e4b.setContent(html_3d28f4e789bb50b3185ba4e84ae8398a);
+            
+        
+
+        circle_marker_64db8264afede9dde3079a3aae517902.bindPopup(popup_d3209bf4be16fb4f01bba06f3d531e4b)
+        ;
+
+        
+    
+    
+            var circle_marker_39f82f7837e60ea60be00f20ae9aebf4 = L.circleMarker(
+                [-40.5847947, -73.1725291],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_36c142d6a115163f3414ac1c7ee9d402 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_86ce178b469028a5a5324731c307772b = $(`<div id="html_86ce178b469028a5a5324731c307772b" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 4858.220919499279<br>Superficie: 2000.0 m²</div>`)[0];
+                popup_36c142d6a115163f3414ac1c7ee9d402.setContent(html_86ce178b469028a5a5324731c307772b);
+            
+        
+
+        circle_marker_39f82f7837e60ea60be00f20ae9aebf4.bindPopup(popup_36c142d6a115163f3414ac1c7ee9d402)
+        ;
+
+        
+    
+    
+            var circle_marker_48d3e125c946cac1da2b8e4da6848f35 = L.circleMarker(
+                [-40.56261, -73.10129],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_a852de76f19484189ba3975c4037c59f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_be0bbe26ba69cfe40802a505e1bdcadf = $(`<div id="html_be0bbe26ba69cfe40802a505e1bdcadf" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 16000.0<br>Superficie: 2500.0 m²</div>`)[0];
+                popup_a852de76f19484189ba3975c4037c59f.setContent(html_be0bbe26ba69cfe40802a505e1bdcadf);
+            
+        
+
+        circle_marker_48d3e125c946cac1da2b8e4da6848f35.bindPopup(popup_a852de76f19484189ba3975c4037c59f)
+        ;
+
+        
+    
+    
+            var circle_marker_5d1398b454189e8b0cceec4599a0aaa6 = L.circleMarker(
+                [-40.5975482, -73.1063274],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_e85c511c9231350758667297a7cb8c21 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5799d2eebdd64f68f6e491144ac651ad = $(`<div id="html_5799d2eebdd64f68f6e491144ac651ad" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 6.0<br>Superficie: 1000.0 m²</div>`)[0];
+                popup_e85c511c9231350758667297a7cb8c21.setContent(html_5799d2eebdd64f68f6e491144ac651ad);
+            
+        
+
+        circle_marker_5d1398b454189e8b0cceec4599a0aaa6.bindPopup(popup_e85c511c9231350758667297a7cb8c21)
+        ;
+
+        
+    
+    
+            var circle_marker_d1e864a7fa131f641bb0cbbd890c32b5 = L.circleMarker(
+                [-40.5788726, -73.1686804],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_51539cff968920eee12b52fb7cb7ac7e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_783cea76902332efcf06eade3e85f77a = $(`<div id="html_783cea76902332efcf06eade3e85f77a" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 7297.182909024669<br>Superficie: 1490.0 m²</div>`)[0];
+                popup_51539cff968920eee12b52fb7cb7ac7e.setContent(html_783cea76902332efcf06eade3e85f77a);
+            
+        
+
+        circle_marker_d1e864a7fa131f641bb0cbbd890c32b5.bindPopup(popup_51539cff968920eee12b52fb7cb7ac7e)
+        ;
+
+        
+    
+    
+            var circle_marker_92df3a487b8a458612f2e88e835e253a = L.circleMarker(
+                [-40.5766457, -73.1460474],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_8fdaeaa3161384bcd0e4e0b5b31d95ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c11857aeffa4be227b28bb61626d017 = $(`<div id="html_7c11857aeffa4be227b28bb61626d017" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 65946.0<br>Superficie: 4455.0 m²</div>`)[0];
+                popup_8fdaeaa3161384bcd0e4e0b5b31d95ae.setContent(html_7c11857aeffa4be227b28bb61626d017);
+            
+        
+
+        circle_marker_92df3a487b8a458612f2e88e835e253a.bindPopup(popup_8fdaeaa3161384bcd0e4e0b5b31d95ae)
+        ;
+
+        
+    
+    
+            var circle_marker_0f28197b5225042a066de54d7742c299 = L.circleMarker(
+                [-40.5596886, -73.1667455],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_91fc854e1bab07aaaff5035b777ff913 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5052a9fd96cbf2308b912ab5dfac6467 = $(`<div id="html_5052a9fd96cbf2308b912ab5dfac6467" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 12260.461238551794<br>Superficie: 2660.0 m²</div>`)[0];
+                popup_91fc854e1bab07aaaff5035b777ff913.setContent(html_5052a9fd96cbf2308b912ab5dfac6467);
+            
+        
+
+        circle_marker_0f28197b5225042a066de54d7742c299.bindPopup(popup_91fc854e1bab07aaaff5035b777ff913)
+        ;
+
+        
+    
+    
+            var circle_marker_b6b07f0f21ab775519b8fc070f223129 = L.circleMarker(
+                [-40.5703602, -73.1375133],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_cd79c689543ed23188047d74b99b5784 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1e31f430d0877f7f145ba428ebb41a6 = $(`<div id="html_e1e31f430d0877f7f145ba428ebb41a6" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 21282.32952122473<br>Superficie: 1710.0 m²</div>`)[0];
+                popup_cd79c689543ed23188047d74b99b5784.setContent(html_e1e31f430d0877f7f145ba428ebb41a6);
+            
+        
+
+        circle_marker_b6b07f0f21ab775519b8fc070f223129.bindPopup(popup_cd79c689543ed23188047d74b99b5784)
+        ;
+
+        
+    
+    
+            var circle_marker_104fc19951c78d79bd365c8d2ae42f30 = L.circleMarker(
+                [-40.5879636, -73.1186473],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_7b7e27715350fb2e13a7af3ca050993a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9683ffcc586488b5981a3d8cea6b00f = $(`<div id="html_b9683ffcc586488b5981a3d8cea6b00f" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 4743.0<br>Superficie: 525.0 m²</div>`)[0];
+                popup_7b7e27715350fb2e13a7af3ca050993a.setContent(html_b9683ffcc586488b5981a3d8cea6b00f);
+            
+        
+
+        circle_marker_104fc19951c78d79bd365c8d2ae42f30.bindPopup(popup_7b7e27715350fb2e13a7af3ca050993a)
+        ;
+
+        
+    
+    
+            var circle_marker_26c5bd48bdc8a1f991e2b9cb605728d2 = L.circleMarker(
+                [-40.5778081, -73.1471076],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_87d1d9090e91f05e90386eae74bbe154 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ddcb95914a6279dfbcfbf1d2085c61fc = $(`<div id="html_ddcb95914a6279dfbcfbf1d2085c61fc" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 5620.0<br>Superficie: 765.0 m²</div>`)[0];
+                popup_87d1d9090e91f05e90386eae74bbe154.setContent(html_ddcb95914a6279dfbcfbf1d2085c61fc);
+            
+        
+
+        circle_marker_26c5bd48bdc8a1f991e2b9cb605728d2.bindPopup(popup_87d1d9090e91f05e90386eae74bbe154)
+        ;
+
+        
+    
+    
+            var circle_marker_e7432f01699a25dbf275318fe692fa89 = L.circleMarker(
+                [-40.5761897, -73.1149469],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_994de90d085b9a51a3ea22f1861bb6ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1613f0e8bbc787360a1e3b0136b7a7e9 = $(`<div id="html_1613f0e8bbc787360a1e3b0136b7a7e9" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 26450.31389505164<br>Superficie: 4500.0 m²</div>`)[0];
+                popup_994de90d085b9a51a3ea22f1861bb6ab.setContent(html_1613f0e8bbc787360a1e3b0136b7a7e9);
+            
+        
+
+        circle_marker_e7432f01699a25dbf275318fe692fa89.bindPopup(popup_994de90d085b9a51a3ea22f1861bb6ab)
+        ;
+
+        
+    
+    
+            var circle_marker_3655aed6d74f4a6b2c42932b3f17be24 = L.circleMarker(
+                [-40.5847947, -73.1725291],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_f707ce7cdc47c593ff28a01c3af2fe86 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c9b038c27c68869451b4b94181aabfcc = $(`<div id="html_c9b038c27c68869451b4b94181aabfcc" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 4831.304275006429<br>Superficie: 2000.0 m²</div>`)[0];
+                popup_f707ce7cdc47c593ff28a01c3af2fe86.setContent(html_c9b038c27c68869451b4b94181aabfcc);
+            
+        
+
+        circle_marker_3655aed6d74f4a6b2c42932b3f17be24.bindPopup(popup_f707ce7cdc47c593ff28a01c3af2fe86)
+        ;
+
+        
+    
+    
+            var circle_marker_fdaedd8639b76995f5dba7fd8827f030 = L.circleMarker(
+                [-40.5722051, -73.1555895],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_8ea0f374074fbe562e4b75d98bbe013c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2998f5c7628779ac7b71636c03e8d35 = $(`<div id="html_c2998f5c7628779ac7b71636c03e8d35" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 6184.844012855871<br>Superficie: 608.0 m²</div>`)[0];
+                popup_8ea0f374074fbe562e4b75d98bbe013c.setContent(html_c2998f5c7628779ac7b71636c03e8d35);
+            
+        
+
+        circle_marker_fdaedd8639b76995f5dba7fd8827f030.bindPopup(popup_8ea0f374074fbe562e4b75d98bbe013c)
+        ;
+
+        
+    
+    
+            var circle_marker_6dcebf949f5c5c45dea4ad04578bd375 = L.circleMarker(
+                [-40.58273, -73.11866],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_e8a06eade42830dac908a1f896234fd9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a9137c291dfe880ff8d666bf3853bb18 = $(`<div id="html_a9137c291dfe880ff8d666bf3853bb18" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 18823.438299996127<br>Superficie: 1115.0 m²</div>`)[0];
+                popup_e8a06eade42830dac908a1f896234fd9.setContent(html_a9137c291dfe880ff8d666bf3853bb18);
+            
+        
+
+        circle_marker_6dcebf949f5c5c45dea4ad04578bd375.bindPopup(popup_e8a06eade42830dac908a1f896234fd9)
+        ;
+
+        
+    
+    
+            var circle_marker_8b4ead7fa83d1244a302dffe927f7ed6 = L.circleMarker(
+                [-40.5582762, -73.1690952],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_332d0d7b023dcc6396f453efafadb746 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_82d5a6fd7c325479b84b64b472aec814 = $(`<div id="html_82d5a6fd7c325479b84b64b472aec814" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 16000.0<br>Superficie: 2973.0 m²</div>`)[0];
+                popup_332d0d7b023dcc6396f453efafadb746.setContent(html_82d5a6fd7c325479b84b64b472aec814);
+            
+        
+
+        circle_marker_8b4ead7fa83d1244a302dffe927f7ed6.bindPopup(popup_332d0d7b023dcc6396f453efafadb746)
+        ;
+
+        
+    
+    
+            var circle_marker_df708006339ddc2a194950c91fc5ec21 = L.circleMarker(
+                [-40.5825702, -73.1180654],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_5fe465fa143ba065ac8a0044837ed21a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a70dc3f553e0c137495699f2aaabd77f = $(`<div id="html_a70dc3f553e0c137495699f2aaabd77f" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 5899.429739668893<br>Superficie: 536.0 m²</div>`)[0];
+                popup_5fe465fa143ba065ac8a0044837ed21a.setContent(html_a70dc3f553e0c137495699f2aaabd77f);
+            
+        
+
+        circle_marker_df708006339ddc2a194950c91fc5ec21.bindPopup(popup_5fe465fa143ba065ac8a0044837ed21a)
+        ;
+
+        
+    
+    
+            var circle_marker_456bede4eea55274838d95a70b6f9998 = L.circleMarker(
+                [-40.5688751, -73.1794148],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_1603e5ae6fa8cf671329e722251b8461 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5873d6473695ec25542733c0d06ef409 = $(`<div id="html_5873d6473695ec25542733c0d06ef409" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 2681.558972576769<br>Superficie: 1000.0 m²</div>`)[0];
+                popup_1603e5ae6fa8cf671329e722251b8461.setContent(html_5873d6473695ec25542733c0d06ef409);
+            
+        
+
+        circle_marker_456bede4eea55274838d95a70b6f9998.bindPopup(popup_1603e5ae6fa8cf671329e722251b8461)
+        ;
+
+        
+    
+    
+            var circle_marker_8eab23db075be7d7e1083498bd34dfb4 = L.circleMarker(
+                [-40.5722051, -73.1555895],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_52d8dbbd4cd0f34b2d2dddf1e6b8af71 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c099ea2a03a517196acca40c81f788ca = $(`<div id="html_c099ea2a03a517196acca40c81f788ca" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 6179.086585928393<br>Superficie: 608.0 m²</div>`)[0];
+                popup_52d8dbbd4cd0f34b2d2dddf1e6b8af71.setContent(html_c099ea2a03a517196acca40c81f788ca);
+            
+        
+
+        circle_marker_8eab23db075be7d7e1083498bd34dfb4.bindPopup(popup_52d8dbbd4cd0f34b2d2dddf1e6b8af71)
+        ;
+
+        
+    
+    
+            var circle_marker_df594aea9f2ac3fecad4c2e3edc71a53 = L.circleMarker(
+                [-40.4986793, -73.1593697],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_ce11a6cdfecb99179630beb1f33452ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7af4299df4bc1126fdcbaba8b0909c6a = $(`<div id="html_7af4299df4bc1126fdcbaba8b0909c6a" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 2675.749229852478<br>Superficie: 4000.0 m²</div>`)[0];
+                popup_ce11a6cdfecb99179630beb1f33452ee.setContent(html_7af4299df4bc1126fdcbaba8b0909c6a);
+            
+        
+
+        circle_marker_df594aea9f2ac3fecad4c2e3edc71a53.bindPopup(popup_ce11a6cdfecb99179630beb1f33452ee)
+        ;
+
+        
+    
+    
+            var circle_marker_1c2456c84e69a7df73013407171b7a8d = L.circleMarker(
+                [-40.58273, -73.11866],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_fbad7aa385676eb9ecf4fc48a0dd2801 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c41c578aa07bd03988aba40e7a40e921 = $(`<div id="html_c41c578aa07bd03988aba40e7a40e921" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 18805.915696303804<br>Superficie: 1115.0 m²</div>`)[0];
+                popup_fbad7aa385676eb9ecf4fc48a0dd2801.setContent(html_c41c578aa07bd03988aba40e7a40e921);
+            
+        
+
+        circle_marker_1c2456c84e69a7df73013407171b7a8d.bindPopup(popup_fbad7aa385676eb9ecf4fc48a0dd2801)
+        ;
+
+        
+    
+    
+            var circle_marker_131058851db3b9544647e02dd8438e59 = L.circleMarker(
+                [-40.580387, -73.1057247],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_d18dd7c59fc6c0bfd08813aa25fca07e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a9d0eea9611a0c6cd66a966afbefa020 = $(`<div id="html_a9d0eea9611a0c6cd66a966afbefa020" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 10749.0<br>Superficie: 648.0 m²</div>`)[0];
+                popup_d18dd7c59fc6c0bfd08813aa25fca07e.setContent(html_a9d0eea9611a0c6cd66a966afbefa020);
+            
+        
+
+        circle_marker_131058851db3b9544647e02dd8438e59.bindPopup(popup_d18dd7c59fc6c0bfd08813aa25fca07e)
+        ;
+
+        
+    
+    
+            var circle_marker_5eff619c9e18bc09411a2bbffb6484bf = L.circleMarker(
+                [-40.5723734, -73.153149],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_2e93aa3b0b6ce4063bddc15b4afca3a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7742a2686b030fda58d15f6d1cd86e17 = $(`<div id="html_7742a2686b030fda58d15f6d1cd86e17" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 8060.0<br>Superficie: 948.0 m²</div>`)[0];
+                popup_2e93aa3b0b6ce4063bddc15b4afca3a1.setContent(html_7742a2686b030fda58d15f6d1cd86e17);
+            
+        
+
+        circle_marker_5eff619c9e18bc09411a2bbffb6484bf.bindPopup(popup_2e93aa3b0b6ce4063bddc15b4afca3a1)
+        ;
+
+        
+    
+    
+            var circle_marker_cc6a6e8423bf66378f06078ee2ad8f57 = L.circleMarker(
+                [-40.5722051, -73.1555895],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_d0568b8c4edc71f6892d6dcd950e55bc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1c1d0f258bec94a564376959496fa931 = $(`<div id="html_1c1d0f258bec94a564376959496fa931" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 6179.086585928393<br>Superficie: 608.0 m²</div>`)[0];
+                popup_d0568b8c4edc71f6892d6dcd950e55bc.setContent(html_1c1d0f258bec94a564376959496fa931);
+            
+        
+
+        circle_marker_cc6a6e8423bf66378f06078ee2ad8f57.bindPopup(popup_d0568b8c4edc71f6892d6dcd950e55bc)
+        ;
+
+        
+    
+    
+            var circle_marker_9adb0c07396a5e175080788bbd3cc9ed = L.circleMarker(
+                [-40.5658608, -73.1071377],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_8387a44fd6e87258538f8ae2de784e5c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7022f7079a91261c56f06a1f6b4581d6 = $(`<div id="html_7022f7079a91261c56f06a1f6b4581d6" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 5.0<br>Superficie: 998.0 m²</div>`)[0];
+                popup_8387a44fd6e87258538f8ae2de784e5c.setContent(html_7022f7079a91261c56f06a1f6b4581d6);
+            
+        
+
+        circle_marker_9adb0c07396a5e175080788bbd3cc9ed.bindPopup(popup_8387a44fd6e87258538f8ae2de784e5c)
+        ;
+
+        
+    
+    
+            var circle_marker_d26925d57494458d413a212af0af30a1 = L.circleMarker(
+                [-40.58273, -73.11866],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_0cfddacc79304bdaf950ed80bf265150 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b73b6ff89a10479214c42451c9e2ab60 = $(`<div id="html_b73b6ff89a10479214c42451c9e2ab60" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 18788.40551391389<br>Superficie: 1115.0 m²</div>`)[0];
+                popup_0cfddacc79304bdaf950ed80bf265150.setContent(html_b73b6ff89a10479214c42451c9e2ab60);
+            
+        
+
+        circle_marker_d26925d57494458d413a212af0af30a1.bindPopup(popup_0cfddacc79304bdaf950ed80bf265150)
+        ;
+
+        
+    
+    
+            var circle_marker_63a27f7a067c24c49ba576c320b8ac10 = L.circleMarker(
+                [-40.58273, -73.11866],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_a51dd58c70e6c45d334490269221fa40 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_46f50fdb4ff584ab058f715f35a840f6 = $(`<div id="html_46f50fdb4ff584ab058f715f35a840f6" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 18788.40551391389<br>Superficie: 1115.0 m²</div>`)[0];
+                popup_a51dd58c70e6c45d334490269221fa40.setContent(html_46f50fdb4ff584ab058f715f35a840f6);
+            
+        
+
+        circle_marker_63a27f7a067c24c49ba576c320b8ac10.bindPopup(popup_a51dd58c70e6c45d334490269221fa40)
+        ;
+
+        
+    
+    
+            var circle_marker_4c285a3a05c8247bc4b544e6a5fbdeaa = L.circleMarker(
+                [-40.58273, -73.11866],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_cef66d31a34fa0773e197fd6673595b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52a140f59a7da8234409e5c35003c06a = $(`<div id="html_52a140f59a7da8234409e5c35003c06a" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 18770.912808037385<br>Superficie: 1115.0 m²</div>`)[0];
+                popup_cef66d31a34fa0773e197fd6673595b4.setContent(html_52a140f59a7da8234409e5c35003c06a);
+            
+        
+
+        circle_marker_4c285a3a05c8247bc4b544e6a5fbdeaa.bindPopup(popup_cef66d31a34fa0773e197fd6673595b4)
+        ;
+
+        
+    
+    
+            var circle_marker_107955f3e14dec5216d2b9212dfd00bb = L.circleMarker(
+                [-40.5722051, -73.1555895],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_04483daace8be64aa5d4b49863ef86a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d9eed627d6f30f0612c65d5bb4c473e = $(`<div id="html_8d9eed627d6f30f0612c65d5bb4c473e" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 6161.157118882205<br>Superficie: 608.0 m²</div>`)[0];
+                popup_04483daace8be64aa5d4b49863ef86a2.setContent(html_8d9eed627d6f30f0612c65d5bb4c473e);
+            
+        
+
+        circle_marker_107955f3e14dec5216d2b9212dfd00bb.bindPopup(popup_04483daace8be64aa5d4b49863ef86a2)
+        ;
+
+        
+    
+    
+            var circle_marker_e105b48ba1e858643f3897924f345816 = L.circleMarker(
+                [-40.5733223, -73.1359011],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_47204d171e71487762608be98898b778 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6aef3ab067842db4864346001ac06d7d = $(`<div id="html_6aef3ab067842db4864346001ac06d7d" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 16000.0<br>Superficie: 2973.0 m²</div>`)[0];
+                popup_47204d171e71487762608be98898b778.setContent(html_6aef3ab067842db4864346001ac06d7d);
+            
+        
+
+        circle_marker_e105b48ba1e858643f3897924f345816.bindPopup(popup_47204d171e71487762608be98898b778)
+        ;
+
+        
+    
+    
+            var circle_marker_8533ba5a62f47963ea78ed42ba294402 = L.circleMarker(
+                [-40.58273, -73.11866],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_4231fde8cfc663bd25b49d13dbf413b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_209cd0685b12af80ef7c45c49f056370 = $(`<div id="html_209cd0685b12af80ef7c45c49f056370" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 18709.158908379377<br>Superficie: 1115.0 m²</div>`)[0];
+                popup_4231fde8cfc663bd25b49d13dbf413b3.setContent(html_209cd0685b12af80ef7c45c49f056370);
+            
+        
+
+        circle_marker_8533ba5a62f47963ea78ed42ba294402.bindPopup(popup_4231fde8cfc663bd25b49d13dbf413b3)
+        ;
+
+        
+    
+    
+            var circle_marker_05227e98d9edc4a02d8ef6a2fcbf1496 = L.circleMarker(
+                [-40.59498415, -73.11294653],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_dcb209b6d84b44b3ff945af9f3e4b2a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c64b79ac1074057e7a17520b6eeefb5f = $(`<div id="html_c64b79ac1074057e7a17520b6eeefb5f" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 19850.0<br>Superficie: 3970.0 m²</div>`)[0];
+                popup_dcb209b6d84b44b3ff945af9f3e4b2a4.setContent(html_c64b79ac1074057e7a17520b6eeefb5f);
+            
+        
+
+        circle_marker_05227e98d9edc4a02d8ef6a2fcbf1496.bindPopup(popup_dcb209b6d84b44b3ff945af9f3e4b2a4)
+        ;
+
+        
+    
+    
+            var circle_marker_18666964652f2e955e93a5ba82723c42 = L.circleMarker(
+                [-40.5678125, -73.1744375],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_b84b5ab91f9e0c6e85309d8616da5161 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61fa3301b96ff2dc169867264a1a5710 = $(`<div id="html_61fa3301b96ff2dc169867264a1a5710" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 6916.757094398038<br>Superficie: 2073.0 m²</div>`)[0];
+                popup_b84b5ab91f9e0c6e85309d8616da5161.setContent(html_61fa3301b96ff2dc169867264a1a5710);
+            
+        
+
+        circle_marker_18666964652f2e955e93a5ba82723c42.bindPopup(popup_b84b5ab91f9e0c6e85309d8616da5161)
+        ;
+
+        
+    
+    
+            var circle_marker_9cf8b557c3327669904f31a786cc21ce = L.circleMarker(
+                [-40.5925912, -73.1199348],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_c551e500b32c2e407d5ca680ac16b727 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb17108fc080986cf1646c58ae74c90f = $(`<div id="html_cb17108fc080986cf1646c58ae74c90f" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 41000.0<br>Superficie: 1650.0 m²</div>`)[0];
+                popup_c551e500b32c2e407d5ca680ac16b727.setContent(html_cb17108fc080986cf1646c58ae74c90f);
+            
+        
+
+        circle_marker_9cf8b557c3327669904f31a786cc21ce.bindPopup(popup_c551e500b32c2e407d5ca680ac16b727)
+        ;
+
+        
+    
+    
+            var circle_marker_a1bd9d6805b6e2189ce2d526060e6b5c = L.circleMarker(
+                [-40.5769663, -73.1561887],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_764d40b3b6e1705a921022cb4aacf02d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_48eacf4434b8c18868379632d982dfa0 = $(`<div id="html_48eacf4434b8c18868379632d982dfa0" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 10500.0<br>Superficie: 1609.0 m²</div>`)[0];
+                popup_764d40b3b6e1705a921022cb4aacf02d.setContent(html_48eacf4434b8c18868379632d982dfa0);
+            
+        
+
+        circle_marker_a1bd9d6805b6e2189ce2d526060e6b5c.bindPopup(popup_764d40b3b6e1705a921022cb4aacf02d)
+        ;
+
+        
+    
+    
+            var circle_marker_65a4bd908f645dec6d717d11dee03062 = L.circleMarker(
+                [-40.5764286, -73.1465314],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_c47230b06324fe251cf99eaf3c6e7de8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ef446a7f743482fcd274d0dccaa3113 = $(`<div id="html_6ef446a7f743482fcd274d0dccaa3113" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 9477.0<br>Superficie: 1723.0 m²</div>`)[0];
+                popup_c47230b06324fe251cf99eaf3c6e7de8.setContent(html_6ef446a7f743482fcd274d0dccaa3113);
+            
+        
+
+        circle_marker_65a4bd908f645dec6d717d11dee03062.bindPopup(popup_c47230b06324fe251cf99eaf3c6e7de8)
+        ;
+
+        
+    
+    
+            var circle_marker_7e0da8922b3e8dcd4b2d5faf817a16a7 = L.circleMarker(
+                [-40.6029774, -73.4696582],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_68344ab5ebc0cd180dd0646c3a359d77 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e8f82bd9abd3ff16fc4025de107636d9 = $(`<div id="html_e8f82bd9abd3ff16fc4025de107636d9" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 2394.8035955049004<br>Superficie: 838.0 m²</div>`)[0];
+                popup_68344ab5ebc0cd180dd0646c3a359d77.setContent(html_e8f82bd9abd3ff16fc4025de107636d9);
+            
+        
+
+        circle_marker_7e0da8922b3e8dcd4b2d5faf817a16a7.bindPopup(popup_68344ab5ebc0cd180dd0646c3a359d77)
+        ;
+
+        
+    
+    
+            var circle_marker_eaacf7f19cd151490c91a78e0385793f = L.circleMarker(
+                [-40.5678125, -73.1744375],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_9f41da4615ae83ed4e4987ed61f56dc3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c07e5759e7df4ec6623ad45f3fde41cd = $(`<div id="html_c07e5759e7df4ec6623ad45f3fde41cd" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 6918.321498125268<br>Superficie: 2073.0 m²</div>`)[0];
+                popup_9f41da4615ae83ed4e4987ed61f56dc3.setContent(html_c07e5759e7df4ec6623ad45f3fde41cd);
+            
+        
+
+        circle_marker_eaacf7f19cd151490c91a78e0385793f.bindPopup(popup_9f41da4615ae83ed4e4987ed61f56dc3)
+        ;
+
+        
+    
+    
+            var circle_marker_401b9aeba77abe2d946896a718ef8287 = L.circleMarker(
+                [-40.5738, -73.11185],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_ec575c20dd3ba2d27c18e3d5983d52c2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c99901c145746f9f1d1a8cbf41bc073 = $(`<div id="html_8c99901c145746f9f1d1a8cbf41bc073" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 14817.41<br>Superficie: 2100.0 m²</div>`)[0];
+                popup_ec575c20dd3ba2d27c18e3d5983d52c2.setContent(html_8c99901c145746f9f1d1a8cbf41bc073);
+            
+        
+
+        circle_marker_401b9aeba77abe2d946896a718ef8287.bindPopup(popup_ec575c20dd3ba2d27c18e3d5983d52c2)
+        ;
+
+        
+    
+    
+            var circle_marker_0d000a7c3953bbcd45c55ecdd7f1e366 = L.circleMarker(
+                [-40.5769635, -73.1533307],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_0c3ae1f42b125fdd8e9b4bf7fce73953 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_307a3bf039d56c4bd64f4ba6b7731df9 = $(`<div id="html_307a3bf039d56c4bd64f4ba6b7731df9" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 7930.676308381953<br>Superficie: 923.0 m²</div>`)[0];
+                popup_0c3ae1f42b125fdd8e9b4bf7fce73953.setContent(html_307a3bf039d56c4bd64f4ba6b7731df9);
+            
+        
+
+        circle_marker_0d000a7c3953bbcd45c55ecdd7f1e366.bindPopup(popup_0c3ae1f42b125fdd8e9b4bf7fce73953)
+        ;
+
+        
+    
+    
+            var circle_marker_8ec17abc81291f08ef844810b70b8cb3 = L.circleMarker(
+                [-40.58009, -73.11302],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_6e9701236b2846e53556db65df4d5edc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62d0dacffde58ec45ea6299813c53a07 = $(`<div id="html_62d0dacffde58ec45ea6299813c53a07" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 29500.0<br>Superficie: 1755.0 m²</div>`)[0];
+                popup_6e9701236b2846e53556db65df4d5edc.setContent(html_62d0dacffde58ec45ea6299813c53a07);
+            
+        
+
+        circle_marker_8ec17abc81291f08ef844810b70b8cb3.bindPopup(popup_6e9701236b2846e53556db65df4d5edc)
+        ;
+
+        
+    
+    
+            var circle_marker_f9509094331428270a348bec2f3d02ae = L.circleMarker(
+                [-40.563827, -73.102301],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_a32107d218ff69a8be41a839d6176bc8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_32f6be9de00f41dc8d3892f0051cbdba = $(`<div id="html_32f6be9de00f41dc8d3892f0051cbdba" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 10480.0<br>Superficie: 2619.0 m²</div>`)[0];
+                popup_a32107d218ff69a8be41a839d6176bc8.setContent(html_32f6be9de00f41dc8d3892f0051cbdba);
+            
+        
+
+        circle_marker_f9509094331428270a348bec2f3d02ae.bindPopup(popup_a32107d218ff69a8be41a839d6176bc8)
+        ;
+
+        
+    
+    
+            var circle_marker_e92386fbb7533fbfd436dc3d4c0b23f9 = L.circleMarker(
+                [-40.5768027, -73.1267315],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_d388f365f55a5e5f1d7dbd6c59fd0a14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_50683ad2f29a6dc797346f742eac9b1d = $(`<div id="html_50683ad2f29a6dc797346f742eac9b1d" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 17372.790414923707<br>Superficie: 800.0 m²</div>`)[0];
+                popup_d388f365f55a5e5f1d7dbd6c59fd0a14.setContent(html_50683ad2f29a6dc797346f742eac9b1d);
+            
+        
+
+        circle_marker_e92386fbb7533fbfd436dc3d4c0b23f9.bindPopup(popup_d388f365f55a5e5f1d7dbd6c59fd0a14)
+        ;
+
+        
+    
+    
+            var circle_marker_aaf077666349c8c8de06675acd6d3a83 = L.circleMarker(
+                [-40.586416, -73.1140314],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_0bb0352efa50644f8d2718ac3b0e2a5a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d6f2c32e844ad5720a740da8a04fc66e = $(`<div id="html_d6f2c32e844ad5720a740da8a04fc66e" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 7027.0<br>Superficie: 536.0 m²</div>`)[0];
+                popup_0bb0352efa50644f8d2718ac3b0e2a5a.setContent(html_d6f2c32e844ad5720a740da8a04fc66e);
+            
+        
+
+        circle_marker_aaf077666349c8c8de06675acd6d3a83.bindPopup(popup_0bb0352efa50644f8d2718ac3b0e2a5a)
+        ;
+
+        
+    
+    
+            var circle_marker_65a0cf7b6eff21d4f4980e2452f1bee2 = L.circleMarker(
+                [-40.5704476, -73.120736],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_f67cb3b5d31071bafefc183982eea78c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d43f5e3e2c27bc601f958c3480b2d736 = $(`<div id="html_d43f5e3e2c27bc601f958c3480b2d736" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 8052.173791677381<br>Superficie: 968.0 m²</div>`)[0];
+                popup_f67cb3b5d31071bafefc183982eea78c.setContent(html_d43f5e3e2c27bc601f958c3480b2d736);
+            
+        
+
+        circle_marker_65a0cf7b6eff21d4f4980e2452f1bee2.bindPopup(popup_f67cb3b5d31071bafefc183982eea78c)
+        ;
+
+        
+    
+    
+            var circle_marker_350bd38d98aa823388dbfb3e50994b6b = L.circleMarker(
+                [-40.565806, -73.1035805],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_24be481ad4e2ac644a844e444aec705d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd722e05f00d03b757790dd19bd702c5 = $(`<div id="html_cd722e05f00d03b757790dd19bd702c5" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 10400.0<br>Superficie: 2619.0 m²</div>`)[0];
+                popup_24be481ad4e2ac644a844e444aec705d.setContent(html_cd722e05f00d03b757790dd19bd702c5);
+            
+        
+
+        circle_marker_350bd38d98aa823388dbfb3e50994b6b.bindPopup(popup_24be481ad4e2ac644a844e444aec705d)
+        ;
+
+        
+    
+    
+            var circle_marker_4c49092604efd1fe69d9ab1b3a422127 = L.circleMarker(
+                [-40.58273, -73.11866],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_4c8dfb2f6180467a05582fd0cd6f2bb3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_88f4bb7d1d4fd806c34eef6c9db2305a = $(`<div id="html_88f4bb7d1d4fd806c34eef6c9db2305a" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 18629.10542237372<br>Superficie: 1115.0 m²</div>`)[0];
+                popup_4c8dfb2f6180467a05582fd0cd6f2bb3.setContent(html_88f4bb7d1d4fd806c34eef6c9db2305a);
+            
+        
+
+        circle_marker_4c49092604efd1fe69d9ab1b3a422127.bindPopup(popup_4c8dfb2f6180467a05582fd0cd6f2bb3)
+        ;
+
+        
+    
+    
+            var circle_marker_5e0147f7b7909b824eb3b58c2502be3d = L.circleMarker(
+                [-40.58273, -73.11866],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_57039e20492b38c81e1b4d48a396e0b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_49392fdadac5be16915be666f1195abd = $(`<div id="html_49392fdadac5be16915be666f1195abd" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 16000.0<br>Superficie: 1200.0 m²</div>`)[0];
+                popup_57039e20492b38c81e1b4d48a396e0b5.setContent(html_49392fdadac5be16915be666f1195abd);
+            
+        
+
+        circle_marker_5e0147f7b7909b824eb3b58c2502be3d.bindPopup(popup_57039e20492b38c81e1b4d48a396e0b5)
+        ;
+
+        
+    
+    
+            var circle_marker_e2efd1446bdad516f9685e3bdbf5f99b = L.circleMarker(
+                [-40.5700077, -73.1254406],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_5ce9ffa49223e7a43a6d6b3a235e07c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5093582a82913dff5ec1db5c6992b2e5 = $(`<div id="html_5093582a82913dff5ec1db5c6992b2e5" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 5318.882992020612<br>Superficie: 525.0 m²</div>`)[0];
+                popup_5ce9ffa49223e7a43a6d6b3a235e07c5.setContent(html_5093582a82913dff5ec1db5c6992b2e5);
+            
+        
+
+        circle_marker_e2efd1446bdad516f9685e3bdbf5f99b.bindPopup(popup_5ce9ffa49223e7a43a6d6b3a235e07c5)
+        ;
+
+        
+    
+    
+            var circle_marker_c16b74b969edae9d1aed6e38c23a90c2 = L.circleMarker(
+                [-40.582766, -73.1183363],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_23ced0a8245a2bce94eb1406227d7dc7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4ea4b1fb4e2a5d2a124426881f70e16 = $(`<div id="html_a4ea4b1fb4e2a5d2a124426881f70e16" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 18626.25018726033<br>Superficie: 1115.0 m²</div>`)[0];
+                popup_23ced0a8245a2bce94eb1406227d7dc7.setContent(html_a4ea4b1fb4e2a5d2a124426881f70e16);
+            
+        
+
+        circle_marker_c16b74b969edae9d1aed6e38c23a90c2.bindPopup(popup_23ced0a8245a2bce94eb1406227d7dc7)
+        ;
+
+        
+    
+    
+            var circle_marker_1149c93be9f1fbd14b11707c54858560 = L.circleMarker(
+                [-40.5622686, -73.1545846],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_19c6fb96025ce2461767b6a84f51f030 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d22f15b04729376f2c44ddb486c8f5e3 = $(`<div id="html_d22f15b04729376f2c44ddb486c8f5e3" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 2659.6904758611813<br>Superficie: 4000.0 m²</div>`)[0];
+                popup_19c6fb96025ce2461767b6a84f51f030.setContent(html_d22f15b04729376f2c44ddb486c8f5e3);
+            
+        
+
+        circle_marker_1149c93be9f1fbd14b11707c54858560.bindPopup(popup_19c6fb96025ce2461767b6a84f51f030)
+        ;
+
+        
+    
+    
+            var circle_marker_238345521c2efe515d33ffe4f27b29cb = L.circleMarker(
+                [-40.5722051, -73.1555895],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_bdf94f826a63a0d08ef13c6485a7c3ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a8338cda6aa5b56f1f94dfa461b5fa2 = $(`<div id="html_9a8338cda6aa5b56f1f94dfa461b5fa2" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 6116.715440823704<br>Superficie: 608.0 m²</div>`)[0];
+                popup_bdf94f826a63a0d08ef13c6485a7c3ca.setContent(html_9a8338cda6aa5b56f1f94dfa461b5fa2);
+            
+        
+
+        circle_marker_238345521c2efe515d33ffe4f27b29cb.bindPopup(popup_bdf94f826a63a0d08ef13c6485a7c3ca)
+        ;
+
+        
+    
+    
+            var circle_marker_b3fb53096cc7db4b5569afc1601a819d = L.circleMarker(
+                [-40.6477728, -73.0600922],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_e8d742300a5523f99f94ec99e8c34e10 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e6d1ab403b882aa777d5b856432e722 = $(`<div id="html_2e6d1ab403b882aa777d5b856432e722" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 1763.0<br>Superficie: 600.0 m²</div>`)[0];
+                popup_e8d742300a5523f99f94ec99e8c34e10.setContent(html_2e6d1ab403b882aa777d5b856432e722);
+            
+        
+
+        circle_marker_b3fb53096cc7db4b5569afc1601a819d.bindPopup(popup_e8d742300a5523f99f94ec99e8c34e10)
+        ;
+
+        
+    
+    
+            var circle_marker_4377779d2db4bcadf9919567a21a9e2b = L.circleMarker(
+                [-40.5769876, -73.1342507],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_5c6919aecf8da0ca6fe31fdf65d48ef2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a557cf16ec0b502a82ba00bf3d8a6aa9 = $(`<div id="html_a557cf16ec0b502a82ba00bf3d8a6aa9" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 35887.0<br>Superficie: 1282.0 m²</div>`)[0];
+                popup_5c6919aecf8da0ca6fe31fdf65d48ef2.setContent(html_a557cf16ec0b502a82ba00bf3d8a6aa9);
+            
+        
+
+        circle_marker_4377779d2db4bcadf9919567a21a9e2b.bindPopup(popup_5c6919aecf8da0ca6fe31fdf65d48ef2)
+        ;
+
+        
+    
+    
+            var circle_marker_8298efb8aacf0cc2870003950226db29 = L.circleMarker(
+                [-40.5622686, -73.1545846],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_1e778eecf44561d7405f8ea08f75720c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f94656ac92a88768920f46d7d7535e15 = $(`<div id="html_f94656ac92a88768920f46d7d7535e15" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 2661.0<br>Superficie: 4000.0 m²</div>`)[0];
+                popup_1e778eecf44561d7405f8ea08f75720c.setContent(html_f94656ac92a88768920f46d7d7535e15);
+            
+        
+
+        circle_marker_8298efb8aacf0cc2870003950226db29.bindPopup(popup_1e778eecf44561d7405f8ea08f75720c)
+        ;
+
+        
+    
+    
+            var circle_marker_4f875f25f94ffd7b501be3c7116f2d8c = L.circleMarker(
+                [-40.5761897, -73.1149469],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_c06ae9dcb414c887cf76e39b53ddf3b2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf47fc5807dacb7f97b05d6972d20cda = $(`<div id="html_bf47fc5807dacb7f97b05d6972d20cda" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 8155.0<br>Superficie: 693.8 m²</div>`)[0];
+                popup_c06ae9dcb414c887cf76e39b53ddf3b2.setContent(html_bf47fc5807dacb7f97b05d6972d20cda);
+            
+        
+
+        circle_marker_4f875f25f94ffd7b501be3c7116f2d8c.bindPopup(popup_c06ae9dcb414c887cf76e39b53ddf3b2)
+        ;
+
+        
+    
+    
+            var circle_marker_1e75a534a45d8fffdcc7c5dcb1cbf7d2 = L.circleMarker(
+                [-40.5805826, -73.1060466],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_b441c8b4fc5edfa7f179936bf2810d74 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5829d24dddf6eef008eac15f994bdec7 = $(`<div id="html_5829d24dddf6eef008eac15f994bdec7" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 9314.552711186858<br>Superficie: 577.0 m²</div>`)[0];
+                popup_b441c8b4fc5edfa7f179936bf2810d74.setContent(html_5829d24dddf6eef008eac15f994bdec7);
+            
+        
+
+        circle_marker_1e75a534a45d8fffdcc7c5dcb1cbf7d2.bindPopup(popup_b441c8b4fc5edfa7f179936bf2810d74)
+        ;
+
+        
+    
+    
+            var circle_marker_9e826444c8fe39e5c5c9d6352da14428 = L.circleMarker(
+                [-40.59259, -73.11993],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_24600f34352e0d2858051d95f2bce8df = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_91db12dae64ffb44d8666e3c29275268 = $(`<div id="html_91db12dae64ffb44d8666e3c29275268" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 41000.0<br>Superficie: 1650.0 m²</div>`)[0];
+                popup_24600f34352e0d2858051d95f2bce8df.setContent(html_91db12dae64ffb44d8666e3c29275268);
+            
+        
+
+        circle_marker_9e826444c8fe39e5c5c9d6352da14428.bindPopup(popup_24600f34352e0d2858051d95f2bce8df)
+        ;
+
+        
+    
+    
+            var circle_marker_b0428e1ca2dfc67e97fd8bdb63f4e12d = L.circleMarker(
+                [-40.57696, -73.15618],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_e164df2e0ac6279edbbd67764bb3f9a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ddd5e6ff9ca4ffff97d9c4ef9cceaff = $(`<div id="html_5ddd5e6ff9ca4ffff97d9c4ef9cceaff" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 10500.0<br>Superficie: 1609.0 m²</div>`)[0];
+                popup_e164df2e0ac6279edbbd67764bb3f9a3.setContent(html_5ddd5e6ff9ca4ffff97d9c4ef9cceaff);
+            
+        
+
+        circle_marker_b0428e1ca2dfc67e97fd8bdb63f4e12d.bindPopup(popup_e164df2e0ac6279edbbd67764bb3f9a3)
+        ;
+
+        
+    
+    
+            var circle_marker_fd039101c651fd937a86d3e762568bda = L.circleMarker(
+                [-40.57618, -73.11494],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_d2fe297c5d69be49b80874ce1e876cf8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40ed4b9e4d3388c2ce52e2751fe8e147 = $(`<div id="html_40ed4b9e4d3388c2ce52e2751fe8e147" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 8155.0<br>Superficie: 693.8 m²</div>`)[0];
+                popup_d2fe297c5d69be49b80874ce1e876cf8.setContent(html_40ed4b9e4d3388c2ce52e2751fe8e147);
+            
+        
+
+        circle_marker_fd039101c651fd937a86d3e762568bda.bindPopup(popup_d2fe297c5d69be49b80874ce1e876cf8)
+        ;
+
+        
+    
+    
+            var circle_marker_1028a2468b24a6ea7637c17b58aa890f = L.circleMarker(
+                [-40.5879636, -73.1186473],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_17e332e4f0e655874d3c290638d66be9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c8100e9934bf857a59b363d7d9c979a = $(`<div id="html_6c8100e9934bf857a59b363d7d9c979a" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 4743.0<br>Superficie: 525.0 m²</div>`)[0];
+                popup_17e332e4f0e655874d3c290638d66be9.setContent(html_6c8100e9934bf857a59b363d7d9c979a);
+            
+        
+
+        circle_marker_1028a2468b24a6ea7637c17b58aa890f.bindPopup(popup_17e332e4f0e655874d3c290638d66be9)
+        ;
+
+        
+    
+    
+            var circle_marker_0b3bf109ca72118277841cb6d58e6f17 = L.circleMarker(
+                [-40.57064432, -73.12412551],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_db335a3afddf1a01baa542363907bb1c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c20805c8c82a5fb0cfe525bce650c8c8 = $(`<div id="html_c20805c8c82a5fb0cfe525bce650c8c8" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 5321.785767788667<br>Superficie: 525.0 m²</div>`)[0];
+                popup_db335a3afddf1a01baa542363907bb1c.setContent(html_c20805c8c82a5fb0cfe525bce650c8c8);
+            
+        
+
+        circle_marker_0b3bf109ca72118277841cb6d58e6f17.bindPopup(popup_db335a3afddf1a01baa542363907bb1c)
+        ;
+
+        
+    
+    
+            var circle_marker_8564bd5ffcc55efb7dbc318bf5d6df42 = L.circleMarker(
+                [-40.5722, -73.15558],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_0c234cd0a14f9c05ad186bb9aebd9c36 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_037653b9e78efa727b05803ae7b7b848 = $(`<div id="html_037653b9e78efa727b05803ae7b7b848" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 6120.93<br>Superficie: 608.0 m²</div>`)[0];
+                popup_0c234cd0a14f9c05ad186bb9aebd9c36.setContent(html_037653b9e78efa727b05803ae7b7b848);
+            
+        
+
+        circle_marker_8564bd5ffcc55efb7dbc318bf5d6df42.bindPopup(popup_0c234cd0a14f9c05ad186bb9aebd9c36)
+        ;
+
+        
+    
+    
+            var circle_marker_a6cec87bb1f05adad12871931e3973b7 = L.circleMarker(
+                [-40.5766457, -73.1460474],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_48c9a9e549244054824dfc14142618a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_28b4ccb2f717eafcd879d51ae70f0796 = $(`<div id="html_28b4ccb2f717eafcd879d51ae70f0796" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 65946.0<br>Superficie: 4455.0 m²</div>`)[0];
+                popup_48c9a9e549244054824dfc14142618a3.setContent(html_28b4ccb2f717eafcd879d51ae70f0796);
+            
+        
+
+        circle_marker_a6cec87bb1f05adad12871931e3973b7.bindPopup(popup_48c9a9e549244054824dfc14142618a3)
+        ;
+
+        
+    
+    
+            var circle_marker_ca233a05eb89d028d57e95343e939cf6 = L.circleMarker(
+                [-40.5949842, -73.1129465],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_948342fe06ada428fd844f0148afc611 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4771021ccab5c97ea9e47b667cf8e8e = $(`<div id="html_e4771021ccab5c97ea9e47b667cf8e8e" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 19850.0<br>Superficie: 3970.0 m²</div>`)[0];
+                popup_948342fe06ada428fd844f0148afc611.setContent(html_e4771021ccab5c97ea9e47b667cf8e8e);
+            
+        
+
+        circle_marker_ca233a05eb89d028d57e95343e939cf6.bindPopup(popup_948342fe06ada428fd844f0148afc611)
+        ;
+
+        
+    
+    
+            var circle_marker_de8be23705b86239a341e129030b4b0d = L.circleMarker(
+                [-40.594984153772, -73.112946525885],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_a430afb354a5dddd828474f1f78f8a91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4496f9c9a1a3a0a26397edf0422987c8 = $(`<div id="html_4496f9c9a1a3a0a26397edf0422987c8" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 19850.0<br>Superficie: 3970.0 m²</div>`)[0];
+                popup_a430afb354a5dddd828474f1f78f8a91.setContent(html_4496f9c9a1a3a0a26397edf0422987c8);
+            
+        
+
+        circle_marker_de8be23705b86239a341e129030b4b0d.bindPopup(popup_a430afb354a5dddd828474f1f78f8a91)
+        ;
+
+        
+    
+    
+            var circle_marker_47d36cbfeadac15092b89bcecab4d5be = L.circleMarker(
+                [-40.5733223, -73.1359011],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_fd7b9f7ef895be9ebb27a7cdde8cdb25 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e0f2f2b1a9e919d4f0927ed6078493c8 = $(`<div id="html_e0f2f2b1a9e919d4f0927ed6078493c8" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 4391.0<br>Superficie: 700.0 m²</div>`)[0];
+                popup_fd7b9f7ef895be9ebb27a7cdde8cdb25.setContent(html_e0f2f2b1a9e919d4f0927ed6078493c8);
+            
+        
+
+        circle_marker_47d36cbfeadac15092b89bcecab4d5be.bindPopup(popup_fd7b9f7ef895be9ebb27a7cdde8cdb25)
+        ;
+
+        
+    
+    
+            var circle_marker_d7d492997b816e94e77a37a2265ee690 = L.circleMarker(
+                [-40.5733223, -73.1359011],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_86d85ec3de6a22c210b05e6ab2168c59 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_56a98dbb94e038b4224bb82cdd913c5f = $(`<div id="html_56a98dbb94e038b4224bb82cdd913c5f" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 2665.0<br>Superficie: 525.0 m²</div>`)[0];
+                popup_86d85ec3de6a22c210b05e6ab2168c59.setContent(html_56a98dbb94e038b4224bb82cdd913c5f);
+            
+        
+
+        circle_marker_d7d492997b816e94e77a37a2265ee690.bindPopup(popup_86d85ec3de6a22c210b05e6ab2168c59)
+        ;
+
+        
+    
+    
+            var circle_marker_02da2cfad7b556fdc5acf9da4b6cbc4e = L.circleMarker(
+                [-40.576492, -73.1101502],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_ab4d15bfdd43b6177d1e2f9990987199 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3563eb90b19b8d2df15376c39079449 = $(`<div id="html_b3563eb90b19b8d2df15376c39079449" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 24634.0<br>Superficie: 1700.0 m²</div>`)[0];
+                popup_ab4d15bfdd43b6177d1e2f9990987199.setContent(html_b3563eb90b19b8d2df15376c39079449);
+            
+        
+
+        circle_marker_02da2cfad7b556fdc5acf9da4b6cbc4e.bindPopup(popup_ab4d15bfdd43b6177d1e2f9990987199)
+        ;
+
+        
+    
+    
+            var circle_marker_80cc56f2d9da3c4fc9d34f19626207bb = L.circleMarker(
+                [-40.5274724, -73.1475036],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_eed61932cfe6bf15c8287403850d15cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e68bb84c312d88290a517cf386191e4 = $(`<div id="html_6e68bb84c312d88290a517cf386191e4" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 2660.0<br>Superficie: 4000.0 m²</div>`)[0];
+                popup_eed61932cfe6bf15c8287403850d15cd.setContent(html_6e68bb84c312d88290a517cf386191e4);
+            
+        
+
+        circle_marker_80cc56f2d9da3c4fc9d34f19626207bb.bindPopup(popup_eed61932cfe6bf15c8287403850d15cd)
+        ;
+
+        
+    
+    
+            var circle_marker_3b1aafd5e0be2a30f9a6a5770b4d65d7 = L.circleMarker(
+                [-40.5722051, -73.1555895],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_5b708e4419cf5593521d23839f751b60 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a855fcef98d866b104705785f0e51cce = $(`<div id="html_a855fcef98d866b104705785f0e51cce" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 6120.053632956968<br>Superficie: 608.0 m²</div>`)[0];
+                popup_5b708e4419cf5593521d23839f751b60.setContent(html_a855fcef98d866b104705785f0e51cce);
+            
+        
+
+        circle_marker_3b1aafd5e0be2a30f9a6a5770b4d65d7.bindPopup(popup_5b708e4419cf5593521d23839f751b60)
+        ;
+
+        
+    
+    
+            var circle_marker_5418358486f2dd56215002039e211c1d = L.circleMarker(
+                [-40.5733223, -73.1359011],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_f7fa1d1c2a84291a3f60699e4004a79b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e2ac6c038e1a3353e6900b8a88935db4 = $(`<div id="html_e2ac6c038e1a3353e6900b8a88935db4" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 12000.0<br>Superficie: 1000.0 m²</div>`)[0];
+                popup_f7fa1d1c2a84291a3f60699e4004a79b.setContent(html_e2ac6c038e1a3353e6900b8a88935db4);
+            
+        
+
+        circle_marker_5418358486f2dd56215002039e211c1d.bindPopup(popup_f7fa1d1c2a84291a3f60699e4004a79b)
+        ;
+
+        
+    
+    
+            var circle_marker_dd91e744069974a9f0ee40697aaf942d = L.circleMarker(
+                [-40.58273, -73.11866],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_8d4d7d6a2671384e67a07f0960201cfb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e6396c307386e8a914dc3cc251a49b4 = $(`<div id="html_4e6396c307386e8a914dc3cc251a49b4" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 18617.83333102827<br>Superficie: 1115.0 m²</div>`)[0];
+                popup_8d4d7d6a2671384e67a07f0960201cfb.setContent(html_4e6396c307386e8a914dc3cc251a49b4);
+            
+        
+
+        circle_marker_dd91e744069974a9f0ee40697aaf942d.bindPopup(popup_8d4d7d6a2671384e67a07f0960201cfb)
+        ;
+
+        
+    
+    
+            var circle_marker_1a7d6b5541081fcd15f81033172225cf = L.circleMarker(
+                [-40.5766643, -73.1264195],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_f064f981cb6cb9d8fa298a3c6cac29e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6915118e91e685fcaf08183003493a9c = $(`<div id="html_6915118e91e685fcaf08183003493a9c" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 11973.0<br>Superficie: 880.0 m²</div>`)[0];
+                popup_f064f981cb6cb9d8fa298a3c6cac29e4.setContent(html_6915118e91e685fcaf08183003493a9c);
+            
+        
+
+        circle_marker_1a7d6b5541081fcd15f81033172225cf.bindPopup(popup_f064f981cb6cb9d8fa298a3c6cac29e4)
+        ;
+
+        
+    
+    
+            var circle_marker_352e45722057dea45777e02f28b11d22 = L.circleMarker(
+                [-40.527472401081006, -73.14750356820068],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_35e4435eae2a87500b30dc7ce978a4c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e09fa4e388fa648392cc72aec06cb71a = $(`<div id="html_e09fa4e388fa648392cc72aec06cb71a" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 2660.0<br>Superficie: 4000.0 m²</div>`)[0];
+                popup_35e4435eae2a87500b30dc7ce978a4c5.setContent(html_e09fa4e388fa648392cc72aec06cb71a);
+            
+        
+
+        circle_marker_352e45722057dea45777e02f28b11d22.bindPopup(popup_35e4435eae2a87500b30dc7ce978a4c5)
+        ;
+
+        
+    
+    
+            var circle_marker_014a4a1295cba2f347b9fffeccea11ca = L.circleMarker(
+                [-40.5703361, -73.1375042],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_7f086d2a5801be063e7f2e036e54708e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f3a002a5c70de60e4bbb4bcce2b05bfc = $(`<div id="html_f3a002a5c70de60e4bbb4bcce2b05bfc" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 21291.0<br>Superficie: 1710.0 m²</div>`)[0];
+                popup_7f086d2a5801be063e7f2e036e54708e.setContent(html_f3a002a5c70de60e4bbb4bcce2b05bfc);
+            
+        
+
+        circle_marker_014a4a1295cba2f347b9fffeccea11ca.bindPopup(popup_7f086d2a5801be063e7f2e036e54708e)
+        ;
+
+        
+    
+    
+            var circle_marker_281ae149130aa040c928823c87155834 = L.circleMarker(
+                [-40.5751274, -73.1472604],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_9963bc78d51d4a90cfd6f347d8f6b322 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5fd546c3e637070501994e769a11bd8b = $(`<div id="html_5fd546c3e637070501994e769a11bd8b" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 40200.0<br>Superficie: 3350.0 m²</div>`)[0];
+                popup_9963bc78d51d4a90cfd6f347d8f6b322.setContent(html_5fd546c3e637070501994e769a11bd8b);
+            
+        
+
+        circle_marker_281ae149130aa040c928823c87155834.bindPopup(popup_9963bc78d51d4a90cfd6f347d8f6b322)
+        ;
+
+        
+    
+    
+            var circle_marker_3792869e4f460116c937d2f5fb92d453 = L.circleMarker(
+                [-40.80887238, -73.27525688],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_439dc0cad336851425d158c134843671 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8fb867bd9b9660d02e151446c4853b13 = $(`<div id="html_8fb867bd9b9660d02e151446c4853b13" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 1927.0<br>Superficie: 15000.0 m²</div>`)[0];
+                popup_439dc0cad336851425d158c134843671.setContent(html_8fb867bd9b9660d02e151446c4853b13);
+            
+        
+
+        circle_marker_3792869e4f460116c937d2f5fb92d453.bindPopup(popup_439dc0cad336851425d158c134843671)
+        ;
+
+        
+    
+    
+            var circle_marker_797562de10ba6a4b84f2f87ba656e7f1 = L.circleMarker(
+                [-40.59991, -73.06281],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_0c060702f68cf4c5371a5f819d80d365 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de6b504f98f42568e07a13f7590209b3 = $(`<div id="html_de6b504f98f42568e07a13f7590209b3" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 27000.0<br>Superficie: 18000.0 m²</div>`)[0];
+                popup_0c060702f68cf4c5371a5f819d80d365.setContent(html_de6b504f98f42568e07a13f7590209b3);
+            
+        
+
+        circle_marker_797562de10ba6a4b84f2f87ba656e7f1.bindPopup(popup_0c060702f68cf4c5371a5f819d80d365)
+        ;
+
+        
+    
+    
+            var circle_marker_899639e31cf20c20205cd35455f3ea10 = L.circleMarker(
+                [-40.5835619, -73.0931969],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_2e399069e056b55fc135854c18f2fd02 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2c52c522a662e24464fc3706ab194e0 = $(`<div id="html_f2c52c522a662e24464fc3706ab194e0" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 45471.0<br>Superficie: 20776.0 m²</div>`)[0];
+                popup_2e399069e056b55fc135854c18f2fd02.setContent(html_f2c52c522a662e24464fc3706ab194e0);
+            
+        
+
+        circle_marker_899639e31cf20c20205cd35455f3ea10.bindPopup(popup_2e399069e056b55fc135854c18f2fd02)
+        ;
+
+        
+    
+    
+            var circle_marker_4f0fad4dcca483c0ba5016123065b585 = L.circleMarker(
+                [-40.5761897, -73.1149468],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_aac4fd899483a0386518273e75ba1eb0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8670588a1cde02a647f440039abf5d88 = $(`<div id="html_8670588a1cde02a647f440039abf5d88" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 825.5799832540421<br>Superficie: 50000.0 m²</div>`)[0];
+                popup_aac4fd899483a0386518273e75ba1eb0.setContent(html_8670588a1cde02a647f440039abf5d88);
+            
+        
+
+        circle_marker_4f0fad4dcca483c0ba5016123065b585.bindPopup(popup_aac4fd899483a0386518273e75ba1eb0)
+        ;
+
+        
+    
+    
+            var circle_marker_fa0949ab677e99b270e687719b2c3d7c = L.circleMarker(
+                [-40.5916402, -72.9310406],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_f6fe5f8ea5df3c3d1ca72d40e1d5bbcc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f849411a536ef8e7f2cec2a4c65707fe = $(`<div id="html_f849411a536ef8e7f2cec2a4c65707fe" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 11500.0<br>Superficie: 53000.0 m²</div>`)[0];
+                popup_f6fe5f8ea5df3c3d1ca72d40e1d5bbcc.setContent(html_f849411a536ef8e7f2cec2a4c65707fe);
+            
+        
+
+        circle_marker_fa0949ab677e99b270e687719b2c3d7c.bindPopup(popup_f6fe5f8ea5df3c3d1ca72d40e1d5bbcc)
+        ;
+
+        
+    
+    
+            var circle_marker_56e7b8b966fa7072ab101d3333d5279c = L.circleMarker(
+                [-40.5626192, -73.1012953],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_6fbbf4c9ac8d917b32d0fb2e7fcb237c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_07bcccdfea96bd82b4027eedffe31f17 = $(`<div id="html_07bcccdfea96bd82b4027eedffe31f17" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 15000.0<br>Superficie: 12310.0 m²</div>`)[0];
+                popup_6fbbf4c9ac8d917b32d0fb2e7fcb237c.setContent(html_07bcccdfea96bd82b4027eedffe31f17);
+            
+        
+
+        circle_marker_56e7b8b966fa7072ab101d3333d5279c.bindPopup(popup_6fbbf4c9ac8d917b32d0fb2e7fcb237c)
+        ;
+
+        
+    
+    
+            var circle_marker_ee931b3b2efe0daafacba96b2ab5706d = L.circleMarker(
+                [-40.5456973, -73.0881538],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_121b77c35fd4a4c7a0cb6c01da6a55eb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3492d7d2981929c4ac686d8c4fe76515 = $(`<div id="html_3492d7d2981929c4ac686d8c4fe76515" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 13700.0<br>Superficie: 10376.0 m²</div>`)[0];
+                popup_121b77c35fd4a4c7a0cb6c01da6a55eb.setContent(html_3492d7d2981929c4ac686d8c4fe76515);
+            
+        
+
+        circle_marker_ee931b3b2efe0daafacba96b2ab5706d.bindPopup(popup_121b77c35fd4a4c7a0cb6c01da6a55eb)
+        ;
+
+        
+    
+    
+            var circle_marker_1423fd1f4dd6ffc48e626cdaf5744f69 = L.circleMarker(
+                [-40.606806, -73.0914617],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_58216ec74955bb24a4ea2bbd9744bdb8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3e75a0c142a772f10aab2c7fdbbc8208 = $(`<div id="html_3e75a0c142a772f10aab2c7fdbbc8208" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 40500.0<br>Superficie: 25000.0 m²</div>`)[0];
+                popup_58216ec74955bb24a4ea2bbd9744bdb8.setContent(html_3e75a0c142a772f10aab2c7fdbbc8208);
+            
+        
+
+        circle_marker_1423fd1f4dd6ffc48e626cdaf5744f69.bindPopup(popup_58216ec74955bb24a4ea2bbd9744bdb8)
+        ;
+
+        
+    
+    
+            var circle_marker_b5570f1b00b734950d76cfe7c75a89d6 = L.circleMarker(
+                [-40.5979563, -72.9462131],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_f4faa19968605926086416557ade0727 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f0215479c6fa2624836cfbbc3bb0ffd3 = $(`<div id="html_f0215479c6fa2624836cfbbc3bb0ffd3" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 5130.0<br>Superficie: 50000.0 m²</div>`)[0];
+                popup_f4faa19968605926086416557ade0727.setContent(html_f0215479c6fa2624836cfbbc3bb0ffd3);
+            
+        
+
+        circle_marker_b5570f1b00b734950d76cfe7c75a89d6.bindPopup(popup_f4faa19968605926086416557ade0727)
+        ;
+
+        
+    
+    
+            var circle_marker_8704eccad968bb6d9b051d7160845cc5 = L.circleMarker(
+                [-40.5688582, -73.1035745],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_1083e011bc15c900af3614bb63eb24bc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1cd947829921eafb3232e6558bb3ec5d = $(`<div id="html_1cd947829921eafb3232e6558bb3ec5d" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 104211.0<br>Superficie: 58571.0 m²</div>`)[0];
+                popup_1083e011bc15c900af3614bb63eb24bc.setContent(html_1cd947829921eafb3232e6558bb3ec5d);
+            
+        
+
+        circle_marker_8704eccad968bb6d9b051d7160845cc5.bindPopup(popup_1083e011bc15c900af3614bb63eb24bc)
+        ;
+
+        
+    
+    
+            var circle_marker_31aa0d3643d608d913c0a159c4ca6b4b = L.circleMarker(
+                [-40.625196110178045, -73.10876709042968],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_89371817bbeafae658e4b31743cba8d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1171d01152ab60798914e731e53c0996 = $(`<div id="html_1171d01152ab60798914e731e53c0996" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 1198.0<br>Superficie: 80000.0 m²</div>`)[0];
+                popup_89371817bbeafae658e4b31743cba8d3.setContent(html_1171d01152ab60798914e731e53c0996);
+            
+        
+
+        circle_marker_31aa0d3643d608d913c0a159c4ca6b4b.bindPopup(popup_89371817bbeafae658e4b31743cba8d3)
+        ;
+
+        
+    
+    
+            var circle_marker_7d2bfea664116bc62f18482fc2e991cb = L.circleMarker(
+                [-40.5733223, -73.1359011],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_355685151d69a43a52ffafa1142a0d64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_67106451f91a4b2133db6a6ccee56380 = $(`<div id="html_67106451f91a4b2133db6a6ccee56380" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 2129.0<br>Superficie: 100000.0 m²</div>`)[0];
+                popup_355685151d69a43a52ffafa1142a0d64.setContent(html_67106451f91a4b2133db6a6ccee56380);
+            
+        
+
+        circle_marker_7d2bfea664116bc62f18482fc2e991cb.bindPopup(popup_355685151d69a43a52ffafa1142a0d64)
+        ;
+
+        
+    
+    
+            var circle_marker_c9e91369f206dcff7b05160cee97daa9 = L.circleMarker(
+                [-40.6046318, -73.06104],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_6580b02e92a391ba74ab2f0a470d8689 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e26c1f57d60e85d916906bdaad4a0028 = $(`<div id="html_e26c1f57d60e85d916906bdaad4a0028" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 91149.46606625667<br>Superficie: 63000.0 m²</div>`)[0];
+                popup_6580b02e92a391ba74ab2f0a470d8689.setContent(html_e26c1f57d60e85d916906bdaad4a0028);
+            
+        
+
+        circle_marker_c9e91369f206dcff7b05160cee97daa9.bindPopup(popup_6580b02e92a391ba74ab2f0a470d8689)
+        ;
+
+        
+    
+    
+            var circle_marker_451c04d880781851cc083f611428eae4 = L.circleMarker(
+                [-40.5251625, -73.02482792],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_9676c1dfecbb9905f8da975336e8a889 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b60db9062905534198671e0a1e19fe1f = $(`<div id="html_b60db9062905534198671e0a1e19fe1f" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 3970.0<br>Superficie: 47800.0 m²</div>`)[0];
+                popup_9676c1dfecbb9905f8da975336e8a889.setContent(html_b60db9062905534198671e0a1e19fe1f);
+            
+        
+
+        circle_marker_451c04d880781851cc083f611428eae4.bindPopup(popup_9676c1dfecbb9905f8da975336e8a889)
+        ;
+
+        
+    
+    
+            var circle_marker_788993ca942830d41af41dce8fd8341d = L.circleMarker(
+                [-40.683339, -72.60154],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_e509433064891e9d7b89381585616727 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b7920492f112d54d52064349e44599d = $(`<div id="html_2b7920492f112d54d52064349e44599d" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 2394.262071137782<br>Superficie: 21000.0 m²</div>`)[0];
+                popup_e509433064891e9d7b89381585616727.setContent(html_2b7920492f112d54d52064349e44599d);
+            
+        
+
+        circle_marker_788993ca942830d41af41dce8fd8341d.bindPopup(popup_e509433064891e9d7b89381585616727)
+        ;
+
+        
+    
+    
+            var circle_marker_7cabd546d5b48997921fe638b9c156b3 = L.circleMarker(
+                [-40.5672932, -73.1294152],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_e99e1e7137edc953560c7b3e13214950 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d4b0a979116e69d5bde258ad3ed29a31 = $(`<div id="html_d4b0a979116e69d5bde258ad3ed29a31" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 59138.0<br>Superficie: 67358.0 m²</div>`)[0];
+                popup_e99e1e7137edc953560c7b3e13214950.setContent(html_d4b0a979116e69d5bde258ad3ed29a31);
+            
+        
+
+        circle_marker_7cabd546d5b48997921fe638b9c156b3.bindPopup(popup_e99e1e7137edc953560c7b3e13214950)
+        ;
+
+        
+    
+    
+            var circle_marker_d2fea3771b5f74e234b0b9a11a302a4f = L.circleMarker(
+                [-40.5740103, -73.1041545],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_78a40cf11a07c53e2332b65f905ec61c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa83f40a790f5b7fcd7d6db6ed7000ad = $(`<div id="html_aa83f40a790f5b7fcd7d6db6ed7000ad" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 35000.0<br>Superficie: 15154.0 m²</div>`)[0];
+                popup_78a40cf11a07c53e2332b65f905ec61c.setContent(html_aa83f40a790f5b7fcd7d6db6ed7000ad);
+            
+        
+
+        circle_marker_d2fea3771b5f74e234b0b9a11a302a4f.bindPopup(popup_78a40cf11a07c53e2332b65f905ec61c)
+        ;
+
+        
+    
+    
+            var circle_marker_739b553f9142972599d33b086c094062 = L.circleMarker(
+                [-40.5650387, -73.126936],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_d5e2f1333248ef46e19321d7a3967fac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_239338b087e30c8dbcd74dd4ec452929 = $(`<div id="html_239338b087e30c8dbcd74dd4ec452929" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 48000.0<br>Superficie: 30000.0 m²</div>`)[0];
+                popup_d5e2f1333248ef46e19321d7a3967fac.setContent(html_239338b087e30c8dbcd74dd4ec452929);
+            
+        
+
+        circle_marker_739b553f9142972599d33b086c094062.bindPopup(popup_d5e2f1333248ef46e19321d7a3967fac)
+        ;
+
+        
+    
+    
+            var circle_marker_7680d3ddfeeffad95b81d970879b3446 = L.circleMarker(
+                [-40.5645553, -73.1027571],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_63e42390336639c88f37245a7e10ff19 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_863d42b5115048021b0159a2f6b54992 = $(`<div id="html_863d42b5115048021b0159a2f6b54992" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 215000.0<br>Superficie: 58346.0 m²</div>`)[0];
+                popup_63e42390336639c88f37245a7e10ff19.setContent(html_863d42b5115048021b0159a2f6b54992);
+            
+        
+
+        circle_marker_7680d3ddfeeffad95b81d970879b3446.bindPopup(popup_63e42390336639c88f37245a7e10ff19)
+        ;
+
+        
+    
+    
+            var circle_marker_8b6c37a79479b90c5c9475bd35c7061e = L.circleMarker(
+                [-40.4520881, -73.1274383],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_1ab9006b934d08f85a92422f0f78751a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09dbd463c42f75d2f89b91495e1ac5c3 = $(`<div id="html_09dbd463c42f75d2f89b91495e1ac5c3" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 3647.89<br>Superficie: 25000.0 m²</div>`)[0];
+                popup_1ab9006b934d08f85a92422f0f78751a.setContent(html_09dbd463c42f75d2f89b91495e1ac5c3);
+            
+        
+
+        circle_marker_8b6c37a79479b90c5c9475bd35c7061e.bindPopup(popup_1ab9006b934d08f85a92422f0f78751a)
+        ;
+
+        
+    
+    
+            var circle_marker_e03e1cb3b945407686a09b3d88c1f40f = L.circleMarker(
+                [-40.5761897, -73.1149469],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_aaa0292e86931435f07f99661e4d2fde = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa1016620d1eb4708041e299d24b0037 = $(`<div id="html_fa1016620d1eb4708041e299d24b0037" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 4428.69558542256<br>Superficie: 80000.0 m²</div>`)[0];
+                popup_aaa0292e86931435f07f99661e4d2fde.setContent(html_fa1016620d1eb4708041e299d24b0037);
+            
+        
+
+        circle_marker_e03e1cb3b945407686a09b3d88c1f40f.bindPopup(popup_aaa0292e86931435f07f99661e4d2fde)
+        ;
+
+        
+    
+    
+            var circle_marker_91b65c1741156fd44c4003471e486ae8 = L.circleMarker(
+                [-40.6147134, -73.0922278],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_a5c68b14fa71969c18a9c26d412bafb4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_688014eb61ac98b4d3a5344ddfd91eb7 = $(`<div id="html_688014eb61ac98b4d3a5344ddfd91eb7" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 3.0<br>Superficie: 45000.0 m²</div>`)[0];
+                popup_a5c68b14fa71969c18a9c26d412bafb4.setContent(html_688014eb61ac98b4d3a5344ddfd91eb7);
+            
+        
+
+        circle_marker_91b65c1741156fd44c4003471e486ae8.bindPopup(popup_a5c68b14fa71969c18a9c26d412bafb4)
+        ;
+
+        
+    
+    
+            var circle_marker_a7cda8d9ad89927866caf1129d3fce17 = L.circleMarker(
+                [-40.5688582, -73.1035745],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_eb3365c968ac61cf093b72139d1bee21 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f982034a9dc1e953b1679c401dc4db92 = $(`<div id="html_f982034a9dc1e953b1679c401dc4db92" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 104211.0<br>Superficie: 79378.0 m²</div>`)[0];
+                popup_eb3365c968ac61cf093b72139d1bee21.setContent(html_f982034a9dc1e953b1679c401dc4db92);
+            
+        
+
+        circle_marker_a7cda8d9ad89927866caf1129d3fce17.bindPopup(popup_eb3365c968ac61cf093b72139d1bee21)
+        ;
+
+        
+    
+    
+            var circle_marker_fe4b4e6c0e934bffa74fa0b64067053b = L.circleMarker(
+                [-40.5612866, -73.0532547],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_a5ebafa832c9fabd4a766b84282d42d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b1903ad462fb5b5515d37dde42726aeb = $(`<div id="html_b1903ad462fb5b5515d37dde42726aeb" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 10500.0<br>Superficie: 66200.0 m²</div>`)[0];
+                popup_a5ebafa832c9fabd4a766b84282d42d0.setContent(html_b1903ad462fb5b5515d37dde42726aeb);
+            
+        
+
+        circle_marker_fe4b4e6c0e934bffa74fa0b64067053b.bindPopup(popup_a5ebafa832c9fabd4a766b84282d42d0)
+        ;
+
+        
+    
+    
+            var circle_marker_775c4246fec2f9f6a1927c7413abe07b = L.circleMarker(
+                [-40.5646134, -73.1252562],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_bd2afed2d7140d366af58da8f7b8a07d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13efd341737e70230b9548d6544bfd59 = $(`<div id="html_13efd341737e70230b9548d6544bfd59" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 45312.0<br>Superficie: 30000.0 m²</div>`)[0];
+                popup_bd2afed2d7140d366af58da8f7b8a07d.setContent(html_13efd341737e70230b9548d6544bfd59);
+            
+        
+
+        circle_marker_775c4246fec2f9f6a1927c7413abe07b.bindPopup(popup_bd2afed2d7140d366af58da8f7b8a07d)
+        ;
+
+        
+    
+    
+            var circle_marker_d0eef84f239a6ba56d1314c3d8adcf88 = L.circleMarker(
+                [-40.4520881, -73.1274383],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_a5a106c225871dbbc91d0ff87c383816 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_16bd2ab64f9b77007e5f13bf817b6e24 = $(`<div id="html_16bd2ab64f9b77007e5f13bf817b6e24" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 3336.63<br>Superficie: 25000.0 m²</div>`)[0];
+                popup_a5a106c225871dbbc91d0ff87c383816.setContent(html_16bd2ab64f9b77007e5f13bf817b6e24);
+            
+        
+
+        circle_marker_d0eef84f239a6ba56d1314c3d8adcf88.bindPopup(popup_a5a106c225871dbbc91d0ff87c383816)
+        ;
+
+        
+    
+    
+            var circle_marker_c50cec2ca18b44495a71a058cea1d9a8 = L.circleMarker(
+                [-40.5733223, -73.1359011],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_07aa25b11b63edd52fbbd684fa38b588 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c327e0bb9684d17dc181d77ce2a6b12a = $(`<div id="html_c327e0bb9684d17dc181d77ce2a6b12a" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 2660.0<br>Superficie: 80000.0 m²</div>`)[0];
+                popup_07aa25b11b63edd52fbbd684fa38b588.setContent(html_c327e0bb9684d17dc181d77ce2a6b12a);
+            
+        
+
+        circle_marker_c50cec2ca18b44495a71a058cea1d9a8.bindPopup(popup_07aa25b11b63edd52fbbd684fa38b588)
+        ;
+
+        
+    
+    
+            var circle_marker_84e8361dc3706d25b6afa41832939120 = L.circleMarker(
+                [-40.582, -73.985],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_25fdddea25592e6d5a81c7ecbd8d4458 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d50cc0e6abe9eaa9c8e45ff4550cbbe0 = $(`<div id="html_d50cc0e6abe9eaa9c8e45ff4550cbbe0" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 12716.0<br>Superficie: 100000.0 m²</div>`)[0];
+                popup_25fdddea25592e6d5a81c7ecbd8d4458.setContent(html_d50cc0e6abe9eaa9c8e45ff4550cbbe0);
+            
+        
+
+        circle_marker_84e8361dc3706d25b6afa41832939120.bindPopup(popup_25fdddea25592e6d5a81c7ecbd8d4458)
+        ;
+
+        
+    
+    
+            var circle_marker_6c1ef54e8c4d268c09f286f703cdbf24 = L.circleMarker(
+                [-40.57215, -73.12107],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_6a93ee6f42c827f0b8b3e85d664b5293 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_91512aad387010e81a24114e10dea4a8 = $(`<div id="html_91512aad387010e81a24114e10dea4a8" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 3.5<br>Superficie: 29400.0 m²</div>`)[0];
+                popup_6a93ee6f42c827f0b8b3e85d664b5293.setContent(html_91512aad387010e81a24114e10dea4a8);
+            
+        
+
+        circle_marker_6c1ef54e8c4d268c09f286f703cdbf24.bindPopup(popup_6a93ee6f42c827f0b8b3e85d664b5293)
+        ;
+
+        
+    
+    
+            var circle_marker_5c73320ff6a6ccf4e70e453052b9d1fd = L.circleMarker(
+                [-40.59577, -73.10959],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_71bbd9b024bb63ee40f8117209236636 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f4b2ebb151c823f512687564b6cb062 = $(`<div id="html_8f4b2ebb151c823f512687564b6cb062" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 15699.42<br>Superficie: 40000.0 m²</div>`)[0];
+                popup_71bbd9b024bb63ee40f8117209236636.setContent(html_8f4b2ebb151c823f512687564b6cb062);
+            
+        
+
+        circle_marker_5c73320ff6a6ccf4e70e453052b9d1fd.bindPopup(popup_71bbd9b024bb63ee40f8117209236636)
+        ;
+
+        
+    
+    
+            var circle_marker_e6a964003f2087895ac73440ea29e5cb = L.circleMarker(
+                [-40.5601, -72.95522],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_d0aea8b515b329e6b5115854340e1749 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_308dea1c468b8be56fe3dabbf2de7b7d = $(`<div id="html_308dea1c468b8be56fe3dabbf2de7b7d" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 5055.696479399234<br>Superficie: 56000.0 m²</div>`)[0];
+                popup_d0aea8b515b329e6b5115854340e1749.setContent(html_308dea1c468b8be56fe3dabbf2de7b7d);
+            
+        
+
+        circle_marker_e6a964003f2087895ac73440ea29e5cb.bindPopup(popup_d0aea8b515b329e6b5115854340e1749)
+        ;
+
+        
+    
+    
+            var circle_marker_85316375fa8138ac5569d3410f85c4da = L.circleMarker(
+                [-40.56503869821234, -73.12693603348824],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_7dc768cb77528b54a074e68ba76d09b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_463bf9049f2f81e4fc6f6a8cc3655fa4 = $(`<div id="html_463bf9049f2f81e4fc6f6a8cc3655fa4" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 48000.0<br>Superficie: 30000.0 m²</div>`)[0];
+                popup_7dc768cb77528b54a074e68ba76d09b7.setContent(html_463bf9049f2f81e4fc6f6a8cc3655fa4);
+            
+        
+
+        circle_marker_85316375fa8138ac5569d3410f85c4da.bindPopup(popup_7dc768cb77528b54a074e68ba76d09b7)
+        ;
+
+        
+    
+    
+            var circle_marker_1cb4e6dd0c5dd609539f272a3034a5f7 = L.circleMarker(
+                [-40.581738, -73.985],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_6c8e46561cae9491d2dc01a2728626d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_76e1a0d08b65dedefcbd337c5122a15f = $(`<div id="html_76e1a0d08b65dedefcbd337c5122a15f" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 12716.0<br>Superficie: 100000.0 m²</div>`)[0];
+                popup_6c8e46561cae9491d2dc01a2728626d8.setContent(html_76e1a0d08b65dedefcbd337c5122a15f);
+            
+        
+
+        circle_marker_1cb4e6dd0c5dd609539f272a3034a5f7.bindPopup(popup_6c8e46561cae9491d2dc01a2728626d8)
+        ;
+
+        
+    
+    
+            var circle_marker_d5b95128ab46ad2c136d71a3217092bb = L.circleMarker(
+                [-40.6202567813123, -72.4724130809509],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_a341b86a4e3582116886e0992fada502 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01830feb20df2f168d1fa0adb3e3cf4f = $(`<div id="html_01830feb20df2f168d1fa0adb3e3cf4f" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 16000.0<br>Superficie: 50000.0 m²</div>`)[0];
+                popup_a341b86a4e3582116886e0992fada502.setContent(html_01830feb20df2f168d1fa0adb3e3cf4f);
+            
+        
+
+        circle_marker_d5b95128ab46ad2c136d71a3217092bb.bindPopup(popup_a341b86a4e3582116886e0992fada502)
+        ;
+
+        
+    
+    
+            var circle_marker_43d4284dec840f96d1fd6bbe3daecbe4 = L.circleMarker(
+                [-40.5835309, -72.9743342],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_49848ac58d6ae3f13da09bfcafbb19d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3c5f6a9841028544037b9ead8c2b68a2 = $(`<div id="html_3c5f6a9841028544037b9ead8c2b68a2" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 2402.0<br>Superficie: 11200.000000000002 m²</div>`)[0];
+                popup_49848ac58d6ae3f13da09bfcafbb19d9.setContent(html_3c5f6a9841028544037b9ead8c2b68a2);
+            
+        
+
+        circle_marker_43d4284dec840f96d1fd6bbe3daecbe4.bindPopup(popup_49848ac58d6ae3f13da09bfcafbb19d9)
+        ;
+
+        
+    
+    
+            var circle_marker_ff8340662f6323f8eef3ae31d9966703 = L.circleMarker(
+                [-40.6147134, -73.0922278],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_870a4e30a2769e8796141138402a99a9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f3e430d3d895c3bb8b64307a3662d69 = $(`<div id="html_7f3e430d3d895c3bb8b64307a3662d69" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 3.0<br>Superficie: 45000.0 m²</div>`)[0];
+                popup_870a4e30a2769e8796141138402a99a9.setContent(html_7f3e430d3d895c3bb8b64307a3662d69);
+            
+        
+
+        circle_marker_ff8340662f6323f8eef3ae31d9966703.bindPopup(popup_870a4e30a2769e8796141138402a99a9)
+        ;
+
+        
+    
+    
+            var circle_marker_6bc52ce4ad3fba14a93405226ca688f5 = L.circleMarker(
+                [-40.5733223, -73.1359011],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_3266d196a60b42c5a944ec00f220dd58 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dedaa04a3a667b2ee73686e34fab8147 = $(`<div id="html_dedaa04a3a667b2ee73686e34fab8147" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 2395.0<br>Superficie: 80000.0 m²</div>`)[0];
+                popup_3266d196a60b42c5a944ec00f220dd58.setContent(html_dedaa04a3a667b2ee73686e34fab8147);
+            
+        
+
+        circle_marker_6bc52ce4ad3fba14a93405226ca688f5.bindPopup(popup_3266d196a60b42c5a944ec00f220dd58)
+        ;
+
+        
+    
+    
+            var circle_marker_be5afa2851f10160d32268f37f042fb6 = L.circleMarker(
+                [-40.59730856897708, -72.97899108945312],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_946daaaf36e2785afdaf56a1c5923fe4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8406ca2f9b66913e8dcd0d75a65c692 = $(`<div id="html_c8406ca2f9b66913e8dcd0d75a65c692" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 15965.0<br>Superficie: 20500.0 m²</div>`)[0];
+                popup_946daaaf36e2785afdaf56a1c5923fe4.setContent(html_c8406ca2f9b66913e8dcd0d75a65c692);
+            
+        
+
+        circle_marker_be5afa2851f10160d32268f37f042fb6.bindPopup(popup_946daaaf36e2785afdaf56a1c5923fe4)
+        ;
+
+        
+    
+    
+            var circle_marker_604f9d8669bc520abc13fdb8c56d8559 = L.circleMarker(
+                [-40.5819627, -73.1731487],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_3ca7cbaf906a3c52e3ee44da411a64ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fef666f273d26c58483f7c1f82822f15 = $(`<div id="html_fef666f273d26c58483f7c1f82822f15" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 7.980873570459274<br>Superficie: 13000.0 m²</div>`)[0];
+                popup_3ca7cbaf906a3c52e3ee44da411a64ba.setContent(html_fef666f273d26c58483f7c1f82822f15);
+            
+        
+
+        circle_marker_604f9d8669bc520abc13fdb8c56d8559.bindPopup(popup_3ca7cbaf906a3c52e3ee44da411a64ba)
+        ;
+
+        
+    
+    
+            var circle_marker_e596911849e482adab33b440bdf1b9b0 = L.circleMarker(
+                [-40.603, -73.224],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_da6b1ff08a12781b82ad51d0594293cc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1852ed1bc37ea17ce2d1662fb389028 = $(`<div id="html_f1852ed1bc37ea17ce2d1662fb389028" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 4760.0<br>Superficie: 12000.0 m²</div>`)[0];
+                popup_da6b1ff08a12781b82ad51d0594293cc.setContent(html_f1852ed1bc37ea17ce2d1662fb389028);
+            
+        
+
+        circle_marker_e596911849e482adab33b440bdf1b9b0.bindPopup(popup_da6b1ff08a12781b82ad51d0594293cc)
+        ;
+
+        
+    
+    
+            var circle_marker_c8799fcc543b021f56b009ea8dabf782 = L.circleMarker(
+                [-40.56885, -73.10357],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_dddf45b33c74abffdcac6cac4452b018 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5fb859aeebaa22e3a8c897e02df15f2e = $(`<div id="html_5fb859aeebaa22e3a8c897e02df15f2e" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 104211.0<br>Superficie: 79378.0 m²</div>`)[0];
+                popup_dddf45b33c74abffdcac6cac4452b018.setContent(html_5fb859aeebaa22e3a8c897e02df15f2e);
+            
+        
+
+        circle_marker_c8799fcc543b021f56b009ea8dabf782.bindPopup(popup_dddf45b33c74abffdcac6cac4452b018)
+        ;
+
+        
+    
+    
+            var circle_marker_9d2b35586ed8bef6826b724a8d8824ec = L.circleMarker(
+                [-40.59115606, -73.00859025],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_0d9436704b73c9139bb9cb33fec45f16 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d3ee852f98337b59cb070d2cac3b9a92 = $(`<div id="html_d3ee852f98337b59cb070d2cac3b9a92" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 14634.910861418835<br>Superficie: 40810.00000000001 m²</div>`)[0];
+                popup_0d9436704b73c9139bb9cb33fec45f16.setContent(html_d3ee852f98337b59cb070d2cac3b9a92);
+            
+        
+
+        circle_marker_9d2b35586ed8bef6826b724a8d8824ec.bindPopup(popup_0d9436704b73c9139bb9cb33fec45f16)
+        ;
+
+        
+    
+    
+            var circle_marker_e1a7b0a05f97db96ab5867a903317bea = L.circleMarker(
+                [-40.5761897, -73.1149468],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_7b0373b5aae7add8d2d6449f9c12509d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26a941f9c2decdf5c453fc9b7fa9aa63 = $(`<div id="html_26a941f9c2decdf5c453fc9b7fa9aa63" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 5189.0<br>Superficie: 10800.0 m²</div>`)[0];
+                popup_7b0373b5aae7add8d2d6449f9c12509d.setContent(html_26a941f9c2decdf5c453fc9b7fa9aa63);
+            
+        
+
+        circle_marker_e1a7b0a05f97db96ab5867a903317bea.bindPopup(popup_7b0373b5aae7add8d2d6449f9c12509d)
+        ;
+
+        
+    
+    
+            var circle_marker_025408dc9ef2aa8b42ecd299da861c1c = L.circleMarker(
+                [-40.5973086, -72.9789911],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_a0a6b8aa344af6cc0ba286f1cc82553d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9dfbb836f34bdd3e1294cfa367216798 = $(`<div id="html_9dfbb836f34bdd3e1294cfa367216798" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 15958.142855167089<br>Superficie: 20500.0 m²</div>`)[0];
+                popup_a0a6b8aa344af6cc0ba286f1cc82553d.setContent(html_9dfbb836f34bdd3e1294cfa367216798);
+            
+        
+
+        circle_marker_025408dc9ef2aa8b42ecd299da861c1c.bindPopup(popup_a0a6b8aa344af6cc0ba286f1cc82553d)
+        ;
+
+        
+    
+    
+            var circle_marker_225fe5744321571f6278e76cdfcd2494 = L.circleMarker(
+                [-40.5733223, -73.1359011],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_67c4ca1d6e1a3156ee5186023684f8dd);
+        
+    
+        var popup_a556256a2d03640e5f7162834030337a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e0a4040ee68a25baff341d206488616f = $(`<div id="html_e0a4040ee68a25baff341d206488616f" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 37200.0<br>Superficie: 98000.0 m²</div>`)[0];
+                popup_a556256a2d03640e5f7162834030337a.setContent(html_e0a4040ee68a25baff341d206488616f);
+            
+        
+
+        circle_marker_225fe5744321571f6278e76cdfcd2494.bindPopup(popup_a556256a2d03640e5f7162834030337a)
+        ;
+
+        
+    
+</script>
+</html>

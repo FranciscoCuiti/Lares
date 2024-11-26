@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1a52e3402e7754cee12322e9e5239ccd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+    <div style="
+    position: fixed;
+    bottom: 50px; left: 50px; width: 180px; height: 100px;
+    border:2px solid grey; z-index:9999; font-size:14px;
+    background-color:white; opacity: 0.85; padding: 10px;">
+    <b>Rangos de Superficie</b><br>
+    <i class="fa fa-circle" style="color:blue"></i> 500-4999 m2<br>
+    <i class="fa fa-circle" style="color:green"></i> 10001-100000 m2<br>
+    </div>
+    
+    
+            <div class="folium-map" id="map_1a52e3402e7754cee12322e9e5239ccd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1a52e3402e7754cee12322e9e5239ccd = L.map(
+                "map_1a52e3402e7754cee12322e9e5239ccd",
+                {
+                    center: [-35.857343429183196, -71.56446070031805],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_60c07d2060a072e5e0fa6ff199b60419 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_60c07d2060a072e5e0fa6ff199b60419.addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+            var circle_marker_8f06bb159c25569f24cf533e54a66e5f = L.circleMarker(
+                [-35.69035998, -71.32798399],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_7666e5b68ea90422545f23c710440b27 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9dd5f0c0757f62f4bb0d632025942563 = $(`<div id="html_9dd5f0c0757f62f4bb0d632025942563" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 11250.0<br>Superficie: 1500.0 m²</div>`)[0];
+                popup_7666e5b68ea90422545f23c710440b27.setContent(html_9dd5f0c0757f62f4bb0d632025942563);
+            
+        
+
+        circle_marker_8f06bb159c25569f24cf533e54a66e5f.bindPopup(popup_7666e5b68ea90422545f23c710440b27)
+        ;
+
+        
+    
+    
+            var circle_marker_ddccc1ed7fa57385ab36811bbbb2350d = L.circleMarker(
+                [-35.8452905, -71.5977173],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_61d88026daadf6682640fd7b273650a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b6be34ab2cf08ff5171795d3c2c7c01 = $(`<div id="html_2b6be34ab2cf08ff5171795d3c2c7c01" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 2006.8119223893584<br>Superficie: 800.0 m²</div>`)[0];
+                popup_61d88026daadf6682640fd7b273650a7.setContent(html_2b6be34ab2cf08ff5171795d3c2c7c01);
+            
+        
+
+        circle_marker_ddccc1ed7fa57385ab36811bbbb2350d.bindPopup(popup_61d88026daadf6682640fd7b273650a7)
+        ;
+
+        
+    
+    
+            var circle_marker_16eb191057f9439208cee5e3f9d44830 = L.circleMarker(
+                [-35.85371789, -71.59425259],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_ccc08cdd14cacb542d421c146fb85243 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_322b647cdbbf027725cf9f15c768097d = $(`<div id="html_322b647cdbbf027725cf9f15c768097d" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 5430.367483828366<br>Superficie: 1784.0 m²</div>`)[0];
+                popup_ccc08cdd14cacb542d421c146fb85243.setContent(html_322b647cdbbf027725cf9f15c768097d);
+            
+        
+
+        circle_marker_16eb191057f9439208cee5e3f9d44830.bindPopup(popup_ccc08cdd14cacb542d421c146fb85243)
+        ;
+
+        
+    
+    
+            var circle_marker_09314d23ea19e2d75f056dab52e1c4ec = L.circleMarker(
+                [-35.8452905, -71.5977173],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_14f3c846abfc6f3ac8976fac38eb1513 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57da5962de145ece29d327f88e90b165 = $(`<div id="html_57da5962de145ece29d327f88e90b165" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 535.1498459704956<br>Superficie: 700.0 m²</div>`)[0];
+                popup_14f3c846abfc6f3ac8976fac38eb1513.setContent(html_57da5962de145ece29d327f88e90b165);
+            
+        
+
+        circle_marker_09314d23ea19e2d75f056dab52e1c4ec.bindPopup(popup_14f3c846abfc6f3ac8976fac38eb1513)
+        ;
+
+        
+    
+    
+            var circle_marker_4b1ec1cb8800b5ee70a1fbcfe321bf74 = L.circleMarker(
+                [-35.84568249, -71.59326553],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_6d545509bf270fa80bd86ffee56e608b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ad74fa5bf7501e10055fd0a19500d8c = $(`<div id="html_5ad74fa5bf7501e10055fd0a19500d8c" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 36000.0<br>Superficie: 2000.0 m²</div>`)[0];
+                popup_6d545509bf270fa80bd86ffee56e608b.setContent(html_5ad74fa5bf7501e10055fd0a19500d8c);
+            
+        
+
+        circle_marker_4b1ec1cb8800b5ee70a1fbcfe321bf74.bindPopup(popup_6d545509bf270fa80bd86ffee56e608b)
+        ;
+
+        
+    
+    
+            var circle_marker_d59da0dc106801f0d9eaecf0ae7f26f2 = L.circleMarker(
+                [-35.84990204, -71.59154463],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_2c1f7813c714d68e66a8b2ba6a7d6f0d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1255b191f6b2df35892afdd63c053d98 = $(`<div id="html_1255b191f6b2df35892afdd63c053d98" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 4343.0<br>Superficie: 636.0 m²</div>`)[0];
+                popup_2c1f7813c714d68e66a8b2ba6a7d6f0d.setContent(html_1255b191f6b2df35892afdd63c053d98);
+            
+        
+
+        circle_marker_d59da0dc106801f0d9eaecf0ae7f26f2.bindPopup(popup_2c1f7813c714d68e66a8b2ba6a7d6f0d)
+        ;
+
+        
+    
+    
+            var circle_marker_492ca4681a54a86a1ca4b7dc3a78c9c2 = L.circleMarker(
+                [-35.86626071, -71.59517527],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_cac0ffee0acac7e6b2f68afdc658d6dd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4b88089c0c4d77a39511b1ee502c363 = $(`<div id="html_b4b88089c0c4d77a39511b1ee502c363" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 10112.0<br>Superficie: 4830.0 m²</div>`)[0];
+                popup_cac0ffee0acac7e6b2f68afdc658d6dd.setContent(html_b4b88089c0c4d77a39511b1ee502c363);
+            
+        
+
+        circle_marker_492ca4681a54a86a1ca4b7dc3a78c9c2.bindPopup(popup_cac0ffee0acac7e6b2f68afdc658d6dd)
+        ;
+
+        
+    
+    
+            var circle_marker_6b0354ae8ca29da9971223c5d49cafc4 = L.circleMarker(
+                [-35.85058731, -71.58867359],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_52888dd351d699928c7f9a79396251a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7248d5fa2ec8cd617519abf74470058c = $(`<div id="html_7248d5fa2ec8cd617519abf74470058c" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 16000.0<br>Superficie: 2300.0 m²</div>`)[0];
+                popup_52888dd351d699928c7f9a79396251a2.setContent(html_7248d5fa2ec8cd617519abf74470058c);
+            
+        
+
+        circle_marker_6b0354ae8ca29da9971223c5d49cafc4.bindPopup(popup_52888dd351d699928c7f9a79396251a2)
+        ;
+
+        
+    
+    
+            var circle_marker_e0de9f6837f1941c4ee0776e3ce36023 = L.circleMarker(
+                [-35.8476133, -71.5927368],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_1a02b83c767db18d6cda453bac56f929 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36be7a8afab4e400e3a9742f9ca621b6 = $(`<div id="html_36be7a8afab4e400e3a9742f9ca621b6" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 11444.0<br>Superficie: 917.0 m²</div>`)[0];
+                popup_1a02b83c767db18d6cda453bac56f929.setContent(html_36be7a8afab4e400e3a9742f9ca621b6);
+            
+        
+
+        circle_marker_e0de9f6837f1941c4ee0776e3ce36023.bindPopup(popup_1a02b83c767db18d6cda453bac56f929)
+        ;
+
+        
+    
+    
+            var circle_marker_dd15f1cd145ea065f6b751148a2a9a09 = L.circleMarker(
+                [-35.850131, -71.5856652],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_3dd5abdab42ea3743256ddbe7cab75ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0591c1a00dda2dc1aba968282b7fffa8 = $(`<div id="html_0591c1a00dda2dc1aba968282b7fffa8" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 3800.0<br>Superficie: 686.0 m²</div>`)[0];
+                popup_3dd5abdab42ea3743256ddbe7cab75ab.setContent(html_0591c1a00dda2dc1aba968282b7fffa8);
+            
+        
+
+        circle_marker_dd15f1cd145ea065f6b751148a2a9a09.bindPopup(popup_3dd5abdab42ea3743256ddbe7cab75ab)
+        ;
+
+        
+    
+    
+            var circle_marker_74393232435fc56581cc257ba0b77962 = L.circleMarker(
+                [-35.8491776, -71.5803552],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_57f70220c159fde1286ee2a958d0e96d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d40c81d0180f637189e62088d446382 = $(`<div id="html_1d40c81d0180f637189e62088d446382" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 21400.0<br>Superficie: 3900.0 m²</div>`)[0];
+                popup_57f70220c159fde1286ee2a958d0e96d.setContent(html_1d40c81d0180f637189e62088d446382);
+            
+        
+
+        circle_marker_74393232435fc56581cc257ba0b77962.bindPopup(popup_57f70220c159fde1286ee2a958d0e96d)
+        ;
+
+        
+    
+    
+            var circle_marker_7e305783376d567ae62f10fc1de02b42 = L.circleMarker(
+                [-35.8491776, -71.5803552],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_7266cbeae6d438dfa29577709154c268 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ac716cc1931a5d0725a8b4e4c66ec92 = $(`<div id="html_0ac716cc1931a5d0725a8b4e4c66ec92" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 21400.0<br>Superficie: 3900.0 m²</div>`)[0];
+                popup_7266cbeae6d438dfa29577709154c268.setContent(html_0ac716cc1931a5d0725a8b4e4c66ec92);
+            
+        
+
+        circle_marker_7e305783376d567ae62f10fc1de02b42.bindPopup(popup_7266cbeae6d438dfa29577709154c268)
+        ;
+
+        
+    
+    
+            var circle_marker_434d285d20281cb492b58070c9cc370a = L.circleMarker(
+                [-35.84719, -71.60306],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_cb364f951df9dea23887ce45014fdaf5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d4063252dab2dafd6545718aa2d266d4 = $(`<div id="html_d4063252dab2dafd6545718aa2d266d4" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 10500.0<br>Superficie: 762.0 m²</div>`)[0];
+                popup_cb364f951df9dea23887ce45014fdaf5.setContent(html_d4063252dab2dafd6545718aa2d266d4);
+            
+        
+
+        circle_marker_434d285d20281cb492b58070c9cc370a.bindPopup(popup_cb364f951df9dea23887ce45014fdaf5)
+        ;
+
+        
+    
+    
+            var circle_marker_8ffa72b491505714da514ce6034db5b6 = L.circleMarker(
+                [-35.8476133, -71.5927368],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_fc2627ad58683bd3c4a2936307df3915 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ab7769ff147669bcc7053f9a10ccba2 = $(`<div id="html_8ab7769ff147669bcc7053f9a10ccba2" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 11444.0<br>Superficie: 917.0 m²</div>`)[0];
+                popup_fc2627ad58683bd3c4a2936307df3915.setContent(html_8ab7769ff147669bcc7053f9a10ccba2);
+            
+        
+
+        circle_marker_8ffa72b491505714da514ce6034db5b6.bindPopup(popup_fc2627ad58683bd3c4a2936307df3915)
+        ;
+
+        
+    
+    
+            var circle_marker_71e910509fa04370e371f9ad186126e3 = L.circleMarker(
+                [-35.829528, -71.7094759],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_cdec995d34065cc679a25c898510fa41 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae8ca352874439aa26eac3532a938a9b = $(`<div id="html_ae8ca352874439aa26eac3532a938a9b" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 692.0<br>Superficie: 500.0 m²</div>`)[0];
+                popup_cdec995d34065cc679a25c898510fa41.setContent(html_ae8ca352874439aa26eac3532a938a9b);
+            
+        
+
+        circle_marker_71e910509fa04370e371f9ad186126e3.bindPopup(popup_cdec995d34065cc679a25c898510fa41)
+        ;
+
+        
+    
+    
+            var circle_marker_ed2f9a45aa0ebb7f104a8e0630240f52 = L.circleMarker(
+                [-35.8480181, -71.5895032],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_f0b8b1462991fb7041975f5d3eaee0ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4787b8a814559c76b5298d6c5bfa1ef = $(`<div id="html_e4787b8a814559c76b5298d6c5bfa1ef" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 12400.0<br>Superficie: 750.0 m²</div>`)[0];
+                popup_f0b8b1462991fb7041975f5d3eaee0ee.setContent(html_e4787b8a814559c76b5298d6c5bfa1ef);
+            
+        
+
+        circle_marker_ed2f9a45aa0ebb7f104a8e0630240f52.bindPopup(popup_f0b8b1462991fb7041975f5d3eaee0ee)
+        ;
+
+        
+    
+    
+            var circle_marker_d60674d34bb1716950dba9107ce095a2 = L.circleMarker(
+                [-35.8413914, -71.6169393],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_879e8b352fcbe97f1ab3c7e83757df29 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4adfc0484397e35e08793946231a2bc1 = $(`<div id="html_4adfc0484397e35e08793946231a2bc1" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 17308.0<br>Superficie: 4945.0 m²</div>`)[0];
+                popup_879e8b352fcbe97f1ab3c7e83757df29.setContent(html_4adfc0484397e35e08793946231a2bc1);
+            
+        
+
+        circle_marker_d60674d34bb1716950dba9107ce095a2.bindPopup(popup_879e8b352fcbe97f1ab3c7e83757df29)
+        ;
+
+        
+    
+    
+            var circle_marker_04b590082fa9f75a5ae8c9dfd6445993 = L.circleMarker(
+                [-35.83, -71.709],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_251d8059fba001f97bec97f8632c82cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7bd6fab38a1402fe8fae213b86de19be = $(`<div id="html_7bd6fab38a1402fe8fae213b86de19be" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 691.8321498125267<br>Superficie: 500.0 m²</div>`)[0];
+                popup_251d8059fba001f97bec97f8632c82cd.setContent(html_7bd6fab38a1402fe8fae213b86de19be);
+            
+        
+
+        circle_marker_04b590082fa9f75a5ae8c9dfd6445993.bindPopup(popup_251d8059fba001f97bec97f8632c82cd)
+        ;
+
+        
+    
+    
+            var circle_marker_c9291123e7a5317b96070dc4c42024c7 = L.circleMarker(
+                [-35.8466493, -71.6038981],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_2c0e97fe0b42e95a334422c7d64609ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7df53ac7725e9e270661dbd0f12dccb6 = $(`<div id="html_7df53ac7725e9e270661dbd0f12dccb6" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 6906.0<br>Superficie: 802.0 m²</div>`)[0];
+                popup_2c0e97fe0b42e95a334422c7d64609ab.setContent(html_7df53ac7725e9e270661dbd0f12dccb6);
+            
+        
+
+        circle_marker_c9291123e7a5317b96070dc4c42024c7.bindPopup(popup_2c0e97fe0b42e95a334422c7d64609ab)
+        ;
+
+        
+    
+    
+            var circle_marker_42dd42d7dcbd544a00c45a28910e3efc = L.circleMarker(
+                [-35.8672002, -71.5941449],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_1e40d2e69b99da01c5cbe13b3aeb7615 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cedeefe4ffd80654292c1173feff0a59 = $(`<div id="html_cedeefe4ffd80654292c1173feff0a59" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 13297.207480051531<br>Superficie: 4930.0 m²</div>`)[0];
+                popup_1e40d2e69b99da01c5cbe13b3aeb7615.setContent(html_cedeefe4ffd80654292c1173feff0a59);
+            
+        
+
+        circle_marker_42dd42d7dcbd544a00c45a28910e3efc.bindPopup(popup_1e40d2e69b99da01c5cbe13b3aeb7615)
+        ;
+
+        
+    
+    
+            var circle_marker_ee210d682ad88662b10ebb7e130e8818 = L.circleMarker(
+                [-35.8413914, -71.6169393],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_d469899faba05afb767f55464bff4a70 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_64666397198eac47a30ac15f79cdcdc9 = $(`<div id="html_64666397198eac47a30ac15f79cdcdc9" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 17308.0<br>Superficie: 4945.0 m²</div>`)[0];
+                popup_d469899faba05afb767f55464bff4a70.setContent(html_64666397198eac47a30ac15f79cdcdc9);
+            
+        
+
+        circle_marker_ee210d682ad88662b10ebb7e130e8818.bindPopup(popup_d469899faba05afb767f55464bff4a70)
+        ;
+
+        
+    
+    
+            var circle_marker_045d50f7848e0e025d14086f476d2047 = L.circleMarker(
+                [-35.8476133, -71.5927368],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_d3f76373becea8cd6224633746ef6af6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_37f24a947375070ea96c740e547481d7 = $(`<div id="html_37f24a947375070ea96c740e547481d7" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 11444.0<br>Superficie: 917.0 m²</div>`)[0];
+                popup_d3f76373becea8cd6224633746ef6af6.setContent(html_37f24a947375070ea96c740e547481d7);
+            
+        
+
+        circle_marker_045d50f7848e0e025d14086f476d2047.bindPopup(popup_d3f76373becea8cd6224633746ef6af6)
+        ;
+
+        
+    
+    
+            var circle_marker_c1b8a573a79bec738538e11727ed967c = L.circleMarker(
+                [-35.8510102, -71.6034541],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_1b60ae42246c2076aadf01bc44928e5b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_75cf1f5ce48619f0a8ff0b0435d49801 = $(`<div id="html_75cf1f5ce48619f0a8ff0b0435d49801" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 9990.0<br>Superficie: 1222.0 m²</div>`)[0];
+                popup_1b60ae42246c2076aadf01bc44928e5b.setContent(html_75cf1f5ce48619f0a8ff0b0435d49801);
+            
+        
+
+        circle_marker_c1b8a573a79bec738538e11727ed967c.bindPopup(popup_1b60ae42246c2076aadf01bc44928e5b)
+        ;
+
+        
+    
+    
+            var circle_marker_4aef8a2421b629d6c4b5996f2a7c0c06 = L.circleMarker(
+                [-35.8924775, -71.5286323],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_67f472cfaa2a52e3486a30b3bb41d880 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c15c23b13448d519a84199f92d39379 = $(`<div id="html_7c15c23b13448d519a84199f92d39379" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 2394.8035955049004<br>Superficie: 1992.0 m²</div>`)[0];
+                popup_67f472cfaa2a52e3486a30b3bb41d880.setContent(html_7c15c23b13448d519a84199f92d39379);
+            
+        
+
+        circle_marker_4aef8a2421b629d6c4b5996f2a7c0c06.bindPopup(popup_67f472cfaa2a52e3486a30b3bb41d880)
+        ;
+
+        
+    
+    
+            var circle_marker_403d8b71447370be5a41d71bb6ecebf5 = L.circleMarker(
+                [-35.8672001788984, -71.5941449054308],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_72096341bc0f5bb142dee32a117f7356 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5607155d5f6676d89088574f5608c857 = $(`<div id="html_5607155d5f6676d89088574f5608c857" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 13301.455950765458<br>Superficie: 4930.0 m²</div>`)[0];
+                popup_72096341bc0f5bb142dee32a117f7356.setContent(html_5607155d5f6676d89088574f5608c857);
+            
+        
+
+        circle_marker_403d8b71447370be5a41d71bb6ecebf5.bindPopup(popup_72096341bc0f5bb142dee32a117f7356)
+        ;
+
+        
+    
+    
+            var circle_marker_20c1b9aae1359e5e42260ec67db5afa5 = L.circleMarker(
+                [-35.88057, -71.54388],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_7701f3e52d1d61e6eea9ce1e18edea04 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3231a005fbe612f11f4c849bbd78370f = $(`<div id="html_3231a005fbe612f11f4c849bbd78370f" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 2262.2<br>Superficie: 3000.0 m²</div>`)[0];
+                popup_7701f3e52d1d61e6eea9ce1e18edea04.setContent(html_3231a005fbe612f11f4c849bbd78370f);
+            
+        
+
+        circle_marker_20c1b9aae1359e5e42260ec67db5afa5.bindPopup(popup_7701f3e52d1d61e6eea9ce1e18edea04)
+        ;
+
+        
+    
+    
+            var circle_marker_feb78d732d92a8124bb26a840cef3507 = L.circleMarker(
+                [-35.8316479, -71.6175601],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_52611f88ae13a1ec8191af41033d2146 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_314c793cf11210b3a972663c3fc86d83 = $(`<div id="html_314c793cf11210b3a972663c3fc86d83" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 70500.0<br>Superficie: 47000.0 m²</div>`)[0];
+                popup_52611f88ae13a1ec8191af41033d2146.setContent(html_314c793cf11210b3a972663c3fc86d83);
+            
+        
+
+        circle_marker_feb78d732d92a8124bb26a840cef3507.bindPopup(popup_52611f88ae13a1ec8191af41033d2146)
+        ;
+
+        
+    
+    
+            var circle_marker_4db393b69092b5cb157024961bdb0b19 = L.circleMarker(
+                [-35.9294117, -71.3944317],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_bbfc037448f80700c909e3603505354e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ea86bb9b0839b97491171e05b3bc3bd = $(`<div id="html_7ea86bb9b0839b97491171e05b3bc3bd" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 5500.0<br>Superficie: 46500.0 m²</div>`)[0];
+                popup_bbfc037448f80700c909e3603505354e.setContent(html_7ea86bb9b0839b97491171e05b3bc3bd);
+            
+        
+
+        circle_marker_4db393b69092b5cb157024961bdb0b19.bindPopup(popup_bbfc037448f80700c909e3603505354e)
+        ;
+
+        
+    
+    
+            var circle_marker_c750c41adcc26d25180a30073f89c850 = L.circleMarker(
+                [-35.9819739, -71.3886881],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_f0fae519e2e18a8acf54459f9254bf7e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_86714102e85ac8ea749d0112c9227a06 = $(`<div id="html_86714102e85ac8ea749d0112c9227a06" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 8027.247689557434<br>Superficie: 20000.0 m²</div>`)[0];
+                popup_f0fae519e2e18a8acf54459f9254bf7e.setContent(html_86714102e85ac8ea749d0112c9227a06);
+            
+        
+
+        circle_marker_c750c41adcc26d25180a30073f89c850.bindPopup(popup_f0fae519e2e18a8acf54459f9254bf7e)
+        ;
+
+        
+    
+    
+            var circle_marker_73f82afd00694668d13b16ff9ed0dc70 = L.circleMarker(
+                [-35.8452905, -71.5977173],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_f959186e2b2d36957ab153f62ad317bc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9dbd3551b7187f70425513c2702f34bc = $(`<div id="html_9dbd3551b7187f70425513c2702f34bc" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 21065.0<br>Superficie: 74400.0 m²</div>`)[0];
+                popup_f959186e2b2d36957ab153f62ad317bc.setContent(html_9dbd3551b7187f70425513c2702f34bc);
+            
+        
+
+        circle_marker_73f82afd00694668d13b16ff9ed0dc70.bindPopup(popup_f959186e2b2d36957ab153f62ad317bc)
+        ;
+
+        
+    
+    
+            var circle_marker_1789df8b4000205b4e6ce8e799145c64 = L.circleMarker(
+                [-35.8328143, -71.6140728],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_52a1bad3bc175e9c6f72b61fdcda0531 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58cc1ac7d76bf5351dac90fdfd2795d2 = $(`<div id="html_58cc1ac7d76bf5351dac90fdfd2795d2" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 14500.0<br>Superficie: 14500.0 m²</div>`)[0];
+                popup_52a1bad3bc175e9c6f72b61fdcda0531.setContent(html_58cc1ac7d76bf5351dac90fdfd2795d2);
+            
+        
+
+        circle_marker_1789df8b4000205b4e6ce8e799145c64.bindPopup(popup_52a1bad3bc175e9c6f72b61fdcda0531)
+        ;
+
+        
+    
+    
+            var circle_marker_4519a4b7e3f266720e487e8c6042515e = L.circleMarker(
+                [-35.7994932, -71.5847726],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_771aa4db6598858f486494ce869a6b64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ada5912d7c91e4201b6021b412b45857 = $(`<div id="html_ada5912d7c91e4201b6021b412b45857" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 8023.29202471174<br>Superficie: 50000.0 m²</div>`)[0];
+                popup_771aa4db6598858f486494ce869a6b64.setContent(html_ada5912d7c91e4201b6021b412b45857);
+            
+        
+
+        circle_marker_4519a4b7e3f266720e487e8c6042515e.bindPopup(popup_771aa4db6598858f486494ce869a6b64)
+        ;
+
+        
+    
+    
+            var circle_marker_0ec2060c694a8b22766687df86b77e92 = L.circleMarker(
+                [-35.8359703, -71.6735998],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_9981a5946bbe200083f79a63a6fb998f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f726c92a1cf3e0a5459c8c59e76a872f = $(`<div id="html_f726c92a1cf3e0a5459c8c59e76a872f" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 2926.320309168401<br>Superficie: 28400.0 m²</div>`)[0];
+                popup_9981a5946bbe200083f79a63a6fb998f.setContent(html_f726c92a1cf3e0a5459c8c59e76a872f);
+            
+        
+
+        circle_marker_0ec2060c694a8b22766687df86b77e92.bindPopup(popup_9981a5946bbe200083f79a63a6fb998f)
+        ;
+
+        
+    
+    
+            var circle_marker_722d611952b8ffb69ce858037973ad90 = L.circleMarker(
+                [-36.016949, -71.4188783],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_ea402b0d1b08a8fb80f8c792b3bee1b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b69f58db567907a7fcfc65c6178b57e3 = $(`<div id="html_b69f58db567907a7fcfc65c6178b57e3" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 1349.0<br>Superficie: 11000.0 m²</div>`)[0];
+                popup_ea402b0d1b08a8fb80f8c792b3bee1b0.setContent(html_b69f58db567907a7fcfc65c6178b57e3);
+            
+        
+
+        circle_marker_722d611952b8ffb69ce858037973ad90.bindPopup(popup_ea402b0d1b08a8fb80f8c792b3bee1b0)
+        ;
+
+        
+    
+    
+            var circle_marker_071e7ba6873c98dc30bcdaafa7a7c36c = L.circleMarker(
+                [-35.8328143, -71.6140728],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_cf047821a646f28743a2c337a633b13e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_51574572ad267c1ba7c66fa7ec427712 = $(`<div id="html_51574572ad267c1ba7c66fa7ec427712" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 14500.0<br>Superficie: 14500.0 m²</div>`)[0];
+                popup_cf047821a646f28743a2c337a633b13e.setContent(html_51574572ad267c1ba7c66fa7ec427712);
+            
+        
+
+        circle_marker_071e7ba6873c98dc30bcdaafa7a7c36c.bindPopup(popup_cf047821a646f28743a2c337a633b13e)
+        ;
+
+        
+    
+    
+            var circle_marker_e291481904176cdfda945ce7de5d361a = L.circleMarker(
+                [-35.877229, -71.5414934],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_6d7db5ee753a4151bb6ebe71dc75feb6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_966da00d1f87e7a70ace32e006eeaf7f = $(`<div id="html_966da00d1f87e7a70ace32e006eeaf7f" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 15965.357303366<br>Superficie: 60000.0 m²</div>`)[0];
+                popup_6d7db5ee753a4151bb6ebe71dc75feb6.setContent(html_966da00d1f87e7a70ace32e006eeaf7f);
+            
+        
+
+        circle_marker_e291481904176cdfda945ce7de5d361a.bindPopup(popup_6d7db5ee753a4151bb6ebe71dc75feb6)
+        ;
+
+        
+    
+    
+            var circle_marker_ffd2a1af76dc5fb2cb7bd8289620f9c6 = L.circleMarker(
+                [-35.83081769274858, -71.43978883320312],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_0b1a6195009c5b8631630f3e9caf9790 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2bd44ed931d2ec725137e348d110a43c = $(`<div id="html_2bd44ed931d2ec725137e348d110a43c" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 9312.0<br>Superficie: 50000.0 m²</div>`)[0];
+                popup_0b1a6195009c5b8631630f3e9caf9790.setContent(html_2bd44ed931d2ec725137e348d110a43c);
+            
+        
+
+        circle_marker_ffd2a1af76dc5fb2cb7bd8289620f9c6.bindPopup(popup_0b1a6195009c5b8631630f3e9caf9790)
+        ;
+
+        
+    
+    
+            var circle_marker_b23465e0880b254083d1036fe498378d = L.circleMarker(
+                [-35.92459, -71.41672],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_4a9297cf9d5f0448dfbb3191dd7ff03e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1b8aa6e7df8dc7ac3f266855454aec7 = $(`<div id="html_e1b8aa6e7df8dc7ac3f266855454aec7" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 1463.1601545842004<br>Superficie: 12000.0 m²</div>`)[0];
+                popup_4a9297cf9d5f0448dfbb3191dd7ff03e.setContent(html_e1b8aa6e7df8dc7ac3f266855454aec7);
+            
+        
+
+        circle_marker_b23465e0880b254083d1036fe498378d.bindPopup(popup_4a9297cf9d5f0448dfbb3191dd7ff03e)
+        ;
+
+        
+    
+    
+            var circle_marker_c9ab7a945ef68578facf5b8ce472191d = L.circleMarker(
+                [-35.99643, -71.466698],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_2c04e54085a882381b9eb5d84cdc5ac3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1bd69cd2e5b4efee4b17c5bf440484bb = $(`<div id="html_1bd69cd2e5b4efee4b17c5bf440484bb" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 11441.839400745635<br>Superficie: 60444.0 m²</div>`)[0];
+                popup_2c04e54085a882381b9eb5d84cdc5ac3.setContent(html_1bd69cd2e5b4efee4b17c5bf440484bb);
+            
+        
+
+        circle_marker_c9ab7a945ef68578facf5b8ce472191d.bindPopup(popup_2c04e54085a882381b9eb5d84cdc5ac3)
+        ;
+
+        
+    
+    
+            var circle_marker_ccefdfc643a72b6b18feaef371669608 = L.circleMarker(
+                [-36.042218, -71.410108],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_1e30dfbf0fdd17e9f414da9c3b5ac37c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d2ce1f12cdee4e952e6784bb59bb177 = $(`<div id="html_5d2ce1f12cdee4e952e6784bb59bb177" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 11441.839400745635<br>Superficie: 60444.0 m²</div>`)[0];
+                popup_1e30dfbf0fdd17e9f414da9c3b5ac37c.setContent(html_5d2ce1f12cdee4e952e6784bb59bb177);
+            
+        
+
+        circle_marker_ccefdfc643a72b6b18feaef371669608.bindPopup(popup_1e30dfbf0fdd17e9f414da9c3b5ac37c)
+        ;
+
+        
+    
+    
+            var circle_marker_8eaf2bc46b1cab4b5bf45fb5aba507c0 = L.circleMarker(
+                [-35.832814, -71.614073],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_77ed4deffe80195d3663611bc153b4cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d67012e0c1f857484ba9620f50686b39 = $(`<div id="html_d67012e0c1f857484ba9620f50686b39" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 14500.0<br>Superficie: 14500.0 m²</div>`)[0];
+                popup_77ed4deffe80195d3663611bc153b4cb.setContent(html_d67012e0c1f857484ba9620f50686b39);
+            
+        
+
+        circle_marker_8eaf2bc46b1cab4b5bf45fb5aba507c0.bindPopup(popup_77ed4deffe80195d3663611bc153b4cb)
+        ;
+
+        
+    
+    
+            var circle_marker_dea12f9c780e50ad2f9dec1e42e2f6b5 = L.circleMarker(
+                [-35.829, -71.616],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_008db43d4feacd1042b0776ecbc3b82a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5cb324c45db1ac1d9c7619d196243731 = $(`<div id="html_5cb324c45db1ac1d9c7619d196243731" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 5295.176838949724<br>Superficie: 15000.0 m²</div>`)[0];
+                popup_008db43d4feacd1042b0776ecbc3b82a.setContent(html_5cb324c45db1ac1d9c7619d196243731);
+            
+        
+
+        circle_marker_dea12f9c780e50ad2f9dec1e42e2f6b5.bindPopup(popup_008db43d4feacd1042b0776ecbc3b82a)
+        ;
+
+        
+    
+    
+            var circle_marker_90808c647fbe4947a44359b868c2739c = L.circleMarker(
+                [-35.74706954601599, -71.44872665405273],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_ac3f48a49fbb7669c34b2a2d61afab75 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_334f09daf49acc71282efe10c42cb586 = $(`<div id="html_334f09daf49acc71282efe10c42cb586" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 665.2232209735834<br>Superficie: 70000.0 m²</div>`)[0];
+                popup_ac3f48a49fbb7669c34b2a2d61afab75.setContent(html_334f09daf49acc71282efe10c42cb586);
+            
+        
+
+        circle_marker_90808c647fbe4947a44359b868c2739c.bindPopup(popup_ac3f48a49fbb7669c34b2a2d61afab75)
+        ;
+
+        
+    
+    
+            var circle_marker_0d053c784d18a24b5f3d56815accf870 = L.circleMarker(
+                [-35.766363170559806, -71.78775787353516],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_d58ea0c8c0a4a52a91da905f4283d717 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_503574b5acc560232078086c5766af33 = $(`<div id="html_503574b5acc560232078086c5766af33" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 3195.0<br>Superficie: 90000.0 m²</div>`)[0];
+                popup_d58ea0c8c0a4a52a91da905f4283d717.setContent(html_503574b5acc560232078086c5766af33);
+            
+        
+
+        circle_marker_0d053c784d18a24b5f3d56815accf870.bindPopup(popup_d58ea0c8c0a4a52a91da905f4283d717)
+        ;
+
+        
+    
+    
+            var circle_marker_c496e14d6a5dd29de30185532dabd892 = L.circleMarker(
+                [-35.828808, -71.607554],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_f80530eb890ed4341a837f6ecb00d07c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4983a6cf7382f564fde8249c7320dd6 = $(`<div id="html_a4983a6cf7382f564fde8249c7320dd6" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 70500.0<br>Superficie: 47000.0 m²</div>`)[0];
+                popup_f80530eb890ed4341a837f6ecb00d07c.setContent(html_a4983a6cf7382f564fde8249c7320dd6);
+            
+        
+
+        circle_marker_c496e14d6a5dd29de30185532dabd892.bindPopup(popup_f80530eb890ed4341a837f6ecb00d07c)
+        ;
+
+        
+    
+    
+            var circle_marker_b19af5b3cebb4c5db8b8e991f12ca53a = L.circleMarker(
+                [-35.838395, -71.5964371],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_a48e10b03cc8b79f8b7e7e2862bd4b5e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_94cd27fac21e599592b71bd783b0c134 = $(`<div id="html_94cd27fac21e599592b71bd783b0c134" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 6652.232209735834<br>Superficie: 50000.0 m²</div>`)[0];
+                popup_a48e10b03cc8b79f8b7e7e2862bd4b5e.setContent(html_94cd27fac21e599592b71bd783b0c134);
+            
+        
+
+        circle_marker_b19af5b3cebb4c5db8b8e991f12ca53a.bindPopup(popup_a48e10b03cc8b79f8b7e7e2862bd4b5e)
+        ;
+
+        
+    
+    
+            var circle_marker_064c358838707dd80f8fa4bfc3685714 = L.circleMarker(
+                [-35.8443577, -71.613415],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_09d289f0b94868872af2109a150eaf4a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7bc8e49e4a509d5a53e9802b1bf74503 = $(`<div id="html_7bc8e49e4a509d5a53e9802b1bf74503" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 5670.0<br>Superficie: 30000.0 m²</div>`)[0];
+                popup_09d289f0b94868872af2109a150eaf4a.setContent(html_7bc8e49e4a509d5a53e9802b1bf74503);
+            
+        
+
+        circle_marker_064c358838707dd80f8fa4bfc3685714.bindPopup(popup_09d289f0b94868872af2109a150eaf4a)
+        ;
+
+        
+    
+    
+            var circle_marker_22ef7f88a6e2385138f0ce8952aae686 = L.circleMarker(
+                [-35.781555, -71.707832],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_0ea6ead0df733c46380d3bebbc3f81ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1106504be1b61cd8e73d134f14b20eba = $(`<div id="html_1106504be1b61cd8e73d134f14b20eba" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 1066.00943631553<br>Superficie: 14600.0 m²</div>`)[0];
+                popup_0ea6ead0df733c46380d3bebbc3f81ce.setContent(html_1106504be1b61cd8e73d134f14b20eba);
+            
+        
+
+        circle_marker_22ef7f88a6e2385138f0ce8952aae686.bindPopup(popup_0ea6ead0df733c46380d3bebbc3f81ce)
+        ;
+
+        
+    
+    
+            var circle_marker_98fb259758f63d2fbcf79b6893655ea1 = L.circleMarker(
+                [-35.8465126, -71.6178984],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_697f8ffa30c31be635fe65634c72e051 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2898e640f0dcae3f5bd33eb19d9ca3e6 = $(`<div id="html_2898e640f0dcae3f5bd33eb19d9ca3e6" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 75000.0<br>Superficie: 50000.0 m²</div>`)[0];
+                popup_697f8ffa30c31be635fe65634c72e051.setContent(html_2898e640f0dcae3f5bd33eb19d9ca3e6);
+            
+        
+
+        circle_marker_98fb259758f63d2fbcf79b6893655ea1.bindPopup(popup_697f8ffa30c31be635fe65634c72e051)
+        ;
+
+        
+    
+    
+            var circle_marker_bcfe84da51793016dda3c9d17cafe927 = L.circleMarker(
+                [-35.9268481, -71.3257405],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_8eb106c1ea0e54d2d5c7ed49f5220d3f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_285d85594a1eb377c7b79e1efaf7e43e = $(`<div id="html_285d85594a1eb377c7b79e1efaf7e43e" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 4255.10639361649<br>Superficie: 91000.0 m²</div>`)[0];
+                popup_8eb106c1ea0e54d2d5c7ed49f5220d3f.setContent(html_285d85594a1eb377c7b79e1efaf7e43e);
+            
+        
+
+        circle_marker_bcfe84da51793016dda3c9d17cafe927.bindPopup(popup_8eb106c1ea0e54d2d5c7ed49f5220d3f)
+        ;
+
+        
+    
+    
+            var circle_marker_146e134aec7bdd94513425bb151e3b9c = L.circleMarker(
+                [-35.8440931, -71.5649868],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_e500cd04ca60fe13a1a39ca0b570e7fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a67486e63c590ace6a916428dd926077 = $(`<div id="html_a67486e63c590ace6a916428dd926077" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 1595.8142855167089<br>Superficie: 20000.0 m²</div>`)[0];
+                popup_e500cd04ca60fe13a1a39ca0b570e7fb.setContent(html_a67486e63c590ace6a916428dd926077);
+            
+        
+
+        circle_marker_146e134aec7bdd94513425bb151e3b9c.bindPopup(popup_e500cd04ca60fe13a1a39ca0b570e7fb)
+        ;
+
+        
+    
+    
+            var circle_marker_3a22e6ebf528888b1f60b52537acc093 = L.circleMarker(
+                [-35.9287555, -71.4795247],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_0a1ecb7f220c4b0f33e40e70f9534b60 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18b93d743c47eca3e0ef9ae50ffb2a97 = $(`<div id="html_18b93d743c47eca3e0ef9ae50ffb2a97" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 2953.5911011227104<br>Superficie: 40000.0 m²</div>`)[0];
+                popup_0a1ecb7f220c4b0f33e40e70f9534b60.setContent(html_18b93d743c47eca3e0ef9ae50ffb2a97);
+            
+        
+
+        circle_marker_3a22e6ebf528888b1f60b52537acc093.bindPopup(popup_0a1ecb7f220c4b0f33e40e70f9534b60)
+        ;
+
+        
+    
+    
+            var circle_marker_3fc887722f2402b0368c06ba2ffd574f = L.circleMarker(
+                [-35.844093113586, -71.564986752544],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_44d9a976dbfb573131c1ee0414d3148b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4191b64375b29abc8377a1fc1ddb20b7 = $(`<div id="html_4191b64375b29abc8377a1fc1ddb20b7" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 1597.0<br>Superficie: 20000.0 m²</div>`)[0];
+                popup_44d9a976dbfb573131c1ee0414d3148b.setContent(html_4191b64375b29abc8377a1fc1ddb20b7);
+            
+        
+
+        circle_marker_3fc887722f2402b0368c06ba2ffd574f.bindPopup(popup_44d9a976dbfb573131c1ee0414d3148b)
+        ;
+
+        
+    
+    
+            var circle_marker_ba50222d0b3fe8451edfdef0861ef0b1 = L.circleMarker(
+                [-35.8608696, -71.5687683],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_135f99329c3e4bb14066096fb2bc5f60 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87570c4ab6fde1b0e55b58937bf61b75 = $(`<div id="html_87570c4ab6fde1b0e55b58937bf61b75" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 15965.357303366<br>Superficie: 80000.0 m²</div>`)[0];
+                popup_135f99329c3e4bb14066096fb2bc5f60.setContent(html_87570c4ab6fde1b0e55b58937bf61b75);
+            
+        
+
+        circle_marker_ba50222d0b3fe8451edfdef0861ef0b1.bindPopup(popup_135f99329c3e4bb14066096fb2bc5f60)
+        ;
+
+        
+    
+    
+            var circle_marker_72e50149734ba1dd18bc56e308b390ab = L.circleMarker(
+                [-35.8440931, -71.5649868],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_487ec788135ebc8a14bf87e8ac1cb692 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f0242cb2f06a0fff1b393045f5c6bfa9 = $(`<div id="html_f0242cb2f06a0fff1b393045f5c6bfa9" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 1596.5357303366002<br>Superficie: 20000.0 m²</div>`)[0];
+                popup_487ec788135ebc8a14bf87e8ac1cb692.setContent(html_f0242cb2f06a0fff1b393045f5c6bfa9);
+            
+        
+
+        circle_marker_72e50149734ba1dd18bc56e308b390ab.bindPopup(popup_487ec788135ebc8a14bf87e8ac1cb692)
+        ;
+
+        
+    
+    
+            var circle_marker_5d293d6e18fe83af0bb4d21dc27507aa = L.circleMarker(
+                [-35.8386488, -71.6163223],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_f0707d6aa7fbb19ffc85d482513c8ed4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d8f4525b472dccf1c40e5ca5196e87c4 = $(`<div id="html_d8f4525b472dccf1c40e5ca5196e87c4" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 1330.1455950765458<br>Superficie: 30200.0 m²</div>`)[0];
+                popup_f0707d6aa7fbb19ffc85d482513c8ed4.setContent(html_d8f4525b472dccf1c40e5ca5196e87c4);
+            
+        
+
+        circle_marker_5d293d6e18fe83af0bb4d21dc27507aa.bindPopup(popup_f0707d6aa7fbb19ffc85d482513c8ed4)
+        ;
+
+        
+    
+    
+            var circle_marker_5d6e3851646d0c7f29f4e96a6a7f8a1e = L.circleMarker(
+                [-35.8626303, -71.5657677],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_edb8467a2a88c91bd2d0a6e5e8a0f3c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_235f9b48725769a278e393ff6d334522 = $(`<div id="html_235f9b48725769a278e393ff6d334522" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 15965.357303366<br>Superficie: 80000.0 m²</div>`)[0];
+                popup_edb8467a2a88c91bd2d0a6e5e8a0f3c0.setContent(html_235f9b48725769a278e393ff6d334522);
+            
+        
+
+        circle_marker_5d6e3851646d0c7f29f4e96a6a7f8a1e.bindPopup(popup_edb8467a2a88c91bd2d0a6e5e8a0f3c0)
+        ;
+
+        
+    
+    
+            var circle_marker_bafd719d9ac3c883220d8cd436b53cd9 = L.circleMarker(
+                [-35.832814, -71.614073],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_ccb8706f8ef50acdc5a32b82ac63ef8a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9b58d07bf928dfed8ce3122c516029c0 = $(`<div id="html_9b58d07bf928dfed8ce3122c516029c0" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 1330.4464419471667<br>Superficie: 30200.0 m²</div>`)[0];
+                popup_ccb8706f8ef50acdc5a32b82ac63ef8a.setContent(html_9b58d07bf928dfed8ce3122c516029c0);
+            
+        
+
+        circle_marker_bafd719d9ac3c883220d8cd436b53cd9.bindPopup(popup_ccb8706f8ef50acdc5a32b82ac63ef8a)
+        ;
+
+        
+    
+    
+            var circle_marker_3cb7e8441ae9f0e35c9df85c1a423188 = L.circleMarker(
+                [-35.9268481, -71.3257405],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_1a52e3402e7754cee12322e9e5239ccd);
+        
+    
+        var popup_0444ebe069c92e6be1b0a729c1f94d87 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f5afb1e86a2fc48d6ddc3c28395f1ece = $(`<div id="html_f5afb1e86a2fc48d6ddc3c28395f1ece" style="width: 100.0%; height: 100.0%;">Comuna: Linares<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 4257.428614230934<br>Superficie: 91000.0 m²</div>`)[0];
+                popup_0444ebe069c92e6be1b0a729c1f94d87.setContent(html_f5afb1e86a2fc48d6ddc3c28395f1ece);
+            
+        
+
+        circle_marker_3cb7e8441ae9f0e35c9df85c1a423188.bindPopup(popup_0444ebe069c92e6be1b0a729c1f94d87)
+        ;
+
+        
+    
+</script>
+</html>

@@ -1,0 +1,3034 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_54026d3de3f76eddc2f66ac0d7565476 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://unpkg.com/leaflet.featuregroup.subgroup@1.0.2/dist/leaflet.featuregroup.subgroup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_54026d3de3f76eddc2f66ac0d7565476" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_54026d3de3f76eddc2f66ac0d7565476 = L.map(
+                "map_54026d3de3f76eddc2f66ac0d7565476",
+                {
+                    center: [-33.826723516123884, -70.7579350285776],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4665dcb345f0c032b997cd28b4398598 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_4665dcb345f0c032b997cd28b4398598.addTo(map_54026d3de3f76eddc2f66ac0d7565476);
+        
+    
+            var feature_group_23f7e327c99f559ff78b650763912300 = L.featureGroup(
+                {}
+            );
+        
+    
+            feature_group_23f7e327c99f559ff78b650763912300.addTo(map_54026d3de3f76eddc2f66ac0d7565476);
+        
+    
+            var feature_group_f2a8064cc1dd2fcb033c1a2473a20907 = L.featureGroup(
+                {}
+            );
+        
+    
+            feature_group_f2a8064cc1dd2fcb033c1a2473a20907.addTo(map_54026d3de3f76eddc2f66ac0d7565476);
+        
+    
+            var feature_group_sub_group_da5a2578068a688cc5665b594af5cde0 = L.featureGroup.subGroup(
+                feature_group_23f7e327c99f559ff78b650763912300
+            );
+        
+    
+            var circle_marker_4eef7a933868aef94e52f36e2b2d9be8 = L.circleMarker(
+                [-33.8544174, -70.773144],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2d00d2ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_da5a2578068a688cc5665b594af5cde0);
+        
+    
+        var popup_1b51b8cbbee50601614bae0bbfb23b7d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b1e297634e167d116a97adce94fa4f60 = $(`<div id="html_b1e297634e167d116a97adce94fa4f60" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 5.723358822515788</div>`)[0];
+                popup_1b51b8cbbee50601614bae0bbfb23b7d.setContent(html_b1e297634e167d116a97adce94fa4f60);
+            
+        
+
+        circle_marker_4eef7a933868aef94e52f36e2b2d9be8.bindPopup(popup_1b51b8cbbee50601614bae0bbfb23b7d)
+        ;
+
+        
+    
+    
+            var circle_marker_1b467d5b622305ad6184ed97004e3718 = L.circleMarker(
+                [-33.7998346, -70.7410315],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1b00e5ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_da5a2578068a688cc5665b594af5cde0);
+        
+    
+        var popup_8266ba67fae6925e753acb166279b945 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0159185118a16f1ce93bd4883e179dce = $(`<div id="html_0159185118a16f1ce93bd4883e179dce" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 3.3834586466165413</div>`)[0];
+                popup_8266ba67fae6925e753acb166279b945.setContent(html_0159185118a16f1ce93bd4883e179dce);
+            
+        
+
+        circle_marker_1b467d5b622305ad6184ed97004e3718.bindPopup(popup_8266ba67fae6925e753acb166279b945)
+        ;
+
+        
+    
+    
+            var circle_marker_a316500a2a3b7ca31641b6f3a12ce4d6 = L.circleMarker(
+                [-33.8816111, -70.7454145],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1200edff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_da5a2578068a688cc5665b594af5cde0);
+        
+    
+        var popup_0849d4271663627ea96402cfca459fea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7fdffc7f9ff901fc46a8397e13d3f86d = $(`<div id="html_7fdffc7f9ff901fc46a8397e13d3f86d" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 2.3105792549222506</div>`)[0];
+                popup_0849d4271663627ea96402cfca459fea.setContent(html_7fdffc7f9ff901fc46a8397e13d3f86d);
+            
+        
+
+        circle_marker_a316500a2a3b7ca31641b6f3a12ce4d6.bindPopup(popup_0849d4271663627ea96402cfca459fea)
+        ;
+
+        
+    
+    
+            var circle_marker_76343c4a26226ccd28646065262ae1e1 = L.circleMarker(
+                [-33.8705586, -70.7325178],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1300edff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_da5a2578068a688cc5665b594af5cde0);
+        
+    
+        var popup_921e5348d4c06f918e9bc6569035d07d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e29fe3d1c108764d9d4ac48b9c6ac14 = $(`<div id="html_9e29fe3d1c108764d9d4ac48b9c6ac14" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 2.3804</div>`)[0];
+                popup_921e5348d4c06f918e9bc6569035d07d.setContent(html_9e29fe3d1c108764d9d4ac48b9c6ac14);
+            
+        
+
+        circle_marker_76343c4a26226ccd28646065262ae1e1.bindPopup(popup_921e5348d4c06f918e9bc6569035d07d)
+        ;
+
+        
+    
+    
+            var circle_marker_1313335315e6b1767e1e268571368c23 = L.circleMarker(
+                [-33.846646, -70.916041],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1600e9ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_da5a2578068a688cc5665b594af5cde0);
+        
+    
+        var popup_81d974a98c6c6d4a1aefc01db054fa5a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8c69613ce17a6fc1b7a6870c61e0980 = $(`<div id="html_c8c69613ce17a6fc1b7a6870c61e0980" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 2.7802034479168074</div>`)[0];
+                popup_81d974a98c6c6d4a1aefc01db054fa5a.setContent(html_c8c69613ce17a6fc1b7a6870c61e0980);
+            
+        
+
+        circle_marker_1313335315e6b1767e1e268571368c23.bindPopup(popup_81d974a98c6c6d4a1aefc01db054fa5a)
+        ;
+
+        
+    
+    
+            var circle_marker_ef7c40b90b39698af8405c2b860ed066 = L.circleMarker(
+                [-33.81649, -70.7404449],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3000cfff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_da5a2578068a688cc5665b594af5cde0);
+        
+    
+        var popup_290d59d2eff6f397794f11b5220cebeb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_549a01bcf283f3846a8539d30819f125 = $(`<div id="html_549a01bcf283f3846a8539d30819f125" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 6.0809857575205575</div>`)[0];
+                popup_290d59d2eff6f397794f11b5220cebeb.setContent(html_549a01bcf283f3846a8539d30819f125);
+            
+        
+
+        circle_marker_ef7c40b90b39698af8405c2b860ed066.bindPopup(popup_290d59d2eff6f397794f11b5220cebeb)
+        ;
+
+        
+    
+    
+            var circle_marker_617335bf185474d7af8c8a1ab96d28c1 = L.circleMarker(
+                [-33.81649, -70.7404449],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3000cfff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_da5a2578068a688cc5665b594af5cde0);
+        
+    
+        var popup_bdc35912170271cde6f961e1d7cd9ed3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_92d6a7dfc2ff6399d54e7ab45d6984d3 = $(`<div id="html_92d6a7dfc2ff6399d54e7ab45d6984d3" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 6.072776149374099</div>`)[0];
+                popup_bdc35912170271cde6f961e1d7cd9ed3.setContent(html_92d6a7dfc2ff6399d54e7ab45d6984d3);
+            
+        
+
+        circle_marker_617335bf185474d7af8c8a1ab96d28c1.bindPopup(popup_bdc35912170271cde6f961e1d7cd9ed3)
+        ;
+
+        
+    
+    
+            var circle_marker_5a9916582f00883e529c9149074c5f40 = L.circleMarker(
+                [-33.81649, -70.7404449],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3000cfff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_da5a2578068a688cc5665b594af5cde0);
+        
+    
+        var popup_7292a710b8ad5b81a10c0c57b1b017f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1abf821a9e841022400fe1de963445bc = $(`<div id="html_1abf821a9e841022400fe1de963445bc" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 6.072776149374099</div>`)[0];
+                popup_7292a710b8ad5b81a10c0c57b1b017f5.setContent(html_1abf821a9e841022400fe1de963445bc);
+            
+        
+
+        circle_marker_5a9916582f00883e529c9149074c5f40.bindPopup(popup_7292a710b8ad5b81a10c0c57b1b017f5)
+        ;
+
+        
+    
+    
+            var circle_marker_85fac9463342046b45ab99bd0b84f4b4 = L.circleMarker(
+                [-33.81649, -70.7404449],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3200ceff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_da5a2578068a688cc5665b594af5cde0);
+        
+    
+        var popup_e05005173665e2adff90a7b0363a4727 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54405ba618fca2ec3f0f87c282d031dc = $(`<div id="html_54405ba618fca2ec3f0f87c282d031dc" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 6.2590250504913225</div>`)[0];
+                popup_e05005173665e2adff90a7b0363a4727.setContent(html_54405ba618fca2ec3f0f87c282d031dc);
+            
+        
+
+        circle_marker_85fac9463342046b45ab99bd0b84f4b4.bindPopup(popup_e05005173665e2adff90a7b0363a4727)
+        ;
+
+        
+    
+    
+            var circle_marker_fadb6b3e0d814ce232fde984ef145a90 = L.circleMarker(
+                [-33.7980654, -70.7309127],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0e00f1ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_da5a2578068a688cc5665b594af5cde0);
+        
+    
+        var popup_a54590bfee6b8955166eb937085c409c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9eb77a9cc626b6f4d1091303c73c6397 = $(`<div id="html_9eb77a9cc626b6f4d1091303c73c6397" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 1.8242069899412865</div>`)[0];
+                popup_a54590bfee6b8955166eb937085c409c.setContent(html_9eb77a9cc626b6f4d1091303c73c6397);
+            
+        
+
+        circle_marker_fadb6b3e0d814ce232fde984ef145a90.bindPopup(popup_a54590bfee6b8955166eb937085c409c)
+        ;
+
+        
+    
+    
+            var circle_marker_4698b8bec25fff938f22e8603224f5dd = L.circleMarker(
+                [-33.81649, -70.7404449],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3200ceff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_da5a2578068a688cc5665b594af5cde0);
+        
+    
+        var popup_217d41f3070005eaea12eeb705ed685c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f1d8088de15041d18e921b16cee65c7 = $(`<div id="html_6f1d8088de15041d18e921b16cee65c7" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 6.2531985689680125</div>`)[0];
+                popup_217d41f3070005eaea12eeb705ed685c.setContent(html_6f1d8088de15041d18e921b16cee65c7);
+            
+        
+
+        circle_marker_4698b8bec25fff938f22e8603224f5dd.bindPopup(popup_217d41f3070005eaea12eeb705ed685c)
+        ;
+
+        
+    
+    
+            var circle_marker_d0c05fc78a9c764377c5fcdc2aa23eb4 = L.circleMarker(
+                [-33.8036275, -70.7165848],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1000f0ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_da5a2578068a688cc5665b594af5cde0);
+        
+    
+        var popup_a850a28b1c2a689381a6f364d96e46bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_274115e3a82c766923860fcf86253454 = $(`<div id="html_274115e3a82c766923860fcf86253454" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 1.9923435468158823</div>`)[0];
+                popup_a850a28b1c2a689381a6f364d96e46bd.setContent(html_274115e3a82c766923860fcf86253454);
+            
+        
+
+        circle_marker_d0c05fc78a9c764377c5fcdc2aa23eb4.bindPopup(popup_a850a28b1c2a689381a6f364d96e46bd)
+        ;
+
+        
+    
+    
+            var circle_marker_29adba74103b03257d62d0a8a1591377 = L.circleMarker(
+                [-33.8424487, -70.846245],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0800f7ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_da5a2578068a688cc5665b594af5cde0);
+        
+    
+        var popup_a52a329e1df79f32379a31218399b7b2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d775817b6c66edac721f14db0d8928c = $(`<div id="html_6d775817b6c66edac721f14db0d8928c" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 1.0690947947645355</div>`)[0];
+                popup_a52a329e1df79f32379a31218399b7b2.setContent(html_6d775817b6c66edac721f14db0d8928c);
+            
+        
+
+        circle_marker_29adba74103b03257d62d0a8a1591377.bindPopup(popup_a52a329e1df79f32379a31218399b7b2)
+        ;
+
+        
+    
+    
+            var circle_marker_33b94ea9cede466351796b03d0dab33c = L.circleMarker(
+                [-33.8036275, -70.7165848],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1600e9ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_da5a2578068a688cc5665b594af5cde0);
+        
+    
+        var popup_adfa14d0ea70d6eff54ae3ecaf0b3c57 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_789518bc3ad61a3b7517affdd95fa0c8 = $(`<div id="html_789518bc3ad61a3b7517affdd95fa0c8" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 2.83875</div>`)[0];
+                popup_adfa14d0ea70d6eff54ae3ecaf0b3c57.setContent(html_789518bc3ad61a3b7517affdd95fa0c8);
+            
+        
+
+        circle_marker_33b94ea9cede466351796b03d0dab33c.bindPopup(popup_adfa14d0ea70d6eff54ae3ecaf0b3c57)
+        ;
+
+        
+    
+    
+            var circle_marker_a45f5be297a6898375421035b91e05e9 = L.circleMarker(
+                [-33.8705586, -70.7325178],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1300edff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_da5a2578068a688cc5665b594af5cde0);
+        
+    
+        var popup_2ab695fad6493cf8c0a644126a1e45e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d8e80cc7a01949b0100f459f2adae453 = $(`<div id="html_d8e80cc7a01949b0100f459f2adae453" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 2.3804</div>`)[0];
+                popup_2ab695fad6493cf8c0a644126a1e45e9.setContent(html_d8e80cc7a01949b0100f459f2adae453);
+            
+        
+
+        circle_marker_a45f5be297a6898375421035b91e05e9.bindPopup(popup_2ab695fad6493cf8c0a644126a1e45e9)
+        ;
+
+        
+    
+    
+            var circle_marker_941f048987f2f19df33f1f60be908529 = L.circleMarker(
+                [-33.8247834, -70.736888],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3300cdff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_da5a2578068a688cc5665b594af5cde0);
+        
+    
+        var popup_a0c63a8291b0c389fa74bd0128563d62 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d72997fff6ea3dff858e39cb0b28a3be = $(`<div id="html_d72997fff6ea3dff858e39cb0b28a3be" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 6.386</div>`)[0];
+                popup_a0c63a8291b0c389fa74bd0128563d62.setContent(html_d72997fff6ea3dff858e39cb0b28a3be);
+            
+        
+
+        circle_marker_941f048987f2f19df33f1f60be908529.bindPopup(popup_a0c63a8291b0c389fa74bd0128563d62)
+        ;
+
+        
+    
+    
+            var circle_marker_124cec61a0e16196b6b1b7fb3affb40b = L.circleMarker(
+                [-33.8722886, -70.9118923],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0400fbff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_da5a2578068a688cc5665b594af5cde0);
+        
+    
+        var popup_373b7395c097e75d9d7e967e3e9ec44e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_276a7f0e6f5ae3c4923fd192b53c4de8 = $(`<div id="html_276a7f0e6f5ae3c4923fd192b53c4de8" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 0.554227331281894</div>`)[0];
+                popup_373b7395c097e75d9d7e967e3e9ec44e.setContent(html_276a7f0e6f5ae3c4923fd192b53c4de8);
+            
+        
+
+        circle_marker_124cec61a0e16196b6b1b7fb3affb40b.bindPopup(popup_373b7395c097e75d9d7e967e3e9ec44e)
+        ;
+
+        
+    
+    
+            var circle_marker_d73c83bb41f3cd6b75950bfbea195eb5 = L.circleMarker(
+                [-33.81649, -70.7404449],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3000d0ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_da5a2578068a688cc5665b594af5cde0);
+        
+    
+        var popup_aa2a803a7daa1bc91617bf06046c68a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_88d996069089f425e380056a780f3b4b = $(`<div id="html_88d996069089f425e380056a780f3b4b" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 5.987926742905836</div>`)[0];
+                popup_aa2a803a7daa1bc91617bf06046c68a4.setContent(html_88d996069089f425e380056a780f3b4b);
+            
+        
+
+        circle_marker_d73c83bb41f3cd6b75950bfbea195eb5.bindPopup(popup_aa2a803a7daa1bc91617bf06046c68a4)
+        ;
+
+        
+    
+    
+            var circle_marker_bbd45e1449d964093848a32316de7c06 = L.circleMarker(
+                [-33.8081235, -70.7363681],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2400dbff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_da5a2578068a688cc5665b594af5cde0);
+        
+    
+        var popup_6b15b561db0df2fbfc39e2cac9f9063d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e237ceb0fdc932f254a3fa2869e35b18 = $(`<div id="html_e237ceb0fdc932f254a3fa2869e35b18" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 4.5210505432175205</div>`)[0];
+                popup_6b15b561db0df2fbfc39e2cac9f9063d.setContent(html_e237ceb0fdc932f254a3fa2869e35b18);
+            
+        
+
+        circle_marker_bbd45e1449d964093848a32316de7c06.bindPopup(popup_6b15b561db0df2fbfc39e2cac9f9063d)
+        ;
+
+        
+    
+    
+            var circle_marker_ec94106c4ee119367bfb2fbd3d61a796 = L.circleMarker(
+                [-33.81649, -70.7404449],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3000d0ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_da5a2578068a688cc5665b594af5cde0);
+        
+    
+        var popup_8ca480e9fcfe9905490132349d56e59a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c6392cdb89a57ac364f1afcd8faa0ddf = $(`<div id="html_c6392cdb89a57ac364f1afcd8faa0ddf" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 5.9875</div>`)[0];
+                popup_8ca480e9fcfe9905490132349d56e59a.setContent(html_c6392cdb89a57ac364f1afcd8faa0ddf);
+            
+        
+
+        circle_marker_ec94106c4ee119367bfb2fbd3d61a796.bindPopup(popup_8ca480e9fcfe9905490132349d56e59a)
+        ;
+
+        
+    
+    
+            var circle_marker_90a2a66cfb894a6da6136427fda75b40 = L.circleMarker(
+                [-33.9072242, -70.7400209],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0800f7ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_da5a2578068a688cc5665b594af5cde0);
+        
+    
+        var popup_372505f47858d0c47b23ef64fdc79556 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9097a62243eb0f70c17bcfe84cde15fe = $(`<div id="html_9097a62243eb0f70c17bcfe84cde15fe" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 1.0105877684839164</div>`)[0];
+                popup_372505f47858d0c47b23ef64fdc79556.setContent(html_9097a62243eb0f70c17bcfe84cde15fe);
+            
+        
+
+        circle_marker_90a2a66cfb894a6da6136427fda75b40.bindPopup(popup_372505f47858d0c47b23ef64fdc79556)
+        ;
+
+        
+    
+    
+            var circle_marker_2ca06bb85090ea4f789e1dbc6894838f = L.circleMarker(
+                [-33.7798935, -70.650857],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3f00c0ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_da5a2578068a688cc5665b594af5cde0);
+        
+    
+        var popup_03fa3930adc2f977bc52950bc8c1123c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a22ccce9a1c3f91afe14b2e1ca6cc26 = $(`<div id="html_1a22ccce9a1c3f91afe14b2e1ca6cc26" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 7.96</div>`)[0];
+                popup_03fa3930adc2f977bc52950bc8c1123c.setContent(html_1a22ccce9a1c3f91afe14b2e1ca6cc26);
+            
+        
+
+        circle_marker_2ca06bb85090ea4f789e1dbc6894838f.bindPopup(popup_03fa3930adc2f977bc52950bc8c1123c)
+        ;
+
+        
+    
+    
+            var circle_marker_5c85691b8a7eee94ef072bec2d934554 = L.circleMarker(
+                [-33.797, -70.723],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1700e8ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_da5a2578068a688cc5665b594af5cde0);
+        
+    
+        var popup_9c6b33be7021cd0e4975624d5e1f4cb7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a53f7dfe80e243f98c19930181e3dfd9 = $(`<div id="html_a53f7dfe80e243f98c19930181e3dfd9" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 2.8870292887029287</div>`)[0];
+                popup_9c6b33be7021cd0e4975624d5e1f4cb7.setContent(html_a53f7dfe80e243f98c19930181e3dfd9);
+            
+        
+
+        circle_marker_5c85691b8a7eee94ef072bec2d934554.bindPopup(popup_9c6b33be7021cd0e4975624d5e1f4cb7)
+        ;
+
+        
+    
+    
+            var circle_marker_b815ccefdc34400946844543790b2d8a = L.circleMarker(
+                [-33.8081642, -70.7363707],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1700e8ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_da5a2578068a688cc5665b594af5cde0);
+        
+    
+        var popup_f5d45910e892996cfcf4b0fae01e2f7a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b182865c12802805d44e6b9add450095 = $(`<div id="html_b182865c12802805d44e6b9add450095" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 2.910351591759428</div>`)[0];
+                popup_f5d45910e892996cfcf4b0fae01e2f7a.setContent(html_b182865c12802805d44e6b9add450095);
+            
+        
+
+        circle_marker_b815ccefdc34400946844543790b2d8a.bindPopup(popup_f5d45910e892996cfcf4b0fae01e2f7a)
+        ;
+
+        
+    
+    
+            var circle_marker_a1a3fa07317df9bdfc5ccbe258dba12d = L.circleMarker(
+                [-33.871, -70.733],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1300edff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_da5a2578068a688cc5665b594af5cde0);
+        
+    
+        var popup_50b49498de1bf7ea0f768e69eed46af0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a3efdcd2ba05b3d0421235ed07a3bf04 = $(`<div id="html_a3efdcd2ba05b3d0421235ed07a3bf04" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 2.3804</div>`)[0];
+                popup_50b49498de1bf7ea0f768e69eed46af0.setContent(html_a3efdcd2ba05b3d0421235ed07a3bf04);
+            
+        
+
+        circle_marker_a1a3fa07317df9bdfc5ccbe258dba12d.bindPopup(popup_50b49498de1bf7ea0f768e69eed46af0)
+        ;
+
+        
+    
+    
+            var circle_marker_9d1d6f1f195c3383acccdba38e56b45d = L.circleMarker(
+                [-33.838482755995145, -70.84121704101561],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1400ebff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_da5a2578068a688cc5665b594af5cde0);
+        
+    
+        var popup_d0bca04646bc53fbc7eb58eb06e24bb2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_250d7573b9ca43a8f9091cf4894edcdf = $(`<div id="html_250d7573b9ca43a8f9091cf4894edcdf" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 2.572196454431189</div>`)[0];
+                popup_d0bca04646bc53fbc7eb58eb06e24bb2.setContent(html_250d7573b9ca43a8f9091cf4894edcdf);
+            
+        
+
+        circle_marker_9d1d6f1f195c3383acccdba38e56b45d.bindPopup(popup_d0bca04646bc53fbc7eb58eb06e24bb2)
+        ;
+
+        
+    
+    
+            var circle_marker_e7a518b53fd17bd4aa202cee8d59b86e = L.circleMarker(
+                [-33.8663791, -70.8651329],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b00f4ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_da5a2578068a688cc5665b594af5cde0);
+        
+    
+        var popup_894c6ec1494d347c5e29f9eb0eec5533 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b80e6ff6784b9dfe0165ae828b2a239f = $(`<div id="html_b80e6ff6784b9dfe0165ae828b2a239f" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 1.4562109216070191</div>`)[0];
+                popup_894c6ec1494d347c5e29f9eb0eec5533.setContent(html_b80e6ff6784b9dfe0165ae828b2a239f);
+            
+        
+
+        circle_marker_e7a518b53fd17bd4aa202cee8d59b86e.bindPopup(popup_894c6ec1494d347c5e29f9eb0eec5533)
+        ;
+
+        
+    
+    
+            var circle_marker_2a0f7af806c72cbee78b54c9da6070f2 = L.circleMarker(
+                [-33.79806, -70.73091],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0e00f1ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_da5a2578068a688cc5665b594af5cde0);
+        
+    
+        var popup_55f7aea16bf46abd525d007aab1abcbe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d5f7521ee695495d8f34d2aa56b8192b = $(`<div id="html_d5f7521ee695495d8f34d2aa56b8192b" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 1.8256481481481484</div>`)[0];
+                popup_55f7aea16bf46abd525d007aab1abcbe.setContent(html_d5f7521ee695495d8f34d2aa56b8192b);
+            
+        
+
+        circle_marker_2a0f7af806c72cbee78b54c9da6070f2.bindPopup(popup_55f7aea16bf46abd525d007aab1abcbe)
+        ;
+
+        
+    
+    
+            var circle_marker_390dab5aeaa27d10faacf9cc27e2e95f = L.circleMarker(
+                [-33.8035579, -70.725973],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1700e8ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_da5a2578068a688cc5665b594af5cde0);
+        
+    
+        var popup_423fd3d51094024daa07a437c3ba2b47 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0d38f584baf99b55a8de2bb516d8993 = $(`<div id="html_d0d38f584baf99b55a8de2bb516d8993" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 2.921470766905044</div>`)[0];
+                popup_423fd3d51094024daa07a437c3ba2b47.setContent(html_d0d38f584baf99b55a8de2bb516d8993);
+            
+        
+
+        circle_marker_390dab5aeaa27d10faacf9cc27e2e95f.bindPopup(popup_423fd3d51094024daa07a437c3ba2b47)
+        ;
+
+        
+    
+    
+            feature_group_sub_group_da5a2578068a688cc5665b594af5cde0.addTo(map_54026d3de3f76eddc2f66ac0d7565476);
+        
+    
+            var feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693 = L.featureGroup.subGroup(
+                feature_group_f2a8064cc1dd2fcb033c1a2473a20907
+            );
+        
+    
+            var circle_marker_9370cc1aa3fcb53b60d585a59e6569ed = L.circleMarker(
+                [-33.850459, -70.7006264],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#148a00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_01bd0f77d4c58f27a8696896e6ace8b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8b62c4d3aa650cdc869a87c5eea61dc1 = $(`<div id="html_8b62c4d3aa650cdc869a87c5eea61dc1" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1578125</div>`)[0];
+                popup_01bd0f77d4c58f27a8696896e6ace8b7.setContent(html_8b62c4d3aa650cdc869a87c5eea61dc1);
+            
+        
+
+        circle_marker_9370cc1aa3fcb53b60d585a59e6569ed.bindPopup(popup_01bd0f77d4c58f27a8696896e6ace8b7)
+        ;
+
+        
+    
+    
+            var circle_marker_d2d34de1d46ea3175446fddeabf88d75 = L.circleMarker(
+                [-33.8662391, -70.7415196],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99cd00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_b82efc16e6cd35ef3b65650d309a39cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14a278e70e427cbe50415ddaf49c3242 = $(`<div id="html_14a278e70e427cbe50415ddaf49c3242" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 1.2007874015748032</div>`)[0];
+                popup_b82efc16e6cd35ef3b65650d309a39cb.setContent(html_14a278e70e427cbe50415ddaf49c3242);
+            
+        
+
+        circle_marker_d2d34de1d46ea3175446fddeabf88d75.bindPopup(popup_b82efc16e6cd35ef3b65650d309a39cb)
+        ;
+
+        
+    
+    
+            var circle_marker_210de12e7f6e3afbf3808042dd7e319f = L.circleMarker(
+                [-33.7592945, -70.6677761],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f9000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_36cd4e61f39ae29c1b7796e3eec32b94 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2710bf1d77e1ef878d83742a3ea885da = $(`<div id="html_2710bf1d77e1ef878d83742a3ea885da" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.2470588235294117</div>`)[0];
+                popup_36cd4e61f39ae29c1b7796e3eec32b94.setContent(html_2710bf1d77e1ef878d83742a3ea885da);
+            
+        
+
+        circle_marker_210de12e7f6e3afbf3808042dd7e319f.bindPopup(popup_36cd4e61f39ae29c1b7796e3eec32b94)
+        ;
+
+        
+    
+    
+            var circle_marker_f356caec5044269ed8098e670c9df7b2 = L.circleMarker(
+                [-33.8261645, -70.7480591],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99cc00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_8499dbf2986b6cc78dac7a28b7a21216 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe95929bdcc72906bd1ae7dcf280d32c = $(`<div id="html_fe95929bdcc72906bd1ae7dcf280d32c" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 1.1999</div>`)[0];
+                popup_8499dbf2986b6cc78dac7a28b7a21216.setContent(html_fe95929bdcc72906bd1ae7dcf280d32c);
+            
+        
+
+        circle_marker_f356caec5044269ed8098e670c9df7b2.bindPopup(popup_8499dbf2986b6cc78dac7a28b7a21216)
+        ;
+
+        
+    
+    
+            var circle_marker_0f5f034f00f2b0823c790c197bcd3eeb = L.circleMarker(
+                [-33.800989, -70.7423274],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d9ec00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_961824953ac6e5eee60c1be6a0011eac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4b7b1396da5b7f5c404e1ad383a6ce9 = $(`<div id="html_b4b7b1396da5b7f5c404e1ad383a6ce9" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 1.7</div>`)[0];
+                popup_961824953ac6e5eee60c1be6a0011eac.setContent(html_b4b7b1396da5b7f5c404e1ad383a6ce9);
+            
+        
+
+        circle_marker_0f5f034f00f2b0823c790c197bcd3eeb.bindPopup(popup_961824953ac6e5eee60c1be6a0011eac)
+        ;
+
+        
+    
+    
+            var circle_marker_40d26de30502d6137d119fc663159b32 = L.circleMarker(
+                [-33.90968, -70.76114],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#329900ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_f3ea593d7ddde5d554714a64f3495075 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc9bd4e8bba8d083cbdd332b95dc456d = $(`<div id="html_dc9bd4e8bba8d083cbdd332b95dc456d" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.39725</div>`)[0];
+                popup_f3ea593d7ddde5d554714a64f3495075.setContent(html_dc9bd4e8bba8d083cbdd332b95dc456d);
+            
+        
+
+        circle_marker_40d26de30502d6137d119fc663159b32.bindPopup(popup_f3ea593d7ddde5d554714a64f3495075)
+        ;
+
+        
+    
+    
+            var circle_marker_67449a7c79a953c782ee03b5ac2d22bb = L.circleMarker(
+                [-33.8220447, -70.7500603],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_ecf1845989a2514c3c68dcaaa8c50a0b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e665fd89b3cffe2d775fc815c18e312 = $(`<div id="html_5e665fd89b3cffe2d775fc815c18e312" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 1.99982782369146</div>`)[0];
+                popup_ecf1845989a2514c3c68dcaaa8c50a0b.setContent(html_5e665fd89b3cffe2d775fc815c18e312);
+            
+        
+
+        circle_marker_67449a7c79a953c782ee03b5ac2d22bb.bindPopup(popup_ecf1845989a2514c3c68dcaaa8c50a0b)
+        ;
+
+        
+    
+    
+            var circle_marker_a4a8c0fee44a4a683d1d41d631c455e5 = L.circleMarker(
+                [-33.799691, -70.742683],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d7eb00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_d8ab3908f96c4ed7b17aa2ec857957b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18cbd04af471ce3c3732d6e68c402c5b = $(`<div id="html_18cbd04af471ce3c3732d6e68c402c5b" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 1.68</div>`)[0];
+                popup_d8ab3908f96c4ed7b17aa2ec857957b0.setContent(html_18cbd04af471ce3c3732d6e68c402c5b);
+            
+        
+
+        circle_marker_a4a8c0fee44a4a683d1d41d631c455e5.bindPopup(popup_d8ab3908f96c4ed7b17aa2ec857957b0)
+        ;
+
+        
+    
+    
+            var circle_marker_edbeb5edd8c1463af7e5bbf5a76eba26 = L.circleMarker(
+                [-33.770144, -70.662642],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#219100ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_835a8bcd57026895210c97bfdf25e6a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_444239ca9d4f3119c4c8578ba7b065db = $(`<div id="html_444239ca9d4f3119c4c8578ba7b065db" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.2603174603174603</div>`)[0];
+                popup_835a8bcd57026895210c97bfdf25e6a6.setContent(html_444239ca9d4f3119c4c8578ba7b065db);
+            
+        
+
+        circle_marker_edbeb5edd8c1463af7e5bbf5a76eba26.bindPopup(popup_835a8bcd57026895210c97bfdf25e6a6)
+        ;
+
+        
+    
+    
+            var circle_marker_864410b21200314ebced3766b5d952ab = L.circleMarker(
+                [-33.8422423, -70.7658109],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#158b00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_ebfd663f9181e40af5b1459244407a64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf8f37f8d6d6d4fd7bd15cf477eb47b4 = $(`<div id="html_cf8f37f8d6d6d4fd7bd15cf477eb47b4" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.16712</div>`)[0];
+                popup_ebfd663f9181e40af5b1459244407a64.setContent(html_cf8f37f8d6d6d4fd7bd15cf477eb47b4);
+            
+        
+
+        circle_marker_864410b21200314ebced3766b5d952ab.bindPopup(popup_ebfd663f9181e40af5b1459244407a64)
+        ;
+
+        
+    
+    
+            var circle_marker_02e29f05b3048b6346ce4e8b455718b1 = L.circleMarker(
+                [-33.82616448, -70.74805914],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99cc00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_c927c0224699d60e0a62d66ed9cbc2a9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ef0e4077f721e3d04e8ca848a719c12 = $(`<div id="html_0ef0e4077f721e3d04e8ca848a719c12" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 1.1999</div>`)[0];
+                popup_c927c0224699d60e0a62d66ed9cbc2a9.setContent(html_0ef0e4077f721e3d04e8ca848a719c12);
+            
+        
+
+        circle_marker_02e29f05b3048b6346ce4e8b455718b1.bindPopup(popup_c927c0224699d60e0a62d66ed9cbc2a9)
+        ;
+
+        
+    
+    
+            var circle_marker_2e0189396fda618d44812c4e8b59fe67 = L.circleMarker(
+                [-33.82556825, -70.76913007],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#309800ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_876c21643c4638b4fab8f98427c74f1a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87893cb680cd87a1a79ad84c3042f0bf = $(`<div id="html_87893cb680cd87a1a79ad84c3042f0bf" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.3817966903073285</div>`)[0];
+                popup_876c21643c4638b4fab8f98427c74f1a.setContent(html_87893cb680cd87a1a79ad84c3042f0bf);
+            
+        
+
+        circle_marker_2e0189396fda618d44812c4e8b59fe67.bindPopup(popup_876c21643c4638b4fab8f98427c74f1a)
+        ;
+
+        
+    
+    
+            var circle_marker_e38bd381d44a0e7d252574d763d8f342 = L.circleMarker(
+                [-33.8587712, -70.7699449],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#209000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_bfd93a4308469d873460453f06c43f66 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b3c11a4dd465c0590ba62413b7516a9 = $(`<div id="html_3b3c11a4dd465c0590ba62413b7516a9" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.2533934252386002</div>`)[0];
+                popup_bfd93a4308469d873460453f06c43f66.setContent(html_3b3c11a4dd465c0590ba62413b7516a9);
+            
+        
+
+        circle_marker_e38bd381d44a0e7d252574d763d8f342.bindPopup(popup_bfd93a4308469d873460453f06c43f66)
+        ;
+
+        
+    
+    
+            var circle_marker_e09abf201ecd33bf2f55954d91d1406d = L.circleMarker(
+                [-33.815642, -70.739141],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9fd000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_80bf3dae6251decf930a3b3ca839bef7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e2c17c2d00bc1dcf8471a0ee58605495 = $(`<div id="html_e2c17c2d00bc1dcf8471a0ee58605495" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 1.25</div>`)[0];
+                popup_80bf3dae6251decf930a3b3ca839bef7.setContent(html_e2c17c2d00bc1dcf8471a0ee58605495);
+            
+        
+
+        circle_marker_e09abf201ecd33bf2f55954d91d1406d.bindPopup(popup_80bf3dae6251decf930a3b3ca839bef7)
+        ;
+
+        
+    
+    
+            var circle_marker_72b984ebf0a7a83b6c08b68b9fe68abe = L.circleMarker(
+                [-33.7787431, -70.7440534],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_8e09f31a2db9f14efe4cf5ba26f2a293 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_86636384f81996982becb874cbcebab8 = $(`<div id="html_86636384f81996982becb874cbcebab8" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.0001774622892635</div>`)[0];
+                popup_8e09f31a2db9f14efe4cf5ba26f2a293.setContent(html_86636384f81996982becb874cbcebab8);
+            
+        
+
+        circle_marker_72b984ebf0a7a83b6c08b68b9fe68abe.bindPopup(popup_8e09f31a2db9f14efe4cf5ba26f2a293)
+        ;
+
+        
+    
+    
+            var circle_marker_14ff93cbaab35f1f33edb8fc66169d8b = L.circleMarker(
+                [-33.8183104, -70.7454484],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#61b100ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_2a8da7d5f3f8cc36e9d03ed8e37e0c19 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9dd16e514426d1499f429b5fcde97ce8 = $(`<div id="html_9dd16e514426d1499f429b5fcde97ce8" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.7619047619047619</div>`)[0];
+                popup_2a8da7d5f3f8cc36e9d03ed8e37e0c19.setContent(html_9dd16e514426d1499f429b5fcde97ce8);
+            
+        
+
+        circle_marker_14ff93cbaab35f1f33edb8fc66169d8b.bindPopup(popup_2a8da7d5f3f8cc36e9d03ed8e37e0c19)
+        ;
+
+        
+    
+    
+            var circle_marker_c84314a271d1e9055ad0e7976f330e2b = L.circleMarker(
+                [-33.8258896, -70.7578009],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5aad00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_96061e316b8b060aa2554d730ad1128f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c479ff9a13c11d2856d2686c461d379 = $(`<div id="html_2c479ff9a13c11d2856d2686c461d379" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.706639847384415</div>`)[0];
+                popup_96061e316b8b060aa2554d730ad1128f.setContent(html_2c479ff9a13c11d2856d2686c461d379);
+            
+        
+
+        circle_marker_c84314a271d1e9055ad0e7976f330e2b.bindPopup(popup_96061e316b8b060aa2554d730ad1128f)
+        ;
+
+        
+    
+    
+            var circle_marker_e8103fc85102d712767faf69e0912242 = L.circleMarker(
+                [-33.8106352, -70.7498492],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#71b800ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_e0767f0dfab8d35ed0da670f083e0716 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4343a0b5a4aba9e9bbd64a611d3a2e55 = $(`<div id="html_4343a0b5a4aba9e9bbd64a611d3a2e55" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.88575</div>`)[0];
+                popup_e0767f0dfab8d35ed0da670f083e0716.setContent(html_4343a0b5a4aba9e9bbd64a611d3a2e55);
+            
+        
+
+        circle_marker_e8103fc85102d712767faf69e0912242.bindPopup(popup_e0767f0dfab8d35ed0da670f083e0716)
+        ;
+
+        
+    
+    
+            var circle_marker_7ea9f0cfb169f1b5833f7bdb9016f602 = L.circleMarker(
+                [-33.770144, -70.662642],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#219100ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_b57de8f4bd4b8fff7ac84dfca542ae64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a5e8f66f730748102910d9b33fd4263 = $(`<div id="html_0a5e8f66f730748102910d9b33fd4263" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.2603174603174603</div>`)[0];
+                popup_b57de8f4bd4b8fff7ac84dfca542ae64.setContent(html_0a5e8f66f730748102910d9b33fd4263);
+            
+        
+
+        circle_marker_7ea9f0cfb169f1b5833f7bdb9016f602.bindPopup(popup_b57de8f4bd4b8fff7ac84dfca542ae64)
+        ;
+
+        
+    
+    
+            var circle_marker_066add91dc6bc84d968ac875833c35fe = L.circleMarker(
+                [-33.8055123, -70.7091927],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#63b100ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_15fd1190e380c9f0ffbf60ac5fa1c230 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_185972e2cb52cf5f71ca621b850020a2 = $(`<div id="html_185972e2cb52cf5f71ca621b850020a2" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.7763142857142857</div>`)[0];
+                popup_15fd1190e380c9f0ffbf60ac5fa1c230.setContent(html_185972e2cb52cf5f71ca621b850020a2);
+            
+        
+
+        circle_marker_066add91dc6bc84d968ac875833c35fe.bindPopup(popup_15fd1190e380c9f0ffbf60ac5fa1c230)
+        ;
+
+        
+    
+    
+            var circle_marker_89dc264e04a06e0b48cf14581d6b79e4 = L.circleMarker(
+                [-33.8698919, -70.8438351],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#269300ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_0b3fe48c5dbc301d4109ee2d5b2dd3e6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a94a12a3a0e6698cdc55bdd3c9aa27d = $(`<div id="html_0a94a12a3a0e6698cdc55bdd3c9aa27d" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.3</div>`)[0];
+                popup_0b3fe48c5dbc301d4109ee2d5b2dd3e6.setContent(html_0a94a12a3a0e6698cdc55bdd3c9aa27d);
+            
+        
+
+        circle_marker_89dc264e04a06e0b48cf14581d6b79e4.bindPopup(popup_0b3fe48c5dbc301d4109ee2d5b2dd3e6)
+        ;
+
+        
+    
+    
+            var circle_marker_9bc61e86ecd11e644d2c9617d7b2fba8 = L.circleMarker(
+                [-33.8430216, -70.8080418],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b3d900ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_dbf9b6c74db02956eb17591d51d8857b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33995adce22308114585a773f7096ce9 = $(`<div id="html_33995adce22308114585a773f7096ce9" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 1.4</div>`)[0];
+                popup_dbf9b6c74db02956eb17591d51d8857b.setContent(html_33995adce22308114585a773f7096ce9);
+            
+        
+
+        circle_marker_9bc61e86ecd11e644d2c9617d7b2fba8.bindPopup(popup_dbf9b6c74db02956eb17591d51d8857b)
+        ;
+
+        
+    
+    
+            var circle_marker_41a4fc9e93c06d5b9ef908c095bf59d8 = L.circleMarker(
+                [-33.81243886, -70.72782679],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#61b100ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_f440daec2611c9565af6c322e6c94751 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0118628e844d9ce7a3ee5f6c5ad385fc = $(`<div id="html_0118628e844d9ce7a3ee5f6c5ad385fc" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.7651895842850617</div>`)[0];
+                popup_f440daec2611c9565af6c322e6c94751.setContent(html_0118628e844d9ce7a3ee5f6c5ad385fc);
+            
+        
+
+        circle_marker_41a4fc9e93c06d5b9ef908c095bf59d8.bindPopup(popup_f440daec2611c9565af6c322e6c94751)
+        ;
+
+        
+    
+    
+            var circle_marker_f7f5ed1a5f0cf266658583f0c927a0bc = L.circleMarker(
+                [-33.85583, -70.742592],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#259300ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_8aff51a58a4082b80ee7a2e0fe5f1ca9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_81076a65c79a7751561755f25d58798a = $(`<div id="html_81076a65c79a7751561755f25d58798a" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.2915887850467289</div>`)[0];
+                popup_8aff51a58a4082b80ee7a2e0fe5f1ca9.setContent(html_81076a65c79a7751561755f25d58798a);
+            
+        
+
+        circle_marker_f7f5ed1a5f0cf266658583f0c927a0bc.bindPopup(popup_8aff51a58a4082b80ee7a2e0fe5f1ca9)
+        ;
+
+        
+    
+    
+            var circle_marker_150e0d41b2d2abca728e31f7029a1a1e = L.circleMarker(
+                [-33.8915286, -70.7355449],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#309800ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_e0f12895321801bc80321b7a9108fd61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9981f1abb585caf0d518148da846857 = $(`<div id="html_b9981f1abb585caf0d518148da846857" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.3764687659999225</div>`)[0];
+                popup_e0f12895321801bc80321b7a9108fd61.setContent(html_b9981f1abb585caf0d518148da846857);
+            
+        
+
+        circle_marker_150e0d41b2d2abca728e31f7029a1a1e.bindPopup(popup_e0f12895321801bc80321b7a9108fd61)
+        ;
+
+        
+    
+    
+            var circle_marker_58b117511d198f3fe19b8d52eca50002 = L.circleMarker(
+                [-33.770144, -70.662642],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#219100ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_23c257abb3474cd7f4298773cbc26278 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_31e1315a6c2a594d99d60aa7a4ea8390 = $(`<div id="html_31e1315a6c2a594d99d60aa7a4ea8390" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.2603174603174603</div>`)[0];
+                popup_23c257abb3474cd7f4298773cbc26278.setContent(html_31e1315a6c2a594d99d60aa7a4ea8390);
+            
+        
+
+        circle_marker_58b117511d198f3fe19b8d52eca50002.bindPopup(popup_23c257abb3474cd7f4298773cbc26278)
+        ;
+
+        
+    
+    
+            var circle_marker_bdee08d9ba0d494f9e976206b842444f = L.circleMarker(
+                [-33.8587712, -70.7699449],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1d8f00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_0b470ed9c7ec0cbcd47e26327580d4fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb70e4d02517aa6e3dc22641809eacb9 = $(`<div id="html_eb70e4d02517aa6e3dc22641809eacb9" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.2289723539295054</div>`)[0];
+                popup_0b470ed9c7ec0cbcd47e26327580d4fb.setContent(html_eb70e4d02517aa6e3dc22641809eacb9);
+            
+        
+
+        circle_marker_bdee08d9ba0d494f9e976206b842444f.bindPopup(popup_0b470ed9c7ec0cbcd47e26327580d4fb)
+        ;
+
+        
+    
+    
+            var circle_marker_16c866795af73737b1d8fcc05ec565db = L.circleMarker(
+                [-33.8179839, -70.9438276],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#088400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_90edb20a95d5a0a05b5ac97613e35dd2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_96210ef580f0818092e1b83aeafad323 = $(`<div id="html_96210ef580f0818092e1b83aeafad323" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.0665072797538272</div>`)[0];
+                popup_90edb20a95d5a0a05b5ac97613e35dd2.setContent(html_96210ef580f0818092e1b83aeafad323);
+            
+        
+
+        circle_marker_16c866795af73737b1d8fcc05ec565db.bindPopup(popup_90edb20a95d5a0a05b5ac97613e35dd2)
+        ;
+
+        
+    
+    
+            var circle_marker_38a583302ff684bc9a0741d99c9b699f = L.circleMarker(
+                [-33.7979896, -70.709141],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#89c500ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_2feeb987565e5385b3db3f259c402f8b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4144a7431e07beccb21314fad864ba49 = $(`<div id="html_4144a7431e07beccb21314fad864ba49" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 1.074956420685648</div>`)[0];
+                popup_2feeb987565e5385b3db3f259c402f8b.setContent(html_4144a7431e07beccb21314fad864ba49);
+            
+        
+
+        circle_marker_38a583302ff684bc9a0741d99c9b699f.bindPopup(popup_2feeb987565e5385b3db3f259c402f8b)
+        ;
+
+        
+    
+    
+            var circle_marker_b42a505fcd426ebcf57649aa4bf1f563 = L.circleMarker(
+                [-33.8325905, -70.9499092],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0f8700ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_17a32798f6b5dba3c87a695d9544567e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6af636e400985cdf8a98a6b8195b9858 = $(`<div id="html_6af636e400985cdf8a98a6b8195b9858" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1174224008237853</div>`)[0];
+                popup_17a32798f6b5dba3c87a695d9544567e.setContent(html_6af636e400985cdf8a98a6b8195b9858);
+            
+        
+
+        circle_marker_b42a505fcd426ebcf57649aa4bf1f563.bindPopup(popup_17a32798f6b5dba3c87a695d9544567e)
+        ;
+
+        
+    
+    
+            var circle_marker_2a55f3c900439a49e5a6ef6ccdfb9b72 = L.circleMarker(
+                [-33.8587712, -70.7699449],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1d8f00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_a15bdb7d955589e950607644647c20c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e7205b944d3c1f9e607c93811290a459 = $(`<div id="html_e7205b944d3c1f9e607c93811290a459" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.2283546046346886</div>`)[0];
+                popup_a15bdb7d955589e950607644647c20c5.setContent(html_e7205b944d3c1f9e607c93811290a459);
+            
+        
+
+        circle_marker_2a55f3c900439a49e5a6ef6ccdfb9b72.bindPopup(popup_a15bdb7d955589e950607644647c20c5)
+        ;
+
+        
+    
+    
+            var circle_marker_cdb3ba49503b802e6aa9581e01a76914 = L.circleMarker(
+                [-33.8611421, -70.8535368],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#269300ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_4e61e99d1f3a686df52b781738802127 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3dfae7e8285cf598f459d09692eaab4c = $(`<div id="html_3dfae7e8285cf598f459d09692eaab4c" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.3</div>`)[0];
+                popup_4e61e99d1f3a686df52b781738802127.setContent(html_3dfae7e8285cf598f459d09692eaab4c);
+            
+        
+
+        circle_marker_cdb3ba49503b802e6aa9581e01a76914.bindPopup(popup_4e61e99d1f3a686df52b781738802127)
+        ;
+
+        
+    
+    
+            var circle_marker_c18db32afb6430c346f5344cd5ed66de = L.circleMarker(
+                [-33.8200864, -70.7456124],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d0e800ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_cee684c7caaf25615e53e5e7570c3c59 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f79b21497efbce095e6d990fbfb12ed = $(`<div id="html_2f79b21497efbce095e6d990fbfb12ed" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 1.632</div>`)[0];
+                popup_cee684c7caaf25615e53e5e7570c3c59.setContent(html_2f79b21497efbce095e6d990fbfb12ed);
+            
+        
+
+        circle_marker_c18db32afb6430c346f5344cd5ed66de.bindPopup(popup_cee684c7caaf25615e53e5e7570c3c59)
+        ;
+
+        
+    
+    
+            var circle_marker_30112b7b27ab50bfe18c9e328febddd4 = L.circleMarker(
+                [-33.8388127, -70.6395639],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#82c100ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_a11c487e6f69b506b6aba165d2a2ceb0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e9102a4372cf6e3a60e536494fde2aef = $(`<div id="html_e9102a4372cf6e3a60e536494fde2aef" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 1.0208333333333333</div>`)[0];
+                popup_a11c487e6f69b506b6aba165d2a2ceb0.setContent(html_e9102a4372cf6e3a60e536494fde2aef);
+            
+        
+
+        circle_marker_30112b7b27ab50bfe18c9e328febddd4.bindPopup(popup_a11c487e6f69b506b6aba165d2a2ceb0)
+        ;
+
+        
+    
+    
+            var circle_marker_67299b538061b8af38fe19e6836aedb5 = L.circleMarker(
+                [-33.8561922, -70.9279496],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2f9800ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_eec1cd74be5d7f654400f59c9ef325a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5af101c17d87e6ad03159f33d192ac80 = $(`<div id="html_5af101c17d87e6ad03159f33d192ac80" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.375</div>`)[0];
+                popup_eec1cd74be5d7f654400f59c9ef325a7.setContent(html_5af101c17d87e6ad03159f33d192ac80);
+            
+        
+
+        circle_marker_67299b538061b8af38fe19e6836aedb5.bindPopup(popup_eec1cd74be5d7f654400f59c9ef325a7)
+        ;
+
+        
+    
+    
+            var circle_marker_8c70ed2044f7cfa1a979b7f135857a4e = L.circleMarker(
+                [-33.8512643, -70.7255249],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#148a00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_160e0a769579f6f17ef4ec13567681cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a8671a8f6ad3842e1955556ea6d5831 = $(`<div id="html_1a8671a8f6ad3842e1955556ea6d5831" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1608935383546061</div>`)[0];
+                popup_160e0a769579f6f17ef4ec13567681cd.setContent(html_1a8671a8f6ad3842e1955556ea6d5831);
+            
+        
+
+        circle_marker_8c70ed2044f7cfa1a979b7f135857a4e.bindPopup(popup_160e0a769579f6f17ef4ec13567681cd)
+        ;
+
+        
+    
+    
+            var circle_marker_d08f78e879c372c3bbed22eaa0491cde = L.circleMarker(
+                [-33.8533387, -70.726634],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#148a00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_8ceeeb58ba114fd3370f85a27542f13e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_520949e957d8b61154d8a4dfdbf68157 = $(`<div id="html_520949e957d8b61154d8a4dfdbf68157" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1608935383546061</div>`)[0];
+                popup_8ceeeb58ba114fd3370f85a27542f13e.setContent(html_520949e957d8b61154d8a4dfdbf68157);
+            
+        
+
+        circle_marker_d08f78e879c372c3bbed22eaa0491cde.bindPopup(popup_8ceeeb58ba114fd3370f85a27542f13e)
+        ;
+
+        
+    
+    
+            var circle_marker_e4ec3732df324123631013148495775a = L.circleMarker(
+                [-33.8406824, -70.6467737],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#339a00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_03cff19acde2756ae41ecbc2c806847b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa2638caa7ebcb7fcfea9ce1f484a4d5 = $(`<div id="html_aa2638caa7ebcb7fcfea9ce1f484a4d5" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.4</div>`)[0];
+                popup_03cff19acde2756ae41ecbc2c806847b.setContent(html_aa2638caa7ebcb7fcfea9ce1f484a4d5);
+            
+        
+
+        circle_marker_e4ec3732df324123631013148495775a.bindPopup(popup_03cff19acde2756ae41ecbc2c806847b)
+        ;
+
+        
+    
+    
+            var circle_marker_3f0a5c408616f8a9de6ba3fd1e9b7331 = L.circleMarker(
+                [-33.8325905, -70.9499092],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0e8700ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_a729fcb2f69e03cc9f241f8205dd4629 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc9466bccc8e4d92fe910cdf40e7dba5 = $(`<div id="html_cc9466bccc8e4d92fe910cdf40e7dba5" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1161923225967192</div>`)[0];
+                popup_a729fcb2f69e03cc9f241f8205dd4629.setContent(html_cc9466bccc8e4d92fe910cdf40e7dba5);
+            
+        
+
+        circle_marker_3f0a5c408616f8a9de6ba3fd1e9b7331.bindPopup(popup_a729fcb2f69e03cc9f241f8205dd4629)
+        ;
+
+        
+    
+    
+            var circle_marker_beb4cec02fbe5019ab4551542fc14d1d = L.circleMarker(
+                [-33.7968954, -70.7356841],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#86c300ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_64d9e880b1225ca0902487c213c70d11 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c572a51e2b2220365e9be0b018491658 = $(`<div id="html_c572a51e2b2220365e9be0b018491658" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 1.0476190476190477</div>`)[0];
+                popup_64d9e880b1225ca0902487c213c70d11.setContent(html_c572a51e2b2220365e9be0b018491658);
+            
+        
+
+        circle_marker_beb4cec02fbe5019ab4551542fc14d1d.bindPopup(popup_64d9e880b1225ca0902487c213c70d11)
+        ;
+
+        
+    
+    
+            var circle_marker_e75bd38eea86ec9c00d9fe582bb7fb1d = L.circleMarker(
+                [-33.82524748266233, -70.89225376449215],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#068300ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_2efedd6d5af446fd52082a76b4812671 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b1911019700167cf98f20e702f7d873d = $(`<div id="html_b1911019700167cf98f20e702f7d873d" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.0499</div>`)[0];
+                popup_2efedd6d5af446fd52082a76b4812671.setContent(html_b1911019700167cf98f20e702f7d873d);
+            
+        
+
+        circle_marker_e75bd38eea86ec9c00d9fe582bb7fb1d.bindPopup(popup_2efedd6d5af446fd52082a76b4812671)
+        ;
+
+        
+    
+    
+            var circle_marker_9d2997113650daa8894cc26b5bb88e9f = L.circleMarker(
+                [-33.81730035091167, -70.94255367949921],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#068300ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_9345376ff2e6204b876cbdd087b03245 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4166989e9e7250a3163e55ae0426d986 = $(`<div id="html_4166989e9e7250a3163e55ae0426d986" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.04808</div>`)[0];
+                popup_9345376ff2e6204b876cbdd087b03245.setContent(html_4166989e9e7250a3163e55ae0426d986);
+            
+        
+
+        circle_marker_9d2997113650daa8894cc26b5bb88e9f.bindPopup(popup_9345376ff2e6204b876cbdd087b03245)
+        ;
+
+        
+    
+    
+            var circle_marker_bfcba8e46a27d4aae11e5660272b0283 = L.circleMarker(
+                [-33.8262818, -70.7571572],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7fc000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_77244ca66332a1e3ad956ac0ecbcbe4a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8ac517da24cfe59dba4c5a0c76e2c4c = $(`<div id="html_f8ac517da24cfe59dba4c5a0c76e2c4c" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 1.0</div>`)[0];
+                popup_77244ca66332a1e3ad956ac0ecbcbe4a.setContent(html_f8ac517da24cfe59dba4c5a0c76e2c4c);
+            
+        
+
+        circle_marker_bfcba8e46a27d4aae11e5660272b0283.bindPopup(popup_77244ca66332a1e3ad956ac0ecbcbe4a)
+        ;
+
+        
+    
+    
+            var circle_marker_e9d66c74fe70cde0fc3e1b91835b847a = L.circleMarker(
+                [-33.851856, -70.727852],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1d8f00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_ddc0839d812badbed2661a7db3bef228 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4fb5388f8d696ba069e500aeac2499bb = $(`<div id="html_4fb5388f8d696ba069e500aeac2499bb" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.2338718862549081</div>`)[0];
+                popup_ddc0839d812badbed2661a7db3bef228.setContent(html_4fb5388f8d696ba069e500aeac2499bb);
+            
+        
+
+        circle_marker_e9d66c74fe70cde0fc3e1b91835b847a.bindPopup(popup_ddc0839d812badbed2661a7db3bef228)
+        ;
+
+        
+    
+    
+            var circle_marker_33952392b56d891a99a6aa48121736a1 = L.circleMarker(
+                [-33.8339415, -70.7873541],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#148a00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_7d956c385ff84fd8f392d9acb2ef9b5f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c6c7d3f1a9f8eef9c7ba7084cddb5d59 = $(`<div id="html_c6c7d3f1a9f8eef9c7ba7084cddb5d59" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1603</div>`)[0];
+                popup_7d956c385ff84fd8f392d9acb2ef9b5f.setContent(html_c6c7d3f1a9f8eef9c7ba7084cddb5d59);
+            
+        
+
+        circle_marker_33952392b56d891a99a6aa48121736a1.bindPopup(popup_7d956c385ff84fd8f392d9acb2ef9b5f)
+        ;
+
+        
+    
+    
+            var circle_marker_bcc768e639ad8e1df3df9b5a11b2ca3e = L.circleMarker(
+                [-33.8081642, -70.7363707],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#339a00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_1c4fd4969faf8d6566e02c0de6d8da9c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a436acc16b4e22dddc1af7205cbbc2c = $(`<div id="html_0a436acc16b4e22dddc1af7205cbbc2c" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.4057861647938859</div>`)[0];
+                popup_1c4fd4969faf8d6566e02c0de6d8da9c.setContent(html_0a436acc16b4e22dddc1af7205cbbc2c);
+            
+        
+
+        circle_marker_bcc768e639ad8e1df3df9b5a11b2ca3e.bindPopup(popup_1c4fd4969faf8d6566e02c0de6d8da9c)
+        ;
+
+        
+    
+    
+            var circle_marker_cedd8e9584364eb0d8c8fb955a7d0b1f = L.circleMarker(
+                [-33.7966736, -70.7490933],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bfe000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_a43cb0578342f989bf3c0e6049007cfc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f61dd740f2baeef51d8b835e9d791914 = $(`<div id="html_f61dd740f2baeef51d8b835e9d791914" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 1.5</div>`)[0];
+                popup_a43cb0578342f989bf3c0e6049007cfc.setContent(html_f61dd740f2baeef51d8b835e9d791914);
+            
+        
+
+        circle_marker_cedd8e9584364eb0d8c8fb955a7d0b1f.bindPopup(popup_a43cb0578342f989bf3c0e6049007cfc)
+        ;
+
+        
+    
+    
+            var circle_marker_50583c445f077afecf7ae80b28f68c5e = L.circleMarker(
+                [-33.8662391, -70.7415196],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6eb700ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_ebcfdc49271d7fc296fa0ed569c07819 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c738365c956a64dfd589532c09a35b77 = $(`<div id="html_c738365c956a64dfd589532c09a35b77" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.8643994046548839</div>`)[0];
+                popup_ebcfdc49271d7fc296fa0ed569c07819.setContent(html_c738365c956a64dfd589532c09a35b77);
+            
+        
+
+        circle_marker_50583c445f077afecf7ae80b28f68c5e.bindPopup(popup_ebcfdc49271d7fc296fa0ed569c07819)
+        ;
+
+        
+    
+    
+            var circle_marker_78bd36cf5c6f0e6e35d7948d818e3028 = L.circleMarker(
+                [-33.8397817, -70.7498696],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2a9500ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_0cf21559a8146b6fd17c61a3a1a659cc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_921637a64f70d3217ad48683ff7435df = $(`<div id="html_921637a64f70d3217ad48683ff7435df" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.329821422313656</div>`)[0];
+                popup_0cf21559a8146b6fd17c61a3a1a659cc.setContent(html_921637a64f70d3217ad48683ff7435df);
+            
+        
+
+        circle_marker_78bd36cf5c6f0e6e35d7948d818e3028.bindPopup(popup_0cf21559a8146b6fd17c61a3a1a659cc)
+        ;
+
+        
+    
+    
+            var circle_marker_63bc31dde123ab86640df978c7fbd571 = L.circleMarker(
+                [-33.832591, -70.949909],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0e8700ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_c87500a73198cd480cd35c89abf4a0ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ae1c75b55c24fb44e7a4217c72e5faf = $(`<div id="html_0ae1c75b55c24fb44e7a4217c72e5faf" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1161923225967192</div>`)[0];
+                popup_c87500a73198cd480cd35c89abf4a0ea.setContent(html_0ae1c75b55c24fb44e7a4217c72e5faf);
+            
+        
+
+        circle_marker_63bc31dde123ab86640df978c7fbd571.bindPopup(popup_c87500a73198cd480cd35c89abf4a0ea)
+        ;
+
+        
+    
+    
+            var circle_marker_6e5cb6f2518f68a8e7ea2ee059447d06 = L.circleMarker(
+                [-33.3702697, -70.8753884],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#219100ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_6d068fe6f4b52edfc31d54f98dea798c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a9354986e0a7066334a7a2a9ac95188e = $(`<div id="html_a9354986e0a7066334a7a2a9ac95188e" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.2642857142857143</div>`)[0];
+                popup_6d068fe6f4b52edfc31d54f98dea798c.setContent(html_a9354986e0a7066334a7a2a9ac95188e);
+            
+        
+
+        circle_marker_6e5cb6f2518f68a8e7ea2ee059447d06.bindPopup(popup_6d068fe6f4b52edfc31d54f98dea798c)
+        ;
+
+        
+    
+    
+            var circle_marker_c8d45689ba0161a76cd8a21bd205d0e0 = L.circleMarker(
+                [-33.80551226, -70.70919274],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#63b100ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_7902af1eac9ecc6065c4e90f6f3b1868 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_746d3dffb671e3bc02df38a1d663c899 = $(`<div id="html_746d3dffb671e3bc02df38a1d663c899" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.7763142857142857</div>`)[0];
+                popup_7902af1eac9ecc6065c4e90f6f3b1868.setContent(html_746d3dffb671e3bc02df38a1d663c899);
+            
+        
+
+        circle_marker_c8d45689ba0161a76cd8a21bd205d0e0.bindPopup(popup_7902af1eac9ecc6065c4e90f6f3b1868)
+        ;
+
+        
+    
+    
+            var circle_marker_ae15e41e0f53bcf672a5968336b0f0fb = L.circleMarker(
+                [-33.8325613, -70.94988213],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#269300ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_f45e3ecbf6c663712bf658ec148d083b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_718473f18e21d7162482f1f77cddb63c = $(`<div id="html_718473f18e21d7162482f1f77cddb63c" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.2993333333333333</div>`)[0];
+                popup_f45e3ecbf6c663712bf658ec148d083b.setContent(html_718473f18e21d7162482f1f77cddb63c);
+            
+        
+
+        circle_marker_ae15e41e0f53bcf672a5968336b0f0fb.bindPopup(popup_f45e3ecbf6c663712bf658ec148d083b)
+        ;
+
+        
+    
+    
+            var circle_marker_e8d96e40a57816ae6212f6ce6f8fca4c = L.circleMarker(
+                [-33.85735666, -70.77237065],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3e9f00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_d2c873b82f5f361e82076560fde2ef6c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0069a7eb03bf78bcabea6da99dee011c = $(`<div id="html_0069a7eb03bf78bcabea6da99dee011c" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.4850585986265712</div>`)[0];
+                popup_d2c873b82f5f361e82076560fde2ef6c.setContent(html_0069a7eb03bf78bcabea6da99dee011c);
+            
+        
+
+        circle_marker_e8d96e40a57816ae6212f6ce6f8fca4c.bindPopup(popup_d2c873b82f5f361e82076560fde2ef6c)
+        ;
+
+        
+    
+    
+            var circle_marker_b07ae2f122f59daefa00c739587248ca = L.circleMarker(
+                [-33.82860825976105, -70.91413021087646],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0f8800ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_464b9cdd37ef8b8a67239670c75422d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5004b9f2e40184a131f9e611ba8f0bc7 = $(`<div id="html_5004b9f2e40184a131f9e611ba8f0bc7" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1181818181818181</div>`)[0];
+                popup_464b9cdd37ef8b8a67239670c75422d5.setContent(html_5004b9f2e40184a131f9e611ba8f0bc7);
+            
+        
+
+        circle_marker_b07ae2f122f59daefa00c739587248ca.bindPopup(popup_464b9cdd37ef8b8a67239670c75422d5)
+        ;
+
+        
+    
+    
+            var circle_marker_28f3135c0fd3f2395dd638b785fa18e0 = L.circleMarker(
+                [-33.812566, -70.737597],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#51a800ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_65cca7cc33fae807d1d91df13fd1483a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_41088472e1f9c9bf190535fe012cb06d = $(`<div id="html_41088472e1f9c9bf190535fe012cb06d" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.6333333333333333</div>`)[0];
+                popup_65cca7cc33fae807d1d91df13fd1483a.setContent(html_41088472e1f9c9bf190535fe012cb06d);
+            
+        
+
+        circle_marker_28f3135c0fd3f2395dd638b785fa18e0.bindPopup(popup_65cca7cc33fae807d1d91df13fd1483a)
+        ;
+
+        
+    
+    
+            var circle_marker_de6d5d9aa2e5a39f0a776dcc1bc5ee30 = L.circleMarker(
+                [-33.909339, -70.762077],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#329900ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_561248be42de26b91ffabf8ba16885ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d49e42b14165c31433ae18f1f82c837 = $(`<div id="html_0d49e42b14165c31433ae18f1f82c837" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.39725</div>`)[0];
+                popup_561248be42de26b91ffabf8ba16885ca.setContent(html_0d49e42b14165c31433ae18f1f82c837);
+            
+        
+
+        circle_marker_de6d5d9aa2e5a39f0a776dcc1bc5ee30.bindPopup(popup_561248be42de26b91ffabf8ba16885ca)
+        ;
+
+        
+    
+    
+            var circle_marker_d310cfa0d01abd4505da23d0f6efd38f = L.circleMarker(
+                [-33.8040206, -70.742443],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_8c2e980f5e26e248cdea36221cb5b491 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_acaf97e39f39c9b092c1292302799024 = $(`<div id="html_acaf97e39f39c9b092c1292302799024" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 2.0</div>`)[0];
+                popup_8c2e980f5e26e248cdea36221cb5b491.setContent(html_acaf97e39f39c9b092c1292302799024);
+            
+        
+
+        circle_marker_d310cfa0d01abd4505da23d0f6efd38f.bindPopup(popup_8c2e980f5e26e248cdea36221cb5b491)
+        ;
+
+        
+    
+    
+            var circle_marker_236a35162b1efe8d41b02f35ddcb7657 = L.circleMarker(
+                [-33.8063612, -70.7468422],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#81c000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_976c261141ab03eceb780454a8ae7713 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_517e2dd0f058b7ca56ff99b075ca9579 = $(`<div id="html_517e2dd0f058b7ca56ff99b075ca9579" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 1.0091743119266054</div>`)[0];
+                popup_976c261141ab03eceb780454a8ae7713.setContent(html_517e2dd0f058b7ca56ff99b075ca9579);
+            
+        
+
+        circle_marker_236a35162b1efe8d41b02f35ddcb7657.bindPopup(popup_976c261141ab03eceb780454a8ae7713)
+        ;
+
+        
+    
+    
+            var circle_marker_4eaee8bf22c1173052d40cbb9bb5885e = L.circleMarker(
+                [-33.8538736, -70.7953798],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#48a400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_8102e1d0b40ad6444c5ca8979f74eb60 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_32d9e39c41e7ccfe4c1b9fd6603c1d84 = $(`<div id="html_32d9e39c41e7ccfe4c1b9fd6603c1d84" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.57</div>`)[0];
+                popup_8102e1d0b40ad6444c5ca8979f74eb60.setContent(html_32d9e39c41e7ccfe4c1b9fd6603c1d84);
+            
+        
+
+        circle_marker_4eaee8bf22c1173052d40cbb9bb5885e.bindPopup(popup_8102e1d0b40ad6444c5ca8979f74eb60)
+        ;
+
+        
+    
+    
+            var circle_marker_d9db3fb4c54b3882d8aa152f8c90f30a = L.circleMarker(
+                [-33.83807, -70.752407],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99cd00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_965abd325eb1b8f4c694b8ca78cdcacf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_71c4999546c0935701deaa8eec0b97a6 = $(`<div id="html_71c4999546c0935701deaa8eec0b97a6" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 1.2029558343357964</div>`)[0];
+                popup_965abd325eb1b8f4c694b8ca78cdcacf.setContent(html_71c4999546c0935701deaa8eec0b97a6);
+            
+        
+
+        circle_marker_d9db3fb4c54b3882d8aa152f8c90f30a.bindPopup(popup_965abd325eb1b8f4c694b8ca78cdcacf)
+        ;
+
+        
+    
+    
+            var circle_marker_30ae377efb4f9f25102b0f4e2226bf7e = L.circleMarker(
+                [-33.839174, -70.753462],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5eaf00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_d3f37693da0481ad39cdf76271f0fa85 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_12b3d051f9fbbde9440873d8169f5eb2 = $(`<div id="html_12b3d051f9fbbde9440873d8169f5eb2" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.742</div>`)[0];
+                popup_d3f37693da0481ad39cdf76271f0fa85.setContent(html_12b3d051f9fbbde9440873d8169f5eb2);
+            
+        
+
+        circle_marker_30ae377efb4f9f25102b0f4e2226bf7e.bindPopup(popup_d3f37693da0481ad39cdf76271f0fa85)
+        ;
+
+        
+    
+    
+            var circle_marker_c28ad7ce0cf397ab7f24314fea35287f = L.circleMarker(
+                [-33.843415, -70.845638],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#239200ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_526d0910d7dff031a08a69511147f4b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_afdeee4ea0aa9d3c27a0214b3fe8626b = $(`<div id="html_afdeee4ea0aa9d3c27a0214b3fe8626b" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.2777777777777778</div>`)[0];
+                popup_526d0910d7dff031a08a69511147f4b1.setContent(html_afdeee4ea0aa9d3c27a0214b3fe8626b);
+            
+        
+
+        circle_marker_c28ad7ce0cf397ab7f24314fea35287f.bindPopup(popup_526d0910d7dff031a08a69511147f4b1)
+        ;
+
+        
+    
+    
+            var circle_marker_b78d1e278f9e61459dadc57c488ce065 = L.circleMarker(
+                [-33.86443458, -70.72704321],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7dbf00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_fcaf32dd6700d53490f596b793ebebea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b0fc23769dc01eadc0a27e4d1c802dc8 = $(`<div id="html_b0fc23769dc01eadc0a27e4d1c802dc8" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.9843081312410842</div>`)[0];
+                popup_fcaf32dd6700d53490f596b793ebebea.setContent(html_b0fc23769dc01eadc0a27e4d1c802dc8);
+            
+        
+
+        circle_marker_b78d1e278f9e61459dadc57c488ce065.bindPopup(popup_fcaf32dd6700d53490f596b793ebebea)
+        ;
+
+        
+    
+    
+            var circle_marker_a7d3c10bffbbc898279232d7a1b9e1df = L.circleMarker(
+                [-33.904678, -70.7514015],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2b9600ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_56c6b18a4239ec9107c1914dcea3032a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78d73dc534bb4ad42a2db13863addb1b = $(`<div id="html_78d73dc534bb4ad42a2db13863addb1b" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.3373493975903614</div>`)[0];
+                popup_56c6b18a4239ec9107c1914dcea3032a.setContent(html_78d73dc534bb4ad42a2db13863addb1b);
+            
+        
+
+        circle_marker_a7d3c10bffbbc898279232d7a1b9e1df.bindPopup(popup_56c6b18a4239ec9107c1914dcea3032a)
+        ;
+
+        
+    
+    
+            var circle_marker_c4f36998ceff7bc8fddb27393ac4eab0 = L.circleMarker(
+                [-33.84775, -70.88759],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#279400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_25cc9596897837b9ed7bea30faea9507 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee3d60481213403fdff4b921dd456814 = $(`<div id="html_ee3d60481213403fdff4b921dd456814" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.31225</div>`)[0];
+                popup_25cc9596897837b9ed7bea30faea9507.setContent(html_ee3d60481213403fdff4b921dd456814);
+            
+        
+
+        circle_marker_c4f36998ceff7bc8fddb27393ac4eab0.bindPopup(popup_25cc9596897837b9ed7bea30faea9507)
+        ;
+
+        
+    
+    
+            var circle_marker_f63b16a168ce6fdff79d644b8a14466d = L.circleMarker(
+                [-33.75836, -70.67505],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#118900ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_33dc1fb5bb705300ca06c5608a44ff1f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ebc8b39ef188a93a84d0815334833d33 = $(`<div id="html_ebc8b39ef188a93a84d0815334833d33" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1339139726027397</div>`)[0];
+                popup_33dc1fb5bb705300ca06c5608a44ff1f.setContent(html_ebc8b39ef188a93a84d0815334833d33);
+            
+        
+
+        circle_marker_f63b16a168ce6fdff79d644b8a14466d.bindPopup(popup_33dc1fb5bb705300ca06c5608a44ff1f)
+        ;
+
+        
+    
+    
+            var circle_marker_f004809f3537c45ccd54dacec6cbeb98 = L.circleMarker(
+                [-33.80812, -70.73636],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#61b100ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_5620e007e7a7bf419ac87907f2913790 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c6175558609c8a33e40f5ca85a153d35 = $(`<div id="html_c6175558609c8a33e40f5ca85a153d35" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.7651455681818181</div>`)[0];
+                popup_5620e007e7a7bf419ac87907f2913790.setContent(html_c6175558609c8a33e40f5ca85a153d35);
+            
+        
+
+        circle_marker_f004809f3537c45ccd54dacec6cbeb98.bindPopup(popup_5620e007e7a7bf419ac87907f2913790)
+        ;
+
+        
+    
+    
+            var circle_marker_4dea2f1a268cc96de3d1d1d1702c9737 = L.circleMarker(
+                [-33.7968954, -70.7356841],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#81c000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_06b3052a5d72f538c4d1fe5d1f8633d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e80d76bf58ffea7b74601c54f9074ad = $(`<div id="html_5e80d76bf58ffea7b74601c54f9074ad" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 1.0087155963302752</div>`)[0];
+                popup_06b3052a5d72f538c4d1fe5d1f8633d1.setContent(html_5e80d76bf58ffea7b74601c54f9074ad);
+            
+        
+
+        circle_marker_4dea2f1a268cc96de3d1d1d1702c9737.bindPopup(popup_06b3052a5d72f538c4d1fe5d1f8633d1)
+        ;
+
+        
+    
+    
+            var circle_marker_42cfe2b02629a9a2e6854992e25c99e9 = L.circleMarker(
+                [-33.8683481, -70.7205702],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#63b200ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_826ccb0b1f902b19adc6664a7efbee6f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47a976b26f50a98dc8cddca60d9ec842 = $(`<div id="html_47a976b26f50a98dc8cddca60d9ec842" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.7777777777777778</div>`)[0];
+                popup_826ccb0b1f902b19adc6664a7efbee6f.setContent(html_47a976b26f50a98dc8cddca60d9ec842);
+            
+        
+
+        circle_marker_42cfe2b02629a9a2e6854992e25c99e9.bindPopup(popup_826ccb0b1f902b19adc6664a7efbee6f)
+        ;
+
+        
+    
+    
+            var circle_marker_f89c538b61e7599fc6753768c03a0b14 = L.circleMarker(
+                [-33.90086, -70.66097],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a8d00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_c7f1b24bb35c5c1e78eee235917d5bf5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2daf14dd2650a76c8d7a91455c6fbe37 = $(`<div id="html_2daf14dd2650a76c8d7a91455c6fbe37" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.207136</div>`)[0];
+                popup_c7f1b24bb35c5c1e78eee235917d5bf5.setContent(html_2daf14dd2650a76c8d7a91455c6fbe37);
+            
+        
+
+        circle_marker_f89c538b61e7599fc6753768c03a0b14.bindPopup(popup_c7f1b24bb35c5c1e78eee235917d5bf5)
+        ;
+
+        
+    
+    
+            var circle_marker_6800e7bf311ee329ac9a52e262865916 = L.circleMarker(
+                [-33.8388127, -70.6395639],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#269300ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_7a1d48456fba87b2883d6580a1095309 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_669e87bc6a9babd2bda9a4df3b830daa = $(`<div id="html_669e87bc6a9babd2bda9a4df3b830daa" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.2996666666666667</div>`)[0];
+                popup_7a1d48456fba87b2883d6580a1095309.setContent(html_669e87bc6a9babd2bda9a4df3b830daa);
+            
+        
+
+        circle_marker_6800e7bf311ee329ac9a52e262865916.bindPopup(popup_7a1d48456fba87b2883d6580a1095309)
+        ;
+
+        
+    
+    
+            var circle_marker_d29e78804835fa93a383e2132431c171 = L.circleMarker(
+                [-33.7747449, -70.6612064],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#65b300ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_43bfe8bf6806d84538ed86d2426b83d7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_72939efdd7edeed1c824728820fca431 = $(`<div id="html_72939efdd7edeed1c824728820fca431" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.7954545454545454</div>`)[0];
+                popup_43bfe8bf6806d84538ed86d2426b83d7.setContent(html_72939efdd7edeed1c824728820fca431);
+            
+        
+
+        circle_marker_d29e78804835fa93a383e2132431c171.bindPopup(popup_43bfe8bf6806d84538ed86d2426b83d7)
+        ;
+
+        
+    
+    
+            var circle_marker_d9d4e3bb5db51a100b03224aa11379f1 = L.circleMarker(
+                [-33.80004779364046, -70.73856353759766],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7fc000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_abe7c6dc9a8ed34c638d4ea84211366f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2432d751fa4c298cc9734fbec7baabb = $(`<div id="html_c2432d751fa4c298cc9734fbec7baabb" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 1.0</div>`)[0];
+                popup_abe7c6dc9a8ed34c638d4ea84211366f.setContent(html_c2432d751fa4c298cc9734fbec7baabb);
+            
+        
+
+        circle_marker_d9d4e3bb5db51a100b03224aa11379f1.bindPopup(popup_abe7c6dc9a8ed34c638d4ea84211366f)
+        ;
+
+        
+    
+    
+            var circle_marker_6be00d6c178000de2eb52db21547c085 = L.circleMarker(
+                [-33.7843684, -70.7458711],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#78bc00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_a7a824efd92099bfdfff58997b93d722 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7608e347fe658b8c7d585ba8c509d060 = $(`<div id="html_7608e347fe658b8c7d585ba8c509d060" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.9414782608695652</div>`)[0];
+                popup_a7a824efd92099bfdfff58997b93d722.setContent(html_7608e347fe658b8c7d585ba8c509d060);
+            
+        
+
+        circle_marker_6be00d6c178000de2eb52db21547c085.bindPopup(popup_a7a824efd92099bfdfff58997b93d722)
+        ;
+
+        
+    
+    
+            var circle_marker_91f8e76b028bc551c7854b8f56367e21 = L.circleMarker(
+                [-33.844334811169844, -70.63465348281248],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#339a00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693);
+        
+    
+        var popup_dda77c3c62e9ec8c914655ea713066a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8a09ec5d019254415c7e634737058b3d = $(`<div id="html_8a09ec5d019254415c7e634737058b3d" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.4</div>`)[0];
+                popup_dda77c3c62e9ec8c914655ea713066a2.setContent(html_8a09ec5d019254415c7e634737058b3d);
+            
+        
+
+        circle_marker_91f8e76b028bc551c7854b8f56367e21.bindPopup(popup_dda77c3c62e9ec8c914655ea713066a2)
+        ;
+
+        
+    
+    
+            feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693.addTo(map_54026d3de3f76eddc2f66ac0d7565476);
+        
+    
+            var feature_group_sub_group_906a843c4e70c02149123e8d3a7d6994 = L.featureGroup.subGroup(
+                feature_group_23f7e327c99f559ff78b650763912300
+            );
+        
+    
+            var circle_marker_1fe5ca79642eca0cc74bc17bb1aac801 = L.circleMarker(
+                [-33.8586, -70.62371],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1500eaff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_906a843c4e70c02149123e8d3a7d6994);
+        
+    
+        var popup_c4709321e3c5fb8831d4c27d9dec382c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_105df34702aebf11b3f929d637fe6bcf = $(`<div id="html_105df34702aebf11b3f929d637fe6bcf" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S2<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 2.717391304347826</div>`)[0];
+                popup_c4709321e3c5fb8831d4c27d9dec382c.setContent(html_105df34702aebf11b3f929d637fe6bcf);
+            
+        
+
+        circle_marker_1fe5ca79642eca0cc74bc17bb1aac801.bindPopup(popup_c4709321e3c5fb8831d4c27d9dec382c)
+        ;
+
+        
+    
+    
+            var circle_marker_803187a8f866e0146fed1460b34321eb = L.circleMarker(
+                [-33.85998427, -70.87895133],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0c00f3ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_906a843c4e70c02149123e8d3a7d6994);
+        
+    
+        var popup_d70b82160dcc1e59267a1830a40eeaac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_610b532831cb8f769933cdbd38a30697 = $(`<div id="html_610b532831cb8f769933cdbd38a30697" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S2<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 1.542857142857143</div>`)[0];
+                popup_d70b82160dcc1e59267a1830a40eeaac.setContent(html_610b532831cb8f769933cdbd38a30697);
+            
+        
+
+        circle_marker_803187a8f866e0146fed1460b34321eb.bindPopup(popup_d70b82160dcc1e59267a1830a40eeaac)
+        ;
+
+        
+    
+    
+            var circle_marker_87f3b936fd29fd84419bccfdd3520ef2 = L.circleMarker(
+                [-33.87584, -70.88257],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0f00f0ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_906a843c4e70c02149123e8d3a7d6994);
+        
+    
+        var popup_b8f135de257637f4b019c890b15b2c46 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4dac482a6bc53feb3a4fe367d327510f = $(`<div id="html_4dac482a6bc53feb3a4fe367d327510f" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S2<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 1.9266957407472391</div>`)[0];
+                popup_b8f135de257637f4b019c890b15b2c46.setContent(html_4dac482a6bc53feb3a4fe367d327510f);
+            
+        
+
+        circle_marker_87f3b936fd29fd84419bccfdd3520ef2.bindPopup(popup_b8f135de257637f4b019c890b15b2c46)
+        ;
+
+        
+    
+    
+            var circle_marker_70b80b59b1cdb16c6f78a27e63fdf415 = L.circleMarker(
+                [-33.80617, -70.74195],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1b00e5ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_906a843c4e70c02149123e8d3a7d6994);
+        
+    
+        var popup_719ef2f7a2aeb759a3e94bf9e01dbd64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc69c7e4930778b2a013bad4f276011a = $(`<div id="html_fc69c7e4930778b2a013bad4f276011a" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S2<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 3.3834586466165413</div>`)[0];
+                popup_719ef2f7a2aeb759a3e94bf9e01dbd64.setContent(html_fc69c7e4930778b2a013bad4f276011a);
+            
+        
+
+        circle_marker_70b80b59b1cdb16c6f78a27e63fdf415.bindPopup(popup_719ef2f7a2aeb759a3e94bf9e01dbd64)
+        ;
+
+        
+    
+    
+            var circle_marker_87c2a7af37d9cf5a09b19a5448300145 = L.circleMarker(
+                [-33.80817015165496, -70.73630845692789],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2000dfff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_906a843c4e70c02149123e8d3a7d6994);
+        
+    
+        var popup_f402dc2aac2c3ee1e39e6e0926d51d34 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c84e636fa37567db85da3eda136b009f = $(`<div id="html_c84e636fa37567db85da3eda136b009f" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S2<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 4.030744227504684</div>`)[0];
+                popup_f402dc2aac2c3ee1e39e6e0926d51d34.setContent(html_c84e636fa37567db85da3eda136b009f);
+            
+        
+
+        circle_marker_87c2a7af37d9cf5a09b19a5448300145.bindPopup(popup_f402dc2aac2c3ee1e39e6e0926d51d34)
+        ;
+
+        
+    
+    
+            var circle_marker_7b0a09a221ec14bc2f3a00d0d2ab3147 = L.circleMarker(
+                [-33.81649, -70.7404449],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3000d0ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_906a843c4e70c02149123e8d3a7d6994);
+        
+    
+        var popup_f648ba52da182c9a68798822ed16ce57 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a040ce3a9f9466ff349255e1e6c55cd = $(`<div id="html_2a040ce3a9f9466ff349255e1e6c55cd" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S2<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 5.987926742905836</div>`)[0];
+                popup_f648ba52da182c9a68798822ed16ce57.setContent(html_2a040ce3a9f9466ff349255e1e6c55cd);
+            
+        
+
+        circle_marker_7b0a09a221ec14bc2f3a00d0d2ab3147.bindPopup(popup_f648ba52da182c9a68798822ed16ce57)
+        ;
+
+        
+    
+    
+            var circle_marker_dc2a6231e0f7378fff9ffdc1e57382be = L.circleMarker(
+                [-33.81649, -70.7404449],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3000d0ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_906a843c4e70c02149123e8d3a7d6994);
+        
+    
+        var popup_ee2eb81d82c497df161e946f73d170a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_86be9e6414081ad1ea5b13bc50ad94c8 = $(`<div id="html_86be9e6414081ad1ea5b13bc50ad94c8" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S2<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 5.984303570687658</div>`)[0];
+                popup_ee2eb81d82c497df161e946f73d170a5.setContent(html_86be9e6414081ad1ea5b13bc50ad94c8);
+            
+        
+
+        circle_marker_dc2a6231e0f7378fff9ffdc1e57382be.bindPopup(popup_ee2eb81d82c497df161e946f73d170a5)
+        ;
+
+        
+    
+    
+            var circle_marker_dc5c6c6eddb1159ff8448f94a1ead688 = L.circleMarker(
+                [-33.8031219, -70.7350765],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000ffff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_906a843c4e70c02149123e8d3a7d6994);
+        
+    
+        var popup_fc71ca2848e0a6209ce322f9bbdd433a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da0c1e83dfc7a8041e38cb5db97174a7 = $(`<div id="html_da0c1e83dfc7a8041e38cb5db97174a7" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S2<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 0.0016</div>`)[0];
+                popup_fc71ca2848e0a6209ce322f9bbdd433a.setContent(html_da0c1e83dfc7a8041e38cb5db97174a7);
+            
+        
+
+        circle_marker_dc5c6c6eddb1159ff8448f94a1ead688.bindPopup(popup_fc71ca2848e0a6209ce322f9bbdd433a)
+        ;
+
+        
+    
+    
+            var circle_marker_93aa006dfd5ccc02764eae6a9640387e = L.circleMarker(
+                [-33.8097992, -70.742569],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000ffff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_906a843c4e70c02149123e8d3a7d6994);
+        
+    
+        var popup_d2c93c11a23b1526d10ab5f036f7d645 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de7a3c82c97a298b418b2340e4f2c51b = $(`<div id="html_de7a3c82c97a298b418b2340e4f2c51b" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S2<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 0.0016</div>`)[0];
+                popup_d2c93c11a23b1526d10ab5f036f7d645.setContent(html_de7a3c82c97a298b418b2340e4f2c51b);
+            
+        
+
+        circle_marker_93aa006dfd5ccc02764eae6a9640387e.bindPopup(popup_d2c93c11a23b1526d10ab5f036f7d645)
+        ;
+
+        
+    
+    
+            var circle_marker_b518bd677c6b76803ca16dc674b40ae9 = L.circleMarker(
+                [-33.81649, -70.7404449],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3000d0ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_906a843c4e70c02149123e8d3a7d6994);
+        
+    
+        var popup_86bc06ecb20e638711fb473e437902bc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b5e9c9745aa8c6e54f32afa399f56c9c = $(`<div id="html_b5e9c9745aa8c6e54f32afa399f56c9c" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S2<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 5.985655177844457</div>`)[0];
+                popup_86bc06ecb20e638711fb473e437902bc.setContent(html_b5e9c9745aa8c6e54f32afa399f56c9c);
+            
+        
+
+        circle_marker_b518bd677c6b76803ca16dc674b40ae9.bindPopup(popup_86bc06ecb20e638711fb473e437902bc)
+        ;
+
+        
+    
+    
+            var circle_marker_a8a93ffe8b5e1f4278e80df56b4a99ce = L.circleMarker(
+                [-33.7977932, -70.7262641],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1b00e4ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_906a843c4e70c02149123e8d3a7d6994);
+        
+    
+        var popup_12632b1cb9f7de0379413695f4235387 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_489b24f7c12f451fa9d2f6f4a818ccec = $(`<div id="html_489b24f7c12f451fa9d2f6f4a818ccec" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S2<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 3.4813687179781203</div>`)[0];
+                popup_12632b1cb9f7de0379413695f4235387.setContent(html_489b24f7c12f451fa9d2f6f4a818ccec);
+            
+        
+
+        circle_marker_a8a93ffe8b5e1f4278e80df56b4a99ce.bindPopup(popup_12632b1cb9f7de0379413695f4235387)
+        ;
+
+        
+    
+    
+            var circle_marker_937904c5e90a45e9f4dd253be0be80f9 = L.circleMarker(
+                [-33.81649, -70.7404449],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3000d0ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_906a843c4e70c02149123e8d3a7d6994);
+        
+    
+        var popup_c2d26609c4527dbad20192a0278493ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f901e83a5571ba4560ecbc2a6471b2f6 = $(`<div id="html_f901e83a5571ba4560ecbc2a6471b2f6" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S2<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 5.98700898876225</div>`)[0];
+                popup_c2d26609c4527dbad20192a0278493ea.setContent(html_f901e83a5571ba4560ecbc2a6471b2f6);
+            
+        
+
+        circle_marker_937904c5e90a45e9f4dd253be0be80f9.bindPopup(popup_c2d26609c4527dbad20192a0278493ea)
+        ;
+
+        
+    
+    
+            var circle_marker_eaf97bd47abb8f5c17b4c2e75bdf070c = L.circleMarker(
+                [-33.8200097, -70.7439024],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2e00d2ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_906a843c4e70c02149123e8d3a7d6994);
+        
+    
+        var popup_6430843342c3b044bec2b26fc219efa3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_53044a83e958409ca1aa810607de20cf = $(`<div id="html_53044a83e958409ca1aa810607de20cf" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S2<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 5.76017316017316</div>`)[0];
+                popup_6430843342c3b044bec2b26fc219efa3.setContent(html_53044a83e958409ca1aa810607de20cf);
+            
+        
+
+        circle_marker_eaf97bd47abb8f5c17b4c2e75bdf070c.bindPopup(popup_6430843342c3b044bec2b26fc219efa3)
+        ;
+
+        
+    
+    
+            feature_group_sub_group_906a843c4e70c02149123e8d3a7d6994.addTo(map_54026d3de3f76eddc2f66ac0d7565476);
+        
+    
+            var feature_group_sub_group_10e60f66287aafcc48bc92532d8ad940 = L.featureGroup.subGroup(
+                feature_group_f2a8064cc1dd2fcb033c1a2473a20907
+            );
+        
+    
+            var circle_marker_20d84c063aa28e0d77a89c329aaf3349 = L.circleMarker(
+                [-33.85387, -70.79537],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#48a400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_10e60f66287aafcc48bc92532d8ad940);
+        
+    
+        var popup_c5668e5ced7b96da6631c8e5b5937751 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b15040ab2c4ade7496aebbf6096646ae = $(`<div id="html_b15040ab2c4ade7496aebbf6096646ae" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.57</div>`)[0];
+                popup_c5668e5ced7b96da6631c8e5b5937751.setContent(html_b15040ab2c4ade7496aebbf6096646ae);
+            
+        
+
+        circle_marker_20d84c063aa28e0d77a89c329aaf3349.bindPopup(popup_c5668e5ced7b96da6631c8e5b5937751)
+        ;
+
+        
+    
+    
+            var circle_marker_da0929df27a4b2e60aa755e7cfe0fc6c = L.circleMarker(
+                [-33.87618, -70.88445],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c9600ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_10e60f66287aafcc48bc92532d8ad940);
+        
+    
+        var popup_c9b7d10440f60bd45c815caee0fd54dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1c598c1c55263763b3fa6cdd7b3a977b = $(`<div id="html_1c598c1c55263763b3fa6cdd7b3a977b" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.35</div>`)[0];
+                popup_c9b7d10440f60bd45c815caee0fd54dc.setContent(html_1c598c1c55263763b3fa6cdd7b3a977b);
+            
+        
+
+        circle_marker_da0929df27a4b2e60aa755e7cfe0fc6c.bindPopup(popup_c9b7d10440f60bd45c815caee0fd54dc)
+        ;
+
+        
+    
+    
+            var circle_marker_e23884332cf64f5147bda0d379fc4c14 = L.circleMarker(
+                [-33.82628, -70.75715],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7fc000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_10e60f66287aafcc48bc92532d8ad940);
+        
+    
+        var popup_ae1d1f6e7d72c7a1c99e26f415483de2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_154eac52847e2ede1062667291ce4da0 = $(`<div id="html_154eac52847e2ede1062667291ce4da0" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 1.0</div>`)[0];
+                popup_ae1d1f6e7d72c7a1c99e26f415483de2.setContent(html_154eac52847e2ede1062667291ce4da0);
+            
+        
+
+        circle_marker_e23884332cf64f5147bda0d379fc4c14.bindPopup(popup_ae1d1f6e7d72c7a1c99e26f415483de2)
+        ;
+
+        
+    
+    
+            var circle_marker_ac11171bca18702579a0fbaa3e02dd43 = L.circleMarker(
+                [-33.90968151, -70.76114168],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#329900ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_10e60f66287aafcc48bc92532d8ad940);
+        
+    
+        var popup_5454bc926e61d8797d0c7f489165926d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_113b08699e282196d5e4378a044e45a3 = $(`<div id="html_113b08699e282196d5e4378a044e45a3" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.39725</div>`)[0];
+                popup_5454bc926e61d8797d0c7f489165926d.setContent(html_113b08699e282196d5e4378a044e45a3);
+            
+        
+
+        circle_marker_ac11171bca18702579a0fbaa3e02dd43.bindPopup(popup_5454bc926e61d8797d0c7f489165926d)
+        ;
+
+        
+    
+    
+            var circle_marker_7f4bb94a2fbe93a5af14f3f4c85a3749 = L.circleMarker(
+                [-33.85583, -70.742592],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#259300ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_10e60f66287aafcc48bc92532d8ad940);
+        
+    
+        var popup_aff9c5ffdb93aa5b81fa934b7b025eb1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c6f54a28f85a36a15974d24964cc402f = $(`<div id="html_c6f54a28f85a36a15974d24964cc402f" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.2915887850467289</div>`)[0];
+                popup_aff9c5ffdb93aa5b81fa934b7b025eb1.setContent(html_c6f54a28f85a36a15974d24964cc402f);
+            
+        
+
+        circle_marker_7f4bb94a2fbe93a5af14f3f4c85a3749.bindPopup(popup_aff9c5ffdb93aa5b81fa934b7b025eb1)
+        ;
+
+        
+    
+    
+            var circle_marker_d69eee76c613b7fa4a19737b3ef57c69 = L.circleMarker(
+                [-33.87626649905037, -70.66888413461537],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#219100ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_10e60f66287aafcc48bc92532d8ad940);
+        
+    
+        var popup_238cc205493aaf0ccf80653e57724501 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b714d13b6f96e3d971cfdef2350b65b0 = $(`<div id="html_b714d13b6f96e3d971cfdef2350b65b0" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.2655555555555555</div>`)[0];
+                popup_238cc205493aaf0ccf80653e57724501.setContent(html_b714d13b6f96e3d971cfdef2350b65b0);
+            
+        
+
+        circle_marker_d69eee76c613b7fa4a19737b3ef57c69.bindPopup(popup_238cc205493aaf0ccf80653e57724501)
+        ;
+
+        
+    
+    
+            var circle_marker_1dd342a19ac464d111919727695d4a6a = L.circleMarker(
+                [-33.87597978963093, -70.63817407298583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a8d00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_10e60f66287aafcc48bc92532d8ad940);
+        
+    
+        var popup_46d96a3d86d1feceb62e3fd996b7c98f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f7dd4ee45cceda1c000f086a9c94be8e = $(`<div id="html_f7dd4ee45cceda1c000f086a9c94be8e" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.2061725672368645</div>`)[0];
+                popup_46d96a3d86d1feceb62e3fd996b7c98f.setContent(html_f7dd4ee45cceda1c000f086a9c94be8e);
+            
+        
+
+        circle_marker_1dd342a19ac464d111919727695d4a6a.bindPopup(popup_46d96a3d86d1feceb62e3fd996b7c98f)
+        ;
+
+        
+    
+    
+            var circle_marker_3c7d69f0f36b04b9c3af94519e761e18 = L.circleMarker(
+                [-33.770144, -70.662642],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#219100ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_10e60f66287aafcc48bc92532d8ad940);
+        
+    
+        var popup_acb933ddf0e2bd69261a1bfa04755603 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c5ea1367dbfd81bf831f78650927433 = $(`<div id="html_0c5ea1367dbfd81bf831f78650927433" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.2603174603174603</div>`)[0];
+                popup_acb933ddf0e2bd69261a1bfa04755603.setContent(html_0c5ea1367dbfd81bf831f78650927433);
+            
+        
+
+        circle_marker_3c7d69f0f36b04b9c3af94519e761e18.bindPopup(popup_acb933ddf0e2bd69261a1bfa04755603)
+        ;
+
+        
+    
+    
+            var circle_marker_d5285d4688763060a5f9a59fe8915c27 = L.circleMarker(
+                [-33.8101102, -70.7390236],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_10e60f66287aafcc48bc92532d8ad940);
+        
+    
+        var popup_21d70fa7c747bff792ced533e5649b17 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3c74598d0c176c30a334c7211e898f7e = $(`<div id="html_3c74598d0c176c30a334c7211e898f7e" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.0002222222222222</div>`)[0];
+                popup_21d70fa7c747bff792ced533e5649b17.setContent(html_3c74598d0c176c30a334c7211e898f7e);
+            
+        
+
+        circle_marker_d5285d4688763060a5f9a59fe8915c27.bindPopup(popup_21d70fa7c747bff792ced533e5649b17)
+        ;
+
+        
+    
+    
+            var circle_marker_e7b2c72453574be23b6c1773cb9073e3 = L.circleMarker(
+                [-33.83478218, -70.92186578],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#62b100ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_10e60f66287aafcc48bc92532d8ad940);
+        
+    
+        var popup_bf5bd8669fae6e93780302b2baa8e95c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2906ef87d8a0321cb3dff5e4e5295e4 = $(`<div id="html_c2906ef87d8a0321cb3dff5e4e5295e4" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.7663551401869159</div>`)[0];
+                popup_bf5bd8669fae6e93780302b2baa8e95c.setContent(html_c2906ef87d8a0321cb3dff5e4e5295e4);
+            
+        
+
+        circle_marker_e7b2c72453574be23b6c1773cb9073e3.bindPopup(popup_bf5bd8669fae6e93780302b2baa8e95c)
+        ;
+
+        
+    
+    
+            var circle_marker_d40c93b00f8a1bfe2903207632a5a4b0 = L.circleMarker(
+                [-33.8055123, -70.7091927],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#aad500ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_10e60f66287aafcc48bc92532d8ad940);
+        
+    
+        var popup_f27b35576037758fcd2c40f777ccd78a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_16d118acac02f90d83dff2b002c95a27 = $(`<div id="html_16d118acac02f90d83dff2b002c95a27" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 1.3304464419471669</div>`)[0];
+                popup_f27b35576037758fcd2c40f777ccd78a.setContent(html_16d118acac02f90d83dff2b002c95a27);
+            
+        
+
+        circle_marker_d40c93b00f8a1bfe2903207632a5a4b0.bindPopup(popup_f27b35576037758fcd2c40f777ccd78a)
+        ;
+
+        
+    
+    
+            var circle_marker_79ccaec3f3fc953df21a9913569ab21f = L.circleMarker(
+                [-33.75836, -70.67505],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#118900ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_10e60f66287aafcc48bc92532d8ad940);
+        
+    
+        var popup_b55851b4029864a64f2feee8525fe54e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_373396c639741f8c288fde68dfede49a = $(`<div id="html_373396c639741f8c288fde68dfede49a" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1337749315068493</div>`)[0];
+                popup_b55851b4029864a64f2feee8525fe54e.setContent(html_373396c639741f8c288fde68dfede49a);
+            
+        
+
+        circle_marker_79ccaec3f3fc953df21a9913569ab21f.bindPopup(popup_b55851b4029864a64f2feee8525fe54e)
+        ;
+
+        
+    
+    
+            var circle_marker_83861096cb0005c960b9753d84fa9831 = L.circleMarker(
+                [-33.80812, -70.73636],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49a500ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_10e60f66287aafcc48bc92532d8ad940);
+        
+    
+        var popup_45dfce0028ca296ba2b27c9411bfa023 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e082886053912135527546c6e7dfe46 = $(`<div id="html_2e082886053912135527546c6e7dfe46" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.5744248863636363</div>`)[0];
+                popup_45dfce0028ca296ba2b27c9411bfa023.setContent(html_2e082886053912135527546c6e7dfe46);
+            
+        
+
+        circle_marker_83861096cb0005c960b9753d84fa9831.bindPopup(popup_45dfce0028ca296ba2b27c9411bfa023)
+        ;
+
+        
+    
+    
+            var circle_marker_85a581606660cf3d0c4b725cc591c698 = L.circleMarker(
+                [-33.7968954, -70.7356841],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#81c000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_10e60f66287aafcc48bc92532d8ad940);
+        
+    
+        var popup_825a808e60cdc3def1eae1b87085866f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2762de4be9fbfb77fada61200af4d741 = $(`<div id="html_2762de4be9fbfb77fada61200af4d741" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 1.0087155963302752</div>`)[0];
+                popup_825a808e60cdc3def1eae1b87085866f.setContent(html_2762de4be9fbfb77fada61200af4d741);
+            
+        
+
+        circle_marker_85a581606660cf3d0c4b725cc591c698.bindPopup(popup_825a808e60cdc3def1eae1b87085866f)
+        ;
+
+        
+    
+    
+            var circle_marker_0cfb19b1efce8a5daaf98b72e6ccb305 = L.circleMarker(
+                [-33.8957311, -70.6413434],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2f9800ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_10e60f66287aafcc48bc92532d8ad940);
+        
+    
+        var popup_9a585259e36d056e827dc1907272286f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e0cf2d22f6d5895589434e69c43d185d = $(`<div id="html_e0cf2d22f6d5895589434e69c43d185d" style="width: 100.0%; height: 100.0%;">Comuna: Paine<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.375</div>`)[0];
+                popup_9a585259e36d056e827dc1907272286f.setContent(html_e0cf2d22f6d5895589434e69c43d185d);
+            
+        
+
+        circle_marker_0cfb19b1efce8a5daaf98b72e6ccb305.bindPopup(popup_9a585259e36d056e827dc1907272286f)
+        ;
+
+        
+    
+    
+            feature_group_sub_group_10e60f66287aafcc48bc92532d8ad940.addTo(map_54026d3de3f76eddc2f66ac0d7565476);
+        
+    
+    var color_map_ae9608078d8b8018a192047db3658488 = {};
+
+    
+    color_map_ae9608078d8b8018a192047db3658488.color = d3.scale.threshold()
+              .domain([0.0, 0.03206412825651302, 0.06412825651302605, 0.09619238476953908, 0.1282565130260521, 0.16032064128256512, 0.19238476953907815, 0.22444889779559118, 0.2565130260521042, 0.28857715430861725, 0.32064128256513025, 0.3527054108216433, 0.3847695390781563, 0.4168336673346693, 0.44889779559118237, 0.48096192384769537, 0.5130260521042084, 0.5450901803607214, 0.5771543086172345, 0.6092184368737475, 0.6412825651302605, 0.6733466933867736, 0.7054108216432866, 0.7374749498997996, 0.7695390781563126, 0.8016032064128257, 0.8336673346693386, 0.8657314629258517, 0.8977955911823647, 0.9298597194388778, 0.9619238476953907, 0.9939879759519038, 1.0260521042084167, 1.0581162324649298, 1.0901803607214429, 1.122244488977956, 1.154308617234469, 1.186372745490982, 1.218436873747495, 1.250501002004008, 1.282565130260521, 1.314629258517034, 1.346693386773547, 1.3787575150300602, 1.4108216432865732, 1.4428857715430863, 1.4749498997995991, 1.5070140280561122, 1.5390781563126252, 1.5711422845691383, 1.6032064128256514, 1.6352705410821644, 1.6673346693386772, 1.6993987975951903, 1.7314629258517034, 1.7635270541082164, 1.7955911823647295, 1.8276553106212425, 1.8597194388777556, 1.8917835671342684, 1.9238476953907815, 1.9559118236472945, 1.9879759519038076, 2.0200400801603204, 2.0521042084168335, 2.0841683366733466, 2.1162324649298596, 2.1482965931863727, 2.1803607214428857, 2.212424849699399, 2.244488977955912, 2.276553106212425, 2.308617234468938, 2.340681362725451, 2.372745490981964, 2.404809619238477, 2.43687374749499, 2.468937875751503, 2.501002004008016, 2.533066132264529, 2.565130260521042, 2.597194388777555, 2.629258517034068, 2.661322645290581, 2.693386773547094, 2.7254509018036073, 2.7575150300601203, 2.7895791583166334, 2.8216432865731464, 2.8537074148296595, 2.8857715430861726, 2.917835671342685, 2.9498997995991982, 2.9819639278557113, 3.0140280561122244, 3.0460921843687374, 3.0781563126252505, 3.1102204408817635, 3.1422845691382766, 3.1743486973947896, 3.2064128256513027, 3.2384769539078158, 3.270541082164329, 3.302605210420842, 3.3346693386773545, 3.3667334669338675, 3.3987975951903806, 3.4308617234468937, 3.4629258517034067, 3.49498997995992, 3.527054108216433, 3.559118236472946, 3.591182364729459, 3.623246492985972, 3.655310621242485, 3.687374749498998, 3.719438877755511, 3.7515030060120242, 3.783567134268537, 3.81563126252505, 3.847695390781563, 3.879759519038076, 3.911823647294589, 3.943887775551102, 3.975951903807615, 4.008016032064128, 4.040080160320641, 4.072144288577154, 4.104208416833667, 4.13627254509018, 4.168336673346693, 4.200400801603206, 4.232464929859719, 4.264529058116232, 4.296593186372745, 4.328657314629258, 4.3607214428857715, 4.3927855711422845, 4.424849699398798, 4.456913827655311, 4.488977955911824, 4.521042084168337, 4.55310621242485, 4.585170340681363, 4.617234468937876, 4.649298597194389, 4.681362725450902, 4.713426853707415, 4.745490981963928, 4.777555110220441, 4.809619238476954, 4.841683366733467, 4.87374749498998, 4.905811623246493, 4.937875751503006, 4.969939879759519, 5.002004008016032, 5.034068136272545, 5.066132264529058, 5.098196392785571, 5.130260521042084, 5.162324649298597, 5.19438877755511, 5.226452905811623, 5.258517034068136, 5.290581162324649, 5.322645290581162, 5.354709418837675, 5.386773547094188, 5.4188376753507015, 5.4509018036072145, 5.482965931863728, 5.515030060120241, 5.547094188376754, 5.579158316633267, 5.61122244488978, 5.643286573146293, 5.675350701402806, 5.707414829659319, 5.739478957915832, 5.771543086172345, 5.803607214428857, 5.83567134268537, 5.867735470941883, 5.8997995991983965, 5.9318637274549095, 5.963927855711423, 5.995991983967936, 6.028056112224449, 6.060120240480962, 6.092184368737475, 6.124248496993988, 6.156312625250501, 6.188376753507014, 6.220440881763527, 6.25250501002004, 6.284569138276553, 6.316633266533066, 6.348697394789579, 6.380761523046092, 6.412825651302605, 6.4448897795591185, 6.4769539078156315, 6.509018036072145, 6.541082164328658, 6.573146292585171, 6.605210420841684, 6.637274549098197, 6.669338677354709, 6.701402805611222, 6.733466933867735, 6.765531062124248, 6.797595190380761, 6.829659318637274, 6.861723446893787, 6.8937875751503, 6.925851703406813, 6.9579158316633265, 6.98997995991984, 7.022044088176353, 7.054108216432866, 7.086172344689379, 7.118236472945892, 7.150300601202405, 7.182364729458918, 7.214428857715431, 7.246492985971944, 7.278557114228457, 7.31062124248497, 7.342685370741483, 7.374749498997996, 7.406813627254509, 7.438877755511022, 7.470941883767535, 7.5030060120240485, 7.5350701402805615, 7.567134268537074, 7.599198396793587, 7.6312625250501, 7.663326653306613, 7.695390781563126, 7.727454909819639, 7.759519038076152, 7.791583166332665, 7.823647294589178, 7.855711422845691, 7.887775551102204, 7.919839679358717, 7.95190380761523, 7.9839679358717435, 8.016032064128256, 8.048096192384769, 8.080160320641282, 8.112224448897795, 8.144288577154308, 8.176352705410821, 8.208416833667334, 8.240480961923847, 8.27254509018036, 8.304609218436873, 8.336673346693386, 8.3687374749499, 8.400801603206412, 8.432865731462925, 8.464929859719438, 8.496993987975952, 8.529058116232465, 8.561122244488978, 8.59318637274549, 8.625250501002004, 8.657314629258517, 8.68937875751503, 8.721442885771543, 8.753507014028056, 8.785571142284569, 8.817635270541082, 8.849699398797595, 8.881763527054108, 8.913827655310621, 8.945891783567134, 8.977955911823647, 9.01002004008016, 9.042084168336673, 9.074148296593187, 9.1062124248497, 9.138276553106213, 9.170340681362726, 9.202404809619239, 9.234468937875752, 9.266533066132265, 9.298597194388778, 9.330661322645291, 9.362725450901804, 9.394789579158317, 9.42685370741483, 9.458917835671343, 9.490981963927856, 9.52304609218437, 9.555110220440882, 9.587174348697395, 9.619238476953909, 9.651302605210422, 9.683366733466935, 9.715430861723448, 9.74749498997996, 9.779559118236472, 9.811623246492985, 9.843687374749498, 9.875751503006011, 9.907815631262524, 9.939879759519037, 9.97194388777555, 10.004008016032063, 10.036072144288577, 10.06813627254509, 10.100200400801603, 10.132264529058116, 10.164328657314629, 10.196392785571142, 10.228456913827655, 10.260521042084168, 10.292585170340681, 10.324649298597194, 10.356713426853707, 10.38877755511022, 10.420841683366733, 10.452905811623246, 10.48496993987976, 10.517034068136272, 10.549098196392785, 10.581162324649299, 10.613226452905812, 10.645290581162325, 10.677354709418838, 10.70941883767535, 10.741482965931864, 10.773547094188377, 10.80561122244489, 10.837675350701403, 10.869739478957916, 10.901803607214429, 10.933867735470942, 10.965931863727455, 10.997995991983968, 11.030060120240481, 11.062124248496994, 11.094188376753507, 11.12625250501002, 11.158316633266534, 11.190380761523047, 11.22244488977956, 11.254509018036073, 11.286573146292586, 11.318637274549099, 11.350701402805612, 11.382765531062125, 11.414829659318638, 11.446893787575151, 11.478957915831664, 11.511022044088177, 11.54308617234469, 11.575150300601202, 11.607214428857715, 11.639278557114228, 11.67134268537074, 11.703406813627254, 11.735470941883767, 11.76753507014028, 11.799599198396793, 11.831663326653306, 11.863727454909819, 11.895791583166332, 11.927855711422845, 11.959919839679358, 11.991983967935871, 12.024048096192384, 12.056112224448897, 12.08817635270541, 12.120240480961924, 12.152304609218437, 12.18436873747495, 12.216432865731463, 12.248496993987976, 12.280561122244489, 12.312625250501002, 12.344689378757515, 12.376753507014028, 12.408817635270541, 12.440881763527054, 12.472945891783567, 12.50501002004008, 12.537074148296593, 12.569138276553106, 12.60120240480962, 12.633266533066132, 12.665330661322646, 12.697394789579159, 12.729458917835672, 12.761523046092185, 12.793587174348698, 12.82565130260521, 12.857715430861724, 12.889779559118237, 12.92184368737475, 12.953907815631263, 12.985971943887776, 13.01803607214429, 13.050100200400802, 13.082164328657315, 13.114228456913828, 13.146292585170341, 13.178356713426854, 13.210420841683367, 13.24248496993988, 13.274549098196394, 13.306613226452907, 13.338677354709418, 13.370741482965931, 13.402805611222444, 13.434869739478957, 13.46693386773547, 13.498997995991983, 13.531062124248496, 13.56312625250501, 13.595190380761522, 13.627254509018035, 13.659318637274549, 13.691382765531062, 13.723446893787575, 13.755511022044088, 13.7875751503006, 13.819639278557114, 13.851703406813627, 13.88376753507014, 13.915831663326653, 13.947895791583166, 13.97995991983968, 14.012024048096192, 14.044088176352705, 14.076152304609218, 14.108216432865731, 14.140280561122244, 14.172344689378757, 14.20440881763527, 14.236472945891784, 14.268537074148297, 14.30060120240481, 14.332665330661323, 14.364729458917836, 14.396793587174349, 14.428857715430862, 14.460921843687375, 14.492985971943888, 14.525050100200401, 14.557114228456914, 14.589178356713427, 14.62124248496994, 14.653306613226453, 14.685370741482966, 14.71743486973948, 14.749498997995993, 14.781563126252506, 14.813627254509019, 14.845691382765532, 14.877755511022045, 14.909819639278558, 14.94188376753507, 14.973947895791584, 15.006012024048097, 15.03807615230461, 15.070140280561123, 15.102204408817636, 15.134268537074147, 15.16633266533066, 15.198396793587174, 15.230460921843687, 15.2625250501002, 15.294589178356713, 15.326653306613226, 15.358717434869739, 15.390781563126252, 15.422845691382765, 15.454909819639278, 15.486973947895791, 15.519038076152304, 15.551102204408817, 15.58316633266533, 15.615230460921843, 15.647294589178356, 15.67935871743487, 15.711422845691382, 15.743486973947896, 15.775551102204409, 15.807615230460922, 15.839679358717435, 15.871743486973948, 15.90380761523046, 15.935871743486974, 15.967935871743487, 16.0])
+              .range(['#0000ffff', '#0000ffff', '#0000ffff', '#0000ffff', '#0100feff', '#0100feff', '#0100feff', '#0100feff', '#0200fdff', '#0200fdff', '#0200fdff', '#0200fdff', '#0300fcff', '#0300fcff', '#0300fcff', '#0300fcff', '#0400fbff', '#0400fbff', '#0400fbff', '#0400fbff', '#0500faff', '#0500faff', '#0500faff', '#0500faff', '#0600f9ff', '#0600f9ff', '#0600f9ff', '#0600f9ff', '#0700f8ff', '#0700f8ff', '#0700f8ff', '#0700f8ff', '#0800f7ff', '#0800f7ff', '#0800f7ff', '#0900f7ff', '#0900f6ff', '#0900f6ff', '#0900f6ff', '#0a00f6ff', '#0a00f5ff', '#0a00f5ff', '#0a00f5ff', '#0b00f5ff', '#0b00f4ff', '#0b00f4ff', '#0b00f4ff', '#0c00f3ff', '#0c00f3ff', '#0c00f3ff', '#0c00f3ff', '#0d00f2ff', '#0d00f2ff', '#0d00f2ff', '#0d00f2ff', '#0e00f1ff', '#0e00f1ff', '#0e00f1ff', '#0e00f1ff', '#0f00f0ff', '#0f00f0ff', '#0f00f0ff', '#0f00f0ff', '#1000efff', '#1000efff', '#1000efff', '#1000efff', '#1100eeff', '#1100eeff', '#1100eeff', '#1200eeff', '#1200edff', '#1200edff', '#1200edff', '#1300edff', '#1300ecff', '#1300ecff', '#1300ecff', '#1400ecff', '#1400ebff', '#1400ebff', '#1400ebff', '#1500ebff', '#1500eaff', '#1500eaff', '#1500eaff', '#1600eaff', '#1600e9ff', '#1600e9ff', '#1600e9ff', '#1700e9ff', '#1700e8ff', '#1700e8ff', '#1700e8ff', '#1800e7ff', '#1800e7ff', '#1800e7ff', '#1800e7ff', '#1900e6ff', '#1900e6ff', '#1900e6ff', '#1a00e6ff', '#1a00e5ff', '#1a00e5ff', '#1a00e5ff', '#1b00e5ff', '#1b00e4ff', '#1b00e4ff', '#1b00e4ff', '#1c00e4ff', '#1c00e3ff', '#1c00e3ff', '#1c00e3ff', '#1d00e3ff', '#1d00e2ff', '#1d00e2ff', '#1d00e2ff', '#1e00e2ff', '#1e00e1ff', '#1e00e1ff', '#1e00e1ff', '#1f00e1ff', '#1f00e0ff', '#1f00e0ff', '#1f00e0ff', '#2000e0ff', '#2000dfff', '#2000dfff', '#2000dfff', '#2100dfff', '#2100deff', '#2100deff', '#2100deff', '#2200deff', '#2200ddff', '#2200ddff', '#2300ddff', '#2300dcff', '#2300dcff', '#2300dcff', '#2400dcff', '#2400dbff', '#2400dbff', '#2400dbff', '#2500dbff', '#2500daff', '#2500daff', '#2500daff', '#2600daff', '#2600d9ff', '#2600d9ff', '#2600d9ff', '#2700d9ff', '#2700d8ff', '#2700d8ff', '#2700d8ff', '#2800d8ff', '#2800d7ff', '#2800d7ff', '#2800d7ff', '#2900d7ff', '#2900d6ff', '#2900d6ff', '#2900d6ff', '#2a00d6ff', '#2a00d5ff', '#2a00d5ff', '#2b00d5ff', '#2b00d5ff', '#2b00d4ff', '#2b00d4ff', '#2c00d4ff', '#2c00d4ff', '#2c00d3ff', '#2c00d3ff', '#2d00d3ff', '#2d00d3ff', '#2d00d2ff', '#2d00d2ff', '#2e00d2ff', '#2e00d2ff', '#2e00d1ff', '#2e00d1ff', '#2f00d1ff', '#2f00d0ff', '#2f00d0ff', '#2f00d0ff', '#3000d0ff', '#3000cfff', '#3000cfff', '#3000cfff', '#3100cfff', '#3100ceff', '#3100ceff', '#3100ceff', '#3200ceff', '#3200cdff', '#3200cdff', '#3200cdff', '#3300cdff', '#3300ccff', '#3300ccff', '#3400ccff', '#3400ccff', '#3400cbff', '#3400cbff', '#3500cbff', '#3500cbff', '#3500caff', '#3500caff', '#3600caff', '#3600caff', '#3600c9ff', '#3600c9ff', '#3700c9ff', '#3700c9ff', '#3700c8ff', '#3700c8ff', '#3800c8ff', '#3800c8ff', '#3800c7ff', '#3800c7ff', '#3900c7ff', '#3900c7ff', '#3900c6ff', '#3900c6ff', '#3a00c6ff', '#3a00c5ff', '#3a00c5ff', '#3a00c5ff', '#3b00c5ff', '#3b00c4ff', '#3b00c4ff', '#3c00c4ff', '#3c00c4ff', '#3c00c3ff', '#3c00c3ff', '#3d00c3ff', '#3d00c3ff', '#3d00c2ff', '#3d00c2ff', '#3e00c2ff', '#3e00c2ff', '#3e00c1ff', '#3e00c1ff', '#3f00c1ff', '#3f00c1ff', '#3f00c0ff', '#3f00c0ff', '#4000c0ff', '#4000c0ff', '#4000bfff', '#4000bfff', '#4100bfff', '#4100bfff', '#4100beff', '#4100beff', '#4200beff', '#4200beff', '#4200bdff', '#4200bdff', '#4300bdff', '#4300bdff', '#4300bcff', '#4300bcff', '#4400bcff', '#4400bcff', '#4400bbff', '#4500bbff', '#4500bbff', '#4500bbff', '#4500baff', '#4600baff', '#4600baff', '#4600b9ff', '#4600b9ff', '#4700b9ff', '#4700b9ff', '#4700b8ff', '#4700b8ff', '#4800b8ff', '#4800b8ff', '#4800b7ff', '#4800b7ff', '#4900b7ff', '#4900b7ff', '#4900b6ff', '#4900b6ff', '#4a00b6ff', '#4a00b6ff', '#4a00b5ff', '#4a00b5ff', '#4b00b5ff', '#4b00b5ff', '#4b00b4ff', '#4b00b4ff', '#4c00b4ff', '#4c00b4ff', '#4c00b3ff', '#4c00b3ff', '#4d00b3ff', '#4d00b3ff', '#4d00b2ff', '#4e00b2ff', '#4e00b2ff', '#4e00b2ff', '#4e00b1ff', '#4f00b1ff', '#4f00b1ff', '#4f00b1ff', '#4f00b0ff', '#5000b0ff', '#5000b0ff', '#5000b0ff', '#5000afff', '#5100afff', '#5100afff', '#5100afff', '#5100aeff', '#5200aeff', '#5200aeff', '#5200adff', '#5200adff', '#5300adff', '#5300adff', '#5300acff', '#5300acff', '#5400acff', '#5400acff', '#5400abff', '#5400abff', '#5500abff', '#5500abff', '#5500aaff', '#5600aaff', '#5600aaff', '#5600aaff', '#5600a9ff', '#5700a9ff', '#5700a9ff', '#5700a9ff', '#5700a8ff', '#5800a8ff', '#5800a8ff', '#5800a8ff', '#5800a7ff', '#5900a7ff', '#5900a7ff', '#5900a7ff', '#5900a6ff', '#5a00a6ff', '#5a00a6ff', '#5a00a6ff', '#5a00a5ff', '#5b00a5ff', '#5b00a5ff', '#5b00a5ff', '#5b00a4ff', '#5c00a4ff', '#5c00a4ff', '#5c00a4ff', '#5c00a3ff', '#5d00a3ff', '#5d00a3ff', '#5d00a2ff', '#5d00a2ff', '#5e00a2ff', '#5e00a2ff', '#5e00a1ff', '#5f00a1ff', '#5f00a1ff', '#5f00a1ff', '#5f00a0ff', '#6000a0ff', '#6000a0ff', '#6000a0ff', '#60009fff', '#61009fff', '#61009fff', '#61009fff', '#61009eff', '#62009eff', '#62009eff', '#62009eff', '#62009dff', '#63009dff', '#63009dff', '#63009dff', '#63009cff', '#64009cff', '#64009cff', '#64009cff', '#64009bff', '#65009bff', '#65009bff', '#65009bff', '#65009aff', '#66009aff', '#66009aff', '#66009aff', '#670099ff', '#670099ff', '#670099ff', '#670099ff', '#680098ff', '#680098ff', '#680098ff', '#680098ff', '#690097ff', '#690097ff', '#690097ff', '#690096ff', '#6a0096ff', '#6a0096ff', '#6a0096ff', '#6a0095ff', '#6b0095ff', '#6b0095ff', '#6b0095ff', '#6b0094ff', '#6c0094ff', '#6c0094ff', '#6c0094ff', '#6c0093ff', '#6d0093ff', '#6d0093ff', '#6d0093ff', '#6d0092ff', '#6e0092ff', '#6e0092ff', '#6e0092ff', '#6e0091ff', '#6f0091ff', '#6f0091ff', '#6f0091ff', '#700090ff', '#700090ff', '#700090ff', '#700090ff', '#71008fff', '#71008fff', '#71008fff', '#71008fff', '#72008eff', '#72008eff', '#72008eff', '#72008eff', '#73008dff', '#73008dff', '#73008dff', '#73008dff', '#74008cff', '#74008cff', '#74008cff', '#74008bff', '#75008bff', '#75008bff', '#75008bff', '#75008aff', '#76008aff', '#76008aff', '#76008aff', '#760089ff', '#770089ff', '#770089ff', '#770089ff', '#780088ff', '#780088ff', '#780088ff', '#780088ff', '#790087ff', '#790087ff', '#790087ff', '#790087ff', '#7a0086ff', '#7a0086ff', '#7a0086ff', '#7a0086ff', '#7b0085ff', '#7b0085ff', '#7b0085ff', '#7b0085ff', '#7c0084ff', '#7c0084ff', '#7c0084ff', '#7c0084ff', '#7d0083ff', '#7d0083ff', '#7d0083ff', '#7d0083ff', '#7e0082ff', '#7e0082ff', '#7e0082ff', '#7e0082ff', '#7f0081ff', '#7f0081ff', '#7f0081ff', '#7f0081ff', '#800080ff', '#800080ff']);
+    
+
+    color_map_ae9608078d8b8018a192047db3658488.x = d3.scale.linear()
+              .domain([0.0, 16.0])
+              .range([0, 450 - 50]);
+
+    color_map_ae9608078d8b8018a192047db3658488.legend = L.control({position: 'topright'});
+    color_map_ae9608078d8b8018a192047db3658488.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_ae9608078d8b8018a192047db3658488.legend.addTo(map_54026d3de3f76eddc2f66ac0d7565476);
+
+    color_map_ae9608078d8b8018a192047db3658488.xAxis = d3.svg.axis()
+        .scale(color_map_ae9608078d8b8018a192047db3658488.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([0.0, 16.0]);
+
+    color_map_ae9608078d8b8018a192047db3658488.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_ae9608078d8b8018a192047db3658488.g = color_map_ae9608078d8b8018a192047db3658488.svg.append("g")
+        .attr("class", "key")
+        .attr("transform", "translate(25,16)");
+
+    color_map_ae9608078d8b8018a192047db3658488.g.selectAll("rect")
+        .data(color_map_ae9608078d8b8018a192047db3658488.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_ae9608078d8b8018a192047db3658488.x(color_map_ae9608078d8b8018a192047db3658488.color.domain()[i - 1]) : color_map_ae9608078d8b8018a192047db3658488.x.range()[0],
+            x1: i < color_map_ae9608078d8b8018a192047db3658488.color.domain().length ? color_map_ae9608078d8b8018a192047db3658488.x(color_map_ae9608078d8b8018a192047db3658488.color.domain()[i]) : color_map_ae9608078d8b8018a192047db3658488.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_ae9608078d8b8018a192047db3658488.g.call(color_map_ae9608078d8b8018a192047db3658488.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .text("UF/m\u00b2 (500-4999 m2)");
+    
+    var color_map_13e823edc91b817989f618bf8dd5fc74 = {};
+
+    
+    color_map_13e823edc91b817989f618bf8dd5fc74.color = d3.scale.threshold()
+              .domain([0.0, 0.004008016032064128, 0.008016032064128256, 0.012024048096192385, 0.01603206412825651, 0.02004008016032064, 0.02404809619238477, 0.028056112224448898, 0.03206412825651302, 0.036072144288577156, 0.04008016032064128, 0.04408817635270541, 0.04809619238476954, 0.052104208416833664, 0.056112224448897796, 0.06012024048096192, 0.06412825651302605, 0.06813627254509018, 0.07214428857715431, 0.07615230460921844, 0.08016032064128256, 0.0841683366733467, 0.08817635270541083, 0.09218436873747494, 0.09619238476953908, 0.10020040080160321, 0.10420841683366733, 0.10821643286573146, 0.11222444889779559, 0.11623246492985972, 0.12024048096192384, 0.12424849699398798, 0.1282565130260521, 0.13226452905811623, 0.13627254509018036, 0.1402805611222445, 0.14428857715430862, 0.14829659318637275, 0.1523046092184369, 0.156312625250501, 0.16032064128256512, 0.16432865731462926, 0.1683366733466934, 0.17234468937875752, 0.17635270541082165, 0.18036072144288579, 0.1843687374749499, 0.18837675350701402, 0.19238476953907815, 0.1963927855711423, 0.20040080160320642, 0.20440881763527055, 0.20841683366733466, 0.2124248496993988, 0.21643286573146292, 0.22044088176352705, 0.22444889779559118, 0.22845691382765532, 0.23246492985971945, 0.23647294589178355, 0.24048096192384769, 0.24448897795591182, 0.24849699398797595, 0.25250501002004005, 0.2565130260521042, 0.2605210420841683, 0.26452905811623245, 0.2685370741482966, 0.2725450901803607, 0.27655310621242485, 0.280561122244489, 0.2845691382765531, 0.28857715430861725, 0.2925851703406814, 0.2965931863727455, 0.30060120240480964, 0.3046092184368738, 0.30861723446893785, 0.312625250501002, 0.3166332665330661, 0.32064128256513025, 0.3246492985971944, 0.3286573146292585, 0.33266533066132264, 0.3366733466933868, 0.3406813627254509, 0.34468937875751504, 0.3486973947895792, 0.3527054108216433, 0.35671342685370744, 0.36072144288577157, 0.36472945891783565, 0.3687374749498998, 0.3727454909819639, 0.37675350701402804, 0.3807615230460922, 0.3847695390781563, 0.38877755511022044, 0.3927855711422846, 0.3967935871743487, 0.40080160320641284, 0.40480961923847697, 0.4088176352705411, 0.41282565130260523, 0.4168336673346693, 0.42084168336673344, 0.4248496993987976, 0.4288577154308617, 0.43286573146292584, 0.43687374749499, 0.4408817635270541, 0.44488977955911824, 0.44889779559118237, 0.4529058116232465, 0.45691382765531063, 0.46092184368737477, 0.4649298597194389, 0.46893787575150303, 0.4729458917835671, 0.47695390781563124, 0.48096192384769537, 0.4849699398797595, 0.48897795591182364, 0.49298597194388777, 0.4969939879759519, 0.501002004008016, 0.5050100200400801, 0.5090180360721442, 0.5130260521042084, 0.5170340681362725, 0.5210420841683366, 0.5250501002004008, 0.5290581162324649, 0.533066132264529, 0.5370741482965932, 0.5410821643286573, 0.5450901803607214, 0.5490981963927856, 0.5531062124248497, 0.5571142284569138, 0.561122244488978, 0.5651302605210421, 0.5691382765531062, 0.5731462925851704, 0.5771543086172345, 0.5811623246492986, 0.5851703406813628, 0.5891783567134269, 0.593186372745491, 0.5971943887775552, 0.6012024048096193, 0.6052104208416834, 0.6092184368737475, 0.6132264529058116, 0.6172344689378757, 0.6212424849699398, 0.625250501002004, 0.6292585170340681, 0.6332665330661322, 0.6372745490981964, 0.6412825651302605, 0.6452905811623246, 0.6492985971943888, 0.6533066132264529, 0.657314629258517, 0.6613226452905812, 0.6653306613226453, 0.6693386773547094, 0.6733466933867736, 0.6773547094188377, 0.6813627254509018, 0.685370741482966, 0.6893787575150301, 0.6933867735470942, 0.6973947895791583, 0.7014028056112225, 0.7054108216432866, 0.7094188376753507, 0.7134268537074149, 0.717434869739479, 0.7214428857715431, 0.7254509018036072, 0.7294589178356713, 0.7334669338677354, 0.7374749498997996, 0.7414829659318637, 0.7454909819639278, 0.749498997995992, 0.7535070140280561, 0.7575150300601202, 0.7615230460921844, 0.7655310621242485, 0.7695390781563126, 0.7735470941883767, 0.7775551102204409, 0.781563126252505, 0.7855711422845691, 0.7895791583166333, 0.7935871743486974, 0.7975951903807615, 0.8016032064128257, 0.8056112224448898, 0.8096192384769539, 0.8136272545090181, 0.8176352705410822, 0.8216432865731463, 0.8256513026052105, 0.8296593186372746, 0.8336673346693386, 0.8376753507014028, 0.8416833667334669, 0.845691382765531, 0.8496993987975952, 0.8537074148296593, 0.8577154308617234, 0.8617234468937875, 0.8657314629258517, 0.8697394789579158, 0.87374749498998, 0.8777555110220441, 0.8817635270541082, 0.8857715430861723, 0.8897795591182365, 0.8937875751503006, 0.8977955911823647, 0.9018036072144289, 0.905811623246493, 0.9098196392785571, 0.9138276553106213, 0.9178356713426854, 0.9218436873747495, 0.9258517034068137, 0.9298597194388778, 0.9338677354709419, 0.9378757515030061, 0.9418837675350702, 0.9458917835671342, 0.9498997995991983, 0.9539078156312625, 0.9579158316633266, 0.9619238476953907, 0.9659318637274549, 0.969939879759519, 0.9739478957915831, 0.9779559118236473, 0.9819639278557114, 0.9859719438877755, 0.9899799599198397, 0.9939879759519038, 0.9979959919839679, 1.002004008016032, 1.006012024048096, 1.0100200400801602, 1.0140280561122244, 1.0180360721442885, 1.0220440881763526, 1.0260521042084167, 1.0300601202404809, 1.034068136272545, 1.0380761523046091, 1.0420841683366733, 1.0460921843687374, 1.0501002004008015, 1.0541082164328657, 1.0581162324649298, 1.062124248496994, 1.066132264529058, 1.0701402805611222, 1.0741482965931863, 1.0781563126252505, 1.0821643286573146, 1.0861723446893787, 1.0901803607214429, 1.094188376753507, 1.0981963927855711, 1.1022044088176353, 1.1062124248496994, 1.1102204408817635, 1.1142284569138277, 1.1182364729458918, 1.122244488977956, 1.12625250501002, 1.1302605210420842, 1.1342685370741483, 1.1382765531062125, 1.1422845691382766, 1.1462925851703407, 1.1503006012024048, 1.154308617234469, 1.1583166332665331, 1.1623246492985972, 1.1663326653306614, 1.1703406813627255, 1.1743486973947896, 1.1783567134268538, 1.182364729458918, 1.186372745490982, 1.1903807615230462, 1.1943887775551103, 1.1983967935871744, 1.2024048096192386, 1.2064128256513027, 1.2104208416833668, 1.214428857715431, 1.218436873747495, 1.222444889779559, 1.2264529058116231, 1.2304609218436873, 1.2344689378757514, 1.2384769539078155, 1.2424849699398797, 1.2464929859719438, 1.250501002004008, 1.254509018036072, 1.2585170340681362, 1.2625250501002003, 1.2665330661322645, 1.2705410821643286, 1.2745490981963927, 1.2785571142284569, 1.282565130260521, 1.2865731462925851, 1.2905811623246493, 1.2945891783567134, 1.2985971943887775, 1.3026052104208417, 1.3066132264529058, 1.31062124248497, 1.314629258517034, 1.3186372745490982, 1.3226452905811623, 1.3266533066132264, 1.3306613226452906, 1.3346693386773547, 1.3386773547094188, 1.342685370741483, 1.346693386773547, 1.3507014028056112, 1.3547094188376754, 1.3587174348697395, 1.3627254509018036, 1.3667334669338678, 1.370741482965932, 1.374749498997996, 1.3787575150300602, 1.3827655310621243, 1.3867735470941884, 1.3907815631262526, 1.3947895791583167, 1.3987975951903808, 1.402805611222445, 1.406813627254509, 1.4108216432865732, 1.4148296593186374, 1.4188376753507015, 1.4228456913827656, 1.4268537074148298, 1.4308617234468939, 1.434869739478958, 1.4388777555110221, 1.4428857715430863, 1.4468937875751502, 1.4509018036072143, 1.4549098196392785, 1.4589178356713426, 1.4629258517034067, 1.4669338677354709, 1.470941883767535, 1.4749498997995991, 1.4789579158316633, 1.4829659318637274, 1.4869739478957915, 1.4909819639278556, 1.4949899799599198, 1.498997995991984, 1.503006012024048, 1.5070140280561122, 1.5110220440881763, 1.5150300601202404, 1.5190380761523046, 1.5230460921843687, 1.5270541082164328, 1.531062124248497, 1.535070140280561, 1.5390781563126252, 1.5430861723446894, 1.5470941883767535, 1.5511022044088176, 1.5551102204408818, 1.559118236472946, 1.56312625250501, 1.5671342685370742, 1.5711422845691383, 1.5751503006012024, 1.5791583166332666, 1.5831663326653307, 1.5871743486973948, 1.591182364729459, 1.595190380761523, 1.5991983967935872, 1.6032064128256514, 1.6072144288577155, 1.6112224448897796, 1.6152304609218437, 1.6192384769539079, 1.623246492985972, 1.6272545090180361, 1.6312625250501003, 1.6352705410821644, 1.6392785571142285, 1.6432865731462927, 1.6472945891783568, 1.651302605210421, 1.655310621242485, 1.6593186372745492, 1.6633266533066133, 1.6673346693386772, 1.6713426853707414, 1.6753507014028055, 1.6793587174348696, 1.6833667334669338, 1.687374749498998, 1.691382765531062, 1.6953907815631262, 1.6993987975951903, 1.7034068136272544, 1.7074148296593186, 1.7114228456913827, 1.7154308617234468, 1.719438877755511, 1.723446893787575, 1.7274549098196392, 1.7314629258517034, 1.7354709418837675, 1.7394789579158316, 1.7434869739478958, 1.74749498997996, 1.751503006012024, 1.7555110220440882, 1.7595190380761523, 1.7635270541082164, 1.7675350701402806, 1.7715430861723447, 1.7755511022044088, 1.779559118236473, 1.783567134268537, 1.7875751503006012, 1.7915831663326653, 1.7955911823647295, 1.7995991983967936, 1.8036072144288577, 1.8076152304609219, 1.811623246492986, 1.8156312625250501, 1.8196392785571143, 1.8236472945891784, 1.8276553106212425, 1.8316633266533067, 1.8356713426853708, 1.839679358717435, 1.843687374749499, 1.8476953907815632, 1.8517034068136273, 1.8557114228456915, 1.8597194388777556, 1.8637274549098197, 1.8677354709418839, 1.871743486973948, 1.8757515030060121, 1.8797595190380763, 1.8837675350701404, 1.8877755511022045, 1.8917835671342684, 1.8957915831663326, 1.8997995991983967, 1.9038076152304608, 1.907815631262525, 1.911823647294589, 1.9158316633266532, 1.9198396793587174, 1.9238476953907815, 1.9278557114228456, 1.9318637274549098, 1.9358717434869739, 1.939879759519038, 1.9438877755511021, 1.9478957915831663, 1.9519038076152304, 1.9559118236472945, 1.9599198396793587, 1.9639278557114228, 1.967935871743487, 1.971943887775551, 1.9759519038076152, 1.9799599198396793, 1.9839679358717435, 1.9879759519038076, 1.9919839679358717, 1.9959919839679359, 2.0])
+              .range(['#008000ff', '#008000ff', '#018100ff', '#018100ff', '#028100ff', '#028100ff', '#038200ff', '#038200ff', '#048200ff', '#048200ff', '#058300ff', '#058300ff', '#068300ff', '#068300ff', '#078400ff', '#078400ff', '#088400ff', '#088400ff', '#098500ff', '#098500ff', '#0a8500ff', '#0a8500ff', '#0b8600ff', '#0b8600ff', '#0c8600ff', '#0c8600ff', '#0d8700ff', '#0d8700ff', '#0e8700ff', '#0e8700ff', '#0f8800ff', '#0f8800ff', '#108800ff', '#108800ff', '#118900ff', '#118900ff', '#128900ff', '#128900ff', '#138a00ff', '#148a00ff', '#148a00ff', '#158a00ff', '#158b00ff', '#168b00ff', '#168b00ff', '#178b00ff', '#178c00ff', '#188c00ff', '#188c00ff', '#198d00ff', '#198d00ff', '#1a8d00ff', '#1a8d00ff', '#1b8e00ff', '#1b8e00ff', '#1c8e00ff', '#1c8e00ff', '#1d8f00ff', '#1d8f00ff', '#1e8f00ff', '#1e8f00ff', '#1f9000ff', '#1f9000ff', '#209000ff', '#209000ff', '#219100ff', '#219100ff', '#229100ff', '#229100ff', '#239200ff', '#239200ff', '#249200ff', '#249200ff', '#259300ff', '#259300ff', '#269300ff', '#269300ff', '#279400ff', '#289400ff', '#289400ff', '#299400ff', '#299500ff', '#2a9500ff', '#2a9500ff', '#2b9500ff', '#2b9600ff', '#2c9600ff', '#2c9600ff', '#2d9600ff', '#2d9700ff', '#2e9700ff', '#2e9700ff', '#2f9800ff', '#2f9800ff', '#309800ff', '#309800ff', '#319900ff', '#319900ff', '#329900ff', '#329900ff', '#339a00ff', '#339a00ff', '#349a00ff', '#349a00ff', '#359b00ff', '#359b00ff', '#369b00ff', '#369b00ff', '#379c00ff', '#379c00ff', '#389c00ff', '#389c00ff', '#399d00ff', '#399d00ff', '#3a9d00ff', '#3a9d00ff', '#3b9e00ff', '#3c9e00ff', '#3c9e00ff', '#3d9e00ff', '#3d9f00ff', '#3e9f00ff', '#3e9f00ff', '#3f9f00ff', '#3fa000ff', '#40a000ff', '#40a000ff', '#41a000ff', '#41a100ff', '#42a100ff', '#42a100ff', '#43a100ff', '#43a200ff', '#44a200ff', '#44a200ff', '#45a200ff', '#45a300ff', '#46a300ff', '#46a300ff', '#47a400ff', '#47a400ff', '#48a400ff', '#48a400ff', '#49a500ff', '#49a500ff', '#4aa500ff', '#4aa500ff', '#4ba600ff', '#4ba600ff', '#4ca600ff', '#4ca600ff', '#4da700ff', '#4da700ff', '#4ea700ff', '#4fa700ff', '#4fa800ff', '#50a800ff', '#50a800ff', '#51a800ff', '#51a900ff', '#52a900ff', '#52a900ff', '#53a900ff', '#53aa00ff', '#54aa00ff', '#54aa00ff', '#55aa00ff', '#55ab00ff', '#56ab00ff', '#56ab00ff', '#57ab00ff', '#57ac00ff', '#58ac00ff', '#58ac00ff', '#59ac00ff', '#59ad00ff', '#5aad00ff', '#5aad00ff', '#5bad00ff', '#5bae00ff', '#5cae00ff', '#5cae00ff', '#5daf00ff', '#5daf00ff', '#5eaf00ff', '#5eaf00ff', '#5fb000ff', '#5fb000ff', '#60b000ff', '#60b000ff', '#61b100ff', '#61b100ff', '#62b100ff', '#63b100ff', '#63b200ff', '#64b200ff', '#64b200ff', '#65b200ff', '#65b300ff', '#66b300ff', '#66b300ff', '#67b300ff', '#67b400ff', '#68b400ff', '#68b400ff', '#69b400ff', '#69b500ff', '#6ab500ff', '#6ab500ff', '#6bb500ff', '#6bb600ff', '#6cb600ff', '#6cb600ff', '#6db600ff', '#6db700ff', '#6eb700ff', '#6eb700ff', '#6fb700ff', '#6fb800ff', '#70b800ff', '#70b800ff', '#71b800ff', '#71b900ff', '#72b900ff', '#72b900ff', '#73b900ff', '#73ba00ff', '#74ba00ff', '#74ba00ff', '#75bb00ff', '#75bb00ff', '#76bb00ff', '#77bb00ff', '#77bc00ff', '#78bc00ff', '#78bc00ff', '#79bc00ff', '#79bd00ff', '#7abd00ff', '#7abd00ff', '#7bbd00ff', '#7bbe00ff', '#7cbe00ff', '#7cbe00ff', '#7dbe00ff', '#7dbf00ff', '#7ebf00ff', '#7ebf00ff', '#7fbf00ff', '#7fc000ff', '#80c000ff', '#80c000ff', '#81c000ff', '#81c100ff', '#82c100ff', '#82c100ff', '#83c100ff', '#83c200ff', '#84c200ff', '#84c200ff', '#85c200ff', '#85c300ff', '#86c300ff', '#86c300ff', '#87c300ff', '#87c400ff', '#88c400ff', '#88c400ff', '#89c400ff', '#8ac500ff', '#8ac500ff', '#8bc500ff', '#8bc500ff', '#8cc600ff', '#8cc600ff', '#8dc600ff', '#8dc700ff', '#8ec700ff', '#8ec700ff', '#8fc700ff', '#8fc800ff', '#90c800ff', '#90c800ff', '#91c800ff', '#91c900ff', '#92c900ff', '#92c900ff', '#93c900ff', '#93ca00ff', '#94ca00ff', '#94ca00ff', '#95ca00ff', '#95cb00ff', '#96cb00ff', '#96cb00ff', '#97cb00ff', '#97cc00ff', '#98cc00ff', '#98cc00ff', '#99cc00ff', '#99cd00ff', '#9acd00ff', '#9acd00ff', '#9bcd00ff', '#9bce00ff', '#9cce00ff', '#9cce00ff', '#9dce00ff', '#9ecf00ff', '#9ecf00ff', '#9fcf00ff', '#9fcf00ff', '#a0d000ff', '#a0d000ff', '#a1d000ff', '#a1d000ff', '#a2d100ff', '#a2d100ff', '#a3d100ff', '#a3d200ff', '#a4d200ff', '#a4d200ff', '#a5d200ff', '#a5d300ff', '#a6d300ff', '#a6d300ff', '#a7d300ff', '#a7d400ff', '#a8d400ff', '#a8d400ff', '#a9d400ff', '#a9d500ff', '#aad500ff', '#aad500ff', '#abd500ff', '#abd600ff', '#acd600ff', '#acd600ff', '#add600ff', '#add700ff', '#aed700ff', '#aed700ff', '#afd700ff', '#afd800ff', '#b0d800ff', '#b0d800ff', '#b1d800ff', '#b2d900ff', '#b2d900ff', '#b3d900ff', '#b3d900ff', '#b4da00ff', '#b4da00ff', '#b5da00ff', '#b5da00ff', '#b6db00ff', '#b6db00ff', '#b7db00ff', '#b7db00ff', '#b8dc00ff', '#b8dc00ff', '#b9dc00ff', '#b9dc00ff', '#badd00ff', '#badd00ff', '#bbdd00ff', '#bbde00ff', '#bcde00ff', '#bcde00ff', '#bdde00ff', '#bddf00ff', '#bedf00ff', '#bedf00ff', '#bfdf00ff', '#bfe000ff', '#c0e000ff', '#c0e000ff', '#c1e000ff', '#c1e100ff', '#c2e100ff', '#c2e100ff', '#c3e100ff', '#c3e200ff', '#c4e200ff', '#c5e200ff', '#c5e200ff', '#c6e300ff', '#c6e300ff', '#c7e300ff', '#c7e300ff', '#c8e400ff', '#c8e400ff', '#c9e400ff', '#c9e400ff', '#cae500ff', '#cae500ff', '#cbe500ff', '#cbe500ff', '#cce600ff', '#cce600ff', '#cde600ff', '#cde600ff', '#cee700ff', '#cee700ff', '#cfe700ff', '#cfe700ff', '#d0e800ff', '#d0e800ff', '#d1e800ff', '#d1e900ff', '#d2e900ff', '#d2e900ff', '#d3e900ff', '#d3ea00ff', '#d4ea00ff', '#d4ea00ff', '#d5ea00ff', '#d5eb00ff', '#d6eb00ff', '#d6eb00ff', '#d7eb00ff', '#d7ec00ff', '#d8ec00ff', '#d9ec00ff', '#d9ec00ff', '#daed00ff', '#daed00ff', '#dbed00ff', '#dbed00ff', '#dcee00ff', '#dcee00ff', '#ddee00ff', '#ddee00ff', '#deef00ff', '#deef00ff', '#dfef00ff', '#dfef00ff', '#e0f000ff', '#e0f000ff', '#e1f000ff', '#e1f000ff', '#e2f100ff', '#e2f100ff', '#e3f100ff', '#e3f100ff', '#e4f200ff', '#e4f200ff', '#e5f200ff', '#e5f200ff', '#e6f300ff', '#e6f300ff', '#e7f300ff', '#e7f300ff', '#e8f400ff', '#e8f400ff', '#e9f400ff', '#e9f500ff', '#eaf500ff', '#eaf500ff', '#ebf500ff', '#ebf600ff', '#ecf600ff', '#edf600ff', '#edf600ff', '#eef700ff', '#eef700ff', '#eff700ff', '#eff700ff', '#f0f800ff', '#f0f800ff', '#f1f800ff', '#f1f800ff', '#f2f900ff', '#f2f900ff', '#f3f900ff', '#f3f900ff', '#f4fa00ff', '#f4fa00ff', '#f5fa00ff', '#f5fa00ff', '#f6fb00ff', '#f6fb00ff', '#f7fb00ff', '#f7fb00ff', '#f8fc00ff', '#f8fc00ff', '#f9fc00ff', '#f9fc00ff', '#fafd00ff', '#fafd00ff', '#fbfd00ff', '#fbfd00ff', '#fcfe00ff', '#fcfe00ff', '#fdfe00ff', '#fdfe00ff', '#feff00ff', '#feff00ff', '#ffff00ff', '#ffff00ff']);
+    
+
+    color_map_13e823edc91b817989f618bf8dd5fc74.x = d3.scale.linear()
+              .domain([0.0, 2.0])
+              .range([0, 450 - 50]);
+
+    color_map_13e823edc91b817989f618bf8dd5fc74.legend = L.control({position: 'topright'});
+    color_map_13e823edc91b817989f618bf8dd5fc74.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_13e823edc91b817989f618bf8dd5fc74.legend.addTo(map_54026d3de3f76eddc2f66ac0d7565476);
+
+    color_map_13e823edc91b817989f618bf8dd5fc74.xAxis = d3.svg.axis()
+        .scale(color_map_13e823edc91b817989f618bf8dd5fc74.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([0.0, 2.0]);
+
+    color_map_13e823edc91b817989f618bf8dd5fc74.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_13e823edc91b817989f618bf8dd5fc74.g = color_map_13e823edc91b817989f618bf8dd5fc74.svg.append("g")
+        .attr("class", "key")
+        .attr("transform", "translate(25,16)");
+
+    color_map_13e823edc91b817989f618bf8dd5fc74.g.selectAll("rect")
+        .data(color_map_13e823edc91b817989f618bf8dd5fc74.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_13e823edc91b817989f618bf8dd5fc74.x(color_map_13e823edc91b817989f618bf8dd5fc74.color.domain()[i - 1]) : color_map_13e823edc91b817989f618bf8dd5fc74.x.range()[0],
+            x1: i < color_map_13e823edc91b817989f618bf8dd5fc74.color.domain().length ? color_map_13e823edc91b817989f618bf8dd5fc74.x(color_map_13e823edc91b817989f618bf8dd5fc74.color.domain()[i]) : color_map_13e823edc91b817989f618bf8dd5fc74.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_13e823edc91b817989f618bf8dd5fc74.g.call(color_map_13e823edc91b817989f618bf8dd5fc74.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .text("UF/m\u00b2 (10001-100000 m2)");
+    
+            var layer_control_d6d98a09d8a254a44b11cd61d5c5ce10_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_4665dcb345f0c032b997cd28b4398598,
+                },
+                overlays :  {
+                    "Rango 500-4999 m2" : feature_group_23f7e327c99f559ff78b650763912300,
+                    "Rango 10001-100000 m2" : feature_group_f2a8064cc1dd2fcb033c1a2473a20907,
+                    "Semestre 2024S1" : feature_group_sub_group_d287ec9899f67d2d1f6e1a5d0c0ae693,
+                    "Semestre 2024S2" : feature_group_sub_group_10e60f66287aafcc48bc92532d8ad940,
+                },
+            };
+            let layer_control_d6d98a09d8a254a44b11cd61d5c5ce10 = L.control.layers(
+                layer_control_d6d98a09d8a254a44b11cd61d5c5ce10_layers.base_layers,
+                layer_control_d6d98a09d8a254a44b11cd61d5c5ce10_layers.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_54026d3de3f76eddc2f66ac0d7565476);
+
+        
+</script>
+</html>

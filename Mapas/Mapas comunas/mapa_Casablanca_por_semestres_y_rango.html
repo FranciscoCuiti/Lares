@@ -1,0 +1,2362 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8eba4e88389041f8f35de81cb985e54c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://unpkg.com/leaflet.featuregroup.subgroup@1.0.2/dist/leaflet.featuregroup.subgroup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8eba4e88389041f8f35de81cb985e54c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8eba4e88389041f8f35de81cb985e54c = L.map(
+                "map_8eba4e88389041f8f35de81cb985e54c",
+                {
+                    center: [-33.291841127282886, -71.44975267772493],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e030a3e0534945ec316d116fdf72ca72 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_e030a3e0534945ec316d116fdf72ca72.addTo(map_8eba4e88389041f8f35de81cb985e54c);
+        
+    
+            var feature_group_352abfa2ecbb9aabf40e16fcaf4c776d = L.featureGroup(
+                {}
+            );
+        
+    
+            feature_group_352abfa2ecbb9aabf40e16fcaf4c776d.addTo(map_8eba4e88389041f8f35de81cb985e54c);
+        
+    
+            var feature_group_cca633e7358a3306800f83935ee8d3c6 = L.featureGroup(
+                {}
+            );
+        
+    
+            feature_group_cca633e7358a3306800f83935ee8d3c6.addTo(map_8eba4e88389041f8f35de81cb985e54c);
+        
+    
+            var feature_group_sub_group_9e23bbb19f8cfdbd32b6864991d061a0 = L.featureGroup.subGroup(
+                feature_group_352abfa2ecbb9aabf40e16fcaf4c776d
+            );
+        
+    
+            var circle_marker_ca5ae398fadd7ae28b8519bc7ce094fa = L.circleMarker(
+                [-33.35086235, -71.3633355],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1800e7ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_9e23bbb19f8cfdbd32b6864991d061a0);
+        
+    
+        var popup_b15a9421aff2748dec1645cb953727ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6eab9499c4e815efac4e63b17c38db36 = $(`<div id="html_6eab9499c4e815efac4e63b17c38db36" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 3.1</div>`)[0];
+                popup_b15a9421aff2748dec1645cb953727ab.setContent(html_6eab9499c4e815efac4e63b17c38db36);
+            
+        
+
+        circle_marker_ca5ae398fadd7ae28b8519bc7ce094fa.bindPopup(popup_b15a9421aff2748dec1645cb953727ab)
+        ;
+
+        
+    
+    
+            var circle_marker_f2aa618c8cd5e1c6e726bcf93731e9d5 = L.circleMarker(
+                [-33.3120739, -71.4176768],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2400dcff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_9e23bbb19f8cfdbd32b6864991d061a0);
+        
+    
+        var popup_f8c97726bfb93e9db6db65c4165d3761 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_084d022e78e79615af4edc83e38782ad = $(`<div id="html_084d022e78e79615af4edc83e38782ad" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 4.483636837336671</div>`)[0];
+                popup_f8c97726bfb93e9db6db65c4165d3761.setContent(html_084d022e78e79615af4edc83e38782ad);
+            
+        
+
+        circle_marker_f2aa618c8cd5e1c6e726bcf93731e9d5.bindPopup(popup_f8c97726bfb93e9db6db65c4165d3761)
+        ;
+
+        
+    
+    
+            var circle_marker_f785961ac808a088b1f3a4912774310f = L.circleMarker(
+                [-33.2741046, -71.426625],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1000efff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_9e23bbb19f8cfdbd32b6864991d061a0);
+        
+    
+        var popup_41d16b4c42524413bf68cccc07c0787c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8122f6c4669841bc9d513d65b25cad70 = $(`<div id="html_8122f6c4669841bc9d513d65b25cad70" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 2.0329621776873994</div>`)[0];
+                popup_41d16b4c42524413bf68cccc07c0787c.setContent(html_8122f6c4669841bc9d513d65b25cad70);
+            
+        
+
+        circle_marker_f785961ac808a088b1f3a4912774310f.bindPopup(popup_41d16b4c42524413bf68cccc07c0787c)
+        ;
+
+        
+    
+    
+            var circle_marker_1b4b7f3a4175d0959836a8ce657d5bf6 = L.circleMarker(
+                [-33.3167596, -71.4090023],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5100aeff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_9e23bbb19f8cfdbd32b6864991d061a0);
+        
+    
+        var popup_3616aca9557b2be7ff47b40d060f52b8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae4992736294f1b75eeed655314866a5 = $(`<div id="html_ae4992736294f1b75eeed655314866a5" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 10.204996090016978</div>`)[0];
+                popup_3616aca9557b2be7ff47b40d060f52b8.setContent(html_ae4992736294f1b75eeed655314866a5);
+            
+        
+
+        circle_marker_1b4b7f3a4175d0959836a8ce657d5bf6.bindPopup(popup_3616aca9557b2be7ff47b40d060f52b8)
+        ;
+
+        
+    
+    
+            var circle_marker_2309092072eee51b5840bf4cbbab2f3e = L.circleMarker(
+                [-33.177811, -71.6802383],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4b00b4ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_9e23bbb19f8cfdbd32b6864991d061a0);
+        
+    
+        var popup_0714344677ff71f5ea24f4a55a7b4cac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ca9e29791a26f3c34f2409222ea7db30 = $(`<div id="html_ca9e29791a26f3c34f2409222ea7db30" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 9.45273631840796</div>`)[0];
+                popup_0714344677ff71f5ea24f4a55a7b4cac.setContent(html_ca9e29791a26f3c34f2409222ea7db30);
+            
+        
+
+        circle_marker_2309092072eee51b5840bf4cbbab2f3e.bindPopup(popup_0714344677ff71f5ea24f4a55a7b4cac)
+        ;
+
+        
+    
+    
+            var circle_marker_cc20e84a9cfc5eb5f50a84d91ff82448 = L.circleMarker(
+                [-33.3167596, -71.4090023],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5100aeff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_9e23bbb19f8cfdbd32b6864991d061a0);
+        
+    
+        var popup_77209b48ac354079bee6b4d80354bc46 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3912e55e3a74babcf92832549a57bb87 = $(`<div id="html_3912e55e3a74babcf92832549a57bb87" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 10.182886413373012</div>`)[0];
+                popup_77209b48ac354079bee6b4d80354bc46.setContent(html_3912e55e3a74babcf92832549a57bb87);
+            
+        
+
+        circle_marker_cc20e84a9cfc5eb5f50a84d91ff82448.bindPopup(popup_77209b48ac354079bee6b4d80354bc46)
+        ;
+
+        
+    
+    
+            var circle_marker_ef238ae7dc235bbc331303e1b2e931f1 = L.circleMarker(
+                [-33.20855747249174, -71.38406360946286],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0a00f5ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_9e23bbb19f8cfdbd32b6864991d061a0);
+        
+    
+        var popup_553b8bc1cd2bc2db6e7a2defc403e521 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_24ba5ffa412841ca3c74a7950e186d9c = $(`<div id="html_24ba5ffa412841ca3c74a7950e186d9c" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 1.2943243243243243</div>`)[0];
+                popup_553b8bc1cd2bc2db6e7a2defc403e521.setContent(html_24ba5ffa412841ca3c74a7950e186d9c);
+            
+        
+
+        circle_marker_ef238ae7dc235bbc331303e1b2e931f1.bindPopup(popup_553b8bc1cd2bc2db6e7a2defc403e521)
+        ;
+
+        
+    
+    
+            var circle_marker_c7f553c83679469916072ad13be64e2c = L.circleMarker(
+                [-33.32242432543128, -71.399245262146],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2900d6ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_9e23bbb19f8cfdbd32b6864991d061a0);
+        
+    
+        var popup_28ea93ad905ac1652f139a4490d7c796 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c949c7d4c4cfda00d6b24fd762b9368d = $(`<div id="html_c949c7d4c4cfda00d6b24fd762b9368d" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 5.17237953303527</div>`)[0];
+                popup_28ea93ad905ac1652f139a4490d7c796.setContent(html_c949c7d4c4cfda00d6b24fd762b9368d);
+            
+        
+
+        circle_marker_c7f553c83679469916072ad13be64e2c.bindPopup(popup_28ea93ad905ac1652f139a4490d7c796)
+        ;
+
+        
+    
+    
+            var circle_marker_096867d51f40816f75a08b49968e3c56 = L.circleMarker(
+                [-33.318971, -71.409964],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_9e23bbb19f8cfdbd32b6864991d061a0);
+        
+    
+        var popup_773d745a7ad684f7220bc292a03821f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_add0e33f802e31c65c6a689d7ed3c310 = $(`<div id="html_add0e33f802e31c65c6a689d7ed3c310" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 16.0126582278481</div>`)[0];
+                popup_773d745a7ad684f7220bc292a03821f9.setContent(html_add0e33f802e31c65c6a689d7ed3c310);
+            
+        
+
+        circle_marker_096867d51f40816f75a08b49968e3c56.bindPopup(popup_773d745a7ad684f7220bc292a03821f9)
+        ;
+
+        
+    
+    
+            var circle_marker_106cb77d6d3e52d099f3b328467a6d82 = L.circleMarker(
+                [-33.2092093, -71.4806311],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b00f4ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_9e23bbb19f8cfdbd32b6864991d061a0);
+        
+    
+        var popup_43a599368a2fd03ddad30cc95e24b257 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_51f6864adc949883f6c1921e86a49c21 = $(`<div id="html_51f6864adc949883f6c1921e86a49c21" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 1.4371695912211844</div>`)[0];
+                popup_43a599368a2fd03ddad30cc95e24b257.setContent(html_51f6864adc949883f6c1921e86a49c21);
+            
+        
+
+        circle_marker_106cb77d6d3e52d099f3b328467a6d82.bindPopup(popup_43a599368a2fd03ddad30cc95e24b257)
+        ;
+
+        
+    
+    
+            var circle_marker_8d24986b764e3e40065e704edc8d6d77 = L.circleMarker(
+                [-33.1938097, -71.7001064],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3b00c5ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_9e23bbb19f8cfdbd32b6864991d061a0);
+        
+    
+        var popup_a76813849fbd612e3913b591f740beaf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7146de98fba7514ea0adf2fc22b5b5ca = $(`<div id="html_7146de98fba7514ea0adf2fc22b5b5ca" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 7.370156636438582</div>`)[0];
+                popup_a76813849fbd612e3913b591f740beaf.setContent(html_7146de98fba7514ea0adf2fc22b5b5ca);
+            
+        
+
+        circle_marker_8d24986b764e3e40065e704edc8d6d77.bindPopup(popup_a76813849fbd612e3913b591f740beaf)
+        ;
+
+        
+    
+    
+            var circle_marker_e0d805d0a35f845b3697bd2aed64dad2 = L.circleMarker(
+                [-33.31676, -71.409002],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5100afff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_9e23bbb19f8cfdbd32b6864991d061a0);
+        
+    
+        var popup_76276d3ce01efcbab0b4c720e0201c7c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e771c2e4f952c96d6163606ad6b0aa01 = $(`<div id="html_e771c2e4f952c96d6163606ad6b0aa01" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 10.110769798872496</div>`)[0];
+                popup_76276d3ce01efcbab0b4c720e0201c7c.setContent(html_e771c2e4f952c96d6163606ad6b0aa01);
+            
+        
+
+        circle_marker_e0d805d0a35f845b3697bd2aed64dad2.bindPopup(popup_76276d3ce01efcbab0b4c720e0201c7c)
+        ;
+
+        
+    
+    
+            var circle_marker_885fd2c377ce173080922eda8616e450 = L.circleMarker(
+                [-33.27170391111521, -71.42718315124512],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1000f0ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_9e23bbb19f8cfdbd32b6864991d061a0);
+        
+    
+        var popup_af3aa0f933a79a2ae95ba5a642f57cd5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ca7193e2e7da8e48534529d5bcf12cfc = $(`<div id="html_ca7193e2e7da8e48534529d5bcf12cfc" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 1.9956696629207504</div>`)[0];
+                popup_af3aa0f933a79a2ae95ba5a642f57cd5.setContent(html_ca7193e2e7da8e48534529d5bcf12cfc);
+            
+        
+
+        circle_marker_885fd2c377ce173080922eda8616e450.bindPopup(popup_af3aa0f933a79a2ae95ba5a642f57cd5)
+        ;
+
+        
+    
+    
+            var circle_marker_f71a0e627e25231cdb14392b9e681fc5 = L.circleMarker(
+                [-33.195744, -71.694697],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2400dbff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_9e23bbb19f8cfdbd32b6864991d061a0);
+        
+    
+        var popup_26bfe81a8bf3b39348b8b9b76fc21f0f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18c9c98aed8ddeaab2e200be1522eb48 = $(`<div id="html_18c9c98aed8ddeaab2e200be1522eb48" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 4.566993464052287</div>`)[0];
+                popup_26bfe81a8bf3b39348b8b9b76fc21f0f.setContent(html_18c9c98aed8ddeaab2e200be1522eb48);
+            
+        
+
+        circle_marker_f71a0e627e25231cdb14392b9e681fc5.bindPopup(popup_26bfe81a8bf3b39348b8b9b76fc21f0f)
+        ;
+
+        
+    
+    
+            var circle_marker_b0646ccc7bd8bfad20b0f863349bc440 = L.circleMarker(
+                [-33.3291532, -71.4124078],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0d00f2ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_9e23bbb19f8cfdbd32b6864991d061a0);
+        
+    
+        var popup_f17c57cf56aee60ba590ad4c546b40b8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e211ab5694917f7a52f2f3728dd3f53 = $(`<div id="html_9e211ab5694917f7a52f2f3728dd3f53" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 1.6801235681059987</div>`)[0];
+                popup_f17c57cf56aee60ba590ad4c546b40b8.setContent(html_9e211ab5694917f7a52f2f3728dd3f53);
+            
+        
+
+        circle_marker_b0646ccc7bd8bfad20b0f863349bc440.bindPopup(popup_f17c57cf56aee60ba590ad4c546b40b8)
+        ;
+
+        
+    
+    
+            var circle_marker_f1fc70b5c821a21023a85807a1bf3272 = L.circleMarker(
+                [-33.177811, -71.6802383],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4b00b4ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_9e23bbb19f8cfdbd32b6864991d061a0);
+        
+    
+        var popup_e456e091dc1a6a30989024d129b28dcd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff899c7a3d0a0b923683b916301dd4ba = $(`<div id="html_ff899c7a3d0a0b923683b916301dd4ba" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 9.45273631840796</div>`)[0];
+                popup_e456e091dc1a6a30989024d129b28dcd.setContent(html_ff899c7a3d0a0b923683b916301dd4ba);
+            
+        
+
+        circle_marker_f1fc70b5c821a21023a85807a1bf3272.bindPopup(popup_e456e091dc1a6a30989024d129b28dcd)
+        ;
+
+        
+    
+    
+            var circle_marker_a5edf7f50b962b70f48c53fece296621 = L.circleMarker(
+                [-33.318971, -71.409964],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_9e23bbb19f8cfdbd32b6864991d061a0);
+        
+    
+        var popup_64446356bdfbaeb8a7ef410a6c6f9f57 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c9dec4412b6f4d35ad249aaad729ab30 = $(`<div id="html_c9dec4412b6f4d35ad249aaad729ab30" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 16.0126582278481</div>`)[0];
+                popup_64446356bdfbaeb8a7ef410a6c6f9f57.setContent(html_c9dec4412b6f4d35ad249aaad729ab30);
+            
+        
+
+        circle_marker_a5edf7f50b962b70f48c53fece296621.bindPopup(popup_64446356bdfbaeb8a7ef410a6c6f9f57)
+        ;
+
+        
+    
+    
+            var circle_marker_78d3434c0880bcf90f282fa5a6b3b1a6 = L.circleMarker(
+                [-33.1938097, -71.7001064],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3b00c5ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_9e23bbb19f8cfdbd32b6864991d061a0);
+        
+    
+        var popup_96988a0ae7908a6b029ac2139c5652f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0e485f5bde522f7d3807c69b4d1da738 = $(`<div id="html_0e485f5bde522f7d3807c69b4d1da738" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 7.370156636438582</div>`)[0];
+                popup_96988a0ae7908a6b029ac2139c5652f9.setContent(html_0e485f5bde522f7d3807c69b4d1da738);
+            
+        
+
+        circle_marker_78d3434c0880bcf90f282fa5a6b3b1a6.bindPopup(popup_96988a0ae7908a6b029ac2139c5652f9)
+        ;
+
+        
+    
+    
+            var circle_marker_ed0d6ec4fd94fd1eeb7b6f120c52aab8 = L.circleMarker(
+                [-33.3167596, -71.4090023],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5100afff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_9e23bbb19f8cfdbd32b6864991d061a0);
+        
+    
+        var popup_e59cd99d377fdd3e3a3f4f07f60b3042 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_10da98080a160095649f470f68faa887 = $(`<div id="html_10da98080a160095649f470f68faa887" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 10.149160621009464</div>`)[0];
+                popup_e59cd99d377fdd3e3a3f4f07f60b3042.setContent(html_10da98080a160095649f470f68faa887);
+            
+        
+
+        circle_marker_ed0d6ec4fd94fd1eeb7b6f120c52aab8.bindPopup(popup_e59cd99d377fdd3e3a3f4f07f60b3042)
+        ;
+
+        
+    
+    
+            feature_group_sub_group_9e23bbb19f8cfdbd32b6864991d061a0.addTo(map_8eba4e88389041f8f35de81cb985e54c);
+        
+    
+            var feature_group_sub_group_6f43c48087c836c8ae46f912073daec9 = L.featureGroup.subGroup(
+                feature_group_cca633e7358a3306800f83935ee8d3c6
+            );
+        
+    
+            var circle_marker_50024d617400e07aec5b4cdd40532430 = L.circleMarker(
+                [-33.2800319, -71.5212149],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0f8800ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_689056f08a6bb55f1f06439f1f52f283 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e00e7e4a101e2426083c191682a02a0 = $(`<div id="html_7e00e7e4a101e2426083c191682a02a0" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1225</div>`)[0];
+                popup_689056f08a6bb55f1f06439f1f52f283.setContent(html_7e00e7e4a101e2426083c191682a02a0);
+            
+        
+
+        circle_marker_50024d617400e07aec5b4cdd40532430.bindPopup(popup_689056f08a6bb55f1f06439f1f52f283)
+        ;
+
+        
+    
+    
+            var circle_marker_cfbfbed0287a2dc28b718126ebca6b6b = L.circleMarker(
+                [-33.264455, -71.432204],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b8600ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_113a9b7518c8ca7a9a660db21557f262 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b82a128d1584fb28dda2093cbf375ef9 = $(`<div id="html_b82a128d1584fb28dda2093cbf375ef9" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.0915488928305773</div>`)[0];
+                popup_113a9b7518c8ca7a9a660db21557f262.setContent(html_b82a128d1584fb28dda2093cbf375ef9);
+            
+        
+
+        circle_marker_cfbfbed0287a2dc28b718126ebca6b6b.bindPopup(popup_113a9b7518c8ca7a9a660db21557f262)
+        ;
+
+        
+    
+    
+            var circle_marker_c14e9b208432cca65a536f81744b2419 = L.circleMarker(
+                [-33.4394574, -71.448763],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#158b00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_22ca7cf74369fe3e619f0db6d7627d82 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b66ee12a39941b5c71443b173b910a46 = $(`<div id="html_b66ee12a39941b5c71443b173b910a46" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1684210526315789</div>`)[0];
+                popup_22ca7cf74369fe3e619f0db6d7627d82.setContent(html_b66ee12a39941b5c71443b173b910a46);
+            
+        
+
+        circle_marker_c14e9b208432cca65a536f81744b2419.bindPopup(popup_22ca7cf74369fe3e619f0db6d7627d82)
+        ;
+
+        
+    
+    
+            var circle_marker_4cb3c29460634fbdcfa10ee9dc95d7f6 = L.circleMarker(
+                [-33.34983844, -71.36243428],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#329900ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_12b3ebb90c60d0c0111b8958f890160c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af4646fc1a001e0444300fa545d8fdd2 = $(`<div id="html_af4646fc1a001e0444300fa545d8fdd2" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.3975</div>`)[0];
+                popup_12b3ebb90c60d0c0111b8958f890160c.setContent(html_af4646fc1a001e0444300fa545d8fdd2);
+            
+        
+
+        circle_marker_4cb3c29460634fbdcfa10ee9dc95d7f6.bindPopup(popup_12b3ebb90c60d0c0111b8958f890160c)
+        ;
+
+        
+    
+    
+            var circle_marker_ec03611a19c415b3e630fdc9c137db3b = L.circleMarker(
+                [-33.3265738, -71.3979952],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_d21c2fbff72739e7bd86dde27e3feb5d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1c05655f6b1afd356d2b895d56175f60 = $(`<div id="html_1c05655f6b1afd356d2b895d56175f60" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 5e-05</div>`)[0];
+                popup_d21c2fbff72739e7bd86dde27e3feb5d.setContent(html_1c05655f6b1afd356d2b895d56175f60);
+            
+        
+
+        circle_marker_ec03611a19c415b3e630fdc9c137db3b.bindPopup(popup_d21c2fbff72739e7bd86dde27e3feb5d)
+        ;
+
+        
+    
+    
+            var circle_marker_097ef84ed8f7a725b6ae69b21a84be65 = L.circleMarker(
+                [-33.2870635, -71.5065379],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0f8800ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_422e1ccb3db3027299c467283b7946cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_146aff79494bf7fcc4d7e5c13b941b5c = $(`<div id="html_146aff79494bf7fcc4d7e5c13b941b5c" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1181818181818181</div>`)[0];
+                popup_422e1ccb3db3027299c467283b7946cb.setContent(html_146aff79494bf7fcc4d7e5c13b941b5c);
+            
+        
+
+        circle_marker_097ef84ed8f7a725b6ae69b21a84be65.bindPopup(popup_422e1ccb3db3027299c467283b7946cb)
+        ;
+
+        
+    
+    
+            var circle_marker_0b01a6e46dd8b4cc5e829e8a63078fb0 = L.circleMarker(
+                [-33.1872083, -71.6853897],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#098500ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_8ecebc842cecbe5d1dd05cb12e854558 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4cc1932b3c6599590aeffada45264ad4 = $(`<div id="html_4cc1932b3c6599590aeffada45264ad4" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.0747934002303636</div>`)[0];
+                popup_8ecebc842cecbe5d1dd05cb12e854558.setContent(html_4cc1932b3c6599590aeffada45264ad4);
+            
+        
+
+        circle_marker_0b01a6e46dd8b4cc5e829e8a63078fb0.bindPopup(popup_8ecebc842cecbe5d1dd05cb12e854558)
+        ;
+
+        
+    
+    
+            var circle_marker_a3c33be096964d345311d838cb7950f4 = L.circleMarker(
+                [-33.30011672, -71.49713516],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0e8700ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_81ee8728824fc7ac3b5224184942a7bf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87a836758ff535a3c71fca259be705be = $(`<div id="html_87a836758ff535a3c71fca259be705be" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1111111111111111</div>`)[0];
+                popup_81ee8728824fc7ac3b5224184942a7bf.setContent(html_87a836758ff535a3c71fca259be705be);
+            
+        
+
+        circle_marker_a3c33be096964d345311d838cb7950f4.bindPopup(popup_81ee8728824fc7ac3b5224184942a7bf)
+        ;
+
+        
+    
+    
+            var circle_marker_4c8367b639d2fa4c7918993c5cebdc20 = L.circleMarker(
+                [-33.439897, -71.4356279],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#108800ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_17f2dc1fc9c3f318154ae7e0b09e73c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4defb932a009748766b0503c13e48a85 = $(`<div id="html_4defb932a009748766b0503c13e48a85" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.128</div>`)[0];
+                popup_17f2dc1fc9c3f318154ae7e0b09e73c1.setContent(html_4defb932a009748766b0503c13e48a85);
+            
+        
+
+        circle_marker_4c8367b639d2fa4c7918993c5cebdc20.bindPopup(popup_17f2dc1fc9c3f318154ae7e0b09e73c1)
+        ;
+
+        
+    
+    
+            var circle_marker_71a9035cd7485d04e67ee0b0ac3786a6 = L.circleMarker(
+                [-33.352664, -71.346107],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#118900ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_3cdd5e59616e4168eb92481f22590051 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26322c20346697223273e6c8bb37b0d1 = $(`<div id="html_26322c20346697223273e6c8bb37b0d1" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1367025479712948</div>`)[0];
+                popup_3cdd5e59616e4168eb92481f22590051.setContent(html_26322c20346697223273e6c8bb37b0d1);
+            
+        
+
+        circle_marker_71a9035cd7485d04e67ee0b0ac3786a6.bindPopup(popup_3cdd5e59616e4168eb92481f22590051)
+        ;
+
+        
+    
+    
+            var circle_marker_8742d8d4ee755c8f325a7738983db8e0 = L.circleMarker(
+                [-33.3182828, -71.4070899],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1d8f00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_7c296d50d71bed66697180a80d120539 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c0d800e9b6de2f51b3a912f08ca50e0d = $(`<div id="html_c0d800e9b6de2f51b3a912f08ca50e0d" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.2325</div>`)[0];
+                popup_7c296d50d71bed66697180a80d120539.setContent(html_c0d800e9b6de2f51b3a912f08ca50e0d);
+            
+        
+
+        circle_marker_8742d8d4ee755c8f325a7738983db8e0.bindPopup(popup_7c296d50d71bed66697180a80d120539)
+        ;
+
+        
+    
+    
+            var circle_marker_1fbcd8f4d8a82ec0421a4a391761fccb = L.circleMarker(
+                [-33.3057304, -71.4096648],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#399d00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_213e98e1aab4e87dbca5865f3dae60c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99bac6a8363213c8d9d79e572cf05855 = $(`<div id="html_99bac6a8363213c8d9d79e572cf05855" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.4477040816326531</div>`)[0];
+                popup_213e98e1aab4e87dbca5865f3dae60c7.setContent(html_99bac6a8363213c8d9d79e572cf05855);
+            
+        
+
+        circle_marker_1fbcd8f4d8a82ec0421a4a391761fccb.bindPopup(popup_213e98e1aab4e87dbca5865f3dae60c7)
+        ;
+
+        
+    
+    
+            var circle_marker_2342ae5a7239fb8b69843d5822918660 = L.circleMarker(
+                [-33.2870456, -71.5066076],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0c8600ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_6f38243344741069452e789741572c2b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_be46b6fbb072b1150744becbd9802ac3 = $(`<div id="html_be46b6fbb072b1150744becbd9802ac3" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.0968208092485549</div>`)[0];
+                popup_6f38243344741069452e789741572c2b.setContent(html_be46b6fbb072b1150744becbd9802ac3);
+            
+        
+
+        circle_marker_2342ae5a7239fb8b69843d5822918660.bindPopup(popup_6f38243344741069452e789741572c2b)
+        ;
+
+        
+    
+    
+            var circle_marker_b05cf47b4e07d86f3936b252e3f3a767 = L.circleMarker(
+                [-33.4635895, -71.4666985],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0f8800ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_77497047314f7051e7fba8614e3c0b34 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4048034657e5de3904d8dedd38e32fdf = $(`<div id="html_4048034657e5de3904d8dedd38e32fdf" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1191326034974082</div>`)[0];
+                popup_77497047314f7051e7fba8614e3c0b34.setContent(html_4048034657e5de3904d8dedd38e32fdf);
+            
+        
+
+        circle_marker_b05cf47b4e07d86f3936b252e3f3a767.bindPopup(popup_77497047314f7051e7fba8614e3c0b34)
+        ;
+
+        
+    
+    
+            var circle_marker_4289ae01c8d76e1e57a88cd37c3bb25b = L.circleMarker(
+                [-33.2545668, -71.3487662],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#108800ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_b0c549113090bde80c70c0e960fa199e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_86ade779f3706d0fd0a6f57473f2d538 = $(`<div id="html_86ade779f3706d0fd0a6f57473f2d538" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1299</div>`)[0];
+                popup_b0c549113090bde80c70c0e960fa199e.setContent(html_86ade779f3706d0fd0a6f57473f2d538);
+            
+        
+
+        circle_marker_4289ae01c8d76e1e57a88cd37c3bb25b.bindPopup(popup_b0c549113090bde80c70c0e960fa199e)
+        ;
+
+        
+    
+    
+            var circle_marker_2c0531bf434db16323ca5fb1f848d7b8 = L.circleMarker(
+                [-33.2867586, -71.5060122],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#088400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_111fdf1c82cfb2cc05eb51c903d77841 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cdce29d832d90152e4370238b5635272 = $(`<div id="html_cdce29d832d90152e4370238b5635272" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.0661375661375661</div>`)[0];
+                popup_111fdf1c82cfb2cc05eb51c903d77841.setContent(html_cdce29d832d90152e4370238b5635272);
+            
+        
+
+        circle_marker_2c0531bf434db16323ca5fb1f848d7b8.bindPopup(popup_111fdf1c82cfb2cc05eb51c903d77841)
+        ;
+
+        
+    
+    
+            var circle_marker_1d2205311c5953b8b210f5a7b3820f36 = L.circleMarker(
+                [-33.2731289, -71.5253953],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0e8700ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_498d1d5d0b6ae0b6249ad3d186a9f6ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3253295fa3d8785edc318e0ec9eff14a = $(`<div id="html_3253295fa3d8785edc318e0ec9eff14a" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1145</div>`)[0];
+                popup_498d1d5d0b6ae0b6249ad3d186a9f6ae.setContent(html_3253295fa3d8785edc318e0ec9eff14a);
+            
+        
+
+        circle_marker_1d2205311c5953b8b210f5a7b3820f36.bindPopup(popup_498d1d5d0b6ae0b6249ad3d186a9f6ae)
+        ;
+
+        
+    
+    
+            var circle_marker_aad0dbc4b74ea18b0b5d08260872df97 = L.circleMarker(
+                [-33.1868384, -71.6854225],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2f9800ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_c78741fbd158e33123d8cfb85f3d078b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c90554005156172c4f3f3dd8a02f817 = $(`<div id="html_0c90554005156172c4f3f3dd8a02f817" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.3713567650699576</div>`)[0];
+                popup_c78741fbd158e33123d8cfb85f3d078b.setContent(html_0c90554005156172c4f3f3dd8a02f817);
+            
+        
+
+        circle_marker_aad0dbc4b74ea18b0b5d08260872df97.bindPopup(popup_c78741fbd158e33123d8cfb85f3d078b)
+        ;
+
+        
+    
+    
+            var circle_marker_29daa9851d88fa7886c7a4f2e0121217 = L.circleMarker(
+                [-33.2545668, -71.3487662],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#108800ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_dfe81018085503cedda98aeae6038611 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8582075beb4459f5063b2500eff3e525 = $(`<div id="html_8582075beb4459f5063b2500eff3e525" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1299</div>`)[0];
+                popup_dfe81018085503cedda98aeae6038611.setContent(html_8582075beb4459f5063b2500eff3e525);
+            
+        
+
+        circle_marker_29daa9851d88fa7886c7a4f2e0121217.bindPopup(popup_dfe81018085503cedda98aeae6038611)
+        ;
+
+        
+    
+    
+            var circle_marker_126280fb396a2826a548abf926805cd0 = L.circleMarker(
+                [-33.3082741, -71.4176796],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bfe000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_b3ec6ccb094d37b9e6fc94ce8366a790 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d979ff5a9ef4fa456ff11f697b5ed405 = $(`<div id="html_d979ff5a9ef4fa456ff11f697b5ed405" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 1.5</div>`)[0];
+                popup_b3ec6ccb094d37b9e6fc94ce8366a790.setContent(html_d979ff5a9ef4fa456ff11f697b5ed405);
+            
+        
+
+        circle_marker_126280fb396a2826a548abf926805cd0.bindPopup(popup_b3ec6ccb094d37b9e6fc94ce8366a790)
+        ;
+
+        
+    
+    
+            var circle_marker_aa6edfd529137a4c554b0e314b67ef69 = L.circleMarker(
+                [-33.2545668, -71.3487662],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#108800ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_431cab2d8c723b2567e74a2ff4d81e6e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5382cc2bd3c515bebb9e58ffea631634 = $(`<div id="html_5382cc2bd3c515bebb9e58ffea631634" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1299</div>`)[0];
+                popup_431cab2d8c723b2567e74a2ff4d81e6e.setContent(html_5382cc2bd3c515bebb9e58ffea631634);
+            
+        
+
+        circle_marker_aa6edfd529137a4c554b0e314b67ef69.bindPopup(popup_431cab2d8c723b2567e74a2ff4d81e6e)
+        ;
+
+        
+    
+    
+            var circle_marker_c677a4d3eab9929da17503c9f3aec58d = L.circleMarker(
+                [-33.3182828, -71.4070899],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#42a100ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_6a654db70d35ad9a16ce393758553335 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_48561b6bf67f81cde94c8be08c4dff15 = $(`<div id="html_48561b6bf67f81cde94c8be08c4dff15" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.5194805194805194</div>`)[0];
+                popup_6a654db70d35ad9a16ce393758553335.setContent(html_48561b6bf67f81cde94c8be08c4dff15);
+            
+        
+
+        circle_marker_c677a4d3eab9929da17503c9f3aec58d.bindPopup(popup_6a654db70d35ad9a16ce393758553335)
+        ;
+
+        
+    
+    
+            var circle_marker_f9563663924973f273c0c58bb1f0c182 = L.circleMarker(
+                [-33.254566753137, -71.34876622889],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#108800ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_3df79f73f5a3ffb25de2dca4a9a86953 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4843331f997bf94fbb889d535cd35f85 = $(`<div id="html_4843331f997bf94fbb889d535cd35f85" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1299</div>`)[0];
+                popup_3df79f73f5a3ffb25de2dca4a9a86953.setContent(html_4843331f997bf94fbb889d535cd35f85);
+            
+        
+
+        circle_marker_f9563663924973f273c0c58bb1f0c182.bindPopup(popup_3df79f73f5a3ffb25de2dca4a9a86953)
+        ;
+
+        
+    
+    
+            var circle_marker_e29a09520d086cb35b63a12fcc4de10d = L.circleMarker(
+                [-33.29576057818434, -71.54251440350207],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#088400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_852b03015b6e5e1fa10160a097d12166 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ec2da387ac3cfeb3da7701a20ea5338 = $(`<div id="html_1ec2da387ac3cfeb3da7701a20ea5338" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.0661375661375661</div>`)[0];
+                popup_852b03015b6e5e1fa10160a097d12166.setContent(html_1ec2da387ac3cfeb3da7701a20ea5338);
+            
+        
+
+        circle_marker_e29a09520d086cb35b63a12fcc4de10d.bindPopup(popup_852b03015b6e5e1fa10160a097d12166)
+        ;
+
+        
+    
+    
+            var circle_marker_66518dfd5c83eaf98281804c9ef4e729 = L.circleMarker(
+                [-33.280843918963306, -71.52079778813477],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0d8700ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_6e43bde17ee93a303947645ec3a909aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc8f032281a2366f4d4c1a1c372a15d7 = $(`<div id="html_cc8f032281a2366f4d4c1a1c372a15d7" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1045</div>`)[0];
+                popup_6e43bde17ee93a303947645ec3a909aa.setContent(html_cc8f032281a2366f4d4c1a1c372a15d7);
+            
+        
+
+        circle_marker_66518dfd5c83eaf98281804c9ef4e729.bindPopup(popup_6e43bde17ee93a303947645ec3a909aa)
+        ;
+
+        
+    
+    
+            var circle_marker_054a2398583cfc1ff91a50a1cbb13954 = L.circleMarker(
+                [-33.42890033915, -71.421110288813],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#108800ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_fee5e62f22354f767189789143e73a41 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1805563adbf6c70c42bb9078572f3db5 = $(`<div id="html_1805563adbf6c70c42bb9078572f3db5" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.13</div>`)[0];
+                popup_fee5e62f22354f767189789143e73a41.setContent(html_1805563adbf6c70c42bb9078572f3db5);
+            
+        
+
+        circle_marker_054a2398583cfc1ff91a50a1cbb13954.bindPopup(popup_fee5e62f22354f767189789143e73a41)
+        ;
+
+        
+    
+    
+            var circle_marker_845faefd705623a91b89aa994a2ed80f = L.circleMarker(
+                [-33.306, -71.42],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bfe000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_9774f8bda05c575a55bf87b81148db1b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5433520465ab93165a4b05b5ba7d3d85 = $(`<div id="html_5433520465ab93165a4b05b5ba7d3d85" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 1.5</div>`)[0];
+                popup_9774f8bda05c575a55bf87b81148db1b.setContent(html_5433520465ab93165a4b05b5ba7d3d85);
+            
+        
+
+        circle_marker_845faefd705623a91b89aa994a2ed80f.bindPopup(popup_9774f8bda05c575a55bf87b81148db1b)
+        ;
+
+        
+    
+    
+            var circle_marker_4f5664f89eb75ab2d88351106d64b02c = L.circleMarker(
+                [-33.25456675, -71.34876623],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#108800ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_1d436067d49e817b4ae7edabbb22f6dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_acf9d0195a6b7f9a36a5be94e9fce3ee = $(`<div id="html_acf9d0195a6b7f9a36a5be94e9fce3ee" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1299</div>`)[0];
+                popup_1d436067d49e817b4ae7edabbb22f6dc.setContent(html_acf9d0195a6b7f9a36a5be94e9fce3ee);
+            
+        
+
+        circle_marker_4f5664f89eb75ab2d88351106d64b02c.bindPopup(popup_1d436067d49e817b4ae7edabbb22f6dc)
+        ;
+
+        
+    
+    
+            var circle_marker_b8a8e8420e0e13ca2a57ca54bf438f7d = L.circleMarker(
+                [-33.37669905082229, -71.40941619873047],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a8d00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_2cabe6c22839d274e0192d772f09565d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_92e9b1db6db60cb8a03651a52b68911a = $(`<div id="html_92e9b1db6db60cb8a03651a52b68911a" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.2075027128319412</div>`)[0];
+                popup_2cabe6c22839d274e0192d772f09565d.setContent(html_92e9b1db6db60cb8a03651a52b68911a);
+            
+        
+
+        circle_marker_b8a8e8420e0e13ca2a57ca54bf438f7d.bindPopup(popup_2cabe6c22839d274e0192d772f09565d)
+        ;
+
+        
+    
+    
+            var circle_marker_7ea7d58a8bf48905cef594f120d9b582 = L.circleMarker(
+                [-33.2566527, -71.4387753],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#45a200ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_52b5fbf1a517140e58f02f07d6631a48 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_638cf17c789537f2ae437f5548bc108c = $(`<div id="html_638cf17c789537f2ae437f5548bc108c" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.54</div>`)[0];
+                popup_52b5fbf1a517140e58f02f07d6631a48.setContent(html_638cf17c789537f2ae437f5548bc108c);
+            
+        
+
+        circle_marker_7ea7d58a8bf48905cef594f120d9b582.bindPopup(popup_52b5fbf1a517140e58f02f07d6631a48)
+        ;
+
+        
+    
+    
+            var circle_marker_11d08bdb1bc03a575933206a0d264550 = L.circleMarker(
+                [-33.2698, -71.370929],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1d8f00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_c619d74c3c39897aed1c359d93e580af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_171408955e963009bd0ceb7b91b1d702 = $(`<div id="html_171408955e963009bd0ceb7b91b1d702" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.2328281273407542</div>`)[0];
+                popup_c619d74c3c39897aed1c359d93e580af.setContent(html_171408955e963009bd0ceb7b91b1d702);
+            
+        
+
+        circle_marker_11d08bdb1bc03a575933206a0d264550.bindPopup(popup_c619d74c3c39897aed1c359d93e580af)
+        ;
+
+        
+    
+    
+            var circle_marker_b61f38e1fbdd2b9dc4a66f1d4a2e494a = L.circleMarker(
+                [-33.24432857, -71.44490358],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#108800ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_c9c575946fb6192e3746da8af3c9f1b8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_807b4331c015ae08f59104700dbd1e40 = $(`<div id="html_807b4331c015ae08f59104700dbd1e40" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.132238313017779</div>`)[0];
+                popup_c9c575946fb6192e3746da8af3c9f1b8.setContent(html_807b4331c015ae08f59104700dbd1e40);
+            
+        
+
+        circle_marker_b61f38e1fbdd2b9dc4a66f1d4a2e494a.bindPopup(popup_c9c575946fb6192e3746da8af3c9f1b8)
+        ;
+
+        
+    
+    
+            var circle_marker_798e82a89a1d5e7f101de327d7f85bdb = L.circleMarker(
+                [-33.2116042, -71.5763195],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#098500ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_33e1ac5b8c97737effc9df0bc3eea23d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c82bc69bfb6c0d76b06acc47dcf522c3 = $(`<div id="html_c82bc69bfb6c0d76b06acc47dcf522c3" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.0725093310861206</div>`)[0];
+                popup_33e1ac5b8c97737effc9df0bc3eea23d.setContent(html_c82bc69bfb6c0d76b06acc47dcf522c3);
+            
+        
+
+        circle_marker_798e82a89a1d5e7f101de327d7f85bdb.bindPopup(popup_33e1ac5b8c97737effc9df0bc3eea23d)
+        ;
+
+        
+    
+    
+            var circle_marker_21e943904c934a976839532fac888f5a = L.circleMarker(
+                [-33.31816849, -71.40705369],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0f8800ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_8f2b9794601367f4071a7d75ff1e89fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_acda1a19de942c6b782cc0610e5b4479 = $(`<div id="html_acda1a19de942c6b782cc0610e5b4479" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1187167594352856</div>`)[0];
+                popup_8f2b9794601367f4071a7d75ff1e89fb.setContent(html_acda1a19de942c6b782cc0610e5b4479);
+            
+        
+
+        circle_marker_21e943904c934a976839532fac888f5a.bindPopup(popup_8f2b9794601367f4071a7d75ff1e89fb)
+        ;
+
+        
+    
+    
+            var circle_marker_097c8e0b3dc4e6f7b20880fb4dfe70f6 = L.circleMarker(
+                [-33.2105386, -71.5757157],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#098500ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_622885ac61580edafd2e54532b416671 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bce67dd8abcd181137ec2f91875515c4 = $(`<div id="html_bce67dd8abcd181137ec2f91875515c4" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.0731745543070941</div>`)[0];
+                popup_622885ac61580edafd2e54532b416671.setContent(html_bce67dd8abcd181137ec2f91875515c4);
+            
+        
+
+        circle_marker_097c8e0b3dc4e6f7b20880fb4dfe70f6.bindPopup(popup_622885ac61580edafd2e54532b416671)
+        ;
+
+        
+    
+    
+            var circle_marker_a60ed3c06202c15e5432ab18b97e1636 = L.circleMarker(
+                [-33.439457, -71.448763],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0f8800ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_67777acca078098fe496cad41981d06d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_869be88b0680c911c6a9d57723f1467d = $(`<div id="html_869be88b0680c911c6a9d57723f1467d" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.119740179775245</div>`)[0];
+                popup_67777acca078098fe496cad41981d06d.setContent(html_869be88b0680c911c6a9d57723f1467d);
+            
+        
+
+        circle_marker_a60ed3c06202c15e5432ab18b97e1636.bindPopup(popup_67777acca078098fe496cad41981d06d)
+        ;
+
+        
+    
+    
+            var circle_marker_3344c15ee56d2207cc2d8ff79d341f65 = L.circleMarker(
+                [-33.2116042, -71.5763195],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2e9700ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_5d5721acf50eda499bf9be7bd626d34a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac81746e5ee51841cc5ef88f013c46b4 = $(`<div id="html_ac81746e5ee51841cc5ef88f013c46b4" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.3628490296219545</div>`)[0];
+                popup_5d5721acf50eda499bf9be7bd626d34a.setContent(html_ac81746e5ee51841cc5ef88f013c46b4);
+            
+        
+
+        circle_marker_3344c15ee56d2207cc2d8ff79d341f65.bindPopup(popup_5d5721acf50eda499bf9be7bd626d34a)
+        ;
+
+        
+    
+    
+            var circle_marker_6f40d9a5dc3559c496953b27f52369b7 = L.circleMarker(
+                [-33.21269629877857, -71.57661437988281],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#188c00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_ef2576cccf4e002d730ff6340bf7e260 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e6b9c40683be78745643e7c7748e9597 = $(`<div id="html_e6b9c40683be78745643e7c7748e9597" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.193</div>`)[0];
+                popup_ef2576cccf4e002d730ff6340bf7e260.setContent(html_e6b9c40683be78745643e7c7748e9597);
+            
+        
+
+        circle_marker_6f40d9a5dc3559c496953b27f52369b7.bindPopup(popup_ef2576cccf4e002d730ff6340bf7e260)
+        ;
+
+        
+    
+    
+            var circle_marker_1238a440c18fa7896bab5843174e96ed = L.circleMarker(
+                [-33.231185327680755, -71.42722606658934],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#138a00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_acb85fe4ef6f9ece5e645344721bde57 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bc6bed04048249426607853ae8155871 = $(`<div id="html_bc6bed04048249426607853ae8155871" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1490174998506838</div>`)[0];
+                popup_acb85fe4ef6f9ece5e645344721bde57.setContent(html_bc6bed04048249426607853ae8155871);
+            
+        
+
+        circle_marker_1238a440c18fa7896bab5843174e96ed.bindPopup(popup_acb85fe4ef6f9ece5e645344721bde57)
+        ;
+
+        
+    
+    
+            var circle_marker_6b5201659b3c5e0c57889426bdfdf322 = L.circleMarker(
+                [-33.37105, -71.299512],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b8600ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_0f2f93b5391e8668f9cebf306259fa10 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05ed4e34f1071fe3b10b9444ad6956f7 = $(`<div id="html_05ed4e34f1071fe3b10b9444ad6956f7" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.0886363636363636</div>`)[0];
+                popup_0f2f93b5391e8668f9cebf306259fa10.setContent(html_05ed4e34f1071fe3b10b9444ad6956f7);
+            
+        
+
+        circle_marker_6b5201659b3c5e0c57889426bdfdf322.bindPopup(popup_0f2f93b5391e8668f9cebf306259fa10)
+        ;
+
+        
+    
+    
+            var circle_marker_d8c49da8f62f2a198dace9cb05455fbf = L.circleMarker(
+                [-33.276655, -71.247238],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#038200ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_c066ebf47ca4e0cfc64fcc1ee60c2add = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_640f25209b2a0704017ff94bc9cd577f = $(`<div id="html_640f25209b2a0704017ff94bc9cd577f" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.0295666666666666</div>`)[0];
+                popup_c066ebf47ca4e0cfc64fcc1ee60c2add.setContent(html_640f25209b2a0704017ff94bc9cd577f);
+            
+        
+
+        circle_marker_d8c49da8f62f2a198dace9cb05455fbf.bindPopup(popup_c066ebf47ca4e0cfc64fcc1ee60c2add)
+        ;
+
+        
+    
+    
+            var circle_marker_45ec42b88adb47d2424178379ac8cb84 = L.circleMarker(
+                [-33.28524, -71.51305],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0a8500ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_6a288adbe2be4a0871f3f936c580adf0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_070efb7c9766284f2fe61dcdd1978131 = $(`<div id="html_070efb7c9766284f2fe61dcdd1978131" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.0835698181818181</div>`)[0];
+                popup_6a288adbe2be4a0871f3f936c580adf0.setContent(html_070efb7c9766284f2fe61dcdd1978131);
+            
+        
+
+        circle_marker_45ec42b88adb47d2424178379ac8cb84.bindPopup(popup_6a288adbe2be4a0871f3f936c580adf0)
+        ;
+
+        
+    
+    
+            var circle_marker_2a4c4cb56e20fba38f388ca1b0548e14 = L.circleMarker(
+                [-33.3052014, -71.4111442],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f9000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_1ecea3ffae47d95df6bb1c70f90846c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40ff445b1940b4490b796b4aa4575e85 = $(`<div id="html_40ff445b1940b4490b796b4aa4575e85" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.25</div>`)[0];
+                popup_1ecea3ffae47d95df6bb1c70f90846c9.setContent(html_40ff445b1940b4490b796b4aa4575e85);
+            
+        
+
+        circle_marker_2a4c4cb56e20fba38f388ca1b0548e14.bindPopup(popup_1ecea3ffae47d95df6bb1c70f90846c9)
+        ;
+
+        
+    
+    
+            var circle_marker_3b63d2303f29840205fef8b8db21312d = L.circleMarker(
+                [-33.4394574, -71.448763],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0f8800ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_d39f370c21fbc3eba56ae9125abbc790 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f46e33b1443c7277c4c6ea5ee29e896 = $(`<div id="html_7f46e33b1443c7277c4c6ea5ee29e896" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1202731644110102</div>`)[0];
+                popup_d39f370c21fbc3eba56ae9125abbc790.setContent(html_7f46e33b1443c7277c4c6ea5ee29e896);
+            
+        
+
+        circle_marker_3b63d2303f29840205fef8b8db21312d.bindPopup(popup_d39f370c21fbc3eba56ae9125abbc790)
+        ;
+
+        
+    
+    
+            var circle_marker_cb227e01bb4d28f845a73c70109ad30e = L.circleMarker(
+                [-33.2566527, -71.4387753],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#45a200ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_b34f3840bc2b7c1ab6e967bcd1630b63 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_56e9fe19bba0cbc2700ab2c42e59eb0f = $(`<div id="html_56e9fe19bba0cbc2700ab2c42e59eb0f" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.54</div>`)[0];
+                popup_b34f3840bc2b7c1ab6e967bcd1630b63.setContent(html_56e9fe19bba0cbc2700ab2c42e59eb0f);
+            
+        
+
+        circle_marker_cb227e01bb4d28f845a73c70109ad30e.bindPopup(popup_b34f3840bc2b7c1ab6e967bcd1630b63)
+        ;
+
+        
+    
+    
+            var circle_marker_c6ecccc600decf26d1b298384493cbfa = L.circleMarker(
+                [-33.28706, -71.50653],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#128900ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_c3e9aef32a41e807988d3eaf90183b5a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a7b89c5d974a77b24be3db90edbd1e58 = $(`<div id="html_a7b89c5d974a77b24be3db90edbd1e58" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1477561106903673</div>`)[0];
+                popup_c3e9aef32a41e807988d3eaf90183b5a.setContent(html_a7b89c5d974a77b24be3db90edbd1e58);
+            
+        
+
+        circle_marker_c6ecccc600decf26d1b298384493cbfa.bindPopup(popup_c3e9aef32a41e807988d3eaf90183b5a)
+        ;
+
+        
+    
+    
+            var circle_marker_a0f44e3344013903c41499ed314b7cb6 = L.circleMarker(
+                [-33.28706, -71.50653],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0f8800ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_39e7704e2b655f2a0503efc9cdea64eb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_879d7fc9731be10c9f8312b89cdd1caf = $(`<div id="html_879d7fc9731be10c9f8312b89cdd1caf" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1245</div>`)[0];
+                popup_39e7704e2b655f2a0503efc9cdea64eb.setContent(html_879d7fc9731be10c9f8312b89cdd1caf);
+            
+        
+
+        circle_marker_a0f44e3344013903c41499ed314b7cb6.bindPopup(popup_39e7704e2b655f2a0503efc9cdea64eb)
+        ;
+
+        
+    
+    
+            var circle_marker_4e46d82e0a4f7679eaefb4eba0b5610e = L.circleMarker(
+                [-33.3772202, -71.387248],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a3d100ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_f0dd73ba09b6fef08af6b2e5dc9d8b19 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b0bd67217cc4fcfde0860b48e62841eb = $(`<div id="html_b0bd67217cc4fcfde0860b48e62841eb" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 1.2738853503184713</div>`)[0];
+                popup_f0dd73ba09b6fef08af6b2e5dc9d8b19.setContent(html_b0bd67217cc4fcfde0860b48e62841eb);
+            
+        
+
+        circle_marker_4e46d82e0a4f7679eaefb4eba0b5610e.bindPopup(popup_f0dd73ba09b6fef08af6b2e5dc9d8b19)
+        ;
+
+        
+    
+    
+            var circle_marker_00523630b394338624aad901b0579e7b = L.circleMarker(
+                [-33.3140749, -71.403136],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_57ec398c2e6fa6bf944c970aa81f2d32 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1329e6434aa85ed079e29881233c7263 = $(`<div id="html_1329e6434aa85ed079e29881233c7263" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 3.3333333333333335e-05</div>`)[0];
+                popup_57ec398c2e6fa6bf944c970aa81f2d32.setContent(html_1329e6434aa85ed079e29881233c7263);
+            
+        
+
+        circle_marker_00523630b394338624aad901b0579e7b.bindPopup(popup_57ec398c2e6fa6bf944c970aa81f2d32)
+        ;
+
+        
+    
+    
+            var circle_marker_daf98e972c65674d4a5edc7b0d72af55 = L.circleMarker(
+                [-33.39792, -71.49388],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a8d00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_386875a5016a4f2b7e7500b0799a0973 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_106de8b02d934a2dfeed4d895cee2a58 = $(`<div id="html_106de8b02d934a2dfeed4d895cee2a58" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.209</div>`)[0];
+                popup_386875a5016a4f2b7e7500b0799a0973.setContent(html_106de8b02d934a2dfeed4d895cee2a58);
+            
+        
+
+        circle_marker_daf98e972c65674d4a5edc7b0d72af55.bindPopup(popup_386875a5016a4f2b7e7500b0799a0973)
+        ;
+
+        
+    
+    
+            var circle_marker_136eb792f32b26ab7d8d7afc059d9230 = L.circleMarker(
+                [-33.2767689, -71.2481981],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2a9500ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_4675a6471b453902259aae530d9e19b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_82f6cb9fc871e6c3cba0c003e2bc7e52 = $(`<div id="html_82f6cb9fc871e6c3cba0c003e2bc7e52" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.332662596828102</div>`)[0];
+                popup_4675a6471b453902259aae530d9e19b1.setContent(html_82f6cb9fc871e6c3cba0c003e2bc7e52);
+            
+        
+
+        circle_marker_136eb792f32b26ab7d8d7afc059d9230.bindPopup(popup_4675a6471b453902259aae530d9e19b1)
+        ;
+
+        
+    
+    
+            var circle_marker_5383b21c0b7018db872bc4bd06e37228 = L.circleMarker(
+                [-33.3166401, -71.398273],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a8d400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_5de838f763bd7e56c4fb530bf5ce477c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_378f33a59fbf132ced63ef94501a3c43 = $(`<div id="html_378f33a59fbf132ced63ef94501a3c43" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 1.32</div>`)[0];
+                popup_5de838f763bd7e56c4fb530bf5ce477c.setContent(html_378f33a59fbf132ced63ef94501a3c43);
+            
+        
+
+        circle_marker_5383b21c0b7018db872bc4bd06e37228.bindPopup(popup_5de838f763bd7e56c4fb530bf5ce477c)
+        ;
+
+        
+    
+    
+            var circle_marker_38351d3ab24700034bdd603836580302 = L.circleMarker(
+                [-33.2545668, -71.3487662],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#108800ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_c09d5257e98b142b4c5e11aea70a07ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_74eb363b31f88fcde2f32cf1fbfa6848 = $(`<div id="html_74eb363b31f88fcde2f32cf1fbfa6848" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1299</div>`)[0];
+                popup_c09d5257e98b142b4c5e11aea70a07ca.setContent(html_74eb363b31f88fcde2f32cf1fbfa6848);
+            
+        
+
+        circle_marker_38351d3ab24700034bdd603836580302.bindPopup(popup_c09d5257e98b142b4c5e11aea70a07ca)
+        ;
+
+        
+    
+    
+            var circle_marker_6d64bee7f7f990a17fb54727d0471344 = L.circleMarker(
+                [-33.2870456, -71.5066076],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0c8600ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_a821491ced92b40c7bafe18a7f49abb1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_920514f60ffb89052332b54b670ff826 = $(`<div id="html_920514f60ffb89052332b54b670ff826" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.0968208092485549</div>`)[0];
+                popup_a821491ced92b40c7bafe18a7f49abb1.setContent(html_920514f60ffb89052332b54b670ff826);
+            
+        
+
+        circle_marker_6d64bee7f7f990a17fb54727d0471344.bindPopup(popup_a821491ced92b40c7bafe18a7f49abb1)
+        ;
+
+        
+    
+    
+            var circle_marker_d4cba927c404c7ffd007455aba6a7ad2 = L.circleMarker(
+                [-33.2543763, -71.3658008],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f9000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_46f77b12092ab55ad528b621606fc071 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19d8e42686f8448795a2728f5d8f557e = $(`<div id="html_19d8e42686f8448795a2728f5d8f557e" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.249658575029824</div>`)[0];
+                popup_46f77b12092ab55ad528b621606fc071.setContent(html_19d8e42686f8448795a2728f5d8f557e);
+            
+        
+
+        circle_marker_d4cba927c404c7ffd007455aba6a7ad2.bindPopup(popup_46f77b12092ab55ad528b621606fc071)
+        ;
+
+        
+    
+    
+            var circle_marker_2dd1176bcccf5e0dadc5877794846311 = L.circleMarker(
+                [-33.2698001, -71.3709287],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1d8f00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_dcec0c7d20e54aa806183e751664e296 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ae1dcb4a940f463e810500f14aa3171 = $(`<div id="html_1ae1dcb4a940f463e810500f14aa3171" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.2338644863547422</div>`)[0];
+                popup_dcec0c7d20e54aa806183e751664e296.setContent(html_1ae1dcb4a940f463e810500f14aa3171);
+            
+        
+
+        circle_marker_2dd1176bcccf5e0dadc5877794846311.bindPopup(popup_dcec0c7d20e54aa806183e751664e296)
+        ;
+
+        
+    
+    
+            var circle_marker_836f7c7e72249e23c287c48850f916ed = L.circleMarker(
+                [-33.2841586, -71.5156548],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0e8700ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_6f43c48087c836c8ae46f912073daec9);
+        
+    
+        var popup_837a4be6863be39b28aca3b599516b41 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f9977e72b26795d918071dd5dfc76fbb = $(`<div id="html_f9977e72b26795d918071dd5dfc76fbb" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1155555555555555</div>`)[0];
+                popup_837a4be6863be39b28aca3b599516b41.setContent(html_f9977e72b26795d918071dd5dfc76fbb);
+            
+        
+
+        circle_marker_836f7c7e72249e23c287c48850f916ed.bindPopup(popup_837a4be6863be39b28aca3b599516b41)
+        ;
+
+        
+    
+    
+            feature_group_sub_group_6f43c48087c836c8ae46f912073daec9.addTo(map_8eba4e88389041f8f35de81cb985e54c);
+        
+    
+            var feature_group_sub_group_10d3b0802e140242eb9954580108190b = L.featureGroup.subGroup(
+                feature_group_352abfa2ecbb9aabf40e16fcaf4c776d
+            );
+        
+    
+            var circle_marker_bade561169a60c09f5c5992d1ac71ef8 = L.circleMarker(
+                [-33.3291532, -71.4124078],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0d00f2ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_10d3b0802e140242eb9954580108190b);
+        
+    
+        var popup_c3d732c38c04e5b2c1c232168136c686 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c69a35a921d835ab4e8746e09cbb3d20 = $(`<div id="html_c69a35a921d835ab4e8746e09cbb3d20" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S2<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 1.6775194268029494</div>`)[0];
+                popup_c3d732c38c04e5b2c1c232168136c686.setContent(html_c69a35a921d835ab4e8746e09cbb3d20);
+            
+        
+
+        circle_marker_bade561169a60c09f5c5992d1ac71ef8.bindPopup(popup_c3d732c38c04e5b2c1c232168136c686)
+        ;
+
+        
+    
+    
+            var circle_marker_d45e9d9e7cc9f622a9d86023e456a0e6 = L.circleMarker(
+                [-33.1864996, -71.6882582],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2d00d2ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_10d3b0802e140242eb9954580108190b);
+        
+    
+        var popup_e7f5a3796a2ec7630327ea4d8facd613 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57234e98ea983a13b449a35ceceb7e72 = $(`<div id="html_57234e98ea983a13b449a35ceceb7e72" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S2<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 5.697493487972027</div>`)[0];
+                popup_e7f5a3796a2ec7630327ea4d8facd613.setContent(html_57234e98ea983a13b449a35ceceb7e72);
+            
+        
+
+        circle_marker_d45e9d9e7cc9f622a9d86023e456a0e6.bindPopup(popup_e7f5a3796a2ec7630327ea4d8facd613)
+        ;
+
+        
+    
+    
+            var circle_marker_f11a10a652c4a802dc1acb56618c5a8b = L.circleMarker(
+                [-33.177811, -71.6802383],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4b00b4ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_10d3b0802e140242eb9954580108190b);
+        
+    
+        var popup_07643c5fdc85c9227483fa1fe6b4ac62 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_931bddbaade3d46bbf257116eb10b7b3 = $(`<div id="html_931bddbaade3d46bbf257116eb10b7b3" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S2<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 9.45273631840796</div>`)[0];
+                popup_07643c5fdc85c9227483fa1fe6b4ac62.setContent(html_931bddbaade3d46bbf257116eb10b7b3);
+            
+        
+
+        circle_marker_f11a10a652c4a802dc1acb56618c5a8b.bindPopup(popup_07643c5fdc85c9227483fa1fe6b4ac62)
+        ;
+
+        
+    
+    
+            var circle_marker_e0c4f59ae67375b367cbbc9bffacc0c0 = L.circleMarker(
+                [-33.318, -71.407],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0d00f2ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_10d3b0802e140242eb9954580108190b);
+        
+    
+        var popup_7097aadcde7a7c75bcd9aa2e8a0a3ee5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a60f07d4e20d5ed11934d877ad24277f = $(`<div id="html_a60f07d4e20d5ed11934d877ad24277f" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S2<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 1.713235294117647</div>`)[0];
+                popup_7097aadcde7a7c75bcd9aa2e8a0a3ee5.setContent(html_a60f07d4e20d5ed11934d877ad24277f);
+            
+        
+
+        circle_marker_e0c4f59ae67375b367cbbc9bffacc0c0.bindPopup(popup_7097aadcde7a7c75bcd9aa2e8a0a3ee5)
+        ;
+
+        
+    
+    
+            var circle_marker_7c9fd28332e6d9079a1851a7ad3e500b = L.circleMarker(
+                [-33.1868384, -71.6854225],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0800f8ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_10d3b0802e140242eb9954580108190b);
+        
+    
+        var popup_1b48325fb4a88fc14fa1114b5c84a868 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e860545912a0704e1c232552053967d9 = $(`<div id="html_e860545912a0704e1c232552053967d9" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S2<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 1.0</div>`)[0];
+                popup_1b48325fb4a88fc14fa1114b5c84a868.setContent(html_e860545912a0704e1c232552053967d9);
+            
+        
+
+        circle_marker_7c9fd28332e6d9079a1851a7ad3e500b.bindPopup(popup_1b48325fb4a88fc14fa1114b5c84a868)
+        ;
+
+        
+    
+    
+            feature_group_sub_group_10d3b0802e140242eb9954580108190b.addTo(map_8eba4e88389041f8f35de81cb985e54c);
+        
+    
+            var feature_group_sub_group_e84501ae2fc39a38130b3e6ecdbb5026 = L.featureGroup.subGroup(
+                feature_group_cca633e7358a3306800f83935ee8d3c6
+            );
+        
+    
+            var circle_marker_722c8c7cd25d4912fc967c79b4d23afe = L.circleMarker(
+                [-33.31816, -71.40705],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0f8800ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_e84501ae2fc39a38130b3e6ecdbb5026);
+        
+    
+        var popup_c5050723d127c5af8420de9a7e38b70c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_029b5756be6e070a29a26ab49075da58 = $(`<div id="html_029b5756be6e070a29a26ab49075da58" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.118718</div>`)[0];
+                popup_c5050723d127c5af8420de9a7e38b70c.setContent(html_029b5756be6e070a29a26ab49075da58);
+            
+        
+
+        circle_marker_722c8c7cd25d4912fc967c79b4d23afe.bindPopup(popup_c5050723d127c5af8420de9a7e38b70c)
+        ;
+
+        
+    
+    
+            var circle_marker_9702899a38fff28005868755870feefa = L.circleMarker(
+                [-33.32486275339344, -71.40806436538698],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#339900ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_e84501ae2fc39a38130b3e6ecdbb5026);
+        
+    
+        var popup_c129076a2ba51c667a84292ca430948a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c73f246e1214c1d6e6ad110028fada35 = $(`<div id="html_c73f246e1214c1d6e6ad110028fada35" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.3990888888888889</div>`)[0];
+                popup_c129076a2ba51c667a84292ca430948a.setContent(html_c73f246e1214c1d6e6ad110028fada35);
+            
+        
+
+        circle_marker_9702899a38fff28005868755870feefa.bindPopup(popup_c129076a2ba51c667a84292ca430948a)
+        ;
+
+        
+    
+    
+            var circle_marker_4e56fb705b28146ec2f2597af26924d7 = L.circleMarker(
+                [-33.20624, -71.49984],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#148a00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_e84501ae2fc39a38130b3e6ecdbb5026);
+        
+    
+        var popup_03055b01172954035996c40a799e09da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_43f33f4063261ee1a01f8dc28eda21a7 = $(`<div id="html_43f33f4063261ee1a01f8dc28eda21a7" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1564877170678289</div>`)[0];
+                popup_03055b01172954035996c40a799e09da.setContent(html_43f33f4063261ee1a01f8dc28eda21a7);
+            
+        
+
+        circle_marker_4e56fb705b28146ec2f2597af26924d7.bindPopup(popup_03055b01172954035996c40a799e09da)
+        ;
+
+        
+    
+    
+            var circle_marker_64d2fd7a639e3fabceef97696f7a7b3e = L.circleMarker(
+                [-33.24841131, -71.53323229],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0e8700ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_e84501ae2fc39a38130b3e6ecdbb5026);
+        
+    
+        var popup_60f305308dab050e8ccffabd6bcf8c0e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7091b62c0b1cae60d071ec015ed2e03b = $(`<div id="html_7091b62c0b1cae60d071ec015ed2e03b" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1157226667716594</div>`)[0];
+                popup_60f305308dab050e8ccffabd6bcf8c0e.setContent(html_7091b62c0b1cae60d071ec015ed2e03b);
+            
+        
+
+        circle_marker_64d2fd7a639e3fabceef97696f7a7b3e.bindPopup(popup_60f305308dab050e8ccffabd6bcf8c0e)
+        ;
+
+        
+    
+    
+            var circle_marker_4abc812d0a52c75bb8e5a5de08166fe5 = L.circleMarker(
+                [-33.39792, -71.49388],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a8d00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_e84501ae2fc39a38130b3e6ecdbb5026);
+        
+    
+        var popup_66a545b87ba078bb3c389ca42cca0c08 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bc25b940257a4b5652450d9f341754a1 = $(`<div id="html_bc25b940257a4b5652450d9f341754a1" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.209</div>`)[0];
+                popup_66a545b87ba078bb3c389ca42cca0c08.setContent(html_bc25b940257a4b5652450d9f341754a1);
+            
+        
+
+        circle_marker_4abc812d0a52c75bb8e5a5de08166fe5.bindPopup(popup_66a545b87ba078bb3c389ca42cca0c08)
+        ;
+
+        
+    
+    
+            var circle_marker_780b4d272e5a409b893d71162f490f5b = L.circleMarker(
+                [-33.3211204, -71.4021066],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_e84501ae2fc39a38130b3e6ecdbb5026);
+        
+    
+        var popup_9cb109bda66509594a7427a419bbdab0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db65fc568afdb0d189c64dac0d56004e = $(`<div id="html_db65fc568afdb0d189c64dac0d56004e" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.0004171881518564</div>`)[0];
+                popup_9cb109bda66509594a7427a419bbdab0.setContent(html_db65fc568afdb0d189c64dac0d56004e);
+            
+        
+
+        circle_marker_780b4d272e5a409b893d71162f490f5b.bindPopup(popup_9cb109bda66509594a7427a419bbdab0)
+        ;
+
+        
+    
+    
+            var circle_marker_fd244117d6843c96cc4e3a78d949e3c5 = L.circleMarker(
+                [-33.37105, -71.299512],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b8600ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_e84501ae2fc39a38130b3e6ecdbb5026);
+        
+    
+        var popup_4d61ffe59e06948844ec5cfea531e50c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_67e212f88c6fa7c0c830f0efeb0a3973 = $(`<div id="html_67e212f88c6fa7c0c830f0efeb0a3973" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.0886363636363636</div>`)[0];
+                popup_4d61ffe59e06948844ec5cfea531e50c.setContent(html_67e212f88c6fa7c0c830f0efeb0a3973);
+            
+        
+
+        circle_marker_fd244117d6843c96cc4e3a78d949e3c5.bindPopup(popup_4d61ffe59e06948844ec5cfea531e50c)
+        ;
+
+        
+    
+    
+            var circle_marker_93b2e00335f5faee2004bffcb1fbd0f2 = L.circleMarker(
+                [-33.2870456, -71.5066076],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0c8600ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_e84501ae2fc39a38130b3e6ecdbb5026);
+        
+    
+        var popup_c2432ed2d9e9f9a134bdd9b7181697cc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ffb87cf9476221b83cd8fb292148896 = $(`<div id="html_3ffb87cf9476221b83cd8fb292148896" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.0968208092485549</div>`)[0];
+                popup_c2432ed2d9e9f9a134bdd9b7181697cc.setContent(html_3ffb87cf9476221b83cd8fb292148896);
+            
+        
+
+        circle_marker_93b2e00335f5faee2004bffcb1fbd0f2.bindPopup(popup_c2432ed2d9e9f9a134bdd9b7181697cc)
+        ;
+
+        
+    
+    
+            var circle_marker_8450523acadf851e3fac53f0d54230ac = L.circleMarker(
+                [-33.2308552, -71.3204547],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#168b00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_e84501ae2fc39a38130b3e6ecdbb5026);
+        
+    
+        var popup_26e9ff796b19a87cdceaa4b65e4cfac3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4bf40625cfb7de6684b0525ef7b6859 = $(`<div id="html_b4bf40625cfb7de6684b0525ef7b6859" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1785714285714285</div>`)[0];
+                popup_26e9ff796b19a87cdceaa4b65e4cfac3.setContent(html_b4bf40625cfb7de6684b0525ef7b6859);
+            
+        
+
+        circle_marker_8450523acadf851e3fac53f0d54230ac.bindPopup(popup_26e9ff796b19a87cdceaa4b65e4cfac3)
+        ;
+
+        
+    
+    
+            var circle_marker_8c8cd3fbc54dd0a0aab6feb3eac9da5e = L.circleMarker(
+                [-33.230855238099785, -71.32045465187427],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#168b00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_e84501ae2fc39a38130b3e6ecdbb5026);
+        
+    
+        var popup_a677d97870f66d9bf3c2a9e0259b2a17 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_70aa59340a2171fc5dd42fae6cb35c11 = $(`<div id="html_70aa59340a2171fc5dd42fae6cb35c11" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1785714285714285</div>`)[0];
+                popup_a677d97870f66d9bf3c2a9e0259b2a17.setContent(html_70aa59340a2171fc5dd42fae6cb35c11);
+            
+        
+
+        circle_marker_8c8cd3fbc54dd0a0aab6feb3eac9da5e.bindPopup(popup_a677d97870f66d9bf3c2a9e0259b2a17)
+        ;
+
+        
+    
+    
+            var circle_marker_f545be05820688d5cca38a4192c779f0 = L.circleMarker(
+                [-33.4394574, -71.448763],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#158b00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_e84501ae2fc39a38130b3e6ecdbb5026);
+        
+    
+        var popup_8ea45036e8e1beb5b86b7b1773528b1e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_56939e75b290f6e874638eb59e6b2577 = $(`<div id="html_56939e75b290f6e874638eb59e6b2577" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1684210526315789</div>`)[0];
+                popup_8ea45036e8e1beb5b86b7b1773528b1e.setContent(html_56939e75b290f6e874638eb59e6b2577);
+            
+        
+
+        circle_marker_f545be05820688d5cca38a4192c779f0.bindPopup(popup_8ea45036e8e1beb5b86b7b1773528b1e)
+        ;
+
+        
+    
+    
+            var circle_marker_629392fc452dbf8eb8d4b514d7566d11 = L.circleMarker(
+                [-33.2319588, -71.4447],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#279400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_e84501ae2fc39a38130b3e6ecdbb5026);
+        
+    
+        var popup_54ff5b3ab3da1b20fd93ce7dbd48fbc6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2614dcf51b9f1ca2049b3e7b40955c53 = $(`<div id="html_2614dcf51b9f1ca2049b3e7b40955c53" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.31</div>`)[0];
+                popup_54ff5b3ab3da1b20fd93ce7dbd48fbc6.setContent(html_2614dcf51b9f1ca2049b3e7b40955c53);
+            
+        
+
+        circle_marker_629392fc452dbf8eb8d4b514d7566d11.bindPopup(popup_54ff5b3ab3da1b20fd93ce7dbd48fbc6)
+        ;
+
+        
+    
+    
+            var circle_marker_45cfcfacd652eb6e0f69d5fd8cfa75ca = L.circleMarker(
+                [-33.2767689, -71.2481981],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#138a00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_e84501ae2fc39a38130b3e6ecdbb5026);
+        
+    
+        var popup_f3eecb0f970d596817b37805661007b6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a5924ea1792ce4a2c838b30e519a37c0 = $(`<div id="html_a5924ea1792ce4a2c838b30e519a37c0" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.15</div>`)[0];
+                popup_f3eecb0f970d596817b37805661007b6.setContent(html_a5924ea1792ce4a2c838b30e519a37c0);
+            
+        
+
+        circle_marker_45cfcfacd652eb6e0f69d5fd8cfa75ca.bindPopup(popup_f3eecb0f970d596817b37805661007b6)
+        ;
+
+        
+    
+    
+            var circle_marker_81dd8329e80ab49c0882c7fb04d86fb2 = L.circleMarker(
+                [-33.3578782, -71.3000823],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#229100ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_e84501ae2fc39a38130b3e6ecdbb5026);
+        
+    
+        var popup_eb77585d3f54ffaad3372441856d36c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_48766b381ef03603f4f7f44a69eb6bed = $(`<div id="html_48766b381ef03603f4f7f44a69eb6bed" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.2660291190153092</div>`)[0];
+                popup_eb77585d3f54ffaad3372441856d36c7.setContent(html_48766b381ef03603f4f7f44a69eb6bed);
+            
+        
+
+        circle_marker_81dd8329e80ab49c0882c7fb04d86fb2.bindPopup(popup_eb77585d3f54ffaad3372441856d36c7)
+        ;
+
+        
+    
+    
+            var circle_marker_f42d151631ad96119b96f1c293f9e086 = L.circleMarker(
+                [-33.21511124, -71.51101011],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#168b00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_e84501ae2fc39a38130b3e6ecdbb5026);
+        
+    
+        var popup_efa4acc6c2aa08d536d54fc426979401 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_17b471b09f2c4ed1635cacd0eeff4b66 = $(`<div id="html_17b471b09f2c4ed1635cacd0eeff4b66" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.175</div>`)[0];
+                popup_efa4acc6c2aa08d536d54fc426979401.setContent(html_17b471b09f2c4ed1635cacd0eeff4b66);
+            
+        
+
+        circle_marker_f42d151631ad96119b96f1c293f9e086.bindPopup(popup_efa4acc6c2aa08d536d54fc426979401)
+        ;
+
+        
+    
+    
+            var circle_marker_0ca50782a6bc5e52c71559cf85429bde = L.circleMarker(
+                [-33.439457, -71.448763],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#158b00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_e84501ae2fc39a38130b3e6ecdbb5026);
+        
+    
+        var popup_2ed5a2697e6872b9dbaf814e9312684e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_533d209bd24753badc11b8fed369c645 = $(`<div id="html_533d209bd24753badc11b8fed369c645" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1684210526315789</div>`)[0];
+                popup_2ed5a2697e6872b9dbaf814e9312684e.setContent(html_533d209bd24753badc11b8fed369c645);
+            
+        
+
+        circle_marker_0ca50782a6bc5e52c71559cf85429bde.bindPopup(popup_2ed5a2697e6872b9dbaf814e9312684e)
+        ;
+
+        
+    
+    
+            var circle_marker_6dda1657397ec3580a5d885281e0cd1f = L.circleMarker(
+                [-33.2647447, -71.4328742],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b8500ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_e84501ae2fc39a38130b3e6ecdbb5026);
+        
+    
+        var popup_dd7ffa351eb7c5893a31fca383a9c871 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e90c0edcd532ab6e8196a2d9018f649 = $(`<div id="html_5e90c0edcd532ab6e8196a2d9018f649" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.0862395528202837</div>`)[0];
+                popup_dd7ffa351eb7c5893a31fca383a9c871.setContent(html_5e90c0edcd532ab6e8196a2d9018f649);
+            
+        
+
+        circle_marker_6dda1657397ec3580a5d885281e0cd1f.bindPopup(popup_dd7ffa351eb7c5893a31fca383a9c871)
+        ;
+
+        
+    
+    
+            var circle_marker_5aa8501f18cca151a5e6eee113e24621 = L.circleMarker(
+                [-33.337591718324674, -71.27235861556132],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#229100ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_e84501ae2fc39a38130b3e6ecdbb5026);
+        
+    
+        var popup_18905dec4c887bf5062bec6ec139fc4b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec0d3143e5027d5da04e5c39b913ca2c = $(`<div id="html_ec0d3143e5027d5da04e5c39b913ca2c" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.26615</div>`)[0];
+                popup_18905dec4c887bf5062bec6ec139fc4b.setContent(html_ec0d3143e5027d5da04e5c39b913ca2c);
+            
+        
+
+        circle_marker_5aa8501f18cca151a5e6eee113e24621.bindPopup(popup_18905dec4c887bf5062bec6ec139fc4b)
+        ;
+
+        
+    
+    
+            var circle_marker_729be6dbe9f286d9d1ac7d46c579a05c = L.circleMarker(
+                [-33.2545668, -71.3487662],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#108800ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_e84501ae2fc39a38130b3e6ecdbb5026);
+        
+    
+        var popup_e149ac20e750e38fbe8551725e7863f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_284e0298b167d05d5be4595a772215f0 = $(`<div id="html_284e0298b167d05d5be4595a772215f0" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1299</div>`)[0];
+                popup_e149ac20e750e38fbe8551725e7863f5.setContent(html_284e0298b167d05d5be4595a772215f0);
+            
+        
+
+        circle_marker_729be6dbe9f286d9d1ac7d46c579a05c.bindPopup(popup_e149ac20e750e38fbe8551725e7863f5)
+        ;
+
+        
+    
+    
+            var circle_marker_f13343e7febf64391962959afac5306d = L.circleMarker(
+                [-33.3182828, -71.4070899],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1d8f00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_e84501ae2fc39a38130b3e6ecdbb5026);
+        
+    
+        var popup_bef0ecd8dde9c34179b294fb40943d86 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb59508809d1cbb608f6476c7c9d5c7d = $(`<div id="html_fb59508809d1cbb608f6476c7c9d5c7d" style="width: 100.0%; height: 100.0%;">Comuna: Casablanca<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.2325</div>`)[0];
+                popup_bef0ecd8dde9c34179b294fb40943d86.setContent(html_fb59508809d1cbb608f6476c7c9d5c7d);
+            
+        
+
+        circle_marker_f13343e7febf64391962959afac5306d.bindPopup(popup_bef0ecd8dde9c34179b294fb40943d86)
+        ;
+
+        
+    
+    
+            feature_group_sub_group_e84501ae2fc39a38130b3e6ecdbb5026.addTo(map_8eba4e88389041f8f35de81cb985e54c);
+        
+    
+    var color_map_ae9608078d8b8018a192047db3658488 = {};
+
+    
+    color_map_ae9608078d8b8018a192047db3658488.color = d3.scale.threshold()
+              .domain([0.0, 0.03206412825651302, 0.06412825651302605, 0.09619238476953908, 0.1282565130260521, 0.16032064128256512, 0.19238476953907815, 0.22444889779559118, 0.2565130260521042, 0.28857715430861725, 0.32064128256513025, 0.3527054108216433, 0.3847695390781563, 0.4168336673346693, 0.44889779559118237, 0.48096192384769537, 0.5130260521042084, 0.5450901803607214, 0.5771543086172345, 0.6092184368737475, 0.6412825651302605, 0.6733466933867736, 0.7054108216432866, 0.7374749498997996, 0.7695390781563126, 0.8016032064128257, 0.8336673346693386, 0.8657314629258517, 0.8977955911823647, 0.9298597194388778, 0.9619238476953907, 0.9939879759519038, 1.0260521042084167, 1.0581162324649298, 1.0901803607214429, 1.122244488977956, 1.154308617234469, 1.186372745490982, 1.218436873747495, 1.250501002004008, 1.282565130260521, 1.314629258517034, 1.346693386773547, 1.3787575150300602, 1.4108216432865732, 1.4428857715430863, 1.4749498997995991, 1.5070140280561122, 1.5390781563126252, 1.5711422845691383, 1.6032064128256514, 1.6352705410821644, 1.6673346693386772, 1.6993987975951903, 1.7314629258517034, 1.7635270541082164, 1.7955911823647295, 1.8276553106212425, 1.8597194388777556, 1.8917835671342684, 1.9238476953907815, 1.9559118236472945, 1.9879759519038076, 2.0200400801603204, 2.0521042084168335, 2.0841683366733466, 2.1162324649298596, 2.1482965931863727, 2.1803607214428857, 2.212424849699399, 2.244488977955912, 2.276553106212425, 2.308617234468938, 2.340681362725451, 2.372745490981964, 2.404809619238477, 2.43687374749499, 2.468937875751503, 2.501002004008016, 2.533066132264529, 2.565130260521042, 2.597194388777555, 2.629258517034068, 2.661322645290581, 2.693386773547094, 2.7254509018036073, 2.7575150300601203, 2.7895791583166334, 2.8216432865731464, 2.8537074148296595, 2.8857715430861726, 2.917835671342685, 2.9498997995991982, 2.9819639278557113, 3.0140280561122244, 3.0460921843687374, 3.0781563126252505, 3.1102204408817635, 3.1422845691382766, 3.1743486973947896, 3.2064128256513027, 3.2384769539078158, 3.270541082164329, 3.302605210420842, 3.3346693386773545, 3.3667334669338675, 3.3987975951903806, 3.4308617234468937, 3.4629258517034067, 3.49498997995992, 3.527054108216433, 3.559118236472946, 3.591182364729459, 3.623246492985972, 3.655310621242485, 3.687374749498998, 3.719438877755511, 3.7515030060120242, 3.783567134268537, 3.81563126252505, 3.847695390781563, 3.879759519038076, 3.911823647294589, 3.943887775551102, 3.975951903807615, 4.008016032064128, 4.040080160320641, 4.072144288577154, 4.104208416833667, 4.13627254509018, 4.168336673346693, 4.200400801603206, 4.232464929859719, 4.264529058116232, 4.296593186372745, 4.328657314629258, 4.3607214428857715, 4.3927855711422845, 4.424849699398798, 4.456913827655311, 4.488977955911824, 4.521042084168337, 4.55310621242485, 4.585170340681363, 4.617234468937876, 4.649298597194389, 4.681362725450902, 4.713426853707415, 4.745490981963928, 4.777555110220441, 4.809619238476954, 4.841683366733467, 4.87374749498998, 4.905811623246493, 4.937875751503006, 4.969939879759519, 5.002004008016032, 5.034068136272545, 5.066132264529058, 5.098196392785571, 5.130260521042084, 5.162324649298597, 5.19438877755511, 5.226452905811623, 5.258517034068136, 5.290581162324649, 5.322645290581162, 5.354709418837675, 5.386773547094188, 5.4188376753507015, 5.4509018036072145, 5.482965931863728, 5.515030060120241, 5.547094188376754, 5.579158316633267, 5.61122244488978, 5.643286573146293, 5.675350701402806, 5.707414829659319, 5.739478957915832, 5.771543086172345, 5.803607214428857, 5.83567134268537, 5.867735470941883, 5.8997995991983965, 5.9318637274549095, 5.963927855711423, 5.995991983967936, 6.028056112224449, 6.060120240480962, 6.092184368737475, 6.124248496993988, 6.156312625250501, 6.188376753507014, 6.220440881763527, 6.25250501002004, 6.284569138276553, 6.316633266533066, 6.348697394789579, 6.380761523046092, 6.412825651302605, 6.4448897795591185, 6.4769539078156315, 6.509018036072145, 6.541082164328658, 6.573146292585171, 6.605210420841684, 6.637274549098197, 6.669338677354709, 6.701402805611222, 6.733466933867735, 6.765531062124248, 6.797595190380761, 6.829659318637274, 6.861723446893787, 6.8937875751503, 6.925851703406813, 6.9579158316633265, 6.98997995991984, 7.022044088176353, 7.054108216432866, 7.086172344689379, 7.118236472945892, 7.150300601202405, 7.182364729458918, 7.214428857715431, 7.246492985971944, 7.278557114228457, 7.31062124248497, 7.342685370741483, 7.374749498997996, 7.406813627254509, 7.438877755511022, 7.470941883767535, 7.5030060120240485, 7.5350701402805615, 7.567134268537074, 7.599198396793587, 7.6312625250501, 7.663326653306613, 7.695390781563126, 7.727454909819639, 7.759519038076152, 7.791583166332665, 7.823647294589178, 7.855711422845691, 7.887775551102204, 7.919839679358717, 7.95190380761523, 7.9839679358717435, 8.016032064128256, 8.048096192384769, 8.080160320641282, 8.112224448897795, 8.144288577154308, 8.176352705410821, 8.208416833667334, 8.240480961923847, 8.27254509018036, 8.304609218436873, 8.336673346693386, 8.3687374749499, 8.400801603206412, 8.432865731462925, 8.464929859719438, 8.496993987975952, 8.529058116232465, 8.561122244488978, 8.59318637274549, 8.625250501002004, 8.657314629258517, 8.68937875751503, 8.721442885771543, 8.753507014028056, 8.785571142284569, 8.817635270541082, 8.849699398797595, 8.881763527054108, 8.913827655310621, 8.945891783567134, 8.977955911823647, 9.01002004008016, 9.042084168336673, 9.074148296593187, 9.1062124248497, 9.138276553106213, 9.170340681362726, 9.202404809619239, 9.234468937875752, 9.266533066132265, 9.298597194388778, 9.330661322645291, 9.362725450901804, 9.394789579158317, 9.42685370741483, 9.458917835671343, 9.490981963927856, 9.52304609218437, 9.555110220440882, 9.587174348697395, 9.619238476953909, 9.651302605210422, 9.683366733466935, 9.715430861723448, 9.74749498997996, 9.779559118236472, 9.811623246492985, 9.843687374749498, 9.875751503006011, 9.907815631262524, 9.939879759519037, 9.97194388777555, 10.004008016032063, 10.036072144288577, 10.06813627254509, 10.100200400801603, 10.132264529058116, 10.164328657314629, 10.196392785571142, 10.228456913827655, 10.260521042084168, 10.292585170340681, 10.324649298597194, 10.356713426853707, 10.38877755511022, 10.420841683366733, 10.452905811623246, 10.48496993987976, 10.517034068136272, 10.549098196392785, 10.581162324649299, 10.613226452905812, 10.645290581162325, 10.677354709418838, 10.70941883767535, 10.741482965931864, 10.773547094188377, 10.80561122244489, 10.837675350701403, 10.869739478957916, 10.901803607214429, 10.933867735470942, 10.965931863727455, 10.997995991983968, 11.030060120240481, 11.062124248496994, 11.094188376753507, 11.12625250501002, 11.158316633266534, 11.190380761523047, 11.22244488977956, 11.254509018036073, 11.286573146292586, 11.318637274549099, 11.350701402805612, 11.382765531062125, 11.414829659318638, 11.446893787575151, 11.478957915831664, 11.511022044088177, 11.54308617234469, 11.575150300601202, 11.607214428857715, 11.639278557114228, 11.67134268537074, 11.703406813627254, 11.735470941883767, 11.76753507014028, 11.799599198396793, 11.831663326653306, 11.863727454909819, 11.895791583166332, 11.927855711422845, 11.959919839679358, 11.991983967935871, 12.024048096192384, 12.056112224448897, 12.08817635270541, 12.120240480961924, 12.152304609218437, 12.18436873747495, 12.216432865731463, 12.248496993987976, 12.280561122244489, 12.312625250501002, 12.344689378757515, 12.376753507014028, 12.408817635270541, 12.440881763527054, 12.472945891783567, 12.50501002004008, 12.537074148296593, 12.569138276553106, 12.60120240480962, 12.633266533066132, 12.665330661322646, 12.697394789579159, 12.729458917835672, 12.761523046092185, 12.793587174348698, 12.82565130260521, 12.857715430861724, 12.889779559118237, 12.92184368737475, 12.953907815631263, 12.985971943887776, 13.01803607214429, 13.050100200400802, 13.082164328657315, 13.114228456913828, 13.146292585170341, 13.178356713426854, 13.210420841683367, 13.24248496993988, 13.274549098196394, 13.306613226452907, 13.338677354709418, 13.370741482965931, 13.402805611222444, 13.434869739478957, 13.46693386773547, 13.498997995991983, 13.531062124248496, 13.56312625250501, 13.595190380761522, 13.627254509018035, 13.659318637274549, 13.691382765531062, 13.723446893787575, 13.755511022044088, 13.7875751503006, 13.819639278557114, 13.851703406813627, 13.88376753507014, 13.915831663326653, 13.947895791583166, 13.97995991983968, 14.012024048096192, 14.044088176352705, 14.076152304609218, 14.108216432865731, 14.140280561122244, 14.172344689378757, 14.20440881763527, 14.236472945891784, 14.268537074148297, 14.30060120240481, 14.332665330661323, 14.364729458917836, 14.396793587174349, 14.428857715430862, 14.460921843687375, 14.492985971943888, 14.525050100200401, 14.557114228456914, 14.589178356713427, 14.62124248496994, 14.653306613226453, 14.685370741482966, 14.71743486973948, 14.749498997995993, 14.781563126252506, 14.813627254509019, 14.845691382765532, 14.877755511022045, 14.909819639278558, 14.94188376753507, 14.973947895791584, 15.006012024048097, 15.03807615230461, 15.070140280561123, 15.102204408817636, 15.134268537074147, 15.16633266533066, 15.198396793587174, 15.230460921843687, 15.2625250501002, 15.294589178356713, 15.326653306613226, 15.358717434869739, 15.390781563126252, 15.422845691382765, 15.454909819639278, 15.486973947895791, 15.519038076152304, 15.551102204408817, 15.58316633266533, 15.615230460921843, 15.647294589178356, 15.67935871743487, 15.711422845691382, 15.743486973947896, 15.775551102204409, 15.807615230460922, 15.839679358717435, 15.871743486973948, 15.90380761523046, 15.935871743486974, 15.967935871743487, 16.0])
+              .range(['#0000ffff', '#0000ffff', '#0000ffff', '#0000ffff', '#0100feff', '#0100feff', '#0100feff', '#0100feff', '#0200fdff', '#0200fdff', '#0200fdff', '#0200fdff', '#0300fcff', '#0300fcff', '#0300fcff', '#0300fcff', '#0400fbff', '#0400fbff', '#0400fbff', '#0400fbff', '#0500faff', '#0500faff', '#0500faff', '#0500faff', '#0600f9ff', '#0600f9ff', '#0600f9ff', '#0600f9ff', '#0700f8ff', '#0700f8ff', '#0700f8ff', '#0700f8ff', '#0800f7ff', '#0800f7ff', '#0800f7ff', '#0900f7ff', '#0900f6ff', '#0900f6ff', '#0900f6ff', '#0a00f6ff', '#0a00f5ff', '#0a00f5ff', '#0a00f5ff', '#0b00f5ff', '#0b00f4ff', '#0b00f4ff', '#0b00f4ff', '#0c00f3ff', '#0c00f3ff', '#0c00f3ff', '#0c00f3ff', '#0d00f2ff', '#0d00f2ff', '#0d00f2ff', '#0d00f2ff', '#0e00f1ff', '#0e00f1ff', '#0e00f1ff', '#0e00f1ff', '#0f00f0ff', '#0f00f0ff', '#0f00f0ff', '#0f00f0ff', '#1000efff', '#1000efff', '#1000efff', '#1000efff', '#1100eeff', '#1100eeff', '#1100eeff', '#1200eeff', '#1200edff', '#1200edff', '#1200edff', '#1300edff', '#1300ecff', '#1300ecff', '#1300ecff', '#1400ecff', '#1400ebff', '#1400ebff', '#1400ebff', '#1500ebff', '#1500eaff', '#1500eaff', '#1500eaff', '#1600eaff', '#1600e9ff', '#1600e9ff', '#1600e9ff', '#1700e9ff', '#1700e8ff', '#1700e8ff', '#1700e8ff', '#1800e7ff', '#1800e7ff', '#1800e7ff', '#1800e7ff', '#1900e6ff', '#1900e6ff', '#1900e6ff', '#1a00e6ff', '#1a00e5ff', '#1a00e5ff', '#1a00e5ff', '#1b00e5ff', '#1b00e4ff', '#1b00e4ff', '#1b00e4ff', '#1c00e4ff', '#1c00e3ff', '#1c00e3ff', '#1c00e3ff', '#1d00e3ff', '#1d00e2ff', '#1d00e2ff', '#1d00e2ff', '#1e00e2ff', '#1e00e1ff', '#1e00e1ff', '#1e00e1ff', '#1f00e1ff', '#1f00e0ff', '#1f00e0ff', '#1f00e0ff', '#2000e0ff', '#2000dfff', '#2000dfff', '#2000dfff', '#2100dfff', '#2100deff', '#2100deff', '#2100deff', '#2200deff', '#2200ddff', '#2200ddff', '#2300ddff', '#2300dcff', '#2300dcff', '#2300dcff', '#2400dcff', '#2400dbff', '#2400dbff', '#2400dbff', '#2500dbff', '#2500daff', '#2500daff', '#2500daff', '#2600daff', '#2600d9ff', '#2600d9ff', '#2600d9ff', '#2700d9ff', '#2700d8ff', '#2700d8ff', '#2700d8ff', '#2800d8ff', '#2800d7ff', '#2800d7ff', '#2800d7ff', '#2900d7ff', '#2900d6ff', '#2900d6ff', '#2900d6ff', '#2a00d6ff', '#2a00d5ff', '#2a00d5ff', '#2b00d5ff', '#2b00d5ff', '#2b00d4ff', '#2b00d4ff', '#2c00d4ff', '#2c00d4ff', '#2c00d3ff', '#2c00d3ff', '#2d00d3ff', '#2d00d3ff', '#2d00d2ff', '#2d00d2ff', '#2e00d2ff', '#2e00d2ff', '#2e00d1ff', '#2e00d1ff', '#2f00d1ff', '#2f00d0ff', '#2f00d0ff', '#2f00d0ff', '#3000d0ff', '#3000cfff', '#3000cfff', '#3000cfff', '#3100cfff', '#3100ceff', '#3100ceff', '#3100ceff', '#3200ceff', '#3200cdff', '#3200cdff', '#3200cdff', '#3300cdff', '#3300ccff', '#3300ccff', '#3400ccff', '#3400ccff', '#3400cbff', '#3400cbff', '#3500cbff', '#3500cbff', '#3500caff', '#3500caff', '#3600caff', '#3600caff', '#3600c9ff', '#3600c9ff', '#3700c9ff', '#3700c9ff', '#3700c8ff', '#3700c8ff', '#3800c8ff', '#3800c8ff', '#3800c7ff', '#3800c7ff', '#3900c7ff', '#3900c7ff', '#3900c6ff', '#3900c6ff', '#3a00c6ff', '#3a00c5ff', '#3a00c5ff', '#3a00c5ff', '#3b00c5ff', '#3b00c4ff', '#3b00c4ff', '#3c00c4ff', '#3c00c4ff', '#3c00c3ff', '#3c00c3ff', '#3d00c3ff', '#3d00c3ff', '#3d00c2ff', '#3d00c2ff', '#3e00c2ff', '#3e00c2ff', '#3e00c1ff', '#3e00c1ff', '#3f00c1ff', '#3f00c1ff', '#3f00c0ff', '#3f00c0ff', '#4000c0ff', '#4000c0ff', '#4000bfff', '#4000bfff', '#4100bfff', '#4100bfff', '#4100beff', '#4100beff', '#4200beff', '#4200beff', '#4200bdff', '#4200bdff', '#4300bdff', '#4300bdff', '#4300bcff', '#4300bcff', '#4400bcff', '#4400bcff', '#4400bbff', '#4500bbff', '#4500bbff', '#4500bbff', '#4500baff', '#4600baff', '#4600baff', '#4600b9ff', '#4600b9ff', '#4700b9ff', '#4700b9ff', '#4700b8ff', '#4700b8ff', '#4800b8ff', '#4800b8ff', '#4800b7ff', '#4800b7ff', '#4900b7ff', '#4900b7ff', '#4900b6ff', '#4900b6ff', '#4a00b6ff', '#4a00b6ff', '#4a00b5ff', '#4a00b5ff', '#4b00b5ff', '#4b00b5ff', '#4b00b4ff', '#4b00b4ff', '#4c00b4ff', '#4c00b4ff', '#4c00b3ff', '#4c00b3ff', '#4d00b3ff', '#4d00b3ff', '#4d00b2ff', '#4e00b2ff', '#4e00b2ff', '#4e00b2ff', '#4e00b1ff', '#4f00b1ff', '#4f00b1ff', '#4f00b1ff', '#4f00b0ff', '#5000b0ff', '#5000b0ff', '#5000b0ff', '#5000afff', '#5100afff', '#5100afff', '#5100afff', '#5100aeff', '#5200aeff', '#5200aeff', '#5200adff', '#5200adff', '#5300adff', '#5300adff', '#5300acff', '#5300acff', '#5400acff', '#5400acff', '#5400abff', '#5400abff', '#5500abff', '#5500abff', '#5500aaff', '#5600aaff', '#5600aaff', '#5600aaff', '#5600a9ff', '#5700a9ff', '#5700a9ff', '#5700a9ff', '#5700a8ff', '#5800a8ff', '#5800a8ff', '#5800a8ff', '#5800a7ff', '#5900a7ff', '#5900a7ff', '#5900a7ff', '#5900a6ff', '#5a00a6ff', '#5a00a6ff', '#5a00a6ff', '#5a00a5ff', '#5b00a5ff', '#5b00a5ff', '#5b00a5ff', '#5b00a4ff', '#5c00a4ff', '#5c00a4ff', '#5c00a4ff', '#5c00a3ff', '#5d00a3ff', '#5d00a3ff', '#5d00a2ff', '#5d00a2ff', '#5e00a2ff', '#5e00a2ff', '#5e00a1ff', '#5f00a1ff', '#5f00a1ff', '#5f00a1ff', '#5f00a0ff', '#6000a0ff', '#6000a0ff', '#6000a0ff', '#60009fff', '#61009fff', '#61009fff', '#61009fff', '#61009eff', '#62009eff', '#62009eff', '#62009eff', '#62009dff', '#63009dff', '#63009dff', '#63009dff', '#63009cff', '#64009cff', '#64009cff', '#64009cff', '#64009bff', '#65009bff', '#65009bff', '#65009bff', '#65009aff', '#66009aff', '#66009aff', '#66009aff', '#670099ff', '#670099ff', '#670099ff', '#670099ff', '#680098ff', '#680098ff', '#680098ff', '#680098ff', '#690097ff', '#690097ff', '#690097ff', '#690096ff', '#6a0096ff', '#6a0096ff', '#6a0096ff', '#6a0095ff', '#6b0095ff', '#6b0095ff', '#6b0095ff', '#6b0094ff', '#6c0094ff', '#6c0094ff', '#6c0094ff', '#6c0093ff', '#6d0093ff', '#6d0093ff', '#6d0093ff', '#6d0092ff', '#6e0092ff', '#6e0092ff', '#6e0092ff', '#6e0091ff', '#6f0091ff', '#6f0091ff', '#6f0091ff', '#700090ff', '#700090ff', '#700090ff', '#700090ff', '#71008fff', '#71008fff', '#71008fff', '#71008fff', '#72008eff', '#72008eff', '#72008eff', '#72008eff', '#73008dff', '#73008dff', '#73008dff', '#73008dff', '#74008cff', '#74008cff', '#74008cff', '#74008bff', '#75008bff', '#75008bff', '#75008bff', '#75008aff', '#76008aff', '#76008aff', '#76008aff', '#760089ff', '#770089ff', '#770089ff', '#770089ff', '#780088ff', '#780088ff', '#780088ff', '#780088ff', '#790087ff', '#790087ff', '#790087ff', '#790087ff', '#7a0086ff', '#7a0086ff', '#7a0086ff', '#7a0086ff', '#7b0085ff', '#7b0085ff', '#7b0085ff', '#7b0085ff', '#7c0084ff', '#7c0084ff', '#7c0084ff', '#7c0084ff', '#7d0083ff', '#7d0083ff', '#7d0083ff', '#7d0083ff', '#7e0082ff', '#7e0082ff', '#7e0082ff', '#7e0082ff', '#7f0081ff', '#7f0081ff', '#7f0081ff', '#7f0081ff', '#800080ff', '#800080ff']);
+    
+
+    color_map_ae9608078d8b8018a192047db3658488.x = d3.scale.linear()
+              .domain([0.0, 16.0])
+              .range([0, 450 - 50]);
+
+    color_map_ae9608078d8b8018a192047db3658488.legend = L.control({position: 'topright'});
+    color_map_ae9608078d8b8018a192047db3658488.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_ae9608078d8b8018a192047db3658488.legend.addTo(map_8eba4e88389041f8f35de81cb985e54c);
+
+    color_map_ae9608078d8b8018a192047db3658488.xAxis = d3.svg.axis()
+        .scale(color_map_ae9608078d8b8018a192047db3658488.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([0.0, 16.0]);
+
+    color_map_ae9608078d8b8018a192047db3658488.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_ae9608078d8b8018a192047db3658488.g = color_map_ae9608078d8b8018a192047db3658488.svg.append("g")
+        .attr("class", "key")
+        .attr("transform", "translate(25,16)");
+
+    color_map_ae9608078d8b8018a192047db3658488.g.selectAll("rect")
+        .data(color_map_ae9608078d8b8018a192047db3658488.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_ae9608078d8b8018a192047db3658488.x(color_map_ae9608078d8b8018a192047db3658488.color.domain()[i - 1]) : color_map_ae9608078d8b8018a192047db3658488.x.range()[0],
+            x1: i < color_map_ae9608078d8b8018a192047db3658488.color.domain().length ? color_map_ae9608078d8b8018a192047db3658488.x(color_map_ae9608078d8b8018a192047db3658488.color.domain()[i]) : color_map_ae9608078d8b8018a192047db3658488.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_ae9608078d8b8018a192047db3658488.g.call(color_map_ae9608078d8b8018a192047db3658488.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .text("UF/m\u00b2 (500-4999 m2)");
+    
+    var color_map_13e823edc91b817989f618bf8dd5fc74 = {};
+
+    
+    color_map_13e823edc91b817989f618bf8dd5fc74.color = d3.scale.threshold()
+              .domain([0.0, 0.004008016032064128, 0.008016032064128256, 0.012024048096192385, 0.01603206412825651, 0.02004008016032064, 0.02404809619238477, 0.028056112224448898, 0.03206412825651302, 0.036072144288577156, 0.04008016032064128, 0.04408817635270541, 0.04809619238476954, 0.052104208416833664, 0.056112224448897796, 0.06012024048096192, 0.06412825651302605, 0.06813627254509018, 0.07214428857715431, 0.07615230460921844, 0.08016032064128256, 0.0841683366733467, 0.08817635270541083, 0.09218436873747494, 0.09619238476953908, 0.10020040080160321, 0.10420841683366733, 0.10821643286573146, 0.11222444889779559, 0.11623246492985972, 0.12024048096192384, 0.12424849699398798, 0.1282565130260521, 0.13226452905811623, 0.13627254509018036, 0.1402805611222445, 0.14428857715430862, 0.14829659318637275, 0.1523046092184369, 0.156312625250501, 0.16032064128256512, 0.16432865731462926, 0.1683366733466934, 0.17234468937875752, 0.17635270541082165, 0.18036072144288579, 0.1843687374749499, 0.18837675350701402, 0.19238476953907815, 0.1963927855711423, 0.20040080160320642, 0.20440881763527055, 0.20841683366733466, 0.2124248496993988, 0.21643286573146292, 0.22044088176352705, 0.22444889779559118, 0.22845691382765532, 0.23246492985971945, 0.23647294589178355, 0.24048096192384769, 0.24448897795591182, 0.24849699398797595, 0.25250501002004005, 0.2565130260521042, 0.2605210420841683, 0.26452905811623245, 0.2685370741482966, 0.2725450901803607, 0.27655310621242485, 0.280561122244489, 0.2845691382765531, 0.28857715430861725, 0.2925851703406814, 0.2965931863727455, 0.30060120240480964, 0.3046092184368738, 0.30861723446893785, 0.312625250501002, 0.3166332665330661, 0.32064128256513025, 0.3246492985971944, 0.3286573146292585, 0.33266533066132264, 0.3366733466933868, 0.3406813627254509, 0.34468937875751504, 0.3486973947895792, 0.3527054108216433, 0.35671342685370744, 0.36072144288577157, 0.36472945891783565, 0.3687374749498998, 0.3727454909819639, 0.37675350701402804, 0.3807615230460922, 0.3847695390781563, 0.38877755511022044, 0.3927855711422846, 0.3967935871743487, 0.40080160320641284, 0.40480961923847697, 0.4088176352705411, 0.41282565130260523, 0.4168336673346693, 0.42084168336673344, 0.4248496993987976, 0.4288577154308617, 0.43286573146292584, 0.43687374749499, 0.4408817635270541, 0.44488977955911824, 0.44889779559118237, 0.4529058116232465, 0.45691382765531063, 0.46092184368737477, 0.4649298597194389, 0.46893787575150303, 0.4729458917835671, 0.47695390781563124, 0.48096192384769537, 0.4849699398797595, 0.48897795591182364, 0.49298597194388777, 0.4969939879759519, 0.501002004008016, 0.5050100200400801, 0.5090180360721442, 0.5130260521042084, 0.5170340681362725, 0.5210420841683366, 0.5250501002004008, 0.5290581162324649, 0.533066132264529, 0.5370741482965932, 0.5410821643286573, 0.5450901803607214, 0.5490981963927856, 0.5531062124248497, 0.5571142284569138, 0.561122244488978, 0.5651302605210421, 0.5691382765531062, 0.5731462925851704, 0.5771543086172345, 0.5811623246492986, 0.5851703406813628, 0.5891783567134269, 0.593186372745491, 0.5971943887775552, 0.6012024048096193, 0.6052104208416834, 0.6092184368737475, 0.6132264529058116, 0.6172344689378757, 0.6212424849699398, 0.625250501002004, 0.6292585170340681, 0.6332665330661322, 0.6372745490981964, 0.6412825651302605, 0.6452905811623246, 0.6492985971943888, 0.6533066132264529, 0.657314629258517, 0.6613226452905812, 0.6653306613226453, 0.6693386773547094, 0.6733466933867736, 0.6773547094188377, 0.6813627254509018, 0.685370741482966, 0.6893787575150301, 0.6933867735470942, 0.6973947895791583, 0.7014028056112225, 0.7054108216432866, 0.7094188376753507, 0.7134268537074149, 0.717434869739479, 0.7214428857715431, 0.7254509018036072, 0.7294589178356713, 0.7334669338677354, 0.7374749498997996, 0.7414829659318637, 0.7454909819639278, 0.749498997995992, 0.7535070140280561, 0.7575150300601202, 0.7615230460921844, 0.7655310621242485, 0.7695390781563126, 0.7735470941883767, 0.7775551102204409, 0.781563126252505, 0.7855711422845691, 0.7895791583166333, 0.7935871743486974, 0.7975951903807615, 0.8016032064128257, 0.8056112224448898, 0.8096192384769539, 0.8136272545090181, 0.8176352705410822, 0.8216432865731463, 0.8256513026052105, 0.8296593186372746, 0.8336673346693386, 0.8376753507014028, 0.8416833667334669, 0.845691382765531, 0.8496993987975952, 0.8537074148296593, 0.8577154308617234, 0.8617234468937875, 0.8657314629258517, 0.8697394789579158, 0.87374749498998, 0.8777555110220441, 0.8817635270541082, 0.8857715430861723, 0.8897795591182365, 0.8937875751503006, 0.8977955911823647, 0.9018036072144289, 0.905811623246493, 0.9098196392785571, 0.9138276553106213, 0.9178356713426854, 0.9218436873747495, 0.9258517034068137, 0.9298597194388778, 0.9338677354709419, 0.9378757515030061, 0.9418837675350702, 0.9458917835671342, 0.9498997995991983, 0.9539078156312625, 0.9579158316633266, 0.9619238476953907, 0.9659318637274549, 0.969939879759519, 0.9739478957915831, 0.9779559118236473, 0.9819639278557114, 0.9859719438877755, 0.9899799599198397, 0.9939879759519038, 0.9979959919839679, 1.002004008016032, 1.006012024048096, 1.0100200400801602, 1.0140280561122244, 1.0180360721442885, 1.0220440881763526, 1.0260521042084167, 1.0300601202404809, 1.034068136272545, 1.0380761523046091, 1.0420841683366733, 1.0460921843687374, 1.0501002004008015, 1.0541082164328657, 1.0581162324649298, 1.062124248496994, 1.066132264529058, 1.0701402805611222, 1.0741482965931863, 1.0781563126252505, 1.0821643286573146, 1.0861723446893787, 1.0901803607214429, 1.094188376753507, 1.0981963927855711, 1.1022044088176353, 1.1062124248496994, 1.1102204408817635, 1.1142284569138277, 1.1182364729458918, 1.122244488977956, 1.12625250501002, 1.1302605210420842, 1.1342685370741483, 1.1382765531062125, 1.1422845691382766, 1.1462925851703407, 1.1503006012024048, 1.154308617234469, 1.1583166332665331, 1.1623246492985972, 1.1663326653306614, 1.1703406813627255, 1.1743486973947896, 1.1783567134268538, 1.182364729458918, 1.186372745490982, 1.1903807615230462, 1.1943887775551103, 1.1983967935871744, 1.2024048096192386, 1.2064128256513027, 1.2104208416833668, 1.214428857715431, 1.218436873747495, 1.222444889779559, 1.2264529058116231, 1.2304609218436873, 1.2344689378757514, 1.2384769539078155, 1.2424849699398797, 1.2464929859719438, 1.250501002004008, 1.254509018036072, 1.2585170340681362, 1.2625250501002003, 1.2665330661322645, 1.2705410821643286, 1.2745490981963927, 1.2785571142284569, 1.282565130260521, 1.2865731462925851, 1.2905811623246493, 1.2945891783567134, 1.2985971943887775, 1.3026052104208417, 1.3066132264529058, 1.31062124248497, 1.314629258517034, 1.3186372745490982, 1.3226452905811623, 1.3266533066132264, 1.3306613226452906, 1.3346693386773547, 1.3386773547094188, 1.342685370741483, 1.346693386773547, 1.3507014028056112, 1.3547094188376754, 1.3587174348697395, 1.3627254509018036, 1.3667334669338678, 1.370741482965932, 1.374749498997996, 1.3787575150300602, 1.3827655310621243, 1.3867735470941884, 1.3907815631262526, 1.3947895791583167, 1.3987975951903808, 1.402805611222445, 1.406813627254509, 1.4108216432865732, 1.4148296593186374, 1.4188376753507015, 1.4228456913827656, 1.4268537074148298, 1.4308617234468939, 1.434869739478958, 1.4388777555110221, 1.4428857715430863, 1.4468937875751502, 1.4509018036072143, 1.4549098196392785, 1.4589178356713426, 1.4629258517034067, 1.4669338677354709, 1.470941883767535, 1.4749498997995991, 1.4789579158316633, 1.4829659318637274, 1.4869739478957915, 1.4909819639278556, 1.4949899799599198, 1.498997995991984, 1.503006012024048, 1.5070140280561122, 1.5110220440881763, 1.5150300601202404, 1.5190380761523046, 1.5230460921843687, 1.5270541082164328, 1.531062124248497, 1.535070140280561, 1.5390781563126252, 1.5430861723446894, 1.5470941883767535, 1.5511022044088176, 1.5551102204408818, 1.559118236472946, 1.56312625250501, 1.5671342685370742, 1.5711422845691383, 1.5751503006012024, 1.5791583166332666, 1.5831663326653307, 1.5871743486973948, 1.591182364729459, 1.595190380761523, 1.5991983967935872, 1.6032064128256514, 1.6072144288577155, 1.6112224448897796, 1.6152304609218437, 1.6192384769539079, 1.623246492985972, 1.6272545090180361, 1.6312625250501003, 1.6352705410821644, 1.6392785571142285, 1.6432865731462927, 1.6472945891783568, 1.651302605210421, 1.655310621242485, 1.6593186372745492, 1.6633266533066133, 1.6673346693386772, 1.6713426853707414, 1.6753507014028055, 1.6793587174348696, 1.6833667334669338, 1.687374749498998, 1.691382765531062, 1.6953907815631262, 1.6993987975951903, 1.7034068136272544, 1.7074148296593186, 1.7114228456913827, 1.7154308617234468, 1.719438877755511, 1.723446893787575, 1.7274549098196392, 1.7314629258517034, 1.7354709418837675, 1.7394789579158316, 1.7434869739478958, 1.74749498997996, 1.751503006012024, 1.7555110220440882, 1.7595190380761523, 1.7635270541082164, 1.7675350701402806, 1.7715430861723447, 1.7755511022044088, 1.779559118236473, 1.783567134268537, 1.7875751503006012, 1.7915831663326653, 1.7955911823647295, 1.7995991983967936, 1.8036072144288577, 1.8076152304609219, 1.811623246492986, 1.8156312625250501, 1.8196392785571143, 1.8236472945891784, 1.8276553106212425, 1.8316633266533067, 1.8356713426853708, 1.839679358717435, 1.843687374749499, 1.8476953907815632, 1.8517034068136273, 1.8557114228456915, 1.8597194388777556, 1.8637274549098197, 1.8677354709418839, 1.871743486973948, 1.8757515030060121, 1.8797595190380763, 1.8837675350701404, 1.8877755511022045, 1.8917835671342684, 1.8957915831663326, 1.8997995991983967, 1.9038076152304608, 1.907815631262525, 1.911823647294589, 1.9158316633266532, 1.9198396793587174, 1.9238476953907815, 1.9278557114228456, 1.9318637274549098, 1.9358717434869739, 1.939879759519038, 1.9438877755511021, 1.9478957915831663, 1.9519038076152304, 1.9559118236472945, 1.9599198396793587, 1.9639278557114228, 1.967935871743487, 1.971943887775551, 1.9759519038076152, 1.9799599198396793, 1.9839679358717435, 1.9879759519038076, 1.9919839679358717, 1.9959919839679359, 2.0])
+              .range(['#008000ff', '#008000ff', '#018100ff', '#018100ff', '#028100ff', '#028100ff', '#038200ff', '#038200ff', '#048200ff', '#048200ff', '#058300ff', '#058300ff', '#068300ff', '#068300ff', '#078400ff', '#078400ff', '#088400ff', '#088400ff', '#098500ff', '#098500ff', '#0a8500ff', '#0a8500ff', '#0b8600ff', '#0b8600ff', '#0c8600ff', '#0c8600ff', '#0d8700ff', '#0d8700ff', '#0e8700ff', '#0e8700ff', '#0f8800ff', '#0f8800ff', '#108800ff', '#108800ff', '#118900ff', '#118900ff', '#128900ff', '#128900ff', '#138a00ff', '#148a00ff', '#148a00ff', '#158a00ff', '#158b00ff', '#168b00ff', '#168b00ff', '#178b00ff', '#178c00ff', '#188c00ff', '#188c00ff', '#198d00ff', '#198d00ff', '#1a8d00ff', '#1a8d00ff', '#1b8e00ff', '#1b8e00ff', '#1c8e00ff', '#1c8e00ff', '#1d8f00ff', '#1d8f00ff', '#1e8f00ff', '#1e8f00ff', '#1f9000ff', '#1f9000ff', '#209000ff', '#209000ff', '#219100ff', '#219100ff', '#229100ff', '#229100ff', '#239200ff', '#239200ff', '#249200ff', '#249200ff', '#259300ff', '#259300ff', '#269300ff', '#269300ff', '#279400ff', '#289400ff', '#289400ff', '#299400ff', '#299500ff', '#2a9500ff', '#2a9500ff', '#2b9500ff', '#2b9600ff', '#2c9600ff', '#2c9600ff', '#2d9600ff', '#2d9700ff', '#2e9700ff', '#2e9700ff', '#2f9800ff', '#2f9800ff', '#309800ff', '#309800ff', '#319900ff', '#319900ff', '#329900ff', '#329900ff', '#339a00ff', '#339a00ff', '#349a00ff', '#349a00ff', '#359b00ff', '#359b00ff', '#369b00ff', '#369b00ff', '#379c00ff', '#379c00ff', '#389c00ff', '#389c00ff', '#399d00ff', '#399d00ff', '#3a9d00ff', '#3a9d00ff', '#3b9e00ff', '#3c9e00ff', '#3c9e00ff', '#3d9e00ff', '#3d9f00ff', '#3e9f00ff', '#3e9f00ff', '#3f9f00ff', '#3fa000ff', '#40a000ff', '#40a000ff', '#41a000ff', '#41a100ff', '#42a100ff', '#42a100ff', '#43a100ff', '#43a200ff', '#44a200ff', '#44a200ff', '#45a200ff', '#45a300ff', '#46a300ff', '#46a300ff', '#47a400ff', '#47a400ff', '#48a400ff', '#48a400ff', '#49a500ff', '#49a500ff', '#4aa500ff', '#4aa500ff', '#4ba600ff', '#4ba600ff', '#4ca600ff', '#4ca600ff', '#4da700ff', '#4da700ff', '#4ea700ff', '#4fa700ff', '#4fa800ff', '#50a800ff', '#50a800ff', '#51a800ff', '#51a900ff', '#52a900ff', '#52a900ff', '#53a900ff', '#53aa00ff', '#54aa00ff', '#54aa00ff', '#55aa00ff', '#55ab00ff', '#56ab00ff', '#56ab00ff', '#57ab00ff', '#57ac00ff', '#58ac00ff', '#58ac00ff', '#59ac00ff', '#59ad00ff', '#5aad00ff', '#5aad00ff', '#5bad00ff', '#5bae00ff', '#5cae00ff', '#5cae00ff', '#5daf00ff', '#5daf00ff', '#5eaf00ff', '#5eaf00ff', '#5fb000ff', '#5fb000ff', '#60b000ff', '#60b000ff', '#61b100ff', '#61b100ff', '#62b100ff', '#63b100ff', '#63b200ff', '#64b200ff', '#64b200ff', '#65b200ff', '#65b300ff', '#66b300ff', '#66b300ff', '#67b300ff', '#67b400ff', '#68b400ff', '#68b400ff', '#69b400ff', '#69b500ff', '#6ab500ff', '#6ab500ff', '#6bb500ff', '#6bb600ff', '#6cb600ff', '#6cb600ff', '#6db600ff', '#6db700ff', '#6eb700ff', '#6eb700ff', '#6fb700ff', '#6fb800ff', '#70b800ff', '#70b800ff', '#71b800ff', '#71b900ff', '#72b900ff', '#72b900ff', '#73b900ff', '#73ba00ff', '#74ba00ff', '#74ba00ff', '#75bb00ff', '#75bb00ff', '#76bb00ff', '#77bb00ff', '#77bc00ff', '#78bc00ff', '#78bc00ff', '#79bc00ff', '#79bd00ff', '#7abd00ff', '#7abd00ff', '#7bbd00ff', '#7bbe00ff', '#7cbe00ff', '#7cbe00ff', '#7dbe00ff', '#7dbf00ff', '#7ebf00ff', '#7ebf00ff', '#7fbf00ff', '#7fc000ff', '#80c000ff', '#80c000ff', '#81c000ff', '#81c100ff', '#82c100ff', '#82c100ff', '#83c100ff', '#83c200ff', '#84c200ff', '#84c200ff', '#85c200ff', '#85c300ff', '#86c300ff', '#86c300ff', '#87c300ff', '#87c400ff', '#88c400ff', '#88c400ff', '#89c400ff', '#8ac500ff', '#8ac500ff', '#8bc500ff', '#8bc500ff', '#8cc600ff', '#8cc600ff', '#8dc600ff', '#8dc700ff', '#8ec700ff', '#8ec700ff', '#8fc700ff', '#8fc800ff', '#90c800ff', '#90c800ff', '#91c800ff', '#91c900ff', '#92c900ff', '#92c900ff', '#93c900ff', '#93ca00ff', '#94ca00ff', '#94ca00ff', '#95ca00ff', '#95cb00ff', '#96cb00ff', '#96cb00ff', '#97cb00ff', '#97cc00ff', '#98cc00ff', '#98cc00ff', '#99cc00ff', '#99cd00ff', '#9acd00ff', '#9acd00ff', '#9bcd00ff', '#9bce00ff', '#9cce00ff', '#9cce00ff', '#9dce00ff', '#9ecf00ff', '#9ecf00ff', '#9fcf00ff', '#9fcf00ff', '#a0d000ff', '#a0d000ff', '#a1d000ff', '#a1d000ff', '#a2d100ff', '#a2d100ff', '#a3d100ff', '#a3d200ff', '#a4d200ff', '#a4d200ff', '#a5d200ff', '#a5d300ff', '#a6d300ff', '#a6d300ff', '#a7d300ff', '#a7d400ff', '#a8d400ff', '#a8d400ff', '#a9d400ff', '#a9d500ff', '#aad500ff', '#aad500ff', '#abd500ff', '#abd600ff', '#acd600ff', '#acd600ff', '#add600ff', '#add700ff', '#aed700ff', '#aed700ff', '#afd700ff', '#afd800ff', '#b0d800ff', '#b0d800ff', '#b1d800ff', '#b2d900ff', '#b2d900ff', '#b3d900ff', '#b3d900ff', '#b4da00ff', '#b4da00ff', '#b5da00ff', '#b5da00ff', '#b6db00ff', '#b6db00ff', '#b7db00ff', '#b7db00ff', '#b8dc00ff', '#b8dc00ff', '#b9dc00ff', '#b9dc00ff', '#badd00ff', '#badd00ff', '#bbdd00ff', '#bbde00ff', '#bcde00ff', '#bcde00ff', '#bdde00ff', '#bddf00ff', '#bedf00ff', '#bedf00ff', '#bfdf00ff', '#bfe000ff', '#c0e000ff', '#c0e000ff', '#c1e000ff', '#c1e100ff', '#c2e100ff', '#c2e100ff', '#c3e100ff', '#c3e200ff', '#c4e200ff', '#c5e200ff', '#c5e200ff', '#c6e300ff', '#c6e300ff', '#c7e300ff', '#c7e300ff', '#c8e400ff', '#c8e400ff', '#c9e400ff', '#c9e400ff', '#cae500ff', '#cae500ff', '#cbe500ff', '#cbe500ff', '#cce600ff', '#cce600ff', '#cde600ff', '#cde600ff', '#cee700ff', '#cee700ff', '#cfe700ff', '#cfe700ff', '#d0e800ff', '#d0e800ff', '#d1e800ff', '#d1e900ff', '#d2e900ff', '#d2e900ff', '#d3e900ff', '#d3ea00ff', '#d4ea00ff', '#d4ea00ff', '#d5ea00ff', '#d5eb00ff', '#d6eb00ff', '#d6eb00ff', '#d7eb00ff', '#d7ec00ff', '#d8ec00ff', '#d9ec00ff', '#d9ec00ff', '#daed00ff', '#daed00ff', '#dbed00ff', '#dbed00ff', '#dcee00ff', '#dcee00ff', '#ddee00ff', '#ddee00ff', '#deef00ff', '#deef00ff', '#dfef00ff', '#dfef00ff', '#e0f000ff', '#e0f000ff', '#e1f000ff', '#e1f000ff', '#e2f100ff', '#e2f100ff', '#e3f100ff', '#e3f100ff', '#e4f200ff', '#e4f200ff', '#e5f200ff', '#e5f200ff', '#e6f300ff', '#e6f300ff', '#e7f300ff', '#e7f300ff', '#e8f400ff', '#e8f400ff', '#e9f400ff', '#e9f500ff', '#eaf500ff', '#eaf500ff', '#ebf500ff', '#ebf600ff', '#ecf600ff', '#edf600ff', '#edf600ff', '#eef700ff', '#eef700ff', '#eff700ff', '#eff700ff', '#f0f800ff', '#f0f800ff', '#f1f800ff', '#f1f800ff', '#f2f900ff', '#f2f900ff', '#f3f900ff', '#f3f900ff', '#f4fa00ff', '#f4fa00ff', '#f5fa00ff', '#f5fa00ff', '#f6fb00ff', '#f6fb00ff', '#f7fb00ff', '#f7fb00ff', '#f8fc00ff', '#f8fc00ff', '#f9fc00ff', '#f9fc00ff', '#fafd00ff', '#fafd00ff', '#fbfd00ff', '#fbfd00ff', '#fcfe00ff', '#fcfe00ff', '#fdfe00ff', '#fdfe00ff', '#feff00ff', '#feff00ff', '#ffff00ff', '#ffff00ff']);
+    
+
+    color_map_13e823edc91b817989f618bf8dd5fc74.x = d3.scale.linear()
+              .domain([0.0, 2.0])
+              .range([0, 450 - 50]);
+
+    color_map_13e823edc91b817989f618bf8dd5fc74.legend = L.control({position: 'topright'});
+    color_map_13e823edc91b817989f618bf8dd5fc74.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_13e823edc91b817989f618bf8dd5fc74.legend.addTo(map_8eba4e88389041f8f35de81cb985e54c);
+
+    color_map_13e823edc91b817989f618bf8dd5fc74.xAxis = d3.svg.axis()
+        .scale(color_map_13e823edc91b817989f618bf8dd5fc74.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([0.0, 2.0]);
+
+    color_map_13e823edc91b817989f618bf8dd5fc74.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_13e823edc91b817989f618bf8dd5fc74.g = color_map_13e823edc91b817989f618bf8dd5fc74.svg.append("g")
+        .attr("class", "key")
+        .attr("transform", "translate(25,16)");
+
+    color_map_13e823edc91b817989f618bf8dd5fc74.g.selectAll("rect")
+        .data(color_map_13e823edc91b817989f618bf8dd5fc74.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_13e823edc91b817989f618bf8dd5fc74.x(color_map_13e823edc91b817989f618bf8dd5fc74.color.domain()[i - 1]) : color_map_13e823edc91b817989f618bf8dd5fc74.x.range()[0],
+            x1: i < color_map_13e823edc91b817989f618bf8dd5fc74.color.domain().length ? color_map_13e823edc91b817989f618bf8dd5fc74.x(color_map_13e823edc91b817989f618bf8dd5fc74.color.domain()[i]) : color_map_13e823edc91b817989f618bf8dd5fc74.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_13e823edc91b817989f618bf8dd5fc74.g.call(color_map_13e823edc91b817989f618bf8dd5fc74.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .text("UF/m\u00b2 (10001-100000 m2)");
+    
+            var layer_control_54476cf99ce2e0361f352e2a1ff0f8db_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_e030a3e0534945ec316d116fdf72ca72,
+                },
+                overlays :  {
+                    "Rango 500-4999 m2" : feature_group_352abfa2ecbb9aabf40e16fcaf4c776d,
+                    "Rango 10001-100000 m2" : feature_group_cca633e7358a3306800f83935ee8d3c6,
+                    "Semestre 2024S1" : feature_group_sub_group_6f43c48087c836c8ae46f912073daec9,
+                    "Semestre 2024S2" : feature_group_sub_group_e84501ae2fc39a38130b3e6ecdbb5026,
+                },
+            };
+            let layer_control_54476cf99ce2e0361f352e2a1ff0f8db = L.control.layers(
+                layer_control_54476cf99ce2e0361f352e2a1ff0f8db_layers.base_layers,
+                layer_control_54476cf99ce2e0361f352e2a1ff0f8db_layers.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_8eba4e88389041f8f35de81cb985e54c);
+
+        
+</script>
+</html>

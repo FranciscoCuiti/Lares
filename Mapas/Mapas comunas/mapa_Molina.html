@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b6c9de59903dff21e96e3c29be352a8a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+    <div style="
+    position: fixed;
+    bottom: 50px; left: 50px; width: 180px; height: 100px;
+    border:2px solid grey; z-index:9999; font-size:14px;
+    background-color:white; opacity: 0.85; padding: 10px;">
+    <b>Rangos de Superficie</b><br>
+    <i class="fa fa-circle" style="color:blue"></i> 500-4999 m2<br>
+    <i class="fa fa-circle" style="color:green"></i> 10001-100000 m2<br>
+    </div>
+    
+    
+            <div class="folium-map" id="map_b6c9de59903dff21e96e3c29be352a8a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b6c9de59903dff21e96e3c29be352a8a = L.map(
+                "map_b6c9de59903dff21e96e3c29be352a8a",
+                {
+                    center: [-35.116596497959186, -71.28370907755102],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a9d15cd2529453d45779083a5976279d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_a9d15cd2529453d45779083a5976279d.addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+            var circle_marker_a222b3f1350cbc7813dc4db8eb96a62b = L.circleMarker(
+                [-35.051175, -71.279415],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_0c0be816631c6ff5ccbfe3f511c8e396 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bddf9241ee0a7cb29987b32d803fb6f3 = $(`<div id="html_bddf9241ee0a7cb29987b32d803fb6f3" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 5335.0<br>Superficie: 1515.0 m²</div>`)[0];
+                popup_0c0be816631c6ff5ccbfe3f511c8e396.setContent(html_bddf9241ee0a7cb29987b32d803fb6f3);
+            
+        
+
+        circle_marker_a222b3f1350cbc7813dc4db8eb96a62b.bindPopup(popup_0c0be816631c6ff5ccbfe3f511c8e396)
+        ;
+
+        
+    
+    
+            var circle_marker_9f3d2bb4c16c088e9dce51a3b146cd19 = L.circleMarker(
+                [-35.115312, -71.2814309],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_196d77089f6c0d52257c902c4537f374 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8df3e1fc411b924f2d93073e40af9599 = $(`<div id="html_8df3e1fc411b924f2d93073e40af9599" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 14776.076618524416<br>Superficie: 2920.0 m²</div>`)[0];
+                popup_196d77089f6c0d52257c902c4537f374.setContent(html_8df3e1fc411b924f2d93073e40af9599);
+            
+        
+
+        circle_marker_9f3d2bb4c16c088e9dce51a3b146cd19.bindPopup(popup_196d77089f6c0d52257c902c4537f374)
+        ;
+
+        
+    
+    
+            var circle_marker_2d094f70aaeac15f1ef557f87056aac6 = L.circleMarker(
+                [-35.11021, -71.28118],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_286548239eeca6f8b2cca8cdad3d916f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40716984d5eb03428c84634a4433b801 = $(`<div id="html_40716984d5eb03428c84634a4433b801" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 6722.656535712903<br>Superficie: 926.0 m²</div>`)[0];
+                popup_286548239eeca6f8b2cca8cdad3d916f.setContent(html_40716984d5eb03428c84634a4433b801);
+            
+        
+
+        circle_marker_2d094f70aaeac15f1ef557f87056aac6.bindPopup(popup_286548239eeca6f8b2cca8cdad3d916f)
+        ;
+
+        
+    
+    
+            var circle_marker_a9d72225e0e486cebe1dd06669700d9e = L.circleMarker(
+                [-35.115312, -71.2814309],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_0993def67f49706c5e899d08f531c208 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87cc890337675154b1c33f0580a41678 = $(`<div id="html_87cc890337675154b1c33f0580a41678" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 6582.070493706331<br>Superficie: 4312.0 m²</div>`)[0];
+                popup_0993def67f49706c5e899d08f531c208.setContent(html_87cc890337675154b1c33f0580a41678);
+            
+        
+
+        circle_marker_a9d72225e0e486cebe1dd06669700d9e.bindPopup(popup_0993def67f49706c5e899d08f531c208)
+        ;
+
+        
+    
+    
+            var circle_marker_4f2f79d1cb42ee051da277147c4ffef8 = L.circleMarker(
+                [-35.115312, -71.2814309],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_bc75d5ee8a697cd2f7081a088dfe7a9f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_990f6eef1d7a9e13bfa9d889ad6a6ad5 = $(`<div id="html_990f6eef1d7a9e13bfa9d889ad6a6ad5" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 6562.9717135919145<br>Superficie: 4312.0 m²</div>`)[0];
+                popup_bc75d5ee8a697cd2f7081a088dfe7a9f.setContent(html_990f6eef1d7a9e13bfa9d889ad6a6ad5);
+            
+        
+
+        circle_marker_4f2f79d1cb42ee051da277147c4ffef8.bindPopup(popup_bc75d5ee8a697cd2f7081a088dfe7a9f)
+        ;
+
+        
+    
+    
+            var circle_marker_029ad5489b1bc55a0b4334005e694531 = L.circleMarker(
+                [-35.115312, -71.2814309],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_f229f727b1ea4b76e380bd15528dca01 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2be637caf4138f3c821ce18f71a205f3 = $(`<div id="html_2be637caf4138f3c821ce18f71a205f3" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 14637.15426043649<br>Superficie: 2920.0 m²</div>`)[0];
+                popup_f229f727b1ea4b76e380bd15528dca01.setContent(html_2be637caf4138f3c821ce18f71a205f3);
+            
+        
+
+        circle_marker_029ad5489b1bc55a0b4334005e694531.bindPopup(popup_f229f727b1ea4b76e380bd15528dca01)
+        ;
+
+        
+    
+    
+            var circle_marker_51728340dba7ac0e83bf8648661ce3ee = L.circleMarker(
+                [-35.1084255, -71.2809937],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_83a67285ce7756d5176a43ed301aacba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_debacd4a4bbfe1808afde14561ae920a = $(`<div id="html_debacd4a4bbfe1808afde14561ae920a" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 13495.0<br>Superficie: 3680.0 m²</div>`)[0];
+                popup_83a67285ce7756d5176a43ed301aacba.setContent(html_debacd4a4bbfe1808afde14561ae920a);
+            
+        
+
+        circle_marker_51728340dba7ac0e83bf8648661ce3ee.bindPopup(popup_83a67285ce7756d5176a43ed301aacba)
+        ;
+
+        
+    
+    
+            var circle_marker_c8bc8ae8670da5e996e38be5a9d7a8d5 = L.circleMarker(
+                [-35.133895, -71.35512],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_a36e1ca952030b88b880229843794241 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9fefc1ddb84a6f2510e47ff0d87503d5 = $(`<div id="html_9fefc1ddb84a6f2510e47ff0d87503d5" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 2394.262071137782<br>Superficie: 3409.0 m²</div>`)[0];
+                popup_a36e1ca952030b88b880229843794241.setContent(html_9fefc1ddb84a6f2510e47ff0d87503d5);
+            
+        
+
+        circle_marker_c8bc8ae8670da5e996e38be5a9d7a8d5.bindPopup(popup_a36e1ca952030b88b880229843794241)
+        ;
+
+        
+    
+    
+            var circle_marker_c50cc6f575fc3f8a2f402e94b980f3ac = L.circleMarker(
+                [-35.115312, -71.281431],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_b5e83877d0e4f561cc4c84967e241931 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a0c8c155c0e27338c4df6f76a483fa55 = $(`<div id="html_a0c8c155c0e27338c4df6f76a483fa55" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 14631.601545842004<br>Superficie: 2920.0 m²</div>`)[0];
+                popup_b5e83877d0e4f561cc4c84967e241931.setContent(html_a0c8c155c0e27338c4df6f76a483fa55);
+            
+        
+
+        circle_marker_c50cc6f575fc3f8a2f402e94b980f3ac.bindPopup(popup_b5e83877d0e4f561cc4c84967e241931)
+        ;
+
+        
+    
+    
+            var circle_marker_f8365574fe1146f14b86f77f52c08456 = L.circleMarker(
+                [-35.115345, -71.277817],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_b61f8a6401c74e81d0487008c120669b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_20d945a4a6c1d4919eaa6a4f2eb216a5 = $(`<div id="html_20d945a4a6c1d4919eaa6a4f2eb216a5" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 17155.0<br>Superficie: 2723.0 m²</div>`)[0];
+                popup_b61f8a6401c74e81d0487008c120669b.setContent(html_20d945a4a6c1d4919eaa6a4f2eb216a5);
+            
+        
+
+        circle_marker_f8365574fe1146f14b86f77f52c08456.bindPopup(popup_b61f8a6401c74e81d0487008c120669b)
+        ;
+
+        
+    
+    
+            var circle_marker_013f8e26a41cad6e4bd6b08266f89338 = L.circleMarker(
+                [-35.108426, -71.280994],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_ad6b90da03eb4d66705bc7aeb55110d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5682fd8e4db8c19c86586d7b34922135 = $(`<div id="html_5682fd8e4db8c19c86586d7b34922135" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 13495.0<br>Superficie: 3680.0 m²</div>`)[0];
+                popup_ad6b90da03eb4d66705bc7aeb55110d5.setContent(html_5682fd8e4db8c19c86586d7b34922135);
+            
+        
+
+        circle_marker_013f8e26a41cad6e4bd6b08266f89338.bindPopup(popup_ad6b90da03eb4d66705bc7aeb55110d5)
+        ;
+
+        
+    
+    
+            var circle_marker_deac8b8069458802fb5a5ec08bc2b4e0 = L.circleMarker(
+                [-35.11021, -71.28118],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_1cf84246ad5cb52ce376d5c87301f0e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_66d58ef5817d2006f21be2cc08ae1aa9 = $(`<div id="html_66d58ef5817d2006f21be2cc08ae1aa9" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 6652.232209735834<br>Superficie: 926.0 m²</div>`)[0];
+                popup_1cf84246ad5cb52ce376d5c87301f0e5.setContent(html_66d58ef5817d2006f21be2cc08ae1aa9);
+            
+        
+
+        circle_marker_deac8b8069458802fb5a5ec08bc2b4e0.bindPopup(popup_1cf84246ad5cb52ce376d5c87301f0e5)
+        ;
+
+        
+    
+    
+            var circle_marker_79b5c986ac33f6844cc0d43c89f33e70 = L.circleMarker(
+                [-35.114323, -71.283957],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_8e131b19d40f6c08dbb7e4e5464d77fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_29c38311f055198ea66f11032013492a = $(`<div id="html_29c38311f055198ea66f11032013492a" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 13304.464419471667<br>Superficie: 3680.0 m²</div>`)[0];
+                popup_8e131b19d40f6c08dbb7e4e5464d77fd.setContent(html_29c38311f055198ea66f11032013492a);
+            
+        
+
+        circle_marker_79b5c986ac33f6844cc0d43c89f33e70.bindPopup(popup_8e131b19d40f6c08dbb7e4e5464d77fd)
+        ;
+
+        
+    
+    
+            var circle_marker_1e8a3bf697cab15492ff3e918198d973 = L.circleMarker(
+                [-35.115312, -71.2814309],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_22aa66b5dd7a5a5b0ecf20450ad7d64b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6eee23432aab01c2035414e3b0a48397 = $(`<div id="html_6eee23432aab01c2035414e3b0a48397" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 6520.1868978308<br>Superficie: 4312.0 m²</div>`)[0];
+                popup_22aa66b5dd7a5a5b0ecf20450ad7d64b.setContent(html_6eee23432aab01c2035414e3b0a48397);
+            
+        
+
+        circle_marker_1e8a3bf697cab15492ff3e918198d973.bindPopup(popup_22aa66b5dd7a5a5b0ecf20450ad7d64b)
+        ;
+
+        
+    
+    
+            var circle_marker_416459ab2527f2ce2c870e5a93f6c148 = L.circleMarker(
+                [-35.1187211, -71.2831894],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_542e73ccfe7fb0dceb4d447d283b8d74 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d5dc65d2dbd4d826f8c02f9873aacbcc = $(`<div id="html_d5dc65d2dbd4d826f8c02f9873aacbcc" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 4037.594853197089<br>Superficie: 675.0 m²</div>`)[0];
+                popup_542e73ccfe7fb0dceb4d447d283b8d74.setContent(html_d5dc65d2dbd4d826f8c02f9873aacbcc);
+            
+        
+
+        circle_marker_416459ab2527f2ce2c870e5a93f6c148.bindPopup(popup_542e73ccfe7fb0dceb4d447d283b8d74)
+        ;
+
+        
+    
+    
+            var circle_marker_9fdd19602f2737d3605a03b3289d3608 = L.circleMarker(
+                [-35.1153446, -71.2778167],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_f816a1b24c58280f4b20e10beed5d48d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aede0a4e64ba4e1580c0f0153726b13f = $(`<div id="html_aede0a4e64ba4e1580c0f0153726b13f" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 17155.0<br>Superficie: 2723.0 m²</div>`)[0];
+                popup_f816a1b24c58280f4b20e10beed5d48d.setContent(html_aede0a4e64ba4e1580c0f0153726b13f);
+            
+        
+
+        circle_marker_9fdd19602f2737d3605a03b3289d3608.bindPopup(popup_f816a1b24c58280f4b20e10beed5d48d)
+        ;
+
+        
+    
+    
+            var circle_marker_453b7ead923d4904425f2ff4c89d4e85 = L.circleMarker(
+                [-35.115312, -71.2814309],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_34dcd02003241abe656e1d59ce76ed0d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c50b4f9d1dc225a3f7ad84b08a05e30 = $(`<div id="html_9c50b4f9d1dc225a3f7ad84b08a05e30" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 6254.056820368319<br>Superficie: 4312.0 m²</div>`)[0];
+                popup_34dcd02003241abe656e1d59ce76ed0d.setContent(html_9c50b4f9d1dc225a3f7ad84b08a05e30);
+            
+        
+
+        circle_marker_453b7ead923d4904425f2ff4c89d4e85.bindPopup(popup_34dcd02003241abe656e1d59ce76ed0d)
+        ;
+
+        
+    
+    
+            var circle_marker_fe43cb032a6214172d6c3dc5961e33c3 = L.circleMarker(
+                [-35.1349586, -71.3450154],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_85cd9383dc6412350cafd258b78db324 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9b02edf8af1c43cf65db2db0fd4e7b1d = $(`<div id="html_9b02edf8af1c43cf65db2db0fd4e7b1d" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 1010.5877684839164<br>Superficie: 1426.0 m²</div>`)[0];
+                popup_85cd9383dc6412350cafd258b78db324.setContent(html_9b02edf8af1c43cf65db2db0fd4e7b1d);
+            
+        
+
+        circle_marker_fe43cb032a6214172d6c3dc5961e33c3.bindPopup(popup_85cd9383dc6412350cafd258b78db324)
+        ;
+
+        
+    
+    
+            var circle_marker_6cdefbe7a315d8e18e8dcb91d13310f1 = L.circleMarker(
+                [-35.11021, -71.28118],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_910420dbd265881273fdf8abda8a2f27 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c6aacdc4a8ba50cddca897a1009bef16 = $(`<div id="html_c6aacdc4a8ba50cddca897a1009bef16" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 6653.251936562041<br>Superficie: 926.0 m²</div>`)[0];
+                popup_910420dbd265881273fdf8abda8a2f27.setContent(html_c6aacdc4a8ba50cddca897a1009bef16);
+            
+        
+
+        circle_marker_6cdefbe7a315d8e18e8dcb91d13310f1.bindPopup(popup_910420dbd265881273fdf8abda8a2f27)
+        ;
+
+        
+    
+    
+            var circle_marker_e1b2cebcfcac172ac19f3b6666b60563 = L.circleMarker(
+                [-35.1143231, -71.2839566],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_efaa5d1328eb06eccfcee652b037ef72 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_17491936c3dc98caa24869d02c4be806 = $(`<div id="html_17491936c3dc98caa24869d02c4be806" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 13306.503873124082<br>Superficie: 3680.0 m²</div>`)[0];
+                popup_efaa5d1328eb06eccfcee652b037ef72.setContent(html_17491936c3dc98caa24869d02c4be806);
+            
+        
+
+        circle_marker_e1b2cebcfcac172ac19f3b6666b60563.bindPopup(popup_efaa5d1328eb06eccfcee652b037ef72)
+        ;
+
+        
+    
+    
+            var circle_marker_15198520d3cb55cf00c8e4f4e06fcb64 = L.circleMarker(
+                [-35.223109, -71.092006],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_1905eec325c24ee1739e8dc6b7651e61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_48f73cd120345a1909681ec09225cbaf = $(`<div id="html_48f73cd120345a1909681ec09225cbaf" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 1463.4910861418834<br>Superficie: 4500.0 m²</div>`)[0];
+                popup_1905eec325c24ee1739e8dc6b7651e61.setContent(html_48f73cd120345a1909681ec09225cbaf);
+            
+        
+
+        circle_marker_15198520d3cb55cf00c8e4f4e06fcb64.bindPopup(popup_1905eec325c24ee1739e8dc6b7651e61)
+        ;
+
+        
+    
+    
+            var circle_marker_1c75c9d02f8ef3704de7ef11924dd49c = L.circleMarker(
+                [-35.1174268, -71.2826602],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_07947ca5a0f468028eb7fa4002a592dd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25440e12f261c2ac5676e6be961aa479 = $(`<div id="html_25440e12f261c2ac5676e6be961aa479" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 6652.232209735834<br>Superficie: 1080.0 m²</div>`)[0];
+                popup_07947ca5a0f468028eb7fa4002a592dd.setContent(html_25440e12f261c2ac5676e6be961aa479);
+            
+        
+
+        circle_marker_1c75c9d02f8ef3704de7ef11924dd49c.bindPopup(popup_07947ca5a0f468028eb7fa4002a592dd)
+        ;
+
+        
+    
+    
+            var circle_marker_5e5520793ceac4129155235de133012d = L.circleMarker(
+                [-35.11021, -71.28118],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_3cc8b718c526d109076d5e1850c434d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb31632dd5e302b1c19fd655f99b465e = $(`<div id="html_fb31632dd5e302b1c19fd655f99b465e" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 6652.232209735834<br>Superficie: 926.0 m²</div>`)[0];
+                popup_3cc8b718c526d109076d5e1850c434d1.setContent(html_fb31632dd5e302b1c19fd655f99b465e);
+            
+        
+
+        circle_marker_5e5520793ceac4129155235de133012d.bindPopup(popup_3cc8b718c526d109076d5e1850c434d1)
+        ;
+
+        
+    
+    
+            var circle_marker_67ca6e718faf9bc878f20ae1a33c5e05 = L.circleMarker(
+                [-35.115312, -71.2814309],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_32a3a14a1a4dcef78775c0d8f89a9ced = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_28a03f98366046cfb2636e9dea1ebe4c = $(`<div id="html_28a03f98366046cfb2636e9dea1ebe4c" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 6253.098277151684<br>Superficie: 4312.0 m²</div>`)[0];
+                popup_32a3a14a1a4dcef78775c0d8f89a9ced.setContent(html_28a03f98366046cfb2636e9dea1ebe4c);
+            
+        
+
+        circle_marker_67ca6e718faf9bc878f20ae1a33c5e05.bindPopup(popup_32a3a14a1a4dcef78775c0d8f89a9ced)
+        ;
+
+        
+    
+    
+            var circle_marker_b0dc47cd5b3acd2d297fb0c887fb9e5f = L.circleMarker(
+                [-35.1084255, -71.2809937],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_b5f0ecc382ae78c970d2c7e0b9b9fa42 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77db6af73ae77e6807fd518f4d59235d = $(`<div id="html_77db6af73ae77e6807fd518f4d59235d" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 13495.0<br>Superficie: 3680.0 m²</div>`)[0];
+                popup_b5f0ecc382ae78c970d2c7e0b9b9fa42.setContent(html_77db6af73ae77e6807fd518f4d59235d);
+            
+        
+
+        circle_marker_b0dc47cd5b3acd2d297fb0c887fb9e5f.bindPopup(popup_b5f0ecc382ae78c970d2c7e0b9b9fa42)
+        ;
+
+        
+    
+    
+            var circle_marker_d2486fbb593bfa5b3958f97d706bdbab = L.circleMarker(
+                [-35.115312, -71.2814309],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_285359b7be64a6b0f8e13332c33aa048 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb9c9bdd7715df086d6a90e482858c37 = $(`<div id="html_bb9c9bdd7715df086d6a90e482858c37" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 14634.910861418835<br>Superficie: 2920.0 m²</div>`)[0];
+                popup_285359b7be64a6b0f8e13332c33aa048.setContent(html_bb9c9bdd7715df086d6a90e482858c37);
+            
+        
+
+        circle_marker_d2486fbb593bfa5b3958f97d706bdbab.bindPopup(popup_285359b7be64a6b0f8e13332c33aa048)
+        ;
+
+        
+    
+    
+            var circle_marker_17b272808110a80ecb1b6c59f76863aa = L.circleMarker(
+                [-35.1139703, -71.2799798],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_fb4287182808a90c43f03955056dde13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25e855afdf705fefae06ea7986cd7221 = $(`<div id="html_25e855afdf705fefae06ea7986cd7221" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 13700.0<br>Superficie: 2740.0 m²</div>`)[0];
+                popup_fb4287182808a90c43f03955056dde13.setContent(html_25e855afdf705fefae06ea7986cd7221);
+            
+        
+
+        circle_marker_17b272808110a80ecb1b6c59f76863aa.bindPopup(popup_fb4287182808a90c43f03955056dde13)
+        ;
+
+        
+    
+    
+            var circle_marker_7888add54221f6a64237e978e00785d1 = L.circleMarker(
+                [-35.115312, -71.281431],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_40cd8835237fe76f6ac7a093500ac522 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b5e6c4e91c238a0c7ec50713cbae7677 = $(`<div id="html_b5e6c4e91c238a0c7ec50713cbae7677" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 6251.684296859765<br>Superficie: 4312.0 m²</div>`)[0];
+                popup_40cd8835237fe76f6ac7a093500ac522.setContent(html_b5e6c4e91c238a0c7ec50713cbae7677);
+            
+        
+
+        circle_marker_7888add54221f6a64237e978e00785d1.bindPopup(popup_40cd8835237fe76f6ac7a093500ac522)
+        ;
+
+        
+    
+    
+            var circle_marker_7cb9440c1213c15d956ad699663a4960 = L.circleMarker(
+                [-35.1187076, -71.283233],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_17e967f12a0aedd9f27c7fd60fb56247 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d641b194982af53aad519961e096b5ea = $(`<div id="html_d641b194982af53aad519961e096b5ea" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 4124.383970036217<br>Superficie: 675.0 m²</div>`)[0];
+                popup_17e967f12a0aedd9f27c7fd60fb56247.setContent(html_d641b194982af53aad519961e096b5ea);
+            
+        
+
+        circle_marker_7cb9440c1213c15d956ad699663a4960.bindPopup(popup_17e967f12a0aedd9f27c7fd60fb56247)
+        ;
+
+        
+    
+    
+            var circle_marker_77ef81bb64274a7a24f9f356393dbde5 = L.circleMarker(
+                [-35.1349586, -71.3450154],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_515b1a13f5524ff2f209ea878bfb7108 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f59f81cbb17f91b091abdddd5bad2957 = $(`<div id="html_f59f81cbb17f91b091abdddd5bad2957" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 500-4999 m2<br>Precio UF: 1011.1392958798468<br>Superficie: 1426.0 m²</div>`)[0];
+                popup_515b1a13f5524ff2f209ea878bfb7108.setContent(html_f59f81cbb17f91b091abdddd5bad2957);
+            
+        
+
+        circle_marker_77ef81bb64274a7a24f9f356393dbde5.bindPopup(popup_515b1a13f5524ff2f209ea878bfb7108)
+        ;
+
+        
+    
+    
+            var circle_marker_3cf06799bdae243ea41e2cc199b0cb99 = L.circleMarker(
+                [-35.1639441, -71.3834138],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_d83700374746e2fc6bb7fccf70431be1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce6fc6a3fe7cfb1332f3e2216cde9dd6 = $(`<div id="html_ce6fc6a3fe7cfb1332f3e2216cde9dd6" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 11950.0<br>Superficie: 13700.000000000002 m²</div>`)[0];
+                popup_d83700374746e2fc6bb7fccf70431be1.setContent(html_ce6fc6a3fe7cfb1332f3e2216cde9dd6);
+            
+        
+
+        circle_marker_3cf06799bdae243ea41e2cc199b0cb99.bindPopup(popup_d83700374746e2fc6bb7fccf70431be1)
+        ;
+
+        
+    
+    
+            var circle_marker_9be78dde2103025beada9c520077ca6a = L.circleMarker(
+                [-35.1164987, -71.2829759],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_584ce1a62e0f189dc7c12ebc6a0fbc0b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3bf773f54035a8054c0cae87e7473c86 = $(`<div id="html_3bf773f54035a8054c0cae87e7473c86" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 16800.0<br>Superficie: 13971.0 m²</div>`)[0];
+                popup_584ce1a62e0f189dc7c12ebc6a0fbc0b.setContent(html_3bf773f54035a8054c0cae87e7473c86);
+            
+        
+
+        circle_marker_9be78dde2103025beada9c520077ca6a.bindPopup(popup_584ce1a62e0f189dc7c12ebc6a0fbc0b)
+        ;
+
+        
+    
+    
+            var circle_marker_2064e642a3f74db0ff7a8f83cf138c49 = L.circleMarker(
+                [-35.1164987, -71.2829759],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_1fbfe69fc39414287b852a777fd299cc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_60d92cb36a63785b98f5fc22aecce06a = $(`<div id="html_60d92cb36a63785b98f5fc22aecce06a" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 10000.0<br>Superficie: 11190.0 m²</div>`)[0];
+                popup_1fbfe69fc39414287b852a777fd299cc.setContent(html_60d92cb36a63785b98f5fc22aecce06a);
+            
+        
+
+        circle_marker_2064e642a3f74db0ff7a8f83cf138c49.bindPopup(popup_1fbfe69fc39414287b852a777fd299cc)
+        ;
+
+        
+    
+    
+            var circle_marker_58789d98b7a3c342af4e7f97c60db7bc = L.circleMarker(
+                [-35.1123173, -71.2874111],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_7f9bc6684ad86ed28e06248633076c45 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97eb5ce64a76a94420da17ee775c655a = $(`<div id="html_97eb5ce64a76a94420da17ee775c655a" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 19040.0<br>Superficie: 11400.0 m²</div>`)[0];
+                popup_7f9bc6684ad86ed28e06248633076c45.setContent(html_97eb5ce64a76a94420da17ee775c655a);
+            
+        
+
+        circle_marker_58789d98b7a3c342af4e7f97c60db7bc.bindPopup(popup_7f9bc6684ad86ed28e06248633076c45)
+        ;
+
+        
+    
+    
+            var circle_marker_a90085bd232f97623806975a97d5ef63 = L.circleMarker(
+                [-35.1134739, -71.286035],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_767a40502f037fa63bfdc282c55a121c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_02cb9fa904c7b7de261bb227a2d80265 = $(`<div id="html_02cb9fa904c7b7de261bb227a2d80265" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 1.0<br>Superficie: 13540.0 m²</div>`)[0];
+                popup_767a40502f037fa63bfdc282c55a121c.setContent(html_02cb9fa904c7b7de261bb227a2d80265);
+            
+        
+
+        circle_marker_a90085bd232f97623806975a97d5ef63.bindPopup(popup_767a40502f037fa63bfdc282c55a121c)
+        ;
+
+        
+    
+    
+            var circle_marker_8c4bbf72b1d4f2f0a1f27d2086a8688c = L.circleMarker(
+                [-35.113258, -71.2865016],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_2119db5b0debd7db25f3aba9c22a96b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8394cf680cc2047217af8953d38bf6ba = $(`<div id="html_8394cf680cc2047217af8953d38bf6ba" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 19040.0<br>Superficie: 11400.0 m²</div>`)[0];
+                popup_2119db5b0debd7db25f3aba9c22a96b1.setContent(html_8394cf680cc2047217af8953d38bf6ba);
+            
+        
+
+        circle_marker_8c4bbf72b1d4f2f0a1f27d2086a8688c.bindPopup(popup_2119db5b0debd7db25f3aba9c22a96b1)
+        ;
+
+        
+    
+    
+            var circle_marker_1118724cb70dc1ea76e73bc63e42cc32 = L.circleMarker(
+                [-35.116499, -71.282976],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_dfc0a54ad8f0af4ac9fd5adec272a715 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a5d2f3555727acb9629b4b941490755f = $(`<div id="html_a5d2f3555727acb9629b4b941490755f" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 10000.0<br>Superficie: 11119.0 m²</div>`)[0];
+                popup_dfc0a54ad8f0af4ac9fd5adec272a715.setContent(html_a5d2f3555727acb9629b4b941490755f);
+            
+        
+
+        circle_marker_1118724cb70dc1ea76e73bc63e42cc32.bindPopup(popup_dfc0a54ad8f0af4ac9fd5adec272a715)
+        ;
+
+        
+    
+    
+            var circle_marker_84988acf9057487cd18e4ebe819b72b4 = L.circleMarker(
+                [-35.116499, -71.282976],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_c95287b730b5143838f0993fd672245f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a07b23b92878d01bf55de0756080ad92 = $(`<div id="html_a07b23b92878d01bf55de0756080ad92" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 10000.0<br>Superficie: 11119.0 m²</div>`)[0];
+                popup_c95287b730b5143838f0993fd672245f.setContent(html_a07b23b92878d01bf55de0756080ad92);
+            
+        
+
+        circle_marker_84988acf9057487cd18e4ebe819b72b4.bindPopup(popup_c95287b730b5143838f0993fd672245f)
+        ;
+
+        
+    
+    
+            var circle_marker_fccd7ca19f29ca9881d17d98122af702 = L.circleMarker(
+                [-35.127864, -71.308758],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_5373d6ae67973e342b0b618cadc4d477 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e28768ea0b75f3ec9e786eb0d5d3dbb6 = $(`<div id="html_e28768ea0b75f3ec9e786eb0d5d3dbb6" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 3193.0714606732004<br>Superficie: 12500.0 m²</div>`)[0];
+                popup_5373d6ae67973e342b0b618cadc4d477.setContent(html_e28768ea0b75f3ec9e786eb0d5d3dbb6);
+            
+        
+
+        circle_marker_fccd7ca19f29ca9881d17d98122af702.bindPopup(popup_5373d6ae67973e342b0b618cadc4d477)
+        ;
+
+        
+    
+    
+            var circle_marker_a5d920346b1c977d7922bb8ceb2a2230 = L.circleMarker(
+                [-35.112317, -71.287411],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_db2a8d48b205a3b53322b8e9b0d5ccda = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_38b16dc7c74a37b03dac8fbbe4d6c004 = $(`<div id="html_38b16dc7c74a37b03dac8fbbe4d6c004" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 19040.0<br>Superficie: 11400.0 m²</div>`)[0];
+                popup_db2a8d48b205a3b53322b8e9b0d5ccda.setContent(html_38b16dc7c74a37b03dac8fbbe4d6c004);
+            
+        
+
+        circle_marker_a5d920346b1c977d7922bb8ceb2a2230.bindPopup(popup_db2a8d48b205a3b53322b8e9b0d5ccda)
+        ;
+
+        
+    
+    
+            var circle_marker_24470ee9a573b5a0803493440880438e = L.circleMarker(
+                [-35.0841099, -71.2581375],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_d01d83e56d822257fb36786c9bf8507d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79602cab97c86fc7c0141a9f338c8cd9 = $(`<div id="html_79602cab97c86fc7c0141a9f338c8cd9" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 58000.0<br>Superficie: 100000.0 m²</div>`)[0];
+                popup_d01d83e56d822257fb36786c9bf8507d.setContent(html_79602cab97c86fc7c0141a9f338c8cd9);
+            
+        
+
+        circle_marker_24470ee9a573b5a0803493440880438e.bindPopup(popup_d01d83e56d822257fb36786c9bf8507d)
+        ;
+
+        
+    
+    
+            var circle_marker_efc04b34da8e85122386031a165e0649 = L.circleMarker(
+                [-35.05708, -71.26937],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_d5e6306fd21b3c418b3d0427f68bcf93 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cfd527d50d2876c5a1bca4b0966a4f20 = $(`<div id="html_cfd527d50d2876c5a1bca4b0966a4f20" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 27441.0<br>Superficie: 39202.0 m²</div>`)[0];
+                popup_d5e6306fd21b3c418b3d0427f68bcf93.setContent(html_cfd527d50d2876c5a1bca4b0966a4f20);
+            
+        
+
+        circle_marker_efc04b34da8e85122386031a165e0649.bindPopup(popup_d5e6306fd21b3c418b3d0427f68bcf93)
+        ;
+
+        
+    
+    
+            var circle_marker_7e6eb9a9367b4f85a5c6f690acc77941 = L.circleMarker(
+                [-35.1164987, -71.2829759],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_004bb2bc07f9ebd1e24bc308881bb6a8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_12a52f80daa2a71f6e4425d7aac5c958 = $(`<div id="html_12a52f80daa2a71f6e4425d7aac5c958" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 10000.0<br>Superficie: 11119.0 m²</div>`)[0];
+                popup_004bb2bc07f9ebd1e24bc308881bb6a8.setContent(html_12a52f80daa2a71f6e4425d7aac5c958);
+            
+        
+
+        circle_marker_7e6eb9a9367b4f85a5c6f690acc77941.bindPopup(popup_004bb2bc07f9ebd1e24bc308881bb6a8)
+        ;
+
+        
+    
+    
+            var circle_marker_5e5870d8a8affdcd8fa3da5c5e5d6be4 = L.circleMarker(
+                [-35.1639441, -71.3834138],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_5ab5a5e5af747486e8488ea1bb918be5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40a2f76042895698824ff56529ef30c6 = $(`<div id="html_40a2f76042895698824ff56529ef30c6" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 11950.0<br>Superficie: 13700.000000000002 m²</div>`)[0];
+                popup_5ab5a5e5af747486e8488ea1bb918be5.setContent(html_40a2f76042895698824ff56529ef30c6);
+            
+        
+
+        circle_marker_5e5870d8a8affdcd8fa3da5c5e5d6be4.bindPopup(popup_5ab5a5e5af747486e8488ea1bb918be5)
+        ;
+
+        
+    
+    
+            var circle_marker_892226517d9fc668d2badec6cdab49b2 = L.circleMarker(
+                [-35.1123173, -71.2874111],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_ee8248a3b0c72d6370995cd9abf3913b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d6879ae91c9ca00a6c8c94096f31af5 = $(`<div id="html_0d6879ae91c9ca00a6c8c94096f31af5" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 19040.0<br>Superficie: 11400.0 m²</div>`)[0];
+                popup_ee8248a3b0c72d6370995cd9abf3913b.setContent(html_0d6879ae91c9ca00a6c8c94096f31af5);
+            
+        
+
+        circle_marker_892226517d9fc668d2badec6cdab49b2.bindPopup(popup_ee8248a3b0c72d6370995cd9abf3913b)
+        ;
+
+        
+    
+    
+            var circle_marker_014cb6ac318e412b1ea11804edb7a1b2 = L.circleMarker(
+                [-35.0570854, -71.2693767],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_896c270ee986934a0378fbeaf3ebf6bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa1ecbf7b72d3018c5f751aee5170aea = $(`<div id="html_fa1ecbf7b72d3018c5f751aee5170aea" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 27441.0<br>Superficie: 39202.0 m²</div>`)[0];
+                popup_896c270ee986934a0378fbeaf3ebf6bd.setContent(html_fa1ecbf7b72d3018c5f751aee5170aea);
+            
+        
+
+        circle_marker_014cb6ac318e412b1ea11804edb7a1b2.bindPopup(popup_896c270ee986934a0378fbeaf3ebf6bd)
+        ;
+
+        
+    
+    
+            var circle_marker_a4f9093d464e416330fa874b1c49b086 = L.circleMarker(
+                [-35.18692, -71.18732],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_d3de4b7abb68ea5b4ed6317a4b6b3dd9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_28ac440d1c5a406e039e1a95a18dc504 = $(`<div id="html_28ac440d1c5a406e039e1a95a18dc504" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 5320.28<br>Superficie: 31800.0 m²</div>`)[0];
+                popup_d3de4b7abb68ea5b4ed6317a4b6b3dd9.setContent(html_28ac440d1c5a406e039e1a95a18dc504);
+            
+        
+
+        circle_marker_a4f9093d464e416330fa874b1c49b086.bindPopup(popup_d3de4b7abb68ea5b4ed6317a4b6b3dd9)
+        ;
+
+        
+    
+    
+            var circle_marker_3666733ccb05729ed16d51aa8505a6db = L.circleMarker(
+                [-35.0841099, -71.2581375],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_f5631d8feebd602c4387a50624543a85 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_653d83eecc0b904a04debb1d29079c1a = $(`<div id="html_653d83eecc0b904a04debb1d29079c1a" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 58000.0<br>Superficie: 100000.0 m²</div>`)[0];
+                popup_f5631d8feebd602c4387a50624543a85.setContent(html_653d83eecc0b904a04debb1d29079c1a);
+            
+        
+
+        circle_marker_3666733ccb05729ed16d51aa8505a6db.bindPopup(popup_f5631d8feebd602c4387a50624543a85)
+        ;
+
+        
+    
+    
+            var circle_marker_de2a418e58e48bde9ec58a42ca035e7c = L.circleMarker(
+                [-35.1164987, -71.2829759],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 0.3}
+            ).addTo(map_b6c9de59903dff21e96e3c29be352a8a);
+        
+    
+        var popup_0a013a4362ad92cf476af13c3ebe5529 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44bf0c11f9c14a45399e1bdaab9bc625 = $(`<div id="html_44bf0c11f9c14a45399e1bdaab9bc625" style="width: 100.0%; height: 100.0%;">Comuna: Molina<br>Rango de Superficie: 10001-100000 m2<br>Precio UF: 10000.0<br>Superficie: 11119.0 m²</div>`)[0];
+                popup_0a013a4362ad92cf476af13c3ebe5529.setContent(html_44bf0c11f9c14a45399e1bdaab9bc625);
+            
+        
+
+        circle_marker_de2a418e58e48bde9ec58a42ca035e7c.bindPopup(popup_0a013a4362ad92cf476af13c3ebe5529)
+        ;
+
+        
+    
+</script>
+</html>

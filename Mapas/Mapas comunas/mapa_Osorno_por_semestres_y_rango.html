@@ -1,0 +1,2824 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_db7e550470395e364cdfef426a9a17d7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://unpkg.com/leaflet.featuregroup.subgroup@1.0.2/dist/leaflet.featuregroup.subgroup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_db7e550470395e364cdfef426a9a17d7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_db7e550470395e364cdfef426a9a17d7 = L.map(
+                "map_db7e550470395e364cdfef426a9a17d7",
+                {
+                    center: [-40.57848998393116, -73.12562994047487],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c777ef9263fa1a66f6cfb5f1026e9170 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_c777ef9263fa1a66f6cfb5f1026e9170.addTo(map_db7e550470395e364cdfef426a9a17d7);
+        
+    
+            var feature_group_971d74a272a00411dace052692593031 = L.featureGroup(
+                {}
+            );
+        
+    
+            feature_group_971d74a272a00411dace052692593031.addTo(map_db7e550470395e364cdfef426a9a17d7);
+        
+    
+            var feature_group_d5c56bc1713b5e5018d6ff704773a28f = L.featureGroup(
+                {}
+            );
+        
+    
+            feature_group_d5c56bc1713b5e5018d6ff704773a28f.addTo(map_db7e550470395e364cdfef426a9a17d7);
+        
+    
+            var feature_group_sub_group_cf96f351d1683184c447cd46bb409812 = L.featureGroup.subGroup(
+                feature_group_971d74a272a00411dace052692593031
+            );
+        
+    
+            var circle_marker_cc6c96faf401859aa85f80e84a554e4f = L.circleMarker(
+                [-40.5781344, -73.136378],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#65009bff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_e352daf004a608ff6989203dc1de6fbc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_829df20475724b9acae93aa57718118a = $(`<div id="html_829df20475724b9acae93aa57718118a" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 12.57861635220126</div>`)[0];
+                popup_e352daf004a608ff6989203dc1de6fbc.setContent(html_829df20475724b9acae93aa57718118a);
+            
+        
+
+        circle_marker_cc6c96faf401859aa85f80e84a554e4f.bindPopup(popup_e352daf004a608ff6989203dc1de6fbc)
+        ;
+
+        
+    
+    
+            var circle_marker_be1b7551b27b79e966818e59ad6e0df8 = L.circleMarker(
+                [-40.5812817, -73.130604],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_57d339f3f08eee89114976cc081206a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e67c95f72c584fa02650fe013939333e = $(`<div id="html_e67c95f72c584fa02650fe013939333e" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 16.0</div>`)[0];
+                popup_57d339f3f08eee89114976cc081206a1.setContent(html_e67c95f72c584fa02650fe013939333e);
+            
+        
+
+        circle_marker_be1b7551b27b79e966818e59ad6e0df8.bindPopup(popup_57d339f3f08eee89114976cc081206a1)
+        ;
+
+        
+    
+    
+            var circle_marker_09851b17ad84ed5fa6dd3872155afc0f = L.circleMarker(
+                [-40.5846402, -73.0912583],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b00f4ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_46d7a3026265b60a62d2ba7026126e26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb716f1cb59c1e8a0f7cdd2a64f96619 = $(`<div id="html_bb716f1cb59c1e8a0f7cdd2a64f96619" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 1.4502079855333578</div>`)[0];
+                popup_46d7a3026265b60a62d2ba7026126e26.setContent(html_bb716f1cb59c1e8a0f7cdd2a64f96619);
+            
+        
+
+        circle_marker_09851b17ad84ed5fa6dd3872155afc0f.bindPopup(popup_46d7a3026265b60a62d2ba7026126e26)
+        ;
+
+        
+    
+    
+            var circle_marker_a7a15b34a7e13f8f05ded19db21b458c = L.circleMarker(
+                [-40.5847947, -73.1725291],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1300ecff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_931afcad55b4cc4fdc3e5545e74a9fe7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aee954d4266cc89d2bcc67d199223ee6 = $(`<div id="html_aee954d4266cc89d2bcc67d199223ee6" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 2.42911045974964</div>`)[0];
+                popup_931afcad55b4cc4fdc3e5545e74a9fe7.setContent(html_aee954d4266cc89d2bcc67d199223ee6);
+            
+        
+
+        circle_marker_a7a15b34a7e13f8f05ded19db21b458c.bindPopup(popup_931afcad55b4cc4fdc3e5545e74a9fe7)
+        ;
+
+        
+    
+    
+            var circle_marker_9662429fb97eb08a14abf6a22588ed77 = L.circleMarker(
+                [-40.56261, -73.10129],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3300cdff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_5036c838d8483198dcad36df9cf591e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ad7f7af626441106ea98380843acb8c = $(`<div id="html_2ad7f7af626441106ea98380843acb8c" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 6.4</div>`)[0];
+                popup_5036c838d8483198dcad36df9cf591e1.setContent(html_2ad7f7af626441106ea98380843acb8c);
+            
+        
+
+        circle_marker_9662429fb97eb08a14abf6a22588ed77.bindPopup(popup_5036c838d8483198dcad36df9cf591e1)
+        ;
+
+        
+    
+    
+            var circle_marker_f232c1b344bd8460834882eb04c7169a = L.circleMarker(
+                [-40.5975482, -73.1063274],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000ffff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_7e7f5b8a3bdb69d308b745ca8273a8e0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25d290fcc15e91325e6ee7dcdaf681f7 = $(`<div id="html_25d290fcc15e91325e6ee7dcdaf681f7" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 0.006</div>`)[0];
+                popup_7e7f5b8a3bdb69d308b745ca8273a8e0.setContent(html_25d290fcc15e91325e6ee7dcdaf681f7);
+            
+        
+
+        circle_marker_f232c1b344bd8460834882eb04c7169a.bindPopup(popup_7e7f5b8a3bdb69d308b745ca8273a8e0)
+        ;
+
+        
+    
+    
+            var circle_marker_41fc2071a78bb2038828eb2da47abacc = L.circleMarker(
+                [-40.5788726, -73.1686804],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2700d8ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_ee354205c11a63a7558e23782a81cace = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bc53503b2319eeea02f97d6c22c948a9 = $(`<div id="html_bc53503b2319eeea02f97d6c22c948a9" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 4.897438193976288</div>`)[0];
+                popup_ee354205c11a63a7558e23782a81cace.setContent(html_bc53503b2319eeea02f97d6c22c948a9);
+            
+        
+
+        circle_marker_41fc2071a78bb2038828eb2da47abacc.bindPopup(popup_ee354205c11a63a7558e23782a81cace)
+        ;
+
+        
+    
+    
+            var circle_marker_e439ec52028a9b9e15de09c85cea4d10 = L.circleMarker(
+                [-40.5766457, -73.1460474],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#76008aff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_fae5a6ea8fc0e6875c0f0a8e6906aa1c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4da0eec26e140287efaea85d26e0d630 = $(`<div id="html_4da0eec26e140287efaea85d26e0d630" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 14.802693602693603</div>`)[0];
+                popup_fae5a6ea8fc0e6875c0f0a8e6906aa1c.setContent(html_4da0eec26e140287efaea85d26e0d630);
+            
+        
+
+        circle_marker_e439ec52028a9b9e15de09c85cea4d10.bindPopup(popup_fae5a6ea8fc0e6875c0f0a8e6906aa1c)
+        ;
+
+        
+    
+    
+            var circle_marker_d3fae0da833c7e715b1f066c6af2e923 = L.circleMarker(
+                [-40.5596886, -73.1667455],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2500dbff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_431639d8c808759dcd1126e2b54b7dc7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_610af2c2047d5df1e34c37a99e99ea33 = $(`<div id="html_610af2c2047d5df1e34c37a99e99ea33" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 4.60919595434278</div>`)[0];
+                popup_431639d8c808759dcd1126e2b54b7dc7.setContent(html_610af2c2047d5df1e34c37a99e99ea33);
+            
+        
+
+        circle_marker_d3fae0da833c7e715b1f066c6af2e923.bindPopup(popup_431639d8c808759dcd1126e2b54b7dc7)
+        ;
+
+        
+    
+    
+            var circle_marker_88b26fa12b9c3964e75d14a5a98ad53f = L.circleMarker(
+                [-40.5703602, -73.1375133],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#63009cff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_0ede2089125242b9db26ea1a9a78b573 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_005fd9b04eef0132e8bc8d988d1b4d1e = $(`<div id="html_005fd9b04eef0132e8bc8d988d1b4d1e" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 12.44580673755832</div>`)[0];
+                popup_0ede2089125242b9db26ea1a9a78b573.setContent(html_005fd9b04eef0132e8bc8d988d1b4d1e);
+            
+        
+
+        circle_marker_88b26fa12b9c3964e75d14a5a98ad53f.bindPopup(popup_0ede2089125242b9db26ea1a9a78b573)
+        ;
+
+        
+    
+    
+            var circle_marker_f1b747576e8561e6a29af61a86b91149 = L.circleMarker(
+                [-40.5879636, -73.1186473],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4800b8ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_5f46a870ae234cc887ac1edfc60556c4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff54eb1e50a39a812b8ff74d0bf03ee6 = $(`<div id="html_ff54eb1e50a39a812b8ff74d0bf03ee6" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 9.034285714285714</div>`)[0];
+                popup_5f46a870ae234cc887ac1edfc60556c4.setContent(html_ff54eb1e50a39a812b8ff74d0bf03ee6);
+            
+        
+
+        circle_marker_f1b747576e8561e6a29af61a86b91149.bindPopup(popup_5f46a870ae234cc887ac1edfc60556c4)
+        ;
+
+        
+    
+    
+            var circle_marker_a59c0b9686fa2c614bc4eeee3bc3fe83 = L.circleMarker(
+                [-40.5778081, -73.1471076],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3b00c5ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_514df9db2b8799c4d19c900fa8854b1a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c776f8f01e25434af1819695004a403 = $(`<div id="html_4c776f8f01e25434af1819695004a403" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 7.34640522875817</div>`)[0];
+                popup_514df9db2b8799c4d19c900fa8854b1a.setContent(html_4c776f8f01e25434af1819695004a403);
+            
+        
+
+        circle_marker_a59c0b9686fa2c614bc4eeee3bc3fe83.bindPopup(popup_514df9db2b8799c4d19c900fa8854b1a)
+        ;
+
+        
+    
+    
+            var circle_marker_4f062fd92e594f191f17a37f34e7d9ab = L.circleMarker(
+                [-40.5761897, -73.1149469],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2f00d1ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_b4b3271964497bc490c6245dface28f0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97395019633b18d6dc0d95fe0ac6d2f5 = $(`<div id="html_97395019633b18d6dc0d95fe0ac6d2f5" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 5.877847532233698</div>`)[0];
+                popup_b4b3271964497bc490c6245dface28f0.setContent(html_97395019633b18d6dc0d95fe0ac6d2f5);
+            
+        
+
+        circle_marker_4f062fd92e594f191f17a37f34e7d9ab.bindPopup(popup_b4b3271964497bc490c6245dface28f0)
+        ;
+
+        
+    
+    
+            var circle_marker_1777d6a6e01185444ebdf2806116a8aa = L.circleMarker(
+                [-40.5847947, -73.1725291],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1300ecff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_2045a23afb0f45d7c33156195fbccfdf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_acc276e032b360f6ccd50a063e6c056a = $(`<div id="html_acc276e032b360f6ccd50a063e6c056a" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 2.4156521375032143</div>`)[0];
+                popup_2045a23afb0f45d7c33156195fbccfdf.setContent(html_acc276e032b360f6ccd50a063e6c056a);
+            
+        
+
+        circle_marker_1777d6a6e01185444ebdf2806116a8aa.bindPopup(popup_2045a23afb0f45d7c33156195fbccfdf)
+        ;
+
+        
+    
+    
+            var circle_marker_9c51c5024229b68f8b1d0a93e20dd8ba = L.circleMarker(
+                [-40.5722051, -73.1555895],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5100aeff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_062c1377e9fc817bc9fb955db64cda27 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_38f9ab4f7bb03160fd23f6e838a4d3f6 = $(`<div id="html_38f9ab4f7bb03160fd23f6e838a4d3f6" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 10.172440810618207</div>`)[0];
+                popup_062c1377e9fc817bc9fb955db64cda27.setContent(html_38f9ab4f7bb03160fd23f6e838a4d3f6);
+            
+        
+
+        circle_marker_9c51c5024229b68f8b1d0a93e20dd8ba.bindPopup(popup_062c1377e9fc817bc9fb955db64cda27)
+        ;
+
+        
+    
+    
+            var circle_marker_00becc3bd0e90d220dcfcf244dfbeee0 = L.circleMarker(
+                [-40.58273, -73.11866],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_0e007cf2f2c7c55e09f3e80659f11e5a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_95ae2663274866137d2d85daa1e2ca56 = $(`<div id="html_95ae2663274866137d2d85daa1e2ca56" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 16.882007443942715</div>`)[0];
+                popup_0e007cf2f2c7c55e09f3e80659f11e5a.setContent(html_95ae2663274866137d2d85daa1e2ca56);
+            
+        
+
+        circle_marker_00becc3bd0e90d220dcfcf244dfbeee0.bindPopup(popup_0e007cf2f2c7c55e09f3e80659f11e5a)
+        ;
+
+        
+    
+    
+            var circle_marker_54e34d2fcf3d968494bbeb9a7613aa68 = L.circleMarker(
+                [-40.5582762, -73.1690952],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2b00d5ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_975f622660ab41b78fd0f97180b90b60 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aeaa243d8ec6dbedbe4e1e3d9f3affd3 = $(`<div id="html_aeaa243d8ec6dbedbe4e1e3d9f3affd3" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 5.381769256643121</div>`)[0];
+                popup_975f622660ab41b78fd0f97180b90b60.setContent(html_aeaa243d8ec6dbedbe4e1e3d9f3affd3);
+            
+        
+
+        circle_marker_54e34d2fcf3d968494bbeb9a7613aa68.bindPopup(popup_975f622660ab41b78fd0f97180b90b60)
+        ;
+
+        
+    
+    
+            var circle_marker_4589fc0530ae8f2f1cbee1ff2593af26 = L.circleMarker(
+                [-40.5825702, -73.1180654],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5800a8ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_3cab480b4400e012d881d3e0d11b3c38 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d59cf592d3ad67815dded224ee94cc20 = $(`<div id="html_d59cf592d3ad67815dded224ee94cc20" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 11.00639876803898</div>`)[0];
+                popup_3cab480b4400e012d881d3e0d11b3c38.setContent(html_d59cf592d3ad67815dded224ee94cc20);
+            
+        
+
+        circle_marker_4589fc0530ae8f2f1cbee1ff2593af26.bindPopup(popup_3cab480b4400e012d881d3e0d11b3c38)
+        ;
+
+        
+    
+    
+            var circle_marker_1834c7f96cdeb2e8f702f7bcef2748f6 = L.circleMarker(
+                [-40.5688751, -73.1794148],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1500eaff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_7fce6fa1b47a1b2b73bdec829ee08996 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54b7dbda62dc125a68a526048bea1ca9 = $(`<div id="html_54b7dbda62dc125a68a526048bea1ca9" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 2.681558972576769</div>`)[0];
+                popup_7fce6fa1b47a1b2b73bdec829ee08996.setContent(html_54b7dbda62dc125a68a526048bea1ca9);
+            
+        
+
+        circle_marker_1834c7f96cdeb2e8f702f7bcef2748f6.bindPopup(popup_7fce6fa1b47a1b2b73bdec829ee08996)
+        ;
+
+        
+    
+    
+            var circle_marker_6ab5c2e80592b074dee40e4b0b582997 = L.circleMarker(
+                [-40.5722051, -73.1555895],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5100afff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_8f7d44b137bc315ad1b288a75a32eca4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ea20f8095b9ace444d56a52879e08baf = $(`<div id="html_ea20f8095b9ace444d56a52879e08baf" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 10.162971358434858</div>`)[0];
+                popup_8f7d44b137bc315ad1b288a75a32eca4.setContent(html_ea20f8095b9ace444d56a52879e08baf);
+            
+        
+
+        circle_marker_6ab5c2e80592b074dee40e4b0b582997.bindPopup(popup_8f7d44b137bc315ad1b288a75a32eca4)
+        ;
+
+        
+    
+    
+            var circle_marker_cdf788a0905138bfa10cb76b37e37fae = L.circleMarker(
+                [-40.4986793, -73.1593697],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0500faff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_52cf8932add2dc06b261a49c5e7240a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_453130b1e9e7ee8429d6df5469e40c87 = $(`<div id="html_453130b1e9e7ee8429d6df5469e40c87" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 0.6689373074631195</div>`)[0];
+                popup_52cf8932add2dc06b261a49c5e7240a7.setContent(html_453130b1e9e7ee8429d6df5469e40c87);
+            
+        
+
+        circle_marker_cdf788a0905138bfa10cb76b37e37fae.bindPopup(popup_52cf8932add2dc06b261a49c5e7240a7)
+        ;
+
+        
+    
+    
+            var circle_marker_ed60de6678150f665f373ad64f36f747 = L.circleMarker(
+                [-40.58273, -73.11866],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_f1e7b5c1817caa3a60dab435d49931ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77c3f207f1427ae709a83bdb202aae68 = $(`<div id="html_77c3f207f1427ae709a83bdb202aae68" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 16.866292104308343</div>`)[0];
+                popup_f1e7b5c1817caa3a60dab435d49931ee.setContent(html_77c3f207f1427ae709a83bdb202aae68);
+            
+        
+
+        circle_marker_ed60de6678150f665f373ad64f36f747.bindPopup(popup_f1e7b5c1817caa3a60dab435d49931ee)
+        ;
+
+        
+    
+    
+            var circle_marker_06d84f210284ad004fca5f866d3e556b = L.circleMarker(
+                [-40.580387, -73.1057247],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_e3ad9aff3e4562cc5f6c31fb4bab8589 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc47fb8cf0a55ba9dd3cf8d5b324d983 = $(`<div id="html_dc47fb8cf0a55ba9dd3cf8d5b324d983" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 16.587962962962962</div>`)[0];
+                popup_e3ad9aff3e4562cc5f6c31fb4bab8589.setContent(html_dc47fb8cf0a55ba9dd3cf8d5b324d983);
+            
+        
+
+        circle_marker_06d84f210284ad004fca5f866d3e556b.bindPopup(popup_e3ad9aff3e4562cc5f6c31fb4bab8589)
+        ;
+
+        
+    
+    
+            var circle_marker_f367fa13f3da3bc5b12179eb07352152 = L.circleMarker(
+                [-40.5723734, -73.153149],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4400bcff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_1781d4709be1eae400d7768c53fc6d5b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_84672a69ba6a7b45cce6419862f2b920 = $(`<div id="html_84672a69ba6a7b45cce6419862f2b920" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 8.50210970464135</div>`)[0];
+                popup_1781d4709be1eae400d7768c53fc6d5b.setContent(html_84672a69ba6a7b45cce6419862f2b920);
+            
+        
+
+        circle_marker_f367fa13f3da3bc5b12179eb07352152.bindPopup(popup_1781d4709be1eae400d7768c53fc6d5b)
+        ;
+
+        
+    
+    
+            var circle_marker_299689a6253cc113347846b138d04727 = L.circleMarker(
+                [-40.5722051, -73.1555895],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5100afff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_a0a246ff209ff4b0f8f991e318ab770c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_130ebe05fe56192f889384a697871ec9 = $(`<div id="html_130ebe05fe56192f889384a697871ec9" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 10.162971358434858</div>`)[0];
+                popup_a0a246ff209ff4b0f8f991e318ab770c.setContent(html_130ebe05fe56192f889384a697871ec9);
+            
+        
+
+        circle_marker_299689a6253cc113347846b138d04727.bindPopup(popup_a0a246ff209ff4b0f8f991e318ab770c)
+        ;
+
+        
+    
+    
+            var circle_marker_693e601dd266826521a6f47219e68c00 = L.circleMarker(
+                [-40.5658608, -73.1071377],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000ffff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_894b98abff5c8750bf52de746e4d81cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4962641fedb4461e72c1b3477679875e = $(`<div id="html_4962641fedb4461e72c1b3477679875e" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 0.0050100200400801</div>`)[0];
+                popup_894b98abff5c8750bf52de746e4d81cd.setContent(html_4962641fedb4461e72c1b3477679875e);
+            
+        
+
+        circle_marker_693e601dd266826521a6f47219e68c00.bindPopup(popup_894b98abff5c8750bf52de746e4d81cd)
+        ;
+
+        
+    
+    
+            var circle_marker_38164a93e3ecbce85c069e32b53cfc13 = L.circleMarker(
+                [-40.58273, -73.11866],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_19242786afafbaf736289ab47a167240 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_864a62810676301c2f08d611389351ec = $(`<div id="html_864a62810676301c2f08d611389351ec" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 16.85058790485551</div>`)[0];
+                popup_19242786afafbaf736289ab47a167240.setContent(html_864a62810676301c2f08d611389351ec);
+            
+        
+
+        circle_marker_38164a93e3ecbce85c069e32b53cfc13.bindPopup(popup_19242786afafbaf736289ab47a167240)
+        ;
+
+        
+    
+    
+            var circle_marker_5afd1a185974c5badf8e6c6f9502781a = L.circleMarker(
+                [-40.58273, -73.11866],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_c375c42425da0c51e48e73f73d61e8c2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d5861aaa89cf9efd948f053057d66bc = $(`<div id="html_0d5861aaa89cf9efd948f053057d66bc" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 16.85058790485551</div>`)[0];
+                popup_c375c42425da0c51e48e73f73d61e8c2.setContent(html_0d5861aaa89cf9efd948f053057d66bc);
+            
+        
+
+        circle_marker_5afd1a185974c5badf8e6c6f9502781a.bindPopup(popup_c375c42425da0c51e48e73f73d61e8c2)
+        ;
+
+        
+    
+    
+            var circle_marker_5dc9b927b3380c6a244b6f94f07a3343 = L.circleMarker(
+                [-40.58273, -73.11866],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_b54e784d223d202c3537beb0e96dac63 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d3348083c13bfde0d0bf4640898eb4e7 = $(`<div id="html_d3348083c13bfde0d0bf4640898eb4e7" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 16.834899379405726</div>`)[0];
+                popup_b54e784d223d202c3537beb0e96dac63.setContent(html_d3348083c13bfde0d0bf4640898eb4e7);
+            
+        
+
+        circle_marker_5dc9b927b3380c6a244b6f94f07a3343.bindPopup(popup_b54e784d223d202c3537beb0e96dac63)
+        ;
+
+        
+    
+    
+            var circle_marker_0a21a374ee452b3807fb479a2b371b71 = L.circleMarker(
+                [-40.5722051, -73.1555895],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5100afff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_0e13ff920ddbbf948a0113046d229f70 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4bd5ab292c36a9ab228104ce64f0310 = $(`<div id="html_b4bd5ab292c36a9ab228104ce64f0310" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 10.13348210342468</div>`)[0];
+                popup_0e13ff920ddbbf948a0113046d229f70.setContent(html_b4bd5ab292c36a9ab228104ce64f0310);
+            
+        
+
+        circle_marker_0a21a374ee452b3807fb479a2b371b71.bindPopup(popup_0e13ff920ddbbf948a0113046d229f70)
+        ;
+
+        
+    
+    
+            var circle_marker_84aa5f6d372cf8aff089d093fb3a92fc = L.circleMarker(
+                [-40.5733223, -73.1359011],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2b00d5ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_1621e72d425e32f2af3a9a543e042b82 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e558e58c4e565da353f76c4ac4d29b05 = $(`<div id="html_e558e58c4e565da353f76c4ac4d29b05" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 5.381769256643121</div>`)[0];
+                popup_1621e72d425e32f2af3a9a543e042b82.setContent(html_e558e58c4e565da353f76c4ac4d29b05);
+            
+        
+
+        circle_marker_84aa5f6d372cf8aff089d093fb3a92fc.bindPopup(popup_1621e72d425e32f2af3a9a543e042b82)
+        ;
+
+        
+    
+    
+            var circle_marker_5cbaaca10b937d917738ba0a7cb51c3f = L.circleMarker(
+                [-40.58273, -73.11866],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_72c34a2680a2c526266e95e1dfbfea09 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0e5c03c763e8a59d13589f5546f3e5b = $(`<div id="html_d0e5c03c763e8a59d13589f5546f3e5b" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 16.779514716035315</div>`)[0];
+                popup_72c34a2680a2c526266e95e1dfbfea09.setContent(html_d0e5c03c763e8a59d13589f5546f3e5b);
+            
+        
+
+        circle_marker_5cbaaca10b937d917738ba0a7cb51c3f.bindPopup(popup_72c34a2680a2c526266e95e1dfbfea09)
+        ;
+
+        
+    
+    
+            var circle_marker_2d0e019c13c21e556347ab8930b99789 = L.circleMarker(
+                [-40.59498415, -73.11294653],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2800d8ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_26dcc17f8ab0ec4b3340b0422ea269d6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5164d0ea655c5dc2b2e2076456e203b5 = $(`<div id="html_5164d0ea655c5dc2b2e2076456e203b5" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 5.0</div>`)[0];
+                popup_26dcc17f8ab0ec4b3340b0422ea269d6.setContent(html_5164d0ea655c5dc2b2e2076456e203b5);
+            
+        
+
+        circle_marker_2d0e019c13c21e556347ab8930b99789.bindPopup(popup_26dcc17f8ab0ec4b3340b0422ea269d6)
+        ;
+
+        
+    
+    
+            var circle_marker_08779d84f4a0cc164bbb7684a157bb24 = L.circleMarker(
+                [-40.5678125, -73.1744375],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a00e5ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_2c2537ed652c24692bb3bd5703fe80de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19174ea2a40545b1a396275c60444a1d = $(`<div id="html_19174ea2a40545b1a396275c60444a1d" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 3.3365929061254405</div>`)[0];
+                popup_2c2537ed652c24692bb3bd5703fe80de.setContent(html_19174ea2a40545b1a396275c60444a1d);
+            
+        
+
+        circle_marker_08779d84f4a0cc164bbb7684a157bb24.bindPopup(popup_2c2537ed652c24692bb3bd5703fe80de)
+        ;
+
+        
+    
+    
+            var circle_marker_16dc94260090e8cecf325d8988ea3176 = L.circleMarker(
+                [-40.5925912, -73.1199348],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_e973c63af7edc9dad4ff85b0e16b04ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6fded02db16c050b2ec2ed926a74444b = $(`<div id="html_6fded02db16c050b2ec2ed926a74444b" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 24.848484848484848</div>`)[0];
+                popup_e973c63af7edc9dad4ff85b0e16b04ae.setContent(html_6fded02db16c050b2ec2ed926a74444b);
+            
+        
+
+        circle_marker_16dc94260090e8cecf325d8988ea3176.bindPopup(popup_e973c63af7edc9dad4ff85b0e16b04ae)
+        ;
+
+        
+    
+    
+            var circle_marker_056454259cfac938fe05cadf6db348da = L.circleMarker(
+                [-40.5769663, -73.1561887],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3400cbff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_f2a56f9ebd9a18d9e1511371d2f68b5d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5dd5c6bb7c8655482f3bdc8143c91bb1 = $(`<div id="html_5dd5c6bb7c8655482f3bdc8143c91bb1" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 6.525792417650715</div>`)[0];
+                popup_f2a56f9ebd9a18d9e1511371d2f68b5d.setContent(html_5dd5c6bb7c8655482f3bdc8143c91bb1);
+            
+        
+
+        circle_marker_056454259cfac938fe05cadf6db348da.bindPopup(popup_f2a56f9ebd9a18d9e1511371d2f68b5d)
+        ;
+
+        
+    
+    
+            var circle_marker_10d4396c4e34ef377898c9ac59b042db = L.circleMarker(
+                [-40.5764286, -73.1465314],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c00d4ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_e6a6613ee728e8abe8acb85c7eff5aef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_efb7bbeea371bb035bb4ab3ecdfc3622 = $(`<div id="html_efb7bbeea371bb035bb4ab3ecdfc3622" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 5.500290191526408</div>`)[0];
+                popup_e6a6613ee728e8abe8acb85c7eff5aef.setContent(html_efb7bbeea371bb035bb4ab3ecdfc3622);
+            
+        
+
+        circle_marker_10d4396c4e34ef377898c9ac59b042db.bindPopup(popup_e6a6613ee728e8abe8acb85c7eff5aef)
+        ;
+
+        
+    
+    
+            var circle_marker_1aa7263b86306ad3124a9d88c432f00d = L.circleMarker(
+                [-40.6029774, -73.4696582],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1600e9ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_9d7d01276e02a591fb45b57fa437964c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d4a707f61cd47146958cf69df8d431c = $(`<div id="html_6d4a707f61cd47146958cf69df8d431c" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 2.8577608538244634</div>`)[0];
+                popup_9d7d01276e02a591fb45b57fa437964c.setContent(html_6d4a707f61cd47146958cf69df8d431c);
+            
+        
+
+        circle_marker_1aa7263b86306ad3124a9d88c432f00d.bindPopup(popup_9d7d01276e02a591fb45b57fa437964c)
+        ;
+
+        
+    
+    
+            var circle_marker_ea04109c628442af6b0c46a97457e2ac = L.circleMarker(
+                [-40.5678125, -73.1744375],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a00e5ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_790de9f5dc3efdfaae5f06c373a70d08 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db757b55060a20194ed879b6eed8d475 = $(`<div id="html_db757b55060a20194ed879b6eed8d475" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 3.3373475630126714</div>`)[0];
+                popup_790de9f5dc3efdfaae5f06c373a70d08.setContent(html_db757b55060a20194ed879b6eed8d475);
+            
+        
+
+        circle_marker_ea04109c628442af6b0c46a97457e2ac.bindPopup(popup_790de9f5dc3efdfaae5f06c373a70d08)
+        ;
+
+        
+    
+    
+            var circle_marker_43c544b2cbf3e6a4b7650977da3a6b14 = L.circleMarker(
+                [-40.5738, -73.11185],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3800c7ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_e635d95525642f1e7ba06aaf4f34a4ef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62220a21f3ad1f6fbce6ee311c5da142 = $(`<div id="html_62220a21f3ad1f6fbce6ee311c5da142" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 7.055909523809524</div>`)[0];
+                popup_e635d95525642f1e7ba06aaf4f34a4ef.setContent(html_62220a21f3ad1f6fbce6ee311c5da142);
+            
+        
+
+        circle_marker_43c544b2cbf3e6a4b7650977da3a6b14.bindPopup(popup_e635d95525642f1e7ba06aaf4f34a4ef)
+        ;
+
+        
+    
+    
+            var circle_marker_13a3e128971f854e04a3dee5f6b3eb9b = L.circleMarker(
+                [-40.5769635, -73.1533307],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4500bbff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_13ef8de6b917a74b94bc6f5ab3b59768 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bade1911124f1fb636216ddc4a4dac94 = $(`<div id="html_bade1911124f1fb636216ddc4a4dac94" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 8.592282024249137</div>`)[0];
+                popup_13ef8de6b917a74b94bc6f5ab3b59768.setContent(html_bade1911124f1fb636216ddc4a4dac94);
+            
+        
+
+        circle_marker_13a3e128971f854e04a3dee5f6b3eb9b.bindPopup(popup_13ef8de6b917a74b94bc6f5ab3b59768)
+        ;
+
+        
+    
+    
+            var circle_marker_9afeba3f1eb5df73f82bcaa5c0076ddd = L.circleMarker(
+                [-40.58009, -73.11302],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_911119bf6ebc889720198f842ffb14a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a1c651e9c7a7259ebb409bb8f461c9f0 = $(`<div id="html_a1c651e9c7a7259ebb409bb8f461c9f0" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 16.80911680911681</div>`)[0];
+                popup_911119bf6ebc889720198f842ffb14a5.setContent(html_a1c651e9c7a7259ebb409bb8f461c9f0);
+            
+        
+
+        circle_marker_9afeba3f1eb5df73f82bcaa5c0076ddd.bindPopup(popup_911119bf6ebc889720198f842ffb14a5)
+        ;
+
+        
+    
+    
+            var circle_marker_c0f4407eaf28e5221e753300ab1266ad = L.circleMarker(
+                [-40.563827, -73.102301],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2000e0ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_96942e0a3ec45a7e3a881a9711a64b61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1698b66fcc53a435fc5ad9262ea6aff8 = $(`<div id="html_1698b66fcc53a435fc5ad9262ea6aff8" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 4.001527300496373</div>`)[0];
+                popup_96942e0a3ec45a7e3a881a9711a64b61.setContent(html_1698b66fcc53a435fc5ad9262ea6aff8);
+            
+        
+
+        circle_marker_c0f4407eaf28e5221e753300ab1266ad.bindPopup(popup_96942e0a3ec45a7e3a881a9711a64b61)
+        ;
+
+        
+    
+    
+            var circle_marker_cf12e1a309c8bec4cfaa58808b58df4f = L.circleMarker(
+                [-40.5768027, -73.1267315],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_7c45e3f32f2a1b039fdd8c6eaec6fb4a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_750e5c91d1493b6298d5e60e0720b1e2 = $(`<div id="html_750e5c91d1493b6298d5e60e0720b1e2" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 21.715988018654635</div>`)[0];
+                popup_7c45e3f32f2a1b039fdd8c6eaec6fb4a.setContent(html_750e5c91d1493b6298d5e60e0720b1e2);
+            
+        
+
+        circle_marker_cf12e1a309c8bec4cfaa58808b58df4f.bindPopup(popup_7c45e3f32f2a1b039fdd8c6eaec6fb4a)
+        ;
+
+        
+    
+    
+            var circle_marker_c30fd207ba98260cef2f786027e8fccb = L.circleMarker(
+                [-40.586416, -73.1140314],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#690097ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_f585eb7166ebdd4b96c295724de58cfb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee47d1218f4358bbc8288d2c4d950f79 = $(`<div id="html_ee47d1218f4358bbc8288d2c4d950f79" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 13.110074626865671</div>`)[0];
+                popup_f585eb7166ebdd4b96c295724de58cfb.setContent(html_ee47d1218f4358bbc8288d2c4d950f79);
+            
+        
+
+        circle_marker_c30fd207ba98260cef2f786027e8fccb.bindPopup(popup_f585eb7166ebdd4b96c295724de58cfb)
+        ;
+
+        
+    
+    
+            var circle_marker_cdb55c80ce9d895eac9b801a0c199bd5 = L.circleMarker(
+                [-40.5704476, -73.120736],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4200bdff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_8e63497263a40394bb0a6c6d86b31d31 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3440f5862f7d276df6b7d78718eb2241 = $(`<div id="html_3440f5862f7d276df6b7d78718eb2241" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 8.318361355038617</div>`)[0];
+                popup_8e63497263a40394bb0a6c6d86b31d31.setContent(html_3440f5862f7d276df6b7d78718eb2241);
+            
+        
+
+        circle_marker_cdb55c80ce9d895eac9b801a0c199bd5.bindPopup(popup_8e63497263a40394bb0a6c6d86b31d31)
+        ;
+
+        
+    
+    
+            var circle_marker_92e8ca57daeeabcf476ea232daa96390 = L.circleMarker(
+                [-40.565806, -73.1035805],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f00e0ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_61c0bbab14c7febb22658b87755ce038 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5faf78aedbd5293143d45c36891ff289 = $(`<div id="html_5faf78aedbd5293143d45c36891ff289" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 3.9709812905689192</div>`)[0];
+                popup_61c0bbab14c7febb22658b87755ce038.setContent(html_5faf78aedbd5293143d45c36891ff289);
+            
+        
+
+        circle_marker_92e8ca57daeeabcf476ea232daa96390.bindPopup(popup_61c0bbab14c7febb22658b87755ce038)
+        ;
+
+        
+    
+    
+            var circle_marker_5f92f5bcd2358404a8831d5684e92e5e = L.circleMarker(
+                [-40.58273, -73.11866],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_725998964f575a5b8877be96e4039d56 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97e2cfaa7352c7274a5fe5c97e7927ec = $(`<div id="html_97e2cfaa7352c7274a5fe5c97e7927ec" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 16.707717867599747</div>`)[0];
+                popup_725998964f575a5b8877be96e4039d56.setContent(html_97e2cfaa7352c7274a5fe5c97e7927ec);
+            
+        
+
+        circle_marker_5f92f5bcd2358404a8831d5684e92e5e.bindPopup(popup_725998964f575a5b8877be96e4039d56)
+        ;
+
+        
+    
+    
+            var circle_marker_58594b73571c18bec0cb00c47c932970 = L.circleMarker(
+                [-40.58273, -73.11866],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6b0095ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_ea641bd0265d451ef09f0fb3d0b57b55 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2875b25ec48d7073487395a06cbd061e = $(`<div id="html_2875b25ec48d7073487395a06cbd061e" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 13.333333333333334</div>`)[0];
+                popup_ea641bd0265d451ef09f0fb3d0b57b55.setContent(html_2875b25ec48d7073487395a06cbd061e);
+            
+        
+
+        circle_marker_58594b73571c18bec0cb00c47c932970.bindPopup(popup_ea641bd0265d451ef09f0fb3d0b57b55)
+        ;
+
+        
+    
+    
+            var circle_marker_db5fc3c0a6e12fb6367402de25f20a5b = L.circleMarker(
+                [-40.5700077, -73.1254406],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5100afff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_461d64abbac9519e41090131878ba2d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_008888ebf85e0d6dc2d0592f4c1b3651 = $(`<div id="html_008888ebf85e0d6dc2d0592f4c1b3651" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 10.13120569908688</div>`)[0];
+                popup_461d64abbac9519e41090131878ba2d2.setContent(html_008888ebf85e0d6dc2d0592f4c1b3651);
+            
+        
+
+        circle_marker_db5fc3c0a6e12fb6367402de25f20a5b.bindPopup(popup_461d64abbac9519e41090131878ba2d2)
+        ;
+
+        
+    
+    
+            var circle_marker_99348890dedf443e1a92cf372e7ab135 = L.circleMarker(
+                [-40.582766, -73.1183363],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_e94c9faa181886abbb7de378f6018092 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1f33b49bd3ef51c8b3a3a41db3623aa8 = $(`<div id="html_1f33b49bd3ef51c8b3a3a41db3623aa8" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 16.70515711861913</div>`)[0];
+                popup_e94c9faa181886abbb7de378f6018092.setContent(html_1f33b49bd3ef51c8b3a3a41db3623aa8);
+            
+        
+
+        circle_marker_99348890dedf443e1a92cf372e7ab135.bindPopup(popup_e94c9faa181886abbb7de378f6018092)
+        ;
+
+        
+    
+    
+            var circle_marker_8b0cbeda262c861faff66191406b1449 = L.circleMarker(
+                [-40.5622686, -73.1545846],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0500faff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_998a4d7fc1b7f53bd03f067f45318a34 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_31f0f0a90f4b2730d9af50635dc4f763 = $(`<div id="html_31f0f0a90f4b2730d9af50635dc4f763" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 0.6649226189652954</div>`)[0];
+                popup_998a4d7fc1b7f53bd03f067f45318a34.setContent(html_31f0f0a90f4b2730d9af50635dc4f763);
+            
+        
+
+        circle_marker_8b0cbeda262c861faff66191406b1449.bindPopup(popup_998a4d7fc1b7f53bd03f067f45318a34)
+        ;
+
+        
+    
+    
+            var circle_marker_c24c4bcbc7384ca2dfeca42c6c9a31a6 = L.circleMarker(
+                [-40.5722051, -73.1555895],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5000afff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_a49a21110f729f3eb25d77818079f11f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d36e63b35c92b6f6c1bbfc5312fb974f = $(`<div id="html_d36e63b35c92b6f6c1bbfc5312fb974f" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 10.06038723819688</div>`)[0];
+                popup_a49a21110f729f3eb25d77818079f11f.setContent(html_d36e63b35c92b6f6c1bbfc5312fb974f);
+            
+        
+
+        circle_marker_c24c4bcbc7384ca2dfeca42c6c9a31a6.bindPopup(popup_a49a21110f729f3eb25d77818079f11f)
+        ;
+
+        
+    
+    
+            var circle_marker_dad6f82a8231b0a4b82aecb5ee5ade5b = L.circleMarker(
+                [-40.6477728, -73.0600922],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1700e8ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_92edabe1f6fa93c209e46a95b6a846f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_921548c98c7a14062d3151d654305dc0 = $(`<div id="html_921548c98c7a14062d3151d654305dc0" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 2.938333333333333</div>`)[0];
+                popup_92edabe1f6fa93c209e46a95b6a846f8.setContent(html_921548c98c7a14062d3151d654305dc0);
+            
+        
+
+        circle_marker_dad6f82a8231b0a4b82aecb5ee5ade5b.bindPopup(popup_92edabe1f6fa93c209e46a95b6a846f8)
+        ;
+
+        
+    
+    
+            var circle_marker_a63c8768f39cb4a28a5e0204b5e8f90c = L.circleMarker(
+                [-40.5769876, -73.1342507],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_e903b7e0e2062c29542e84d43c4d36ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9618aab1e58416b2ec2a249be2b4a042 = $(`<div id="html_9618aab1e58416b2ec2a249be2b4a042" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 27.992979719188767</div>`)[0];
+                popup_e903b7e0e2062c29542e84d43c4d36ee.setContent(html_9618aab1e58416b2ec2a249be2b4a042);
+            
+        
+
+        circle_marker_a63c8768f39cb4a28a5e0204b5e8f90c.bindPopup(popup_e903b7e0e2062c29542e84d43c4d36ee)
+        ;
+
+        
+    
+    
+            var circle_marker_42c1f7910061c413b2d435885349ef27 = L.circleMarker(
+                [-40.5622686, -73.1545846],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0500faff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_2bd1e9d5c6a7045b387b497f2fd50138 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c4b5114b4c8ac53479d8257dd119f2b = $(`<div id="html_8c4b5114b4c8ac53479d8257dd119f2b" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 0.66525</div>`)[0];
+                popup_2bd1e9d5c6a7045b387b497f2fd50138.setContent(html_8c4b5114b4c8ac53479d8257dd119f2b);
+            
+        
+
+        circle_marker_42c1f7910061c413b2d435885349ef27.bindPopup(popup_2bd1e9d5c6a7045b387b497f2fd50138)
+        ;
+
+        
+    
+    
+            var circle_marker_3314341febd42ce770f5048d27b37ac0 = L.circleMarker(
+                [-40.5761897, -73.1149469],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5e00a2ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_5ab564396f4c145ff3d3dd356925d106 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_956640331c7babbfabf56afeb24f9793 = $(`<div id="html_956640331c7babbfabf56afeb24f9793" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 11.754107812049584</div>`)[0];
+                popup_5ab564396f4c145ff3d3dd356925d106.setContent(html_956640331c7babbfabf56afeb24f9793);
+            
+        
+
+        circle_marker_3314341febd42ce770f5048d27b37ac0.bindPopup(popup_5ab564396f4c145ff3d3dd356925d106)
+        ;
+
+        
+    
+    
+            var circle_marker_89c587eb6d5578b00f438505d53f9546 = L.circleMarker(
+                [-40.5805826, -73.1060466],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_cf96f351d1683184c447cd46bb409812);
+        
+    
+        var popup_ab17222023bb6ab533910f8789328acf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_82d012a65c26659381131822f07dc448 = $(`<div id="html_82d012a65c26659381131822f07dc448" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 16.14307228975192</div>`)[0];
+                popup_ab17222023bb6ab533910f8789328acf.setContent(html_82d012a65c26659381131822f07dc448);
+            
+        
+
+        circle_marker_89c587eb6d5578b00f438505d53f9546.bindPopup(popup_ab17222023bb6ab533910f8789328acf)
+        ;
+
+        
+    
+    
+            feature_group_sub_group_cf96f351d1683184c447cd46bb409812.addTo(map_db7e550470395e364cdfef426a9a17d7);
+        
+    
+            var feature_group_sub_group_3e0ecf5600cebdba0b964950d7fc1db4 = L.featureGroup.subGroup(
+                feature_group_d5c56bc1713b5e5018d6ff704773a28f
+            );
+        
+    
+            var circle_marker_3c7b6dfad17d9f2931aaa91aefc9b866 = L.circleMarker(
+                [-40.80887238, -73.27525688],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#108800ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_3e0ecf5600cebdba0b964950d7fc1db4);
+        
+    
+        var popup_cf99d4b91d2a665f3239a5d8654594ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5fe40d7a84c63979a33be002029dc26a = $(`<div id="html_5fe40d7a84c63979a33be002029dc26a" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1284666666666666</div>`)[0];
+                popup_cf99d4b91d2a665f3239a5d8654594ea.setContent(html_5fe40d7a84c63979a33be002029dc26a);
+            
+        
+
+        circle_marker_3c7b6dfad17d9f2931aaa91aefc9b866.bindPopup(popup_cf99d4b91d2a665f3239a5d8654594ea)
+        ;
+
+        
+    
+    
+            var circle_marker_99704997804e40e057d4c0c40589bdb6 = L.circleMarker(
+                [-40.59991, -73.06281],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bfe000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_3e0ecf5600cebdba0b964950d7fc1db4);
+        
+    
+        var popup_09a30aec21909bdd92dc69c1b3ca21c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb15dfea344745bbcc7c026b6f7437c1 = $(`<div id="html_cb15dfea344745bbcc7c026b6f7437c1" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 1.5</div>`)[0];
+                popup_09a30aec21909bdd92dc69c1b3ca21c9.setContent(html_cb15dfea344745bbcc7c026b6f7437c1);
+            
+        
+
+        circle_marker_99704997804e40e057d4c0c40589bdb6.bindPopup(popup_09a30aec21909bdd92dc69c1b3ca21c9)
+        ;
+
+        
+    
+    
+            var circle_marker_39f2573e37907db3337ccf65e10ff27b = L.circleMarker(
+                [-40.5835619, -73.0931969],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_3e0ecf5600cebdba0b964950d7fc1db4);
+        
+    
+        var popup_a22d739c9e3916a0f935c4a8951e0c96 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e3ad6b1a154f5a2de42a79d6f0515de3 = $(`<div id="html_e3ad6b1a154f5a2de42a79d6f0515de3" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 2.188631112822488</div>`)[0];
+                popup_a22d739c9e3916a0f935c4a8951e0c96.setContent(html_e3ad6b1a154f5a2de42a79d6f0515de3);
+            
+        
+
+        circle_marker_39f2573e37907db3337ccf65e10ff27b.bindPopup(popup_a22d739c9e3916a0f935c4a8951e0c96)
+        ;
+
+        
+    
+    
+            var circle_marker_e38557499a28d83b348b12134bf9d5a8 = L.circleMarker(
+                [-40.5761897, -73.1149468],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#028100ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_3e0ecf5600cebdba0b964950d7fc1db4);
+        
+    
+        var popup_a00f6889e0adb9205bd1f051c1de032f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_498174c04193ea2a320dadd15af3e5b0 = $(`<div id="html_498174c04193ea2a320dadd15af3e5b0" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.0165115996650808</div>`)[0];
+                popup_a00f6889e0adb9205bd1f051c1de032f.setContent(html_498174c04193ea2a320dadd15af3e5b0);
+            
+        
+
+        circle_marker_e38557499a28d83b348b12134bf9d5a8.bindPopup(popup_a00f6889e0adb9205bd1f051c1de032f)
+        ;
+
+        
+    
+    
+            var circle_marker_e5a4d92777d27a361da0a2604b6da2e5 = L.circleMarker(
+                [-40.5916402, -72.9310406],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1b8e00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_3e0ecf5600cebdba0b964950d7fc1db4);
+        
+    
+        var popup_b161770353fb94e9b8fff45563b37798 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b5da96418a85078061f9397055898fc = $(`<div id="html_3b5da96418a85078061f9397055898fc" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.2169811320754717</div>`)[0];
+                popup_b161770353fb94e9b8fff45563b37798.setContent(html_3b5da96418a85078061f9397055898fc);
+            
+        
+
+        circle_marker_e5a4d92777d27a361da0a2604b6da2e5.bindPopup(popup_b161770353fb94e9b8fff45563b37798)
+        ;
+
+        
+    
+    
+            var circle_marker_639dc37f0752f7b92ecad98c9d8c4df3 = L.circleMarker(
+                [-40.5626192, -73.1012953],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9bce00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_3e0ecf5600cebdba0b964950d7fc1db4);
+        
+    
+        var popup_9ac964e4532d7fd2988c8c56590d1461 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47ab14925ef218fb5bd836b87859bce9 = $(`<div id="html_47ab14925ef218fb5bd836b87859bce9" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 1.2185215272136474</div>`)[0];
+                popup_9ac964e4532d7fd2988c8c56590d1461.setContent(html_47ab14925ef218fb5bd836b87859bce9);
+            
+        
+
+        circle_marker_639dc37f0752f7b92ecad98c9d8c4df3.bindPopup(popup_9ac964e4532d7fd2988c8c56590d1461)
+        ;
+
+        
+    
+    
+            var circle_marker_6e92b0f18ca87cdc626b6a7691f3c0ae = L.circleMarker(
+                [-40.5456973, -73.0881538],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a9d400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_3e0ecf5600cebdba0b964950d7fc1db4);
+        
+    
+        var popup_5f1ac79e5fc2bdc7eaaa6aef1fa3cce0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f39bb4610375f3bc2ff3be20ee0e6f6 = $(`<div id="html_4f39bb4610375f3bc2ff3be20ee0e6f6" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 1.32035466461064</div>`)[0];
+                popup_5f1ac79e5fc2bdc7eaaa6aef1fa3cce0.setContent(html_4f39bb4610375f3bc2ff3be20ee0e6f6);
+            
+        
+
+        circle_marker_6e92b0f18ca87cdc626b6a7691f3c0ae.bindPopup(popup_5f1ac79e5fc2bdc7eaaa6aef1fa3cce0)
+        ;
+
+        
+    
+    
+            var circle_marker_e44af3a2b8656c5e2a7157668557a10a = L.circleMarker(
+                [-40.606806, -73.0914617],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#cfe700ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_3e0ecf5600cebdba0b964950d7fc1db4);
+        
+    
+        var popup_eb74fcbf20a64a2aa7c3b10dce850538 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b51a9858dcf582e82db80d432959992b = $(`<div id="html_b51a9858dcf582e82db80d432959992b" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 1.62</div>`)[0];
+                popup_eb74fcbf20a64a2aa7c3b10dce850538.setContent(html_b51a9858dcf582e82db80d432959992b);
+            
+        
+
+        circle_marker_e44af3a2b8656c5e2a7157668557a10a.bindPopup(popup_eb74fcbf20a64a2aa7c3b10dce850538)
+        ;
+
+        
+    
+    
+            var circle_marker_a273fda6bcbc5df2448ebf5a1738fe1f = L.circleMarker(
+                [-40.5979563, -72.9462131],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0d8700ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_3e0ecf5600cebdba0b964950d7fc1db4);
+        
+    
+        var popup_e3a0945749b5f4dfaa6ed8357b770188 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9819508244281b2b70c2fbcd283c03f7 = $(`<div id="html_9819508244281b2b70c2fbcd283c03f7" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1026</div>`)[0];
+                popup_e3a0945749b5f4dfaa6ed8357b770188.setContent(html_9819508244281b2b70c2fbcd283c03f7);
+            
+        
+
+        circle_marker_a273fda6bcbc5df2448ebf5a1738fe1f.bindPopup(popup_e3a0945749b5f4dfaa6ed8357b770188)
+        ;
+
+        
+    
+    
+            var circle_marker_fb566f25612d500a9a402ea072e8a416 = L.circleMarker(
+                [-40.5688582, -73.1035745],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e3f100ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_3e0ecf5600cebdba0b964950d7fc1db4);
+        
+    
+        var popup_0c46c2fed35d6fd14f15ddf72218fbe9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f807f6365fad698c71c9ff3ea8e0724b = $(`<div id="html_f807f6365fad698c71c9ff3ea8e0724b" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 1.7792252138430282</div>`)[0];
+                popup_0c46c2fed35d6fd14f15ddf72218fbe9.setContent(html_f807f6365fad698c71c9ff3ea8e0724b);
+            
+        
+
+        circle_marker_fb566f25612d500a9a402ea072e8a416.bindPopup(popup_0c46c2fed35d6fd14f15ddf72218fbe9)
+        ;
+
+        
+    
+    
+            var circle_marker_c080cd00bef48b4fb380c70a0c97dd00 = L.circleMarker(
+                [-40.625196110178045, -73.10876709042968],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#018100ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_3e0ecf5600cebdba0b964950d7fc1db4);
+        
+    
+        var popup_dcc99145005bf750643b667ccaa8df07 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8391bbc482b6fa5150303ca29d2a766 = $(`<div id="html_b8391bbc482b6fa5150303ca29d2a766" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.014975</div>`)[0];
+                popup_dcc99145005bf750643b667ccaa8df07.setContent(html_b8391bbc482b6fa5150303ca29d2a766);
+            
+        
+
+        circle_marker_c080cd00bef48b4fb380c70a0c97dd00.bindPopup(popup_dcc99145005bf750643b667ccaa8df07)
+        ;
+
+        
+    
+    
+            var circle_marker_4b3cf15e707c18f1ddadc3b5884b8382 = L.circleMarker(
+                [-40.5733223, -73.1359011],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#028100ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_3e0ecf5600cebdba0b964950d7fc1db4);
+        
+    
+        var popup_18e563751db9b94e243d64e90f99eab6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb3a771e8ef56eada7074e861bfa2491 = $(`<div id="html_eb3a771e8ef56eada7074e861bfa2491" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.02129</div>`)[0];
+                popup_18e563751db9b94e243d64e90f99eab6.setContent(html_eb3a771e8ef56eada7074e861bfa2491);
+            
+        
+
+        circle_marker_4b3cf15e707c18f1ddadc3b5884b8382.bindPopup(popup_18e563751db9b94e243d64e90f99eab6)
+        ;
+
+        
+    
+    
+            var circle_marker_42e7d2d710e18d38d1209900a9cc0dbc = L.circleMarker(
+                [-40.6046318, -73.06104],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b9dc00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_3e0ecf5600cebdba0b964950d7fc1db4);
+        
+    
+        var popup_818939c4301b36c524f863baa660a449 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52ff6e2a43c55ed0bac136800a5e2e36 = $(`<div id="html_52ff6e2a43c55ed0bac136800a5e2e36" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 1.4468169216866138</div>`)[0];
+                popup_818939c4301b36c524f863baa660a449.setContent(html_52ff6e2a43c55ed0bac136800a5e2e36);
+            
+        
+
+        circle_marker_42e7d2d710e18d38d1209900a9cc0dbc.bindPopup(popup_818939c4301b36c524f863baa660a449)
+        ;
+
+        
+    
+    
+            var circle_marker_d0c8b62ae7d9b4abd1d930b9ea349231 = L.circleMarker(
+                [-40.5251625, -73.02482792],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0a8500ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_3e0ecf5600cebdba0b964950d7fc1db4);
+        
+    
+        var popup_6dcf21249dafd9edb80758940e3b1bab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04260c28684df190b345c7b89e2d31fa = $(`<div id="html_04260c28684df190b345c7b89e2d31fa" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.0830543933054393</div>`)[0];
+                popup_6dcf21249dafd9edb80758940e3b1bab.setContent(html_04260c28684df190b345c7b89e2d31fa);
+            
+        
+
+        circle_marker_d0c8b62ae7d9b4abd1d930b9ea349231.bindPopup(popup_6dcf21249dafd9edb80758940e3b1bab)
+        ;
+
+        
+    
+    
+            var circle_marker_e8ffc4521755e595592f40557cb0c1f4 = L.circleMarker(
+                [-40.683339, -72.60154],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0e8700ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_3e0ecf5600cebdba0b964950d7fc1db4);
+        
+    
+        var popup_f53af23ecdfade6b9bd02d8b1612929d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_75e58b3a0d20b3281a84af87a7fc1dd5 = $(`<div id="html_75e58b3a0d20b3281a84af87a7fc1dd5" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1140124795779896</div>`)[0];
+                popup_f53af23ecdfade6b9bd02d8b1612929d.setContent(html_75e58b3a0d20b3281a84af87a7fc1dd5);
+            
+        
+
+        circle_marker_e8ffc4521755e595592f40557cb0c1f4.bindPopup(popup_f53af23ecdfade6b9bd02d8b1612929d)
+        ;
+
+        
+    
+    
+            var circle_marker_0d515f030dd2b4203f02ec45582229c2 = L.circleMarker(
+                [-40.5672932, -73.1294152],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#70b800ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_3e0ecf5600cebdba0b964950d7fc1db4);
+        
+    
+        var popup_637e9634bc747d56dda0186ca9371562 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eabba0209911a8a1016415996c7e89c8 = $(`<div id="html_eabba0209911a8a1016415996c7e89c8" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.8779654977879391</div>`)[0];
+                popup_637e9634bc747d56dda0186ca9371562.setContent(html_eabba0209911a8a1016415996c7e89c8);
+            
+        
+
+        circle_marker_0d515f030dd2b4203f02ec45582229c2.bindPopup(popup_637e9634bc747d56dda0186ca9371562)
+        ;
+
+        
+    
+    
+            var circle_marker_2f6d99e35dacc2b45e0a62f2c268e1e2 = L.circleMarker(
+                [-40.5740103, -73.1041545],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_3e0ecf5600cebdba0b964950d7fc1db4);
+        
+    
+        var popup_6b3bf2b06d1b128cfb2dabb1ea7c2f1d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa5869a7b27cfc913162dd4dbb32455e = $(`<div id="html_aa5869a7b27cfc913162dd4dbb32455e" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 2.3096212221195724</div>`)[0];
+                popup_6b3bf2b06d1b128cfb2dabb1ea7c2f1d.setContent(html_aa5869a7b27cfc913162dd4dbb32455e);
+            
+        
+
+        circle_marker_2f6d99e35dacc2b45e0a62f2c268e1e2.bindPopup(popup_6b3bf2b06d1b128cfb2dabb1ea7c2f1d)
+        ;
+
+        
+    
+    
+            var circle_marker_8400ccbe0c62915907b9b6310e0d7553 = L.circleMarker(
+                [-40.5650387, -73.126936],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#cce600ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_3e0ecf5600cebdba0b964950d7fc1db4);
+        
+    
+        var popup_e4fa377bbb91b39e5c2182b7ebc924a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1004d117f06541f71028a2010e6885e0 = $(`<div id="html_1004d117f06541f71028a2010e6885e0" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 1.6</div>`)[0];
+                popup_e4fa377bbb91b39e5c2182b7ebc924a3.setContent(html_1004d117f06541f71028a2010e6885e0);
+            
+        
+
+        circle_marker_8400ccbe0c62915907b9b6310e0d7553.bindPopup(popup_e4fa377bbb91b39e5c2182b7ebc924a3)
+        ;
+
+        
+    
+    
+            var circle_marker_0f019c1773e09780ef5caca7afbb1f33 = L.circleMarker(
+                [-40.5645553, -73.1027571],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_3e0ecf5600cebdba0b964950d7fc1db4);
+        
+    
+        var popup_9f00c3a1859c5bd726102d02e474074d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3e3338b61641d179cecda32f24a209b2 = $(`<div id="html_3e3338b61641d179cecda32f24a209b2" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 3.684914132931135</div>`)[0];
+                popup_9f00c3a1859c5bd726102d02e474074d.setContent(html_3e3338b61641d179cecda32f24a209b2);
+            
+        
+
+        circle_marker_0f019c1773e09780ef5caca7afbb1f33.bindPopup(popup_9f00c3a1859c5bd726102d02e474074d)
+        ;
+
+        
+    
+    
+            var circle_marker_9075d86a10fe3b621c513909b2eeb993 = L.circleMarker(
+                [-40.4520881, -73.1274383],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#128900ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_3e0ecf5600cebdba0b964950d7fc1db4);
+        
+    
+        var popup_f51b09e92b4c1ec834fc0bbe1ced607a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c3b942ccfad48377ac0e4f039c9538c = $(`<div id="html_0c3b942ccfad48377ac0e4f039c9538c" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1459156</div>`)[0];
+                popup_f51b09e92b4c1ec834fc0bbe1ced607a.setContent(html_0c3b942ccfad48377ac0e4f039c9538c);
+            
+        
+
+        circle_marker_9075d86a10fe3b621c513909b2eeb993.bindPopup(popup_f51b09e92b4c1ec834fc0bbe1ced607a)
+        ;
+
+        
+    
+    
+            var circle_marker_883e592f1e0bc63821f0730d4bcb8314 = L.circleMarker(
+                [-40.5761897, -73.1149469],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#078400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_3e0ecf5600cebdba0b964950d7fc1db4);
+        
+    
+        var popup_1b224f0f9159ae66cab72760ac6ee430 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c82f131d3febf34c76bb5b7d18db1af7 = $(`<div id="html_c82f131d3febf34c76bb5b7d18db1af7" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.0553586948177819</div>`)[0];
+                popup_1b224f0f9159ae66cab72760ac6ee430.setContent(html_c82f131d3febf34c76bb5b7d18db1af7);
+            
+        
+
+        circle_marker_883e592f1e0bc63821f0730d4bcb8314.bindPopup(popup_1b224f0f9159ae66cab72760ac6ee430)
+        ;
+
+        
+    
+    
+            var circle_marker_b11984e453138d6730973c3cc9ae743d = L.circleMarker(
+                [-40.6147134, -73.0922278],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_3e0ecf5600cebdba0b964950d7fc1db4);
+        
+    
+        var popup_96a46c7f7ac62287e239af52c17aba83 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9cf8879408011aaab7850f644a988635 = $(`<div id="html_9cf8879408011aaab7850f644a988635" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 6.666666666666667e-05</div>`)[0];
+                popup_96a46c7f7ac62287e239af52c17aba83.setContent(html_9cf8879408011aaab7850f644a988635);
+            
+        
+
+        circle_marker_b11984e453138d6730973c3cc9ae743d.bindPopup(popup_96a46c7f7ac62287e239af52c17aba83)
+        ;
+
+        
+    
+    
+            var circle_marker_5626856551cfa677b7fb4f6fc463e93a = L.circleMarker(
+                [-40.5688582, -73.1035745],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a8d400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_3e0ecf5600cebdba0b964950d7fc1db4);
+        
+    
+        var popup_dcb0c07fa631f591ba586dfcc16115e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_06755d2fa07e76c0a4925bc55b669b9c = $(`<div id="html_06755d2fa07e76c0a4925bc55b669b9c" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 1.3128448688553505</div>`)[0];
+                popup_dcb0c07fa631f591ba586dfcc16115e5.setContent(html_06755d2fa07e76c0a4925bc55b669b9c);
+            
+        
+
+        circle_marker_5626856551cfa677b7fb4f6fc463e93a.bindPopup(popup_dcb0c07fa631f591ba586dfcc16115e5)
+        ;
+
+        
+    
+    
+            var circle_marker_4f4b9376ffad1008bac65b6ad9839362 = L.circleMarker(
+                [-40.5612866, -73.0532547],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#148a00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_3e0ecf5600cebdba0b964950d7fc1db4);
+        
+    
+        var popup_dd4573827c4cbd156788fff2723d26a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3c3954bbd4d305e28ea7f196f23de9e5 = $(`<div id="html_3c3954bbd4d305e28ea7f196f23de9e5" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1586102719033232</div>`)[0];
+                popup_dd4573827c4cbd156788fff2723d26a6.setContent(html_3c3954bbd4d305e28ea7f196f23de9e5);
+            
+        
+
+        circle_marker_4f4b9376ffad1008bac65b6ad9839362.bindPopup(popup_dd4573827c4cbd156788fff2723d26a6)
+        ;
+
+        
+    
+    
+            var circle_marker_c441e1e40444dc1eca5f7e79402511f3 = L.circleMarker(
+                [-40.5646134, -73.1252562],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c1e000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_3e0ecf5600cebdba0b964950d7fc1db4);
+        
+    
+        var popup_b8203f7a7f38a6d09437f4f949f97358 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2787462aa1ff32d704ecac1e99ea450 = $(`<div id="html_a2787462aa1ff32d704ecac1e99ea450" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 1.5104</div>`)[0];
+                popup_b8203f7a7f38a6d09437f4f949f97358.setContent(html_a2787462aa1ff32d704ecac1e99ea450);
+            
+        
+
+        circle_marker_c441e1e40444dc1eca5f7e79402511f3.bindPopup(popup_b8203f7a7f38a6d09437f4f949f97358)
+        ;
+
+        
+    
+    
+            var circle_marker_fca5b3a3f665c5d89de2130054ff1d4b = L.circleMarker(
+                [-40.4520881, -73.1274383],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#118900ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_3e0ecf5600cebdba0b964950d7fc1db4);
+        
+    
+        var popup_f49f4efbb8e7f0e3984d120819ca7cd2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f5d97ff46ea82e671033dc4c44667ee = $(`<div id="html_6f5d97ff46ea82e671033dc4c44667ee" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.1334652</div>`)[0];
+                popup_f49f4efbb8e7f0e3984d120819ca7cd2.setContent(html_6f5d97ff46ea82e671033dc4c44667ee);
+            
+        
+
+        circle_marker_fca5b3a3f665c5d89de2130054ff1d4b.bindPopup(popup_f49f4efbb8e7f0e3984d120819ca7cd2)
+        ;
+
+        
+    
+    
+            var circle_marker_a5f886f4df86183c73abda86293f6338 = L.circleMarker(
+                [-40.5733223, -73.1359011],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#048200ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_3e0ecf5600cebdba0b964950d7fc1db4);
+        
+    
+        var popup_6092c58c16fb9dc1c65833abc0e45a3d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_afb90904edbfd4f2cde06d6ed0608029 = $(`<div id="html_afb90904edbfd4f2cde06d6ed0608029" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S1<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.03325</div>`)[0];
+                popup_6092c58c16fb9dc1c65833abc0e45a3d.setContent(html_afb90904edbfd4f2cde06d6ed0608029);
+            
+        
+
+        circle_marker_a5f886f4df86183c73abda86293f6338.bindPopup(popup_6092c58c16fb9dc1c65833abc0e45a3d)
+        ;
+
+        
+    
+    
+            feature_group_sub_group_3e0ecf5600cebdba0b964950d7fc1db4.addTo(map_db7e550470395e364cdfef426a9a17d7);
+        
+    
+            var feature_group_sub_group_01ac203cc9fc3ec8a8e18175db95af60 = L.featureGroup.subGroup(
+                feature_group_971d74a272a00411dace052692593031
+            );
+        
+    
+            var circle_marker_e821919a821bdea6a936ed56876b8526 = L.circleMarker(
+                [-40.59259, -73.11993],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_01ac203cc9fc3ec8a8e18175db95af60);
+        
+    
+        var popup_c0458f524cb9f23da9dfcca2ab8b0905 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bec6d803df96f334f7de36f2a32a6fc8 = $(`<div id="html_bec6d803df96f334f7de36f2a32a6fc8" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S2<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 24.848484848484848</div>`)[0];
+                popup_c0458f524cb9f23da9dfcca2ab8b0905.setContent(html_bec6d803df96f334f7de36f2a32a6fc8);
+            
+        
+
+        circle_marker_e821919a821bdea6a936ed56876b8526.bindPopup(popup_c0458f524cb9f23da9dfcca2ab8b0905)
+        ;
+
+        
+    
+    
+            var circle_marker_d674dc76257681c1fe18bd8a5c308ad9 = L.circleMarker(
+                [-40.57696, -73.15618],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3400cbff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_01ac203cc9fc3ec8a8e18175db95af60);
+        
+    
+        var popup_90afceb463c0f9e14c6287d3e6e11508 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78cf174655c9df83907454d4a7177ba4 = $(`<div id="html_78cf174655c9df83907454d4a7177ba4" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S2<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 6.525792417650715</div>`)[0];
+                popup_90afceb463c0f9e14c6287d3e6e11508.setContent(html_78cf174655c9df83907454d4a7177ba4);
+            
+        
+
+        circle_marker_d674dc76257681c1fe18bd8a5c308ad9.bindPopup(popup_90afceb463c0f9e14c6287d3e6e11508)
+        ;
+
+        
+    
+    
+            var circle_marker_e3b7919d1591760b45b667b7b4b0ab97 = L.circleMarker(
+                [-40.57618, -73.11494],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5e00a2ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_01ac203cc9fc3ec8a8e18175db95af60);
+        
+    
+        var popup_52a1a9b16b82979b419bb2e81814511b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f6414434fb4c520d49abca933cf44c48 = $(`<div id="html_f6414434fb4c520d49abca933cf44c48" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S2<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 11.754107812049584</div>`)[0];
+                popup_52a1a9b16b82979b419bb2e81814511b.setContent(html_f6414434fb4c520d49abca933cf44c48);
+            
+        
+
+        circle_marker_e3b7919d1591760b45b667b7b4b0ab97.bindPopup(popup_52a1a9b16b82979b419bb2e81814511b)
+        ;
+
+        
+    
+    
+            var circle_marker_78254d723e82f3af7001eac76c93db77 = L.circleMarker(
+                [-40.5879636, -73.1186473],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4800b8ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_01ac203cc9fc3ec8a8e18175db95af60);
+        
+    
+        var popup_3fa4bdcdb489af23066d254e30c040d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6e32c0dbc8804a3f24f9bddda1fd984 = $(`<div id="html_a6e32c0dbc8804a3f24f9bddda1fd984" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S2<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 9.034285714285714</div>`)[0];
+                popup_3fa4bdcdb489af23066d254e30c040d3.setContent(html_a6e32c0dbc8804a3f24f9bddda1fd984);
+            
+        
+
+        circle_marker_78254d723e82f3af7001eac76c93db77.bindPopup(popup_3fa4bdcdb489af23066d254e30c040d3)
+        ;
+
+        
+    
+    
+            var circle_marker_b2597b71f649379e96e7bbe4cdd2e9ee = L.circleMarker(
+                [-40.57064432, -73.12412551],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5100afff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_01ac203cc9fc3ec8a8e18175db95af60);
+        
+    
+        var popup_24a67bd678d49022de1a9e21bb7706d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1da9744ae2c3eb208efcfcd71a93f7a5 = $(`<div id="html_1da9744ae2c3eb208efcfcd71a93f7a5" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S2<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 10.136734795787936</div>`)[0];
+                popup_24a67bd678d49022de1a9e21bb7706d3.setContent(html_1da9744ae2c3eb208efcfcd71a93f7a5);
+            
+        
+
+        circle_marker_b2597b71f649379e96e7bbe4cdd2e9ee.bindPopup(popup_24a67bd678d49022de1a9e21bb7706d3)
+        ;
+
+        
+    
+    
+            var circle_marker_15840a6d89b9df3a3d1f11cb610be458 = L.circleMarker(
+                [-40.5722, -73.15558],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5000afff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_01ac203cc9fc3ec8a8e18175db95af60);
+        
+    
+        var popup_fb18581f450d6942ac2e87ba615bd301 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8741910e4ae3653a3f5118d6f281cf65 = $(`<div id="html_8741910e4ae3653a3f5118d6f281cf65" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S2<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 10.067319078947367</div>`)[0];
+                popup_fb18581f450d6942ac2e87ba615bd301.setContent(html_8741910e4ae3653a3f5118d6f281cf65);
+            
+        
+
+        circle_marker_15840a6d89b9df3a3d1f11cb610be458.bindPopup(popup_fb18581f450d6942ac2e87ba615bd301)
+        ;
+
+        
+    
+    
+            var circle_marker_73343ee8a74b00e5bba634a8c116fccf = L.circleMarker(
+                [-40.5766457, -73.1460474],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#76008aff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_01ac203cc9fc3ec8a8e18175db95af60);
+        
+    
+        var popup_987214138cfc916c6ceecf239c95358d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e587f1798c24eb0442fd3bf3744f94f8 = $(`<div id="html_e587f1798c24eb0442fd3bf3744f94f8" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S2<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 14.802693602693603</div>`)[0];
+                popup_987214138cfc916c6ceecf239c95358d.setContent(html_e587f1798c24eb0442fd3bf3744f94f8);
+            
+        
+
+        circle_marker_73343ee8a74b00e5bba634a8c116fccf.bindPopup(popup_987214138cfc916c6ceecf239c95358d)
+        ;
+
+        
+    
+    
+            var circle_marker_2f1b7541dc814834ba5ca01b873f6c74 = L.circleMarker(
+                [-40.5949842, -73.1129465],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2800d8ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_01ac203cc9fc3ec8a8e18175db95af60);
+        
+    
+        var popup_f37a2a546b36ed60d6d4296a1915414d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b41fee98389aaa51427c3f628b8c08b = $(`<div id="html_5b41fee98389aaa51427c3f628b8c08b" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S2<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 5.0</div>`)[0];
+                popup_f37a2a546b36ed60d6d4296a1915414d.setContent(html_5b41fee98389aaa51427c3f628b8c08b);
+            
+        
+
+        circle_marker_2f1b7541dc814834ba5ca01b873f6c74.bindPopup(popup_f37a2a546b36ed60d6d4296a1915414d)
+        ;
+
+        
+    
+    
+            var circle_marker_2b46242dc3cc8e63862862a296cc5d35 = L.circleMarker(
+                [-40.594984153772, -73.112946525885],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2800d8ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_01ac203cc9fc3ec8a8e18175db95af60);
+        
+    
+        var popup_a6d8de0f7735e5f4a3df1df34e175e7f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99fc1c33d511dc6988422b3d68fdf71d = $(`<div id="html_99fc1c33d511dc6988422b3d68fdf71d" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S2<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 5.0</div>`)[0];
+                popup_a6d8de0f7735e5f4a3df1df34e175e7f.setContent(html_99fc1c33d511dc6988422b3d68fdf71d);
+            
+        
+
+        circle_marker_2b46242dc3cc8e63862862a296cc5d35.bindPopup(popup_a6d8de0f7735e5f4a3df1df34e175e7f)
+        ;
+
+        
+    
+    
+            var circle_marker_27208953eaba64a1e363328f1922f05b = L.circleMarker(
+                [-40.5733223, -73.1359011],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3200ceff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_01ac203cc9fc3ec8a8e18175db95af60);
+        
+    
+        var popup_3024719a7d13396f24f360818facdcbd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_32a1409405585de7063fa1eaa863a148 = $(`<div id="html_32a1409405585de7063fa1eaa863a148" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S2<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 6.272857142857143</div>`)[0];
+                popup_3024719a7d13396f24f360818facdcbd.setContent(html_32a1409405585de7063fa1eaa863a148);
+            
+        
+
+        circle_marker_27208953eaba64a1e363328f1922f05b.bindPopup(popup_3024719a7d13396f24f360818facdcbd)
+        ;
+
+        
+    
+    
+            var circle_marker_6bfa1ad7c2a70b5bb1617d7e510aa2dd = L.circleMarker(
+                [-40.5733223, -73.1359011],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2800d7ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_01ac203cc9fc3ec8a8e18175db95af60);
+        
+    
+        var popup_146e7321d9dbf8d84e40acc574fc27eb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6bf4429a4f866c0cea73b22e20d04e9a = $(`<div id="html_6bf4429a4f866c0cea73b22e20d04e9a" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S2<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 5.076190476190476</div>`)[0];
+                popup_146e7321d9dbf8d84e40acc574fc27eb.setContent(html_6bf4429a4f866c0cea73b22e20d04e9a);
+            
+        
+
+        circle_marker_6bfa1ad7c2a70b5bb1617d7e510aa2dd.bindPopup(popup_146e7321d9dbf8d84e40acc574fc27eb)
+        ;
+
+        
+    
+    
+            var circle_marker_e3531ea1ab6bed5e71c59eadd0898306 = L.circleMarker(
+                [-40.576492, -73.1101502],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#74008cff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_01ac203cc9fc3ec8a8e18175db95af60);
+        
+    
+        var popup_f408b6daafd7e25ee4bb3b9d7f4b49f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_364e5d71eac6e66ee1228a1e7424e793 = $(`<div id="html_364e5d71eac6e66ee1228a1e7424e793" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S2<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 14.490588235294116</div>`)[0];
+                popup_f408b6daafd7e25ee4bb3b9d7f4b49f1.setContent(html_364e5d71eac6e66ee1228a1e7424e793);
+            
+        
+
+        circle_marker_e3531ea1ab6bed5e71c59eadd0898306.bindPopup(popup_f408b6daafd7e25ee4bb3b9d7f4b49f1)
+        ;
+
+        
+    
+    
+            var circle_marker_3ebff826cef77aa5765271882462693d = L.circleMarker(
+                [-40.5274724, -73.1475036],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0500faff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_01ac203cc9fc3ec8a8e18175db95af60);
+        
+    
+        var popup_7d437327451e9935238f2da81d28bd03 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_65cd3f65aa5c6bf8d7121d1ead849442 = $(`<div id="html_65cd3f65aa5c6bf8d7121d1ead849442" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S2<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 0.665</div>`)[0];
+                popup_7d437327451e9935238f2da81d28bd03.setContent(html_65cd3f65aa5c6bf8d7121d1ead849442);
+            
+        
+
+        circle_marker_3ebff826cef77aa5765271882462693d.bindPopup(popup_7d437327451e9935238f2da81d28bd03)
+        ;
+
+        
+    
+    
+            var circle_marker_adf0a95ccc271f3f62c2e902ed7aa442 = L.circleMarker(
+                [-40.5722051, -73.1555895],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5000afff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_01ac203cc9fc3ec8a8e18175db95af60);
+        
+    
+        var popup_985d694a79642a056d90cc09fabfa307 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f084e57775a90bfc4054f9107c3fddf = $(`<div id="html_3f084e57775a90bfc4054f9107c3fddf" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S2<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 10.065877685784486</div>`)[0];
+                popup_985d694a79642a056d90cc09fabfa307.setContent(html_3f084e57775a90bfc4054f9107c3fddf);
+            
+        
+
+        circle_marker_adf0a95ccc271f3f62c2e902ed7aa442.bindPopup(popup_985d694a79642a056d90cc09fabfa307)
+        ;
+
+        
+    
+    
+            var circle_marker_9989090e3e06e70fef5e410a4d09913e = L.circleMarker(
+                [-40.5733223, -73.1359011],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6000a0ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_01ac203cc9fc3ec8a8e18175db95af60);
+        
+    
+        var popup_596f67c45314d589a3e342134649ca06 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c984cdae3afe5698a7ff37e97a19cdb1 = $(`<div id="html_c984cdae3afe5698a7ff37e97a19cdb1" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S2<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 12.0</div>`)[0];
+                popup_596f67c45314d589a3e342134649ca06.setContent(html_c984cdae3afe5698a7ff37e97a19cdb1);
+            
+        
+
+        circle_marker_9989090e3e06e70fef5e410a4d09913e.bindPopup(popup_596f67c45314d589a3e342134649ca06)
+        ;
+
+        
+    
+    
+            var circle_marker_e147b4bc1c636b9fd9eb0eabb149b5c7 = L.circleMarker(
+                [-40.58273, -73.11866],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_01ac203cc9fc3ec8a8e18175db95af60);
+        
+    
+        var popup_1c97ce5afcdd4934f27f666b46605347 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05d1df052266cd5badc0764eb972b411 = $(`<div id="html_05d1df052266cd5badc0764eb972b411" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S2<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 16.69760836863522</div>`)[0];
+                popup_1c97ce5afcdd4934f27f666b46605347.setContent(html_05d1df052266cd5badc0764eb972b411);
+            
+        
+
+        circle_marker_e147b4bc1c636b9fd9eb0eabb149b5c7.bindPopup(popup_1c97ce5afcdd4934f27f666b46605347)
+        ;
+
+        
+    
+    
+            var circle_marker_c6670b9859c87ad64202889f3eaf1773 = L.circleMarker(
+                [-40.5766643, -73.1264195],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6d0093ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_01ac203cc9fc3ec8a8e18175db95af60);
+        
+    
+        var popup_4626cc75336644a5b773208fe12f9bfe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a9be02050c05c026c97109b028cbc219 = $(`<div id="html_a9be02050c05c026c97109b028cbc219" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S2<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 13.605681818181818</div>`)[0];
+                popup_4626cc75336644a5b773208fe12f9bfe.setContent(html_a9be02050c05c026c97109b028cbc219);
+            
+        
+
+        circle_marker_c6670b9859c87ad64202889f3eaf1773.bindPopup(popup_4626cc75336644a5b773208fe12f9bfe)
+        ;
+
+        
+    
+    
+            var circle_marker_ee95051f9428bd09172dbdcd7bb23b9d = L.circleMarker(
+                [-40.527472401081006, -73.14750356820068],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0500faff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_01ac203cc9fc3ec8a8e18175db95af60);
+        
+    
+        var popup_8bc6afbf102de1fb153b98a52749bbd4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_274d0ccc02d471441617cc7b51af149c = $(`<div id="html_274d0ccc02d471441617cc7b51af149c" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S2<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 0.665</div>`)[0];
+                popup_8bc6afbf102de1fb153b98a52749bbd4.setContent(html_274d0ccc02d471441617cc7b51af149c);
+            
+        
+
+        circle_marker_ee95051f9428bd09172dbdcd7bb23b9d.bindPopup(popup_8bc6afbf102de1fb153b98a52749bbd4)
+        ;
+
+        
+    
+    
+            var circle_marker_67ec52c5108c57107282d3a954cf7c84 = L.circleMarker(
+                [-40.5703361, -73.1375042],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#63009cff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_01ac203cc9fc3ec8a8e18175db95af60);
+        
+    
+        var popup_f9b4b554d9e9fbb886136a7ebf8d4343 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_540eb8ecd6ddddc1287c18754c5b3962 = $(`<div id="html_540eb8ecd6ddddc1287c18754c5b3962" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S2<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 12.450877192982457</div>`)[0];
+                popup_f9b4b554d9e9fbb886136a7ebf8d4343.setContent(html_540eb8ecd6ddddc1287c18754c5b3962);
+            
+        
+
+        circle_marker_67ec52c5108c57107282d3a954cf7c84.bindPopup(popup_f9b4b554d9e9fbb886136a7ebf8d4343)
+        ;
+
+        
+    
+    
+            var circle_marker_fa3bcf68146fc730aea0b2eab54fb370 = L.circleMarker(
+                [-40.5751274, -73.1472604],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6000a0ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_01ac203cc9fc3ec8a8e18175db95af60);
+        
+    
+        var popup_79e892484b54a3ea917a72f8ce0c4dd4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_778b14e2af76a66d8ba2b71eb6172d0c = $(`<div id="html_778b14e2af76a66d8ba2b71eb6172d0c" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S2<br>Rango de Superficie: 500-4999 m2<br>Precio UF/m²: 12.0</div>`)[0];
+                popup_79e892484b54a3ea917a72f8ce0c4dd4.setContent(html_778b14e2af76a66d8ba2b71eb6172d0c);
+            
+        
+
+        circle_marker_fa3bcf68146fc730aea0b2eab54fb370.bindPopup(popup_79e892484b54a3ea917a72f8ce0c4dd4)
+        ;
+
+        
+    
+    
+            feature_group_sub_group_01ac203cc9fc3ec8a8e18175db95af60.addTo(map_db7e550470395e364cdfef426a9a17d7);
+        
+    
+            var feature_group_sub_group_9358caec5c0789f0636c195028ceb391 = L.featureGroup.subGroup(
+                feature_group_d5c56bc1713b5e5018d6ff704773a28f
+            );
+        
+    
+            var circle_marker_46ede99421c025dbd5dc009495103293 = L.circleMarker(
+                [-40.582, -73.985],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#108800ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_9358caec5c0789f0636c195028ceb391);
+        
+    
+        var popup_08d34ae70d0dc9b8737b04671792409c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_770b32a616007ab982cf869edb25ab97 = $(`<div id="html_770b32a616007ab982cf869edb25ab97" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.12716</div>`)[0];
+                popup_08d34ae70d0dc9b8737b04671792409c.setContent(html_770b32a616007ab982cf869edb25ab97);
+            
+        
+
+        circle_marker_46ede99421c025dbd5dc009495103293.bindPopup(popup_08d34ae70d0dc9b8737b04671792409c)
+        ;
+
+        
+    
+    
+            var circle_marker_0b48bb917f9ab1ac6dfbb59d4327f6c4 = L.circleMarker(
+                [-40.57215, -73.12107],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_9358caec5c0789f0636c195028ceb391);
+        
+    
+        var popup_481ff4748e40ac82990b300b55220db0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ab04bcfa1aa73f5c798b37fa895696d8 = $(`<div id="html_ab04bcfa1aa73f5c798b37fa895696d8" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.0001190476190476</div>`)[0];
+                popup_481ff4748e40ac82990b300b55220db0.setContent(html_ab04bcfa1aa73f5c798b37fa895696d8);
+            
+        
+
+        circle_marker_0b48bb917f9ab1ac6dfbb59d4327f6c4.bindPopup(popup_481ff4748e40ac82990b300b55220db0)
+        ;
+
+        
+    
+    
+            var circle_marker_f103acaabad5e091e635dc035d6bb1ed = L.circleMarker(
+                [-40.59577, -73.10959],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#329900ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_9358caec5c0789f0636c195028ceb391);
+        
+    
+        var popup_89babe54599fb03e28f4c2140930d39e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5120dfd10f195cd7041dce7a23d17c9c = $(`<div id="html_5120dfd10f195cd7041dce7a23d17c9c" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.3924855</div>`)[0];
+                popup_89babe54599fb03e28f4c2140930d39e.setContent(html_5120dfd10f195cd7041dce7a23d17c9c);
+            
+        
+
+        circle_marker_f103acaabad5e091e635dc035d6bb1ed.bindPopup(popup_89babe54599fb03e28f4c2140930d39e)
+        ;
+
+        
+    
+    
+            var circle_marker_83fb7f6da35989320e14dd768ba018aa = L.circleMarker(
+                [-40.5601, -72.95522],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b8600ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_9358caec5c0789f0636c195028ceb391);
+        
+    
+        var popup_4dd8850b1dc84687b5cea7d80c60bd46 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_51d1094c120e3b3b6d1179fcb6de2163 = $(`<div id="html_51d1094c120e3b3b6d1179fcb6de2163" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.0902802942749863</div>`)[0];
+                popup_4dd8850b1dc84687b5cea7d80c60bd46.setContent(html_51d1094c120e3b3b6d1179fcb6de2163);
+            
+        
+
+        circle_marker_83fb7f6da35989320e14dd768ba018aa.bindPopup(popup_4dd8850b1dc84687b5cea7d80c60bd46)
+        ;
+
+        
+    
+    
+            var circle_marker_833d547d0e76e788155ee5505dd4cb9a = L.circleMarker(
+                [-40.56503869821234, -73.12693603348824],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#cce600ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_9358caec5c0789f0636c195028ceb391);
+        
+    
+        var popup_bae3f4a02650795bb4023772cc9ee6c3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a0bad9c70d8d8e4ce1ff596d8c941bf4 = $(`<div id="html_a0bad9c70d8d8e4ce1ff596d8c941bf4" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 1.6</div>`)[0];
+                popup_bae3f4a02650795bb4023772cc9ee6c3.setContent(html_a0bad9c70d8d8e4ce1ff596d8c941bf4);
+            
+        
+
+        circle_marker_833d547d0e76e788155ee5505dd4cb9a.bindPopup(popup_bae3f4a02650795bb4023772cc9ee6c3)
+        ;
+
+        
+    
+    
+            var circle_marker_437515643c154da3e0e9034004958f67 = L.circleMarker(
+                [-40.581738, -73.985],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#108800ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_9358caec5c0789f0636c195028ceb391);
+        
+    
+        var popup_ac58dd4c48d1a0394cf7524fa8adc0fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_878ceb3b549254da7ec0176473aa9c67 = $(`<div id="html_878ceb3b549254da7ec0176473aa9c67" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.12716</div>`)[0];
+                popup_ac58dd4c48d1a0394cf7524fa8adc0fd.setContent(html_878ceb3b549254da7ec0176473aa9c67);
+            
+        
+
+        circle_marker_437515643c154da3e0e9034004958f67.bindPopup(popup_ac58dd4c48d1a0394cf7524fa8adc0fd)
+        ;
+
+        
+    
+    
+            var circle_marker_5a325d98b6633268366b1ab9a25dcd3b = L.circleMarker(
+                [-40.6202567813123, -72.4724130809509],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#289400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_9358caec5c0789f0636c195028ceb391);
+        
+    
+        var popup_423d50d07242304315947a06a64c8e0e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_acc40a58d603592232ae4f625cc9fe82 = $(`<div id="html_acc40a58d603592232ae4f625cc9fe82" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.32</div>`)[0];
+                popup_423d50d07242304315947a06a64c8e0e.setContent(html_acc40a58d603592232ae4f625cc9fe82);
+            
+        
+
+        circle_marker_5a325d98b6633268366b1ab9a25dcd3b.bindPopup(popup_423d50d07242304315947a06a64c8e0e)
+        ;
+
+        
+    
+    
+            var circle_marker_fad9b74605270a4c05c1f9b086d8f12c = L.circleMarker(
+                [-40.5835309, -72.9743342],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1b8e00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_9358caec5c0789f0636c195028ceb391);
+        
+    
+        var popup_c814e388b1392258ca5d8c401c31d0b2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3bf7c775397df87180c0d7fe286b1dd4 = $(`<div id="html_3bf7c775397df87180c0d7fe286b1dd4" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.2144642857142857</div>`)[0];
+                popup_c814e388b1392258ca5d8c401c31d0b2.setContent(html_3bf7c775397df87180c0d7fe286b1dd4);
+            
+        
+
+        circle_marker_fad9b74605270a4c05c1f9b086d8f12c.bindPopup(popup_c814e388b1392258ca5d8c401c31d0b2)
+        ;
+
+        
+    
+    
+            var circle_marker_a0395311529606ac89e19a5746d53182 = L.circleMarker(
+                [-40.6147134, -73.0922278],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_9358caec5c0789f0636c195028ceb391);
+        
+    
+        var popup_7b20011e8322d1d5cc872289ba620134 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2bc6a266cf6c7d71cde2ac6b91cfada0 = $(`<div id="html_2bc6a266cf6c7d71cde2ac6b91cfada0" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 6.666666666666667e-05</div>`)[0];
+                popup_7b20011e8322d1d5cc872289ba620134.setContent(html_2bc6a266cf6c7d71cde2ac6b91cfada0);
+            
+        
+
+        circle_marker_a0395311529606ac89e19a5746d53182.bindPopup(popup_7b20011e8322d1d5cc872289ba620134)
+        ;
+
+        
+    
+    
+            var circle_marker_0accd7bcaa953f9c1c4851abace3be0c = L.circleMarker(
+                [-40.5733223, -73.1359011],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#038200ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_9358caec5c0789f0636c195028ceb391);
+        
+    
+        var popup_7c9e9fbd6548116880abbd8dec6b934e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6239efff6f90a9d62ffd6ec06a30c8ef = $(`<div id="html_6239efff6f90a9d62ffd6ec06a30c8ef" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.0299375</div>`)[0];
+                popup_7c9e9fbd6548116880abbd8dec6b934e.setContent(html_6239efff6f90a9d62ffd6ec06a30c8ef);
+            
+        
+
+        circle_marker_0accd7bcaa953f9c1c4851abace3be0c.bindPopup(popup_7c9e9fbd6548116880abbd8dec6b934e)
+        ;
+
+        
+    
+    
+            var circle_marker_383b8c14b556f6d5432f999f2c27d504 = L.circleMarker(
+                [-40.59730856897708, -72.97899108945312],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#63b200ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_9358caec5c0789f0636c195028ceb391);
+        
+    
+        var popup_f6157adc063d22fccf9980e8dc3873fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cef9c3a0b3c2e5c9846926ee9675d739 = $(`<div id="html_cef9c3a0b3c2e5c9846926ee9675d739" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.7787804878048781</div>`)[0];
+                popup_f6157adc063d22fccf9980e8dc3873fb.setContent(html_cef9c3a0b3c2e5c9846926ee9675d739);
+            
+        
+
+        circle_marker_383b8c14b556f6d5432f999f2c27d504.bindPopup(popup_f6157adc063d22fccf9980e8dc3873fb)
+        ;
+
+        
+    
+    
+            var circle_marker_50ebfa3dbeb010f94aba55ad6062f5d6 = L.circleMarker(
+                [-40.5819627, -73.1731487],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_9358caec5c0789f0636c195028ceb391);
+        
+    
+        var popup_da7c430217958ecd67bada843b7c3aca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3bf40c07620a3ca23f31dd2829ae638b = $(`<div id="html_3bf40c07620a3ca23f31dd2829ae638b" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.0006139133515737</div>`)[0];
+                popup_da7c430217958ecd67bada843b7c3aca.setContent(html_3bf40c07620a3ca23f31dd2829ae638b);
+            
+        
+
+        circle_marker_50ebfa3dbeb010f94aba55ad6062f5d6.bindPopup(popup_da7c430217958ecd67bada843b7c3aca)
+        ;
+
+        
+    
+    
+            var circle_marker_73cc216a059a363821c883052d5f13c5 = L.circleMarker(
+                [-40.603, -73.224],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#329900ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_9358caec5c0789f0636c195028ceb391);
+        
+    
+        var popup_01e4781d5ee04f562a75d21267fd03e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a9dabbf82ea23ae3dff164ca3cd60811 = $(`<div id="html_a9dabbf82ea23ae3dff164ca3cd60811" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.3966666666666666</div>`)[0];
+                popup_01e4781d5ee04f562a75d21267fd03e2.setContent(html_a9dabbf82ea23ae3dff164ca3cd60811);
+            
+        
+
+        circle_marker_73cc216a059a363821c883052d5f13c5.bindPopup(popup_01e4781d5ee04f562a75d21267fd03e2)
+        ;
+
+        
+    
+    
+            var circle_marker_55309d9001e822cb0c6ad8851372c0ed = L.circleMarker(
+                [-40.56885, -73.10357],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a8d400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_9358caec5c0789f0636c195028ceb391);
+        
+    
+        var popup_8c58ef633e1bdf21557c2830682e8f9f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_abffd6d1659fcd08f3c314385bcdc419 = $(`<div id="html_abffd6d1659fcd08f3c314385bcdc419" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 1.3128448688553505</div>`)[0];
+                popup_8c58ef633e1bdf21557c2830682e8f9f.setContent(html_abffd6d1659fcd08f3c314385bcdc419);
+            
+        
+
+        circle_marker_55309d9001e822cb0c6ad8851372c0ed.bindPopup(popup_8c58ef633e1bdf21557c2830682e8f9f)
+        ;
+
+        
+    
+    
+            var circle_marker_fbb816ac988a7e6f549510fb1cd3b2b3 = L.circleMarker(
+                [-40.59115606, -73.00859025],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2d9700ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_9358caec5c0789f0636c195028ceb391);
+        
+    
+        var popup_5c5e041b0b314f9319780db0e9a77bf1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ee0f00d0e4dfa0acf0607930fc0e0bb = $(`<div id="html_6ee0f00d0e4dfa0acf0607930fc0e0bb" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.3586109007943845</div>`)[0];
+                popup_5c5e041b0b314f9319780db0e9a77bf1.setContent(html_6ee0f00d0e4dfa0acf0607930fc0e0bb);
+            
+        
+
+        circle_marker_fbb816ac988a7e6f549510fb1cd3b2b3.bindPopup(popup_5c5e041b0b314f9319780db0e9a77bf1)
+        ;
+
+        
+    
+    
+            var circle_marker_3d960557aeb7178f1346f771f6b0226c = L.circleMarker(
+                [-40.5761897, -73.1149468],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3d9f00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_9358caec5c0789f0636c195028ceb391);
+        
+    
+        var popup_1fa9b73d03d2c4c468334252390d6a26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4bb3e517e1aa25632f18d5e462207efb = $(`<div id="html_4bb3e517e1aa25632f18d5e462207efb" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.480462962962963</div>`)[0];
+                popup_1fa9b73d03d2c4c468334252390d6a26.setContent(html_4bb3e517e1aa25632f18d5e462207efb);
+            
+        
+
+        circle_marker_3d960557aeb7178f1346f771f6b0226c.bindPopup(popup_1fa9b73d03d2c4c468334252390d6a26)
+        ;
+
+        
+    
+    
+            var circle_marker_5f344e61111195499f9ccbbe4229df83 = L.circleMarker(
+                [-40.5973086, -72.9789911],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#63b200ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_9358caec5c0789f0636c195028ceb391);
+        
+    
+        var popup_722a5bcc1c002994c9bd3223f65ad4c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_350735e40080a69aa1e7c5d9144845b5 = $(`<div id="html_350735e40080a69aa1e7c5d9144845b5" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.77844599293498</div>`)[0];
+                popup_722a5bcc1c002994c9bd3223f65ad4c7.setContent(html_350735e40080a69aa1e7c5d9144845b5);
+            
+        
+
+        circle_marker_5f344e61111195499f9ccbbe4229df83.bindPopup(popup_722a5bcc1c002994c9bd3223f65ad4c7)
+        ;
+
+        
+    
+    
+            var circle_marker_546c91f6b72bce753fd14fef53f659fc = L.circleMarker(
+                [-40.5733223, -73.1359011],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#309800ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 0.5}
+            ).addTo(feature_group_sub_group_9358caec5c0789f0636c195028ceb391);
+        
+    
+        var popup_c89b2c3984331a245bae237bc4fafe2f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5cff5dd5c83e6ca1b25ba0f9d45d78e6 = $(`<div id="html_5cff5dd5c83e6ca1b25ba0f9d45d78e6" style="width: 100.0%; height: 100.0%;">Comuna: Osorno<br>Semestre: 2024S2<br>Rango de Superficie: 10001-100000 m2<br>Precio UF/m²: 0.3795918367346939</div>`)[0];
+                popup_c89b2c3984331a245bae237bc4fafe2f.setContent(html_5cff5dd5c83e6ca1b25ba0f9d45d78e6);
+            
+        
+
+        circle_marker_546c91f6b72bce753fd14fef53f659fc.bindPopup(popup_c89b2c3984331a245bae237bc4fafe2f)
+        ;
+
+        
+    
+    
+            feature_group_sub_group_9358caec5c0789f0636c195028ceb391.addTo(map_db7e550470395e364cdfef426a9a17d7);
+        
+    
+    var color_map_ae9608078d8b8018a192047db3658488 = {};
+
+    
+    color_map_ae9608078d8b8018a192047db3658488.color = d3.scale.threshold()
+              .domain([0.0, 0.03206412825651302, 0.06412825651302605, 0.09619238476953908, 0.1282565130260521, 0.16032064128256512, 0.19238476953907815, 0.22444889779559118, 0.2565130260521042, 0.28857715430861725, 0.32064128256513025, 0.3527054108216433, 0.3847695390781563, 0.4168336673346693, 0.44889779559118237, 0.48096192384769537, 0.5130260521042084, 0.5450901803607214, 0.5771543086172345, 0.6092184368737475, 0.6412825651302605, 0.6733466933867736, 0.7054108216432866, 0.7374749498997996, 0.7695390781563126, 0.8016032064128257, 0.8336673346693386, 0.8657314629258517, 0.8977955911823647, 0.9298597194388778, 0.9619238476953907, 0.9939879759519038, 1.0260521042084167, 1.0581162324649298, 1.0901803607214429, 1.122244488977956, 1.154308617234469, 1.186372745490982, 1.218436873747495, 1.250501002004008, 1.282565130260521, 1.314629258517034, 1.346693386773547, 1.3787575150300602, 1.4108216432865732, 1.4428857715430863, 1.4749498997995991, 1.5070140280561122, 1.5390781563126252, 1.5711422845691383, 1.6032064128256514, 1.6352705410821644, 1.6673346693386772, 1.6993987975951903, 1.7314629258517034, 1.7635270541082164, 1.7955911823647295, 1.8276553106212425, 1.8597194388777556, 1.8917835671342684, 1.9238476953907815, 1.9559118236472945, 1.9879759519038076, 2.0200400801603204, 2.0521042084168335, 2.0841683366733466, 2.1162324649298596, 2.1482965931863727, 2.1803607214428857, 2.212424849699399, 2.244488977955912, 2.276553106212425, 2.308617234468938, 2.340681362725451, 2.372745490981964, 2.404809619238477, 2.43687374749499, 2.468937875751503, 2.501002004008016, 2.533066132264529, 2.565130260521042, 2.597194388777555, 2.629258517034068, 2.661322645290581, 2.693386773547094, 2.7254509018036073, 2.7575150300601203, 2.7895791583166334, 2.8216432865731464, 2.8537074148296595, 2.8857715430861726, 2.917835671342685, 2.9498997995991982, 2.9819639278557113, 3.0140280561122244, 3.0460921843687374, 3.0781563126252505, 3.1102204408817635, 3.1422845691382766, 3.1743486973947896, 3.2064128256513027, 3.2384769539078158, 3.270541082164329, 3.302605210420842, 3.3346693386773545, 3.3667334669338675, 3.3987975951903806, 3.4308617234468937, 3.4629258517034067, 3.49498997995992, 3.527054108216433, 3.559118236472946, 3.591182364729459, 3.623246492985972, 3.655310621242485, 3.687374749498998, 3.719438877755511, 3.7515030060120242, 3.783567134268537, 3.81563126252505, 3.847695390781563, 3.879759519038076, 3.911823647294589, 3.943887775551102, 3.975951903807615, 4.008016032064128, 4.040080160320641, 4.072144288577154, 4.104208416833667, 4.13627254509018, 4.168336673346693, 4.200400801603206, 4.232464929859719, 4.264529058116232, 4.296593186372745, 4.328657314629258, 4.3607214428857715, 4.3927855711422845, 4.424849699398798, 4.456913827655311, 4.488977955911824, 4.521042084168337, 4.55310621242485, 4.585170340681363, 4.617234468937876, 4.649298597194389, 4.681362725450902, 4.713426853707415, 4.745490981963928, 4.777555110220441, 4.809619238476954, 4.841683366733467, 4.87374749498998, 4.905811623246493, 4.937875751503006, 4.969939879759519, 5.002004008016032, 5.034068136272545, 5.066132264529058, 5.098196392785571, 5.130260521042084, 5.162324649298597, 5.19438877755511, 5.226452905811623, 5.258517034068136, 5.290581162324649, 5.322645290581162, 5.354709418837675, 5.386773547094188, 5.4188376753507015, 5.4509018036072145, 5.482965931863728, 5.515030060120241, 5.547094188376754, 5.579158316633267, 5.61122244488978, 5.643286573146293, 5.675350701402806, 5.707414829659319, 5.739478957915832, 5.771543086172345, 5.803607214428857, 5.83567134268537, 5.867735470941883, 5.8997995991983965, 5.9318637274549095, 5.963927855711423, 5.995991983967936, 6.028056112224449, 6.060120240480962, 6.092184368737475, 6.124248496993988, 6.156312625250501, 6.188376753507014, 6.220440881763527, 6.25250501002004, 6.284569138276553, 6.316633266533066, 6.348697394789579, 6.380761523046092, 6.412825651302605, 6.4448897795591185, 6.4769539078156315, 6.509018036072145, 6.541082164328658, 6.573146292585171, 6.605210420841684, 6.637274549098197, 6.669338677354709, 6.701402805611222, 6.733466933867735, 6.765531062124248, 6.797595190380761, 6.829659318637274, 6.861723446893787, 6.8937875751503, 6.925851703406813, 6.9579158316633265, 6.98997995991984, 7.022044088176353, 7.054108216432866, 7.086172344689379, 7.118236472945892, 7.150300601202405, 7.182364729458918, 7.214428857715431, 7.246492985971944, 7.278557114228457, 7.31062124248497, 7.342685370741483, 7.374749498997996, 7.406813627254509, 7.438877755511022, 7.470941883767535, 7.5030060120240485, 7.5350701402805615, 7.567134268537074, 7.599198396793587, 7.6312625250501, 7.663326653306613, 7.695390781563126, 7.727454909819639, 7.759519038076152, 7.791583166332665, 7.823647294589178, 7.855711422845691, 7.887775551102204, 7.919839679358717, 7.95190380761523, 7.9839679358717435, 8.016032064128256, 8.048096192384769, 8.080160320641282, 8.112224448897795, 8.144288577154308, 8.176352705410821, 8.208416833667334, 8.240480961923847, 8.27254509018036, 8.304609218436873, 8.336673346693386, 8.3687374749499, 8.400801603206412, 8.432865731462925, 8.464929859719438, 8.496993987975952, 8.529058116232465, 8.561122244488978, 8.59318637274549, 8.625250501002004, 8.657314629258517, 8.68937875751503, 8.721442885771543, 8.753507014028056, 8.785571142284569, 8.817635270541082, 8.849699398797595, 8.881763527054108, 8.913827655310621, 8.945891783567134, 8.977955911823647, 9.01002004008016, 9.042084168336673, 9.074148296593187, 9.1062124248497, 9.138276553106213, 9.170340681362726, 9.202404809619239, 9.234468937875752, 9.266533066132265, 9.298597194388778, 9.330661322645291, 9.362725450901804, 9.394789579158317, 9.42685370741483, 9.458917835671343, 9.490981963927856, 9.52304609218437, 9.555110220440882, 9.587174348697395, 9.619238476953909, 9.651302605210422, 9.683366733466935, 9.715430861723448, 9.74749498997996, 9.779559118236472, 9.811623246492985, 9.843687374749498, 9.875751503006011, 9.907815631262524, 9.939879759519037, 9.97194388777555, 10.004008016032063, 10.036072144288577, 10.06813627254509, 10.100200400801603, 10.132264529058116, 10.164328657314629, 10.196392785571142, 10.228456913827655, 10.260521042084168, 10.292585170340681, 10.324649298597194, 10.356713426853707, 10.38877755511022, 10.420841683366733, 10.452905811623246, 10.48496993987976, 10.517034068136272, 10.549098196392785, 10.581162324649299, 10.613226452905812, 10.645290581162325, 10.677354709418838, 10.70941883767535, 10.741482965931864, 10.773547094188377, 10.80561122244489, 10.837675350701403, 10.869739478957916, 10.901803607214429, 10.933867735470942, 10.965931863727455, 10.997995991983968, 11.030060120240481, 11.062124248496994, 11.094188376753507, 11.12625250501002, 11.158316633266534, 11.190380761523047, 11.22244488977956, 11.254509018036073, 11.286573146292586, 11.318637274549099, 11.350701402805612, 11.382765531062125, 11.414829659318638, 11.446893787575151, 11.478957915831664, 11.511022044088177, 11.54308617234469, 11.575150300601202, 11.607214428857715, 11.639278557114228, 11.67134268537074, 11.703406813627254, 11.735470941883767, 11.76753507014028, 11.799599198396793, 11.831663326653306, 11.863727454909819, 11.895791583166332, 11.927855711422845, 11.959919839679358, 11.991983967935871, 12.024048096192384, 12.056112224448897, 12.08817635270541, 12.120240480961924, 12.152304609218437, 12.18436873747495, 12.216432865731463, 12.248496993987976, 12.280561122244489, 12.312625250501002, 12.344689378757515, 12.376753507014028, 12.408817635270541, 12.440881763527054, 12.472945891783567, 12.50501002004008, 12.537074148296593, 12.569138276553106, 12.60120240480962, 12.633266533066132, 12.665330661322646, 12.697394789579159, 12.729458917835672, 12.761523046092185, 12.793587174348698, 12.82565130260521, 12.857715430861724, 12.889779559118237, 12.92184368737475, 12.953907815631263, 12.985971943887776, 13.01803607214429, 13.050100200400802, 13.082164328657315, 13.114228456913828, 13.146292585170341, 13.178356713426854, 13.210420841683367, 13.24248496993988, 13.274549098196394, 13.306613226452907, 13.338677354709418, 13.370741482965931, 13.402805611222444, 13.434869739478957, 13.46693386773547, 13.498997995991983, 13.531062124248496, 13.56312625250501, 13.595190380761522, 13.627254509018035, 13.659318637274549, 13.691382765531062, 13.723446893787575, 13.755511022044088, 13.7875751503006, 13.819639278557114, 13.851703406813627, 13.88376753507014, 13.915831663326653, 13.947895791583166, 13.97995991983968, 14.012024048096192, 14.044088176352705, 14.076152304609218, 14.108216432865731, 14.140280561122244, 14.172344689378757, 14.20440881763527, 14.236472945891784, 14.268537074148297, 14.30060120240481, 14.332665330661323, 14.364729458917836, 14.396793587174349, 14.428857715430862, 14.460921843687375, 14.492985971943888, 14.525050100200401, 14.557114228456914, 14.589178356713427, 14.62124248496994, 14.653306613226453, 14.685370741482966, 14.71743486973948, 14.749498997995993, 14.781563126252506, 14.813627254509019, 14.845691382765532, 14.877755511022045, 14.909819639278558, 14.94188376753507, 14.973947895791584, 15.006012024048097, 15.03807615230461, 15.070140280561123, 15.102204408817636, 15.134268537074147, 15.16633266533066, 15.198396793587174, 15.230460921843687, 15.2625250501002, 15.294589178356713, 15.326653306613226, 15.358717434869739, 15.390781563126252, 15.422845691382765, 15.454909819639278, 15.486973947895791, 15.519038076152304, 15.551102204408817, 15.58316633266533, 15.615230460921843, 15.647294589178356, 15.67935871743487, 15.711422845691382, 15.743486973947896, 15.775551102204409, 15.807615230460922, 15.839679358717435, 15.871743486973948, 15.90380761523046, 15.935871743486974, 15.967935871743487, 16.0])
+              .range(['#0000ffff', '#0000ffff', '#0000ffff', '#0000ffff', '#0100feff', '#0100feff', '#0100feff', '#0100feff', '#0200fdff', '#0200fdff', '#0200fdff', '#0200fdff', '#0300fcff', '#0300fcff', '#0300fcff', '#0300fcff', '#0400fbff', '#0400fbff', '#0400fbff', '#0400fbff', '#0500faff', '#0500faff', '#0500faff', '#0500faff', '#0600f9ff', '#0600f9ff', '#0600f9ff', '#0600f9ff', '#0700f8ff', '#0700f8ff', '#0700f8ff', '#0700f8ff', '#0800f7ff', '#0800f7ff', '#0800f7ff', '#0900f7ff', '#0900f6ff', '#0900f6ff', '#0900f6ff', '#0a00f6ff', '#0a00f5ff', '#0a00f5ff', '#0a00f5ff', '#0b00f5ff', '#0b00f4ff', '#0b00f4ff', '#0b00f4ff', '#0c00f3ff', '#0c00f3ff', '#0c00f3ff', '#0c00f3ff', '#0d00f2ff', '#0d00f2ff', '#0d00f2ff', '#0d00f2ff', '#0e00f1ff', '#0e00f1ff', '#0e00f1ff', '#0e00f1ff', '#0f00f0ff', '#0f00f0ff', '#0f00f0ff', '#0f00f0ff', '#1000efff', '#1000efff', '#1000efff', '#1000efff', '#1100eeff', '#1100eeff', '#1100eeff', '#1200eeff', '#1200edff', '#1200edff', '#1200edff', '#1300edff', '#1300ecff', '#1300ecff', '#1300ecff', '#1400ecff', '#1400ebff', '#1400ebff', '#1400ebff', '#1500ebff', '#1500eaff', '#1500eaff', '#1500eaff', '#1600eaff', '#1600e9ff', '#1600e9ff', '#1600e9ff', '#1700e9ff', '#1700e8ff', '#1700e8ff', '#1700e8ff', '#1800e7ff', '#1800e7ff', '#1800e7ff', '#1800e7ff', '#1900e6ff', '#1900e6ff', '#1900e6ff', '#1a00e6ff', '#1a00e5ff', '#1a00e5ff', '#1a00e5ff', '#1b00e5ff', '#1b00e4ff', '#1b00e4ff', '#1b00e4ff', '#1c00e4ff', '#1c00e3ff', '#1c00e3ff', '#1c00e3ff', '#1d00e3ff', '#1d00e2ff', '#1d00e2ff', '#1d00e2ff', '#1e00e2ff', '#1e00e1ff', '#1e00e1ff', '#1e00e1ff', '#1f00e1ff', '#1f00e0ff', '#1f00e0ff', '#1f00e0ff', '#2000e0ff', '#2000dfff', '#2000dfff', '#2000dfff', '#2100dfff', '#2100deff', '#2100deff', '#2100deff', '#2200deff', '#2200ddff', '#2200ddff', '#2300ddff', '#2300dcff', '#2300dcff', '#2300dcff', '#2400dcff', '#2400dbff', '#2400dbff', '#2400dbff', '#2500dbff', '#2500daff', '#2500daff', '#2500daff', '#2600daff', '#2600d9ff', '#2600d9ff', '#2600d9ff', '#2700d9ff', '#2700d8ff', '#2700d8ff', '#2700d8ff', '#2800d8ff', '#2800d7ff', '#2800d7ff', '#2800d7ff', '#2900d7ff', '#2900d6ff', '#2900d6ff', '#2900d6ff', '#2a00d6ff', '#2a00d5ff', '#2a00d5ff', '#2b00d5ff', '#2b00d5ff', '#2b00d4ff', '#2b00d4ff', '#2c00d4ff', '#2c00d4ff', '#2c00d3ff', '#2c00d3ff', '#2d00d3ff', '#2d00d3ff', '#2d00d2ff', '#2d00d2ff', '#2e00d2ff', '#2e00d2ff', '#2e00d1ff', '#2e00d1ff', '#2f00d1ff', '#2f00d0ff', '#2f00d0ff', '#2f00d0ff', '#3000d0ff', '#3000cfff', '#3000cfff', '#3000cfff', '#3100cfff', '#3100ceff', '#3100ceff', '#3100ceff', '#3200ceff', '#3200cdff', '#3200cdff', '#3200cdff', '#3300cdff', '#3300ccff', '#3300ccff', '#3400ccff', '#3400ccff', '#3400cbff', '#3400cbff', '#3500cbff', '#3500cbff', '#3500caff', '#3500caff', '#3600caff', '#3600caff', '#3600c9ff', '#3600c9ff', '#3700c9ff', '#3700c9ff', '#3700c8ff', '#3700c8ff', '#3800c8ff', '#3800c8ff', '#3800c7ff', '#3800c7ff', '#3900c7ff', '#3900c7ff', '#3900c6ff', '#3900c6ff', '#3a00c6ff', '#3a00c5ff', '#3a00c5ff', '#3a00c5ff', '#3b00c5ff', '#3b00c4ff', '#3b00c4ff', '#3c00c4ff', '#3c00c4ff', '#3c00c3ff', '#3c00c3ff', '#3d00c3ff', '#3d00c3ff', '#3d00c2ff', '#3d00c2ff', '#3e00c2ff', '#3e00c2ff', '#3e00c1ff', '#3e00c1ff', '#3f00c1ff', '#3f00c1ff', '#3f00c0ff', '#3f00c0ff', '#4000c0ff', '#4000c0ff', '#4000bfff', '#4000bfff', '#4100bfff', '#4100bfff', '#4100beff', '#4100beff', '#4200beff', '#4200beff', '#4200bdff', '#4200bdff', '#4300bdff', '#4300bdff', '#4300bcff', '#4300bcff', '#4400bcff', '#4400bcff', '#4400bbff', '#4500bbff', '#4500bbff', '#4500bbff', '#4500baff', '#4600baff', '#4600baff', '#4600b9ff', '#4600b9ff', '#4700b9ff', '#4700b9ff', '#4700b8ff', '#4700b8ff', '#4800b8ff', '#4800b8ff', '#4800b7ff', '#4800b7ff', '#4900b7ff', '#4900b7ff', '#4900b6ff', '#4900b6ff', '#4a00b6ff', '#4a00b6ff', '#4a00b5ff', '#4a00b5ff', '#4b00b5ff', '#4b00b5ff', '#4b00b4ff', '#4b00b4ff', '#4c00b4ff', '#4c00b4ff', '#4c00b3ff', '#4c00b3ff', '#4d00b3ff', '#4d00b3ff', '#4d00b2ff', '#4e00b2ff', '#4e00b2ff', '#4e00b2ff', '#4e00b1ff', '#4f00b1ff', '#4f00b1ff', '#4f00b1ff', '#4f00b0ff', '#5000b0ff', '#5000b0ff', '#5000b0ff', '#5000afff', '#5100afff', '#5100afff', '#5100afff', '#5100aeff', '#5200aeff', '#5200aeff', '#5200adff', '#5200adff', '#5300adff', '#5300adff', '#5300acff', '#5300acff', '#5400acff', '#5400acff', '#5400abff', '#5400abff', '#5500abff', '#5500abff', '#5500aaff', '#5600aaff', '#5600aaff', '#5600aaff', '#5600a9ff', '#5700a9ff', '#5700a9ff', '#5700a9ff', '#5700a8ff', '#5800a8ff', '#5800a8ff', '#5800a8ff', '#5800a7ff', '#5900a7ff', '#5900a7ff', '#5900a7ff', '#5900a6ff', '#5a00a6ff', '#5a00a6ff', '#5a00a6ff', '#5a00a5ff', '#5b00a5ff', '#5b00a5ff', '#5b00a5ff', '#5b00a4ff', '#5c00a4ff', '#5c00a4ff', '#5c00a4ff', '#5c00a3ff', '#5d00a3ff', '#5d00a3ff', '#5d00a2ff', '#5d00a2ff', '#5e00a2ff', '#5e00a2ff', '#5e00a1ff', '#5f00a1ff', '#5f00a1ff', '#5f00a1ff', '#5f00a0ff', '#6000a0ff', '#6000a0ff', '#6000a0ff', '#60009fff', '#61009fff', '#61009fff', '#61009fff', '#61009eff', '#62009eff', '#62009eff', '#62009eff', '#62009dff', '#63009dff', '#63009dff', '#63009dff', '#63009cff', '#64009cff', '#64009cff', '#64009cff', '#64009bff', '#65009bff', '#65009bff', '#65009bff', '#65009aff', '#66009aff', '#66009aff', '#66009aff', '#670099ff', '#670099ff', '#670099ff', '#670099ff', '#680098ff', '#680098ff', '#680098ff', '#680098ff', '#690097ff', '#690097ff', '#690097ff', '#690096ff', '#6a0096ff', '#6a0096ff', '#6a0096ff', '#6a0095ff', '#6b0095ff', '#6b0095ff', '#6b0095ff', '#6b0094ff', '#6c0094ff', '#6c0094ff', '#6c0094ff', '#6c0093ff', '#6d0093ff', '#6d0093ff', '#6d0093ff', '#6d0092ff', '#6e0092ff', '#6e0092ff', '#6e0092ff', '#6e0091ff', '#6f0091ff', '#6f0091ff', '#6f0091ff', '#700090ff', '#700090ff', '#700090ff', '#700090ff', '#71008fff', '#71008fff', '#71008fff', '#71008fff', '#72008eff', '#72008eff', '#72008eff', '#72008eff', '#73008dff', '#73008dff', '#73008dff', '#73008dff', '#74008cff', '#74008cff', '#74008cff', '#74008bff', '#75008bff', '#75008bff', '#75008bff', '#75008aff', '#76008aff', '#76008aff', '#76008aff', '#760089ff', '#770089ff', '#770089ff', '#770089ff', '#780088ff', '#780088ff', '#780088ff', '#780088ff', '#790087ff', '#790087ff', '#790087ff', '#790087ff', '#7a0086ff', '#7a0086ff', '#7a0086ff', '#7a0086ff', '#7b0085ff', '#7b0085ff', '#7b0085ff', '#7b0085ff', '#7c0084ff', '#7c0084ff', '#7c0084ff', '#7c0084ff', '#7d0083ff', '#7d0083ff', '#7d0083ff', '#7d0083ff', '#7e0082ff', '#7e0082ff', '#7e0082ff', '#7e0082ff', '#7f0081ff', '#7f0081ff', '#7f0081ff', '#7f0081ff', '#800080ff', '#800080ff']);
+    
+
+    color_map_ae9608078d8b8018a192047db3658488.x = d3.scale.linear()
+              .domain([0.0, 16.0])
+              .range([0, 450 - 50]);
+
+    color_map_ae9608078d8b8018a192047db3658488.legend = L.control({position: 'topright'});
+    color_map_ae9608078d8b8018a192047db3658488.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_ae9608078d8b8018a192047db3658488.legend.addTo(map_db7e550470395e364cdfef426a9a17d7);
+
+    color_map_ae9608078d8b8018a192047db3658488.xAxis = d3.svg.axis()
+        .scale(color_map_ae9608078d8b8018a192047db3658488.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([0.0, 16.0]);
+
+    color_map_ae9608078d8b8018a192047db3658488.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_ae9608078d8b8018a192047db3658488.g = color_map_ae9608078d8b8018a192047db3658488.svg.append("g")
+        .attr("class", "key")
+        .attr("transform", "translate(25,16)");
+
+    color_map_ae9608078d8b8018a192047db3658488.g.selectAll("rect")
+        .data(color_map_ae9608078d8b8018a192047db3658488.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_ae9608078d8b8018a192047db3658488.x(color_map_ae9608078d8b8018a192047db3658488.color.domain()[i - 1]) : color_map_ae9608078d8b8018a192047db3658488.x.range()[0],
+            x1: i < color_map_ae9608078d8b8018a192047db3658488.color.domain().length ? color_map_ae9608078d8b8018a192047db3658488.x(color_map_ae9608078d8b8018a192047db3658488.color.domain()[i]) : color_map_ae9608078d8b8018a192047db3658488.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_ae9608078d8b8018a192047db3658488.g.call(color_map_ae9608078d8b8018a192047db3658488.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .text("UF/m\u00b2 (500-4999 m2)");
+    
+    var color_map_13e823edc91b817989f618bf8dd5fc74 = {};
+
+    
+    color_map_13e823edc91b817989f618bf8dd5fc74.color = d3.scale.threshold()
+              .domain([0.0, 0.004008016032064128, 0.008016032064128256, 0.012024048096192385, 0.01603206412825651, 0.02004008016032064, 0.02404809619238477, 0.028056112224448898, 0.03206412825651302, 0.036072144288577156, 0.04008016032064128, 0.04408817635270541, 0.04809619238476954, 0.052104208416833664, 0.056112224448897796, 0.06012024048096192, 0.06412825651302605, 0.06813627254509018, 0.07214428857715431, 0.07615230460921844, 0.08016032064128256, 0.0841683366733467, 0.08817635270541083, 0.09218436873747494, 0.09619238476953908, 0.10020040080160321, 0.10420841683366733, 0.10821643286573146, 0.11222444889779559, 0.11623246492985972, 0.12024048096192384, 0.12424849699398798, 0.1282565130260521, 0.13226452905811623, 0.13627254509018036, 0.1402805611222445, 0.14428857715430862, 0.14829659318637275, 0.1523046092184369, 0.156312625250501, 0.16032064128256512, 0.16432865731462926, 0.1683366733466934, 0.17234468937875752, 0.17635270541082165, 0.18036072144288579, 0.1843687374749499, 0.18837675350701402, 0.19238476953907815, 0.1963927855711423, 0.20040080160320642, 0.20440881763527055, 0.20841683366733466, 0.2124248496993988, 0.21643286573146292, 0.22044088176352705, 0.22444889779559118, 0.22845691382765532, 0.23246492985971945, 0.23647294589178355, 0.24048096192384769, 0.24448897795591182, 0.24849699398797595, 0.25250501002004005, 0.2565130260521042, 0.2605210420841683, 0.26452905811623245, 0.2685370741482966, 0.2725450901803607, 0.27655310621242485, 0.280561122244489, 0.2845691382765531, 0.28857715430861725, 0.2925851703406814, 0.2965931863727455, 0.30060120240480964, 0.3046092184368738, 0.30861723446893785, 0.312625250501002, 0.3166332665330661, 0.32064128256513025, 0.3246492985971944, 0.3286573146292585, 0.33266533066132264, 0.3366733466933868, 0.3406813627254509, 0.34468937875751504, 0.3486973947895792, 0.3527054108216433, 0.35671342685370744, 0.36072144288577157, 0.36472945891783565, 0.3687374749498998, 0.3727454909819639, 0.37675350701402804, 0.3807615230460922, 0.3847695390781563, 0.38877755511022044, 0.3927855711422846, 0.3967935871743487, 0.40080160320641284, 0.40480961923847697, 0.4088176352705411, 0.41282565130260523, 0.4168336673346693, 0.42084168336673344, 0.4248496993987976, 0.4288577154308617, 0.43286573146292584, 0.43687374749499, 0.4408817635270541, 0.44488977955911824, 0.44889779559118237, 0.4529058116232465, 0.45691382765531063, 0.46092184368737477, 0.4649298597194389, 0.46893787575150303, 0.4729458917835671, 0.47695390781563124, 0.48096192384769537, 0.4849699398797595, 0.48897795591182364, 0.49298597194388777, 0.4969939879759519, 0.501002004008016, 0.5050100200400801, 0.5090180360721442, 0.5130260521042084, 0.5170340681362725, 0.5210420841683366, 0.5250501002004008, 0.5290581162324649, 0.533066132264529, 0.5370741482965932, 0.5410821643286573, 0.5450901803607214, 0.5490981963927856, 0.5531062124248497, 0.5571142284569138, 0.561122244488978, 0.5651302605210421, 0.5691382765531062, 0.5731462925851704, 0.5771543086172345, 0.5811623246492986, 0.5851703406813628, 0.5891783567134269, 0.593186372745491, 0.5971943887775552, 0.6012024048096193, 0.6052104208416834, 0.6092184368737475, 0.6132264529058116, 0.6172344689378757, 0.6212424849699398, 0.625250501002004, 0.6292585170340681, 0.6332665330661322, 0.6372745490981964, 0.6412825651302605, 0.6452905811623246, 0.6492985971943888, 0.6533066132264529, 0.657314629258517, 0.6613226452905812, 0.6653306613226453, 0.6693386773547094, 0.6733466933867736, 0.6773547094188377, 0.6813627254509018, 0.685370741482966, 0.6893787575150301, 0.6933867735470942, 0.6973947895791583, 0.7014028056112225, 0.7054108216432866, 0.7094188376753507, 0.7134268537074149, 0.717434869739479, 0.7214428857715431, 0.7254509018036072, 0.7294589178356713, 0.7334669338677354, 0.7374749498997996, 0.7414829659318637, 0.7454909819639278, 0.749498997995992, 0.7535070140280561, 0.7575150300601202, 0.7615230460921844, 0.7655310621242485, 0.7695390781563126, 0.7735470941883767, 0.7775551102204409, 0.781563126252505, 0.7855711422845691, 0.7895791583166333, 0.7935871743486974, 0.7975951903807615, 0.8016032064128257, 0.8056112224448898, 0.8096192384769539, 0.8136272545090181, 0.8176352705410822, 0.8216432865731463, 0.8256513026052105, 0.8296593186372746, 0.8336673346693386, 0.8376753507014028, 0.8416833667334669, 0.845691382765531, 0.8496993987975952, 0.8537074148296593, 0.8577154308617234, 0.8617234468937875, 0.8657314629258517, 0.8697394789579158, 0.87374749498998, 0.8777555110220441, 0.8817635270541082, 0.8857715430861723, 0.8897795591182365, 0.8937875751503006, 0.8977955911823647, 0.9018036072144289, 0.905811623246493, 0.9098196392785571, 0.9138276553106213, 0.9178356713426854, 0.9218436873747495, 0.9258517034068137, 0.9298597194388778, 0.9338677354709419, 0.9378757515030061, 0.9418837675350702, 0.9458917835671342, 0.9498997995991983, 0.9539078156312625, 0.9579158316633266, 0.9619238476953907, 0.9659318637274549, 0.969939879759519, 0.9739478957915831, 0.9779559118236473, 0.9819639278557114, 0.9859719438877755, 0.9899799599198397, 0.9939879759519038, 0.9979959919839679, 1.002004008016032, 1.006012024048096, 1.0100200400801602, 1.0140280561122244, 1.0180360721442885, 1.0220440881763526, 1.0260521042084167, 1.0300601202404809, 1.034068136272545, 1.0380761523046091, 1.0420841683366733, 1.0460921843687374, 1.0501002004008015, 1.0541082164328657, 1.0581162324649298, 1.062124248496994, 1.066132264529058, 1.0701402805611222, 1.0741482965931863, 1.0781563126252505, 1.0821643286573146, 1.0861723446893787, 1.0901803607214429, 1.094188376753507, 1.0981963927855711, 1.1022044088176353, 1.1062124248496994, 1.1102204408817635, 1.1142284569138277, 1.1182364729458918, 1.122244488977956, 1.12625250501002, 1.1302605210420842, 1.1342685370741483, 1.1382765531062125, 1.1422845691382766, 1.1462925851703407, 1.1503006012024048, 1.154308617234469, 1.1583166332665331, 1.1623246492985972, 1.1663326653306614, 1.1703406813627255, 1.1743486973947896, 1.1783567134268538, 1.182364729458918, 1.186372745490982, 1.1903807615230462, 1.1943887775551103, 1.1983967935871744, 1.2024048096192386, 1.2064128256513027, 1.2104208416833668, 1.214428857715431, 1.218436873747495, 1.222444889779559, 1.2264529058116231, 1.2304609218436873, 1.2344689378757514, 1.2384769539078155, 1.2424849699398797, 1.2464929859719438, 1.250501002004008, 1.254509018036072, 1.2585170340681362, 1.2625250501002003, 1.2665330661322645, 1.2705410821643286, 1.2745490981963927, 1.2785571142284569, 1.282565130260521, 1.2865731462925851, 1.2905811623246493, 1.2945891783567134, 1.2985971943887775, 1.3026052104208417, 1.3066132264529058, 1.31062124248497, 1.314629258517034, 1.3186372745490982, 1.3226452905811623, 1.3266533066132264, 1.3306613226452906, 1.3346693386773547, 1.3386773547094188, 1.342685370741483, 1.346693386773547, 1.3507014028056112, 1.3547094188376754, 1.3587174348697395, 1.3627254509018036, 1.3667334669338678, 1.370741482965932, 1.374749498997996, 1.3787575150300602, 1.3827655310621243, 1.3867735470941884, 1.3907815631262526, 1.3947895791583167, 1.3987975951903808, 1.402805611222445, 1.406813627254509, 1.4108216432865732, 1.4148296593186374, 1.4188376753507015, 1.4228456913827656, 1.4268537074148298, 1.4308617234468939, 1.434869739478958, 1.4388777555110221, 1.4428857715430863, 1.4468937875751502, 1.4509018036072143, 1.4549098196392785, 1.4589178356713426, 1.4629258517034067, 1.4669338677354709, 1.470941883767535, 1.4749498997995991, 1.4789579158316633, 1.4829659318637274, 1.4869739478957915, 1.4909819639278556, 1.4949899799599198, 1.498997995991984, 1.503006012024048, 1.5070140280561122, 1.5110220440881763, 1.5150300601202404, 1.5190380761523046, 1.5230460921843687, 1.5270541082164328, 1.531062124248497, 1.535070140280561, 1.5390781563126252, 1.5430861723446894, 1.5470941883767535, 1.5511022044088176, 1.5551102204408818, 1.559118236472946, 1.56312625250501, 1.5671342685370742, 1.5711422845691383, 1.5751503006012024, 1.5791583166332666, 1.5831663326653307, 1.5871743486973948, 1.591182364729459, 1.595190380761523, 1.5991983967935872, 1.6032064128256514, 1.6072144288577155, 1.6112224448897796, 1.6152304609218437, 1.6192384769539079, 1.623246492985972, 1.6272545090180361, 1.6312625250501003, 1.6352705410821644, 1.6392785571142285, 1.6432865731462927, 1.6472945891783568, 1.651302605210421, 1.655310621242485, 1.6593186372745492, 1.6633266533066133, 1.6673346693386772, 1.6713426853707414, 1.6753507014028055, 1.6793587174348696, 1.6833667334669338, 1.687374749498998, 1.691382765531062, 1.6953907815631262, 1.6993987975951903, 1.7034068136272544, 1.7074148296593186, 1.7114228456913827, 1.7154308617234468, 1.719438877755511, 1.723446893787575, 1.7274549098196392, 1.7314629258517034, 1.7354709418837675, 1.7394789579158316, 1.7434869739478958, 1.74749498997996, 1.751503006012024, 1.7555110220440882, 1.7595190380761523, 1.7635270541082164, 1.7675350701402806, 1.7715430861723447, 1.7755511022044088, 1.779559118236473, 1.783567134268537, 1.7875751503006012, 1.7915831663326653, 1.7955911823647295, 1.7995991983967936, 1.8036072144288577, 1.8076152304609219, 1.811623246492986, 1.8156312625250501, 1.8196392785571143, 1.8236472945891784, 1.8276553106212425, 1.8316633266533067, 1.8356713426853708, 1.839679358717435, 1.843687374749499, 1.8476953907815632, 1.8517034068136273, 1.8557114228456915, 1.8597194388777556, 1.8637274549098197, 1.8677354709418839, 1.871743486973948, 1.8757515030060121, 1.8797595190380763, 1.8837675350701404, 1.8877755511022045, 1.8917835671342684, 1.8957915831663326, 1.8997995991983967, 1.9038076152304608, 1.907815631262525, 1.911823647294589, 1.9158316633266532, 1.9198396793587174, 1.9238476953907815, 1.9278557114228456, 1.9318637274549098, 1.9358717434869739, 1.939879759519038, 1.9438877755511021, 1.9478957915831663, 1.9519038076152304, 1.9559118236472945, 1.9599198396793587, 1.9639278557114228, 1.967935871743487, 1.971943887775551, 1.9759519038076152, 1.9799599198396793, 1.9839679358717435, 1.9879759519038076, 1.9919839679358717, 1.9959919839679359, 2.0])
+              .range(['#008000ff', '#008000ff', '#018100ff', '#018100ff', '#028100ff', '#028100ff', '#038200ff', '#038200ff', '#048200ff', '#048200ff', '#058300ff', '#058300ff', '#068300ff', '#068300ff', '#078400ff', '#078400ff', '#088400ff', '#088400ff', '#098500ff', '#098500ff', '#0a8500ff', '#0a8500ff', '#0b8600ff', '#0b8600ff', '#0c8600ff', '#0c8600ff', '#0d8700ff', '#0d8700ff', '#0e8700ff', '#0e8700ff', '#0f8800ff', '#0f8800ff', '#108800ff', '#108800ff', '#118900ff', '#118900ff', '#128900ff', '#128900ff', '#138a00ff', '#148a00ff', '#148a00ff', '#158a00ff', '#158b00ff', '#168b00ff', '#168b00ff', '#178b00ff', '#178c00ff', '#188c00ff', '#188c00ff', '#198d00ff', '#198d00ff', '#1a8d00ff', '#1a8d00ff', '#1b8e00ff', '#1b8e00ff', '#1c8e00ff', '#1c8e00ff', '#1d8f00ff', '#1d8f00ff', '#1e8f00ff', '#1e8f00ff', '#1f9000ff', '#1f9000ff', '#209000ff', '#209000ff', '#219100ff', '#219100ff', '#229100ff', '#229100ff', '#239200ff', '#239200ff', '#249200ff', '#249200ff', '#259300ff', '#259300ff', '#269300ff', '#269300ff', '#279400ff', '#289400ff', '#289400ff', '#299400ff', '#299500ff', '#2a9500ff', '#2a9500ff', '#2b9500ff', '#2b9600ff', '#2c9600ff', '#2c9600ff', '#2d9600ff', '#2d9700ff', '#2e9700ff', '#2e9700ff', '#2f9800ff', '#2f9800ff', '#309800ff', '#309800ff', '#319900ff', '#319900ff', '#329900ff', '#329900ff', '#339a00ff', '#339a00ff', '#349a00ff', '#349a00ff', '#359b00ff', '#359b00ff', '#369b00ff', '#369b00ff', '#379c00ff', '#379c00ff', '#389c00ff', '#389c00ff', '#399d00ff', '#399d00ff', '#3a9d00ff', '#3a9d00ff', '#3b9e00ff', '#3c9e00ff', '#3c9e00ff', '#3d9e00ff', '#3d9f00ff', '#3e9f00ff', '#3e9f00ff', '#3f9f00ff', '#3fa000ff', '#40a000ff', '#40a000ff', '#41a000ff', '#41a100ff', '#42a100ff', '#42a100ff', '#43a100ff', '#43a200ff', '#44a200ff', '#44a200ff', '#45a200ff', '#45a300ff', '#46a300ff', '#46a300ff', '#47a400ff', '#47a400ff', '#48a400ff', '#48a400ff', '#49a500ff', '#49a500ff', '#4aa500ff', '#4aa500ff', '#4ba600ff', '#4ba600ff', '#4ca600ff', '#4ca600ff', '#4da700ff', '#4da700ff', '#4ea700ff', '#4fa700ff', '#4fa800ff', '#50a800ff', '#50a800ff', '#51a800ff', '#51a900ff', '#52a900ff', '#52a900ff', '#53a900ff', '#53aa00ff', '#54aa00ff', '#54aa00ff', '#55aa00ff', '#55ab00ff', '#56ab00ff', '#56ab00ff', '#57ab00ff', '#57ac00ff', '#58ac00ff', '#58ac00ff', '#59ac00ff', '#59ad00ff', '#5aad00ff', '#5aad00ff', '#5bad00ff', '#5bae00ff', '#5cae00ff', '#5cae00ff', '#5daf00ff', '#5daf00ff', '#5eaf00ff', '#5eaf00ff', '#5fb000ff', '#5fb000ff', '#60b000ff', '#60b000ff', '#61b100ff', '#61b100ff', '#62b100ff', '#63b100ff', '#63b200ff', '#64b200ff', '#64b200ff', '#65b200ff', '#65b300ff', '#66b300ff', '#66b300ff', '#67b300ff', '#67b400ff', '#68b400ff', '#68b400ff', '#69b400ff', '#69b500ff', '#6ab500ff', '#6ab500ff', '#6bb500ff', '#6bb600ff', '#6cb600ff', '#6cb600ff', '#6db600ff', '#6db700ff', '#6eb700ff', '#6eb700ff', '#6fb700ff', '#6fb800ff', '#70b800ff', '#70b800ff', '#71b800ff', '#71b900ff', '#72b900ff', '#72b900ff', '#73b900ff', '#73ba00ff', '#74ba00ff', '#74ba00ff', '#75bb00ff', '#75bb00ff', '#76bb00ff', '#77bb00ff', '#77bc00ff', '#78bc00ff', '#78bc00ff', '#79bc00ff', '#79bd00ff', '#7abd00ff', '#7abd00ff', '#7bbd00ff', '#7bbe00ff', '#7cbe00ff', '#7cbe00ff', '#7dbe00ff', '#7dbf00ff', '#7ebf00ff', '#7ebf00ff', '#7fbf00ff', '#7fc000ff', '#80c000ff', '#80c000ff', '#81c000ff', '#81c100ff', '#82c100ff', '#82c100ff', '#83c100ff', '#83c200ff', '#84c200ff', '#84c200ff', '#85c200ff', '#85c300ff', '#86c300ff', '#86c300ff', '#87c300ff', '#87c400ff', '#88c400ff', '#88c400ff', '#89c400ff', '#8ac500ff', '#8ac500ff', '#8bc500ff', '#8bc500ff', '#8cc600ff', '#8cc600ff', '#8dc600ff', '#8dc700ff', '#8ec700ff', '#8ec700ff', '#8fc700ff', '#8fc800ff', '#90c800ff', '#90c800ff', '#91c800ff', '#91c900ff', '#92c900ff', '#92c900ff', '#93c900ff', '#93ca00ff', '#94ca00ff', '#94ca00ff', '#95ca00ff', '#95cb00ff', '#96cb00ff', '#96cb00ff', '#97cb00ff', '#97cc00ff', '#98cc00ff', '#98cc00ff', '#99cc00ff', '#99cd00ff', '#9acd00ff', '#9acd00ff', '#9bcd00ff', '#9bce00ff', '#9cce00ff', '#9cce00ff', '#9dce00ff', '#9ecf00ff', '#9ecf00ff', '#9fcf00ff', '#9fcf00ff', '#a0d000ff', '#a0d000ff', '#a1d000ff', '#a1d000ff', '#a2d100ff', '#a2d100ff', '#a3d100ff', '#a3d200ff', '#a4d200ff', '#a4d200ff', '#a5d200ff', '#a5d300ff', '#a6d300ff', '#a6d300ff', '#a7d300ff', '#a7d400ff', '#a8d400ff', '#a8d400ff', '#a9d400ff', '#a9d500ff', '#aad500ff', '#aad500ff', '#abd500ff', '#abd600ff', '#acd600ff', '#acd600ff', '#add600ff', '#add700ff', '#aed700ff', '#aed700ff', '#afd700ff', '#afd800ff', '#b0d800ff', '#b0d800ff', '#b1d800ff', '#b2d900ff', '#b2d900ff', '#b3d900ff', '#b3d900ff', '#b4da00ff', '#b4da00ff', '#b5da00ff', '#b5da00ff', '#b6db00ff', '#b6db00ff', '#b7db00ff', '#b7db00ff', '#b8dc00ff', '#b8dc00ff', '#b9dc00ff', '#b9dc00ff', '#badd00ff', '#badd00ff', '#bbdd00ff', '#bbde00ff', '#bcde00ff', '#bcde00ff', '#bdde00ff', '#bddf00ff', '#bedf00ff', '#bedf00ff', '#bfdf00ff', '#bfe000ff', '#c0e000ff', '#c0e000ff', '#c1e000ff', '#c1e100ff', '#c2e100ff', '#c2e100ff', '#c3e100ff', '#c3e200ff', '#c4e200ff', '#c5e200ff', '#c5e200ff', '#c6e300ff', '#c6e300ff', '#c7e300ff', '#c7e300ff', '#c8e400ff', '#c8e400ff', '#c9e400ff', '#c9e400ff', '#cae500ff', '#cae500ff', '#cbe500ff', '#cbe500ff', '#cce600ff', '#cce600ff', '#cde600ff', '#cde600ff', '#cee700ff', '#cee700ff', '#cfe700ff', '#cfe700ff', '#d0e800ff', '#d0e800ff', '#d1e800ff', '#d1e900ff', '#d2e900ff', '#d2e900ff', '#d3e900ff', '#d3ea00ff', '#d4ea00ff', '#d4ea00ff', '#d5ea00ff', '#d5eb00ff', '#d6eb00ff', '#d6eb00ff', '#d7eb00ff', '#d7ec00ff', '#d8ec00ff', '#d9ec00ff', '#d9ec00ff', '#daed00ff', '#daed00ff', '#dbed00ff', '#dbed00ff', '#dcee00ff', '#dcee00ff', '#ddee00ff', '#ddee00ff', '#deef00ff', '#deef00ff', '#dfef00ff', '#dfef00ff', '#e0f000ff', '#e0f000ff', '#e1f000ff', '#e1f000ff', '#e2f100ff', '#e2f100ff', '#e3f100ff', '#e3f100ff', '#e4f200ff', '#e4f200ff', '#e5f200ff', '#e5f200ff', '#e6f300ff', '#e6f300ff', '#e7f300ff', '#e7f300ff', '#e8f400ff', '#e8f400ff', '#e9f400ff', '#e9f500ff', '#eaf500ff', '#eaf500ff', '#ebf500ff', '#ebf600ff', '#ecf600ff', '#edf600ff', '#edf600ff', '#eef700ff', '#eef700ff', '#eff700ff', '#eff700ff', '#f0f800ff', '#f0f800ff', '#f1f800ff', '#f1f800ff', '#f2f900ff', '#f2f900ff', '#f3f900ff', '#f3f900ff', '#f4fa00ff', '#f4fa00ff', '#f5fa00ff', '#f5fa00ff', '#f6fb00ff', '#f6fb00ff', '#f7fb00ff', '#f7fb00ff', '#f8fc00ff', '#f8fc00ff', '#f9fc00ff', '#f9fc00ff', '#fafd00ff', '#fafd00ff', '#fbfd00ff', '#fbfd00ff', '#fcfe00ff', '#fcfe00ff', '#fdfe00ff', '#fdfe00ff', '#feff00ff', '#feff00ff', '#ffff00ff', '#ffff00ff']);
+    
+
+    color_map_13e823edc91b817989f618bf8dd5fc74.x = d3.scale.linear()
+              .domain([0.0, 2.0])
+              .range([0, 450 - 50]);
+
+    color_map_13e823edc91b817989f618bf8dd5fc74.legend = L.control({position: 'topright'});
+    color_map_13e823edc91b817989f618bf8dd5fc74.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_13e823edc91b817989f618bf8dd5fc74.legend.addTo(map_db7e550470395e364cdfef426a9a17d7);
+
+    color_map_13e823edc91b817989f618bf8dd5fc74.xAxis = d3.svg.axis()
+        .scale(color_map_13e823edc91b817989f618bf8dd5fc74.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([0.0, 2.0]);
+
+    color_map_13e823edc91b817989f618bf8dd5fc74.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_13e823edc91b817989f618bf8dd5fc74.g = color_map_13e823edc91b817989f618bf8dd5fc74.svg.append("g")
+        .attr("class", "key")
+        .attr("transform", "translate(25,16)");
+
+    color_map_13e823edc91b817989f618bf8dd5fc74.g.selectAll("rect")
+        .data(color_map_13e823edc91b817989f618bf8dd5fc74.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_13e823edc91b817989f618bf8dd5fc74.x(color_map_13e823edc91b817989f618bf8dd5fc74.color.domain()[i - 1]) : color_map_13e823edc91b817989f618bf8dd5fc74.x.range()[0],
+            x1: i < color_map_13e823edc91b817989f618bf8dd5fc74.color.domain().length ? color_map_13e823edc91b817989f618bf8dd5fc74.x(color_map_13e823edc91b817989f618bf8dd5fc74.color.domain()[i]) : color_map_13e823edc91b817989f618bf8dd5fc74.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_13e823edc91b817989f618bf8dd5fc74.g.call(color_map_13e823edc91b817989f618bf8dd5fc74.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .text("UF/m\u00b2 (10001-100000 m2)");
+    
+            var layer_control_d9734fa32b00ecb8a1ad8330f776da4b_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_c777ef9263fa1a66f6cfb5f1026e9170,
+                },
+                overlays :  {
+                    "Rango 500-4999 m2" : feature_group_971d74a272a00411dace052692593031,
+                    "Rango 10001-100000 m2" : feature_group_d5c56bc1713b5e5018d6ff704773a28f,
+                    "Semestre 2024S1" : feature_group_sub_group_3e0ecf5600cebdba0b964950d7fc1db4,
+                    "Semestre 2024S2" : feature_group_sub_group_9358caec5c0789f0636c195028ceb391,
+                },
+            };
+            let layer_control_d9734fa32b00ecb8a1ad8330f776da4b = L.control.layers(
+                layer_control_d9734fa32b00ecb8a1ad8330f776da4b_layers.base_layers,
+                layer_control_d9734fa32b00ecb8a1ad8330f776da4b_layers.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_db7e550470395e364cdfef426a9a17d7);
+
+        
+</script>
+</html>
